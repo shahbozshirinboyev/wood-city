@@ -8,7 +8,7 @@ function RootLayout() {
   return (
     <>
       {/* Navbar START */}
-      <nav className="overflow-x-hidden">
+      <nav className="overflow-x-hidden border border-green-700  top-0 w-full z-50 bg-white shadow-lg">
         <Nabar />
       </nav>
       {/* Navbar END */}

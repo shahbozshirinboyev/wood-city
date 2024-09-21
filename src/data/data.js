@@ -1,27 +1,27 @@
 export const NavbarMenu = [
   {
     id: 1,
-    title: "Home",
+    title: "Главная",
     link: "/",
   },
   {
     id: 2,
-    title: "Trainer",
-    link: "#",
+    title: "О нас",
+    link: "/aboutus",
   },
   {
     id: 3,
-    title: "Program",
-    link: "#",
+    title: "Деревянные дома",
+    link: "/woodenhouses",
   },
   {
     id: 4,
-    title: "Blogs",
-    link: "#",
+    title: "Деревянная мебель",
+    link: "/woodenfurniture",
   },
   {
     id: 5,
-    title: "Pricing",
-    link: "#",
+    title: "Контакты",
+    link: "/contactus",
   },
 ];

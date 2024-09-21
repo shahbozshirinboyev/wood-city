@@ -8,9 +8,14 @@ import ResponsiveMenu from './ResponsiveMenu'
 
 function Navbar() {
   const [open, setOpen] = useState(false)
+
+  const handleToggle = () => {
+    setOpen(!open); // Toggle the state
+  };
+
   return (
     <>
-      <div className="container flex justify-between items-center py-8">
+      <div className="container flex justify-between items-center py-8 border border-green-700">
         {/* logo section */}
         <div className="text-2xl flex items-center gap-2 font-bold uppercase">
           <i className="bi bi-braces-asterisk"></i>
@@ -29,18 +34,21 @@ function Navbar() {
         </div>
         {/* Icons section */}
         <div className="flex items-center gap-4">
-          <button className="text-2xl hover:bg-primary hover:text-white rounded-full p-2 duration-200">
+          <button className="hover:bg-primary text-primary font-semibold hover:text-white rounded-md border-2 border-primary px-6 py-2 duration-200 hidden md:hidden lg:block">
           <i class="bi bi-telephone"></i>
+          <span className="ml-2">+998 93 456 34 21</span>
           </button>
-          <button className="text-2xl hover:bg-primary hover:text-white rounded-full p-2 duration-200">
-          <i class="bi bi-search"></i>
-          </button>
-          <button className="hover:bg-primary text-primary font-semibold hover:text-white rounded-md border-2 border-primary px-6 py-2 duration-200 hidden md:block">Login</button>
         </div>
         {/* Mobile hamburger section */}
-        <div className="md:hidden" onClick={() => {setOpen(!open)}}>
-        <i className="bi bi-list text-4xl"></i>
-        </div>
+        <label className="btn btn-circle swap swap-rotate md:hidden">
+          {/* this hidden checkbox controls the state */}
+          <input type="checkbox" checked={open} onChange={handleToggle} />
+          {/* hamburger icon */}
+          <i className="swap-off fill-current bi bi-list text-3xl"></i>
+          {/* close icon */}
+          <i className="swap-on fill-current bi bi-x text-3xl"></i>
+        </label>
+        
       </div>
       {/* Mobile Sidebar Section */}
       <ResponsiveMenu open={open}/>
