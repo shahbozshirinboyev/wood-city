@@ -8,15 +8,15 @@ function RootLayout() {
   return (
     <>
       {/* Navbar START */}
-      <nav className="overflow-x-hidden border border-green-700  top-0 w-full z-50 bg-white shadow-lg">
+      <nav className="container border border-red-800">
         <Nabar />
       </nav>
       {/* Navbar END */}
-      <main>
+      <main className="container">
         <Outlet />
       </main>
       {/* Footer START */}
-      <footer>
+      <footer className="container">
         <Footer />
       </footer>
       {/* Footer End */}

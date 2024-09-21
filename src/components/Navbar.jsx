@@ -15,7 +15,8 @@ function Navbar() {
 
   return (
     <>
-      <div className="container flex justify-between items-center py-8 border border-green-700">
+    {/* container flex justify-between items-center py-8 border border-green-700 */}
+      <div className="flex justify-between items-center border border-green-700 py-4">
         {/* logo section */}
         <div className="text-2xl flex items-center gap-2 font-bold uppercase">
           <i className="bi bi-braces-asterisk"></i>
