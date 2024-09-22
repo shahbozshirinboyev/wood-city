@@ -16,26 +16,26 @@ function Navbar() {
   return (
     <>
     {/* container flex justify-between items-center py-8 border border-green-700 */}
-      <div className="flex justify-between items-center border border-green-700 py-4">
+      <div className="container flex justify-between items-center border-[5px] border-purple-700 py-8">
         {/* logo section */}
-        <div className="text-2xl flex items-center gap-2 font-bold uppercase">
+        <div className="border border-red-700 text-xl flex items-center gap-2 font-bold uppercase">
           <i className="bi bi-braces-asterisk"></i>
           <p>Coders</p>
           <p className="text-secondary">Gym</p>
         </div>
         {/* Menu section */}
-        <div className="hidden md:block">
-          <ul className="flex items-center gap-6 text-gray-600">
+        <div className="hidden md:block border border-red-700">
+          <ul className="flex items-center gap-1 md:gap-2 lg:gap-4 text-gray-600">
             {NavbarMenu.map((item) => {
-              return <li key={item.id}>
-                <NavLink to={item.link} className="inline-block py-1 px-3 hover:text-primary font-semibold">{item.title}</NavLink>
+              return <li key={item.id} className="text-[14px] lg:text-[18px]">
+                <NavLink to={item.link} className="inline-block py-1 px-3 hover:text-primary font-semibold whitespace-nowrap">{item.title}</NavLink>
               </li>;
             })}
           </ul>
         </div>
         {/* Icons section */}
-        <div className="flex items-center gap-4">
-          <button className="hover:bg-primary text-primary font-semibold hover:text-white rounded-md border-2 border-primary px-6 py-2 duration-200 hidden md:hidden lg:block">
+        <div className=" hidden md:hidden lg:hidden xl:flex items-center gap-2 border border-red-700">
+          <button className="hover:bg-primary text-primary font-semibold hover:text-white rounded-md border-2 border-primary px-6 py-2 duration-200">
           <i class="bi bi-telephone"></i>
           <span className="ml-2">+998 93 456 34 21</span>
           </button>
