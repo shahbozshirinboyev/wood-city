@@ -1,5 +1,5 @@
 // data
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavbarMenu } from "../data/data";
 import { NavLink } from "react-router-dom";
 
@@ -16,10 +16,28 @@ function Navbar() {
     setOpen(!open); // Toggle the state
   };
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
     {/* container flex justify-between items-center py-8 border border-green-700 */}
-      <div className="container flex justify-between gap-1 items-center border-[5px] border-purple-700 py-8">
+      <div className={`container flex justify-between gap-1 items-center border-[5px] border-purple-700 ${isScrolled ? 'py-2' : 'py-8'} transition-all duration-300 `}>
         {/* logo section */}
         <div className="border border-red-700 text-xl flex items-center gap-2 font-bold uppercase">
           {/* <i className="bi bi-braces-asterisk"></i>
@@ -39,8 +57,8 @@ function Navbar() {
         </div>
         {/* Icons section */}
         <div className=" hidden md:hidden lg:hidden xl:flex items-center gap-2 border border-red-700">
-          <button className="hover:bg-primary whitespace-nowrap text-primary font-semibold hover:text-white rounded-md border-2 border-primary px-6 py-2 duration-200">
-          <i class="bi bi-telephone"></i>
+          <button className="hover:bg-green-600 whitespace-nowrap text-green-600 font-semibold hover:text-white rounded-md border-2 border-green-600 px-6 py-2 duration-200">
+          <i className="bi bi-telephone"></i>
           <span className="ml-2">+998 93 456 34 21</span>
           </button>
         </div>

@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 function HomePage() {
   return (
-    <div className='text-justify'>
+    <div className='container text-justify border border-red-700'>
 
     <motion.div
     initial={{ opacity: 0, scale: 0.5 }}
