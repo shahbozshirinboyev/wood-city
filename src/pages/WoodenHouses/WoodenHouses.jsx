@@ -2,7 +2,7 @@ import React from 'react'
 
 function WoodenHouses() {
   return (
-    <div>WoodenHouses</div>
+    <div className='container'>WoodenHouses</div>
   )
 }
 

@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion"
 
-function ResponsiveMenu({open}) {
+function MobileMenu({open}) {
   return (
     <>
        <AnimatePresence mode="wait">
@@ -27,4 +27,4 @@ function ResponsiveMenu({open}) {
   )
 }
 
-export default ResponsiveMenu
+export default MobileMenu

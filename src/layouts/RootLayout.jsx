@@ -11,7 +11,7 @@ function RootLayout() {
     <div className="border-[5px] border-red-700" >
 
       {/* Navbar START */}
-      <nav className="border-[5px] border-green-800 sticky top-0 z-999">
+      <nav className="sticky top-0 z-999">
         <Nabar />
       </nav>
       {/* Navbar END */}

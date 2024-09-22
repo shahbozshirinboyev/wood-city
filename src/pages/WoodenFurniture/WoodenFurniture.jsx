@@ -2,7 +2,7 @@ import React from 'react'
 
 function WoodenFurniture() {
   return (
-    <div>WoodenFurniture</div>
+    <div className='container'>WoodenFurniture</div>
   )
 }
 
