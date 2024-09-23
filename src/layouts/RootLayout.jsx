@@ -1,17 +1,31 @@
 import { NavLink, Outlet } from "react-router-dom";
-import bgMin from '../../public/images/bg.jpg'
+import { useEffect, useState } from "react";
 
 // components
 import Nabar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 function RootLayout() {
+
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => { window.removeEventListener("scroll", handleScroll); };
+  }, []);
+
   return (
 
-    <div className="border-[5px] border-red-700" >
+    <div className="bg-green-200" >
 
       {/* Navbar START */}
-      <nav className="sticky top-0 z-999">
+      <nav className={`sticky ${isScrolled ? 'top-1 md:top-2' : 'top-0'} z-999 transition duration-300`}>
         <Nabar />
       </nav>
       {/* Navbar END */}

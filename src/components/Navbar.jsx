@@ -1,10 +1,10 @@
 // data
-import { useState, useEffect } from "react";
+import { useState, useEffect, Fragment } from "react";
 import { NavbarMenu } from "../data/data";
 import { NavLink, useNavigate } from "react-router-dom";
 
 // logo
-import logo from '../../public/logo/art-old-wood-e.png'
+import logo from '../../public/logo/wood_city.png'
 
 // Farmer Motion 
 import { motion } from "framer-motion";
@@ -30,67 +30,46 @@ function Navbar() {
         setIsScrolled(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => { window.removeEventListener("scroll", handleScroll); };
   }, []);
 
   return (
     <>
-    {/* container flex justify-between items-center py-8 border border-green-700 */}
-      <div className={`container flex justify-between gap-1 items-center border-[5px] border-purple-700 ${isScrolled ? 'py-2 bg-white rounded-[25px] mt-1 md:mt-2' : 'py-8'} transition-all duration-300`}>
+      <div className={`container flex justify-between gap-1 items-center bg-white ${isScrolled ? 'py-2 md:py-3 rounded-[25px]' : 'py-8'} transition-all duration-300`}>
         {/* logo section */}
-        <div className="border border-red-700 text-xl flex items-center gap-2 font-bold uppercase">
-          {/* <i className="bi bi-braces-asterisk"></i>
-          <p>Coders</p>
-          <p className="text-secondary">Gym</p> */}
-          <motion.img src={logo} alt="" className="w-[180px]"
-             whileHover={{ scale: 1.05 }}
-             whileTap={{ scale: 0.950 }}
-             transition={{ type: "spring", stiffness: 400, damping: 10 }}
-             onClick={() => {navigate('/')}}
-          />
+        <div className="text-xl flex items-center gap-2 font-bold uppercase">
+          <motion.img src={logo} alt="" className="w-[150px]" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.950 }} transition={{ type: "spring", stiffness: 400, damping: 10 }} onClick={() => {navigate('/')}} />
         </div>
         {/* Menu section */}
-        <div className="hidden md:block border border-red-700">
+        <div className="hidden md:block">
           <ul className="flex items-center gap-1 md:gap-2 lg:gap-4 text-gray-600">
             {NavbarMenu.map((item) => {
-              return <li key={item.id} className="text-[14px] lg:text-[18px]">
+              return <li key={item.id} className="text-[14px] lg:text-[16px]">
                 <NavLink to={item.link} className={({ isActive }) =>
-              `inline-block py-1 px-3 font-semibold whitespace-nowrap hover:text-primary transition-all duration-200 ${
-                isActive ? 'text-primary' : 'text-gray-600'
+              `inline-block py-1 px-3 font-semibold whitespace-nowrap hover:text-green-600 transition-all duration-300 ${
+                isActive ? 'text-green-600 bg-green-100 rounded-full' : 'text-gray-600'
               }`
             }>{item.title}</NavLink>
               </li>;
             })}
           </ul>
         </div>
-
         {/* Icons section */}
-        <div className=" hidden md:hidden lg:hidden xl:flex items-center gap-2 border border-red-700">
-
-          <motion.button className="bg-green-600 whitespace-nowrap font-semibold text-white rounded-md border-2 border-green-600 px-6 py-2"
-             whileHover={{ scale: 1.05 }}
-             whileTap={{ scale: 0.950 }}
-             transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          >
+        <div className="hidden md:hidden lg:hidden xl:flex items-center gap-1 text-[14px] lg:text-[14px]">
+          <motion.button className="bg-green-600 whitespace-nowrap font-semibold text-white rounded-md border-2 border-green-600 px-2 py-1" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.950 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
           <i className="bi bi-telephone"></i>
           <span className="ml-2">+998 93 456 34 21</span>
           </motion.button>
-
         </div>
         {/* Mobile hamburger section */}
         <label className="btn btn-circle swap swap-rotate md:hidden">
-          {/* this hidden checkbox controls the state */}
           <input type="checkbox" checked={open} onChange={handleToggle} />
           {/* hamburger icon */}
           <i className="swap-off fill-current bi bi-list text-3xl"></i>
           {/* close icon */}
           <i className="swap-on fill-current bi bi-x text-3xl"></i>
-        </label>     
+        </label>  
       </div>
       {/* Mobile Sidebar Section */}
       <MobileMenu open={open}/>
