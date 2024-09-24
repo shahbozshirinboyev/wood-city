@@ -38,7 +38,7 @@ function Navbar() {
     <>
       <div className={`container flex justify-between gap-1 items-center bg-white ${isScrolled ? 'py-2 md:py-3 rounded-[25px]' : 'py-8'} transition-all duration-300`}>
         {/* logo section */}
-        <div className="text-xl flex items-center gap-2 font-bold uppercase">
+        <div className="text-xl flex items-center gap-2 font-bold uppercase cursor-pointer">
           <motion.img src={logo} alt="" className="w-[150px]" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.950 }} transition={{ type: "spring", stiffness: 400, damping: 10 }} onClick={() => {navigate('/')}} />
         </div>
         {/* Menu section */}
