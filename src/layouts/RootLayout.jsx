@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 // components
@@ -22,14 +22,14 @@ function RootLayout() {
 
   return (
 
-    <div className="bg-green-200" >
+    <div className="bg-base-200" >
 
       {/* Navbar START */}
       <nav className={`sticky ${isScrolled ? 'top-1 md:top-2' : 'top-0'} z-999 transition duration-300`}>
         <Nabar />
       </nav>
       {/* Navbar END */}
-      <main className="">
+      <main className="z-900">
         <Outlet />
       </main>
       {/* Footer START */}

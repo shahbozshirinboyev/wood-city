@@ -1,5 +1,5 @@
 // data
-import { useState, useEffect, Fragment } from "react";
+import { useState, useEffect } from "react";
 import { NavbarMenu } from "../data/data";
 import { NavLink, useNavigate } from "react-router-dom";
 
@@ -13,7 +13,6 @@ import { motion } from "framer-motion";
 import MobileMenu from './MobileMenu'
 
 function Navbar() {
-
   const navigate = useNavigate();
   const [open, setOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false);
