@@ -26,7 +26,7 @@ function RootLayout() {
   return (
     <>
       {/* Navbar START */}
-      <nav className={`sticky ${ isScrolled ? "top-1 md:top-2" : "top-0" } z-999 transition duration-300`}>
+      <nav className={`sticky ${ isScrolled ? "top-1 md:top-2" : "top-0" } z-[999] transition duration-300`}>
         <Nabar />
       </nav>
       {/* Navbar END */}
