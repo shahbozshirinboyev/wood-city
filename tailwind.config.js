@@ -8,8 +8,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#ff8901",
-        secondary: "#fb923c"
+        lightwood: "#D9A673",
+        forestgreen: "#228B22",
+        olivegreen: "#808000",
+        beige: "#F5F5DC",
+        lightgray: "#D3D3D3",
+        warmorange: "#FF8C00",
+        lightpink: "#FFB6C1",
       },
       container: {
         center: true,

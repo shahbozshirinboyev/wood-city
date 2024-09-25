@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 function RootLayout() {
 
   const [isScrolled, setIsScrolled] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -16,29 +17,28 @@ function RootLayout() {
         setIsScrolled(false);
       }
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => { window.removeEventListener("scroll", handleScroll); };
+      window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
-
-    <div className="bg-base-200" >
-
+    <>
       {/* Navbar START */}
-      <nav className={`sticky ${isScrolled ? 'top-1 md:top-2' : 'top-0'} z-999 transition duration-300`}>
+      <nav className={`sticky ${ isScrolled ? "top-1 md:top-2" : "top-0" } z-999 transition duration-300`}>
         <Nabar />
       </nav>
       {/* Navbar END */}
-      <main className="z-900">
+      <main>
         <Outlet />
       </main>
       {/* Footer START */}
-      <footer className="">
+      <footer>
         <Footer />
       </footer>
       {/* Footer End */}
-
-    </div>
+    </>
   );
 }
 
