@@ -1,8 +1,10 @@
 function ContactUs() {
   return (
-    <section className="container my-[25px]">
+    <section className="container">
 
-      <p className="font-bold text-[32px] text-center  my-[25px]">Contact Us</p>
+      <div className="border border-red-700">
+        <p className="font-bold text-[32px] text-center  my-[25px]">Contact Us</p>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="grid grid-cols-2 gap-4">

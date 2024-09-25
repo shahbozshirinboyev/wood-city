@@ -2,12 +2,42 @@ import React from "react";
 
 function WoodenFurniture() {
   return (
-    <section className="container">
-      <div>WoodenFurniture</div>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem eligendi nulla veniam molestias. Quas error laudantium, ab, illo enim placeat vitae necessitatibus odit in totam commodi temporibus, non voluptates aliquid repellat soluta vero eos quam asperiores incidunt possimus eaque! Dolorum numquam porro reiciendis accusantium. Ab, maxime. Inventore eum optio officia in ipsum sapiente esse soluta veniam alias. Hic, ratione aut non eum porro doloremque, iste sint quos blanditiis, incidunt nulla magni unde velit optio consequuntur. Modi, natus tenetur dolores alias error ipsam deleniti ea quaerat aliquid accusamus placeat! Nobis debitis velit suscipit aut praesentium, optio minus earum, iste animi libero placeat molestias sint corporis consectetur ea distinctio impedit blanditiis labore hic odit corrupti, tempora ipsa sit! Iste repudiandae a ipsam error animi sit dolor voluptatibus, debitis eos eligendi. Ex labore delectus officia necessitatibus. Dolorem facere quod reiciendis cum esse suscipit iure consequuntur dolorum. Nulla laudantium fugiat, doloribus impedit ipsa natus commodi ullam, ad illum, dolor sequi fuga expedita eos aliquid labore. Praesentium quam sint veniam ea fuga laborum rem nesciunt corrupti dignissimos. Dolore ipsum modi assumenda cupiditate consequatur pariatur molestias maiores reiciendis, aspernatur sequi dolor amet saepe aliquid quae consequuntur possimus esse sit ut ea atque corporis, aperiam quidem quia! Odit tempore vitae corrupti assumenda dicta sint doloribus et repellat architecto corporis esse, hic maxime est magnam, eum animi velit, at quibusdam. Aliquid, facere tenetur enim quibusdam a quisquam omnis dolorum! Consequatur, molestias! Repellat voluptas reprehenderit adipisci, voluptatem ab quia animi enim dolores fugiat commodi aspernatur architecto? Esse eos culpa rem ipsam quis explicabo blanditiis ea quaerat? Aliquam non, aperiam excepturi odio tenetur cum sed impedit totam earum quo et aspernatur corporis beatae minus ex. Et eos possimus obcaecati quidem at eveniet maxime autem. Autem, minima. Pariatur ratione eius odio vero nostrum atque? Doloremque culpa libero ullam quasi, ipsam pariatur vero autem inventore minus corporis reprehenderit provident rem cum non fugit soluta modi quas in amet adipisci aperiam rerum, fuga necessitatibus. Placeat quo expedita, ullam autem doloribus nostrum reprehenderit eos ut. Porro quod voluptatem illo magni, suscipit odio necessitatibus dignissimos. Voluptas necessitatibus distinctio in totam recusandae nihil, et eligendi. Corrupti totam consequatur ad doloribus aperiam quam, natus, delectus suscipit maiores incidunt repellendus ipsam quia, omnis sed. Eaque reiciendis fuga magni perspiciatis. Necessitatibus voluptatum nihil doloremque nobis rem voluptatibus aspernatur laboriosam quis porro, veniam deleniti omnis impedit, cupiditate sint itaque perferendis. Distinctio voluptas tempora libero incidunt est adipisci eum ipsam quos, laboriosam deleniti obcaecati accusantium sit illum ab soluta recusandae eveniet maiores quasi sunt. Qui tenetur quaerat labore accusamus, nostrum similique sit amet ad iste? Minima eaque dolorem explicabo est ut ab recusandae odit aliquam corrupti, iure voluptatibus quisquam nesciunt, tempore ex repellat dolores ullam quae ratione iste quidem perspiciatis quis nisi alias. Ex placeat possimus adipisci voluptates. Veniam libero odit ipsa eos cumque voluptatem repellendus, aut iste eum quaerat at vero illum nisi non rerum? Ipsa, maiores. Architecto similique, quos error, earum non nihil voluptatem aperiam iste expedita dolorum consequuntur quam id deleniti dolor sequi sit voluptas fuga ab?
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem eligendi nulla veniam molestias. Quas error laudantium, ab, illo enim placeat vitae necessitatibus odit in totam commodi temporibus, non voluptates aliquid repellat soluta vero eos quam asperiores incidunt possimus eaque! Dolorum numquam porro reiciendis accusantium. Ab, maxime. Inventore eum optio officia in ipsum sapiente esse soluta veniam alias. Hic, ratione aut non eum porro doloremque, iste sint quos blanditiis, incidunt nulla magni unde velit optio consequuntur. Modi, natus tenetur dolores alias error ipsam deleniti ea quaerat aliquid accusamus placeat! Nobis debitis velit suscipit aut praesentium, optio minus earum, iste animi libero placeat molestias sint corporis consectetur ea distinctio impedit blanditiis labore hic odit corrupti, tempora ipsa sit! Iste repudiandae a ipsam error animi sit dolor voluptatibus, debitis eos eligendi. Ex labore delectus officia necessitatibus. Dolorem facere quod reiciendis cum esse suscipit iure consequuntur dolorum. Nulla laudantium fugiat, doloribus impedit ipsa natus commodi ullam, ad illum, dolor sequi fuga expedita eos aliquid labore. Praesentium quam sint veniam ea fuga laborum rem nesciunt corrupti dignissimos. Dolore ipsum modi assumenda cupiditate consequatur pariatur molestias maiores reiciendis, aspernatur sequi dolor amet saepe aliquid quae consequuntur possimus esse sit ut ea atque corporis, aperiam quidem quia! Odit tempore vitae corrupti assumenda dicta sint doloribus et repellat architecto corporis esse, hic maxime est magnam, eum animi velit, at quibusdam. Aliquid, facere tenetur enim quibusdam a quisquam omnis dolorum! Consequatur, molestias! Repellat voluptas reprehenderit adipisci, voluptatem ab quia animi enim dolores fugiat commodi aspernatur architecto? Esse eos culpa rem ipsam quis explicabo blanditiis ea quaerat? Aliquam non, aperiam excepturi odio tenetur cum sed impedit totam earum quo et aspernatur corporis beatae minus ex. Et eos possimus obcaecati quidem at eveniet maxime autem. Autem, minima. Pariatur ratione eius odio vero nostrum atque? Doloremque culpa libero ullam quasi, ipsam pariatur vero autem inventore minus corporis reprehenderit provident rem cum non fugit soluta modi quas in amet adipisci aperiam rerum, fuga necessitatibus. Placeat quo expedita, ullam autem doloribus nostrum reprehenderit eos ut. Porro quod voluptatem illo magni, suscipit odio necessitatibus dignissimos. Voluptas necessitatibus distinctio in totam recusandae nihil, et eligendi. Corrupti totam consequatur ad doloribus aperiam quam, natus, delectus suscipit maiores incidunt repellendus ipsam quia, omnis sed. Eaque reiciendis fuga magni perspiciatis. Necessitatibus voluptatum nihil doloremque nobis rem voluptatibus aspernatur laboriosam quis porro, veniam deleniti omnis impedit, cupiditate sint itaque perferendis. Distinctio voluptas tempora libero incidunt est adipisci eum ipsam quos, laboriosam deleniti obcaecati accusantium sit illum ab soluta recusandae eveniet maiores quasi sunt. Qui tenetur quaerat labore accusamus, nostrum similique sit amet ad iste? Minima eaque dolorem explicabo est ut ab recusandae odit aliquam corrupti, iure voluptatibus quisquam nesciunt, tempore ex repellat dolores ullam quae ratione iste quidem perspiciatis quis nisi alias. Ex placeat possimus adipisci voluptates. Veniam libero odit ipsa eos cumque voluptatem repellendus, aut iste eum quaerat at vero illum nisi non rerum? Ipsa, maiores. Architecto similique, quos error, earum non nihil voluptatem aperiam iste expedita dolorum consequuntur quam id deleniti dolor sequi sit voluptas fuga ab?
-      </p>
+    <section className="container border border-red-700">
+
+      <div className="border border-red-700">
+        <p className="text-olivegreen font-bold text-[32px] text-center my-[25px]">WoodenFurniture</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+
+        <div class="row-span-2 col-span-2 bg-beige">
+
+          <img src="https://optim.tildacdn.com/stor3666-3764-4565-a337-306435306538/-/format/webp/37587386.jpg" alt="" className="w-full h-full" />
+
+        </div>
+
+        <div class="bg-beige">
+          <img src="https://optim.tildacdn.com/tild3639-3263-4430-b766-643137633138/-/format/webp/4-min.jpg" alt="" className="w-full h-full  blur-[2px]" />
+
+          {/* <button className="btn">Client</button>
+
+          <p>Become a regular customer</p>
+
+          <p>Enter in the furniture world</p> */}
+
+        </div>
+
+        <div class="bg-beige">
+          <img src="https://optim.tildacdn.com/tild3435-6464-4663-a436-383033653562/-/format/webp/9-min.jpg" alt="" className="w-full h-full  blur-[2px]" />
+
+          {/* <button className="btn">Product</button> */}
+
+          <p></p>
+
+        </div>
+
+      </div>
+
     </section>
   );
 }
