@@ -1,15 +1,14 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
 
 function WoodenFurniture() {
   const woodenFurnitureList = [
-    "First",
-    "Second",
-    "Third",
-    "Okay",
-    "NmaGap",
-    "Shunaqa",
-    "Odamlar ucha olar",
+    "All",
+    "Music",
+    "Live",
+    "NQE Podcast",
+    "Aziz Rahimov",
+    "NmaGap Podcast",
+    "Konsta+",
     "Second",
     "Third",
     "Okay",
@@ -23,6 +22,13 @@ function WoodenFurniture() {
     "Shunaqa",
     "Odamlar ucha olar",
   ];
+
+  const [activeMenuBtn, setActiveMenuBtn] = useState(0);
+
+  const activeMenu = (index) => {
+    console.log(index);
+    setActiveMenuBtn(index);
+  };
 
   return (
     <section className="container mb-[25px] border border-red-700">
@@ -92,42 +98,30 @@ function WoodenFurniture() {
         </p>
       </div>
 
-      <div>
-        <ul className="flex flex-row gap-4 overflow-y-auto">
-          {woodenFurnitureList.map((name, index) => (
-            <li
-              key={index}
-              className="px-2 py-1 bg-beige rounded-full text-nowrap"
-            >
-              {name}
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="bg-olivegreen my-[25px] rounded-lg select-none overflow-hidden relative">
-        <div className="p-[8px] cursor-pointer absolute h-full top-0 w-[100px] flex items-center justify-start px-2 bg-gradient-to-r from-olivegreen to-transparent">
-          <i className="bi bi-chevron-left text-[24px] text-white"></i>
+      <div className="bg-beige my-[25px] rounded-lg select-none overflow-hidden relative">
+        {/* flex  - hidden */}
+        <div className="hidden p-[8px] cursor-pointer absolute h-full top-0 w-[100px] items-center justify-start px-2 bg-gradient-to-r from-beige to-transparent">
+          <i className="bi bi-chevron-left text-[24px] text-black"></i>
         </div>
 
         <ul className="scrollbar-hide flex gap-6 p-3 overflow-x-auto">
           {woodenFurnitureList.map((name, index) => (
             <li className="" key={index}>
-              <NavLink
-                className={({ isActive }) =>
-                  `text-nowrap px-2 py-1 bg-beige text-gray font-medium rounded-xl transition-all duration-300 ${
-                    isActive ? "bg-warmorange text-white" : "text-olivegreen"
-                  }`
-                }
+              <button
+                className={`whitespace-nowrap px-2 py-1 bg-lightgray text-gray font-medium rounded-xl ${
+                  activeMenuBtn === index ? "bg-black text-white" : ""
+                } transition-all duration-300 border border-black
+                      hover:bg-black hover:text-white`}
+                onClick={() => activeMenu(index)}
               >
                 {name}
-              </NavLink>
+              </button>
             </li>
           ))}
         </ul>
 
-        <div className="p-[8px] cursor-pointer absolute h-full top-0 w-[100px] flex items-center justify-end px-2 bg-gradient-to-l from-olivegreen to-transparent right-0">
-          <i className="bi bi-chevron-right text-[24px] text-white"></i>
+        <div className="p-[8px] cursor-pointer absolute h-full top-0 w-[100px] flex items-center justify-end px-2 bg-gradient-to-l from-beige to-transparent right-0">
+          <i className="bi bi-chevron-right text-[24px] text-black"></i>
         </div>
       </div>
     </section>
