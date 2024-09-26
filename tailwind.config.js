@@ -34,4 +34,7 @@ export default {
   daisyui: {
     darkTheme: false, // Disable dark mode in DaisyUI
   },
+  corePlugins: {
+    preflight: true,
+  },
 }
