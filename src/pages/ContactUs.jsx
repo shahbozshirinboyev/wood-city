@@ -1,6 +1,6 @@
 function ContactUs() {
   return (
-    <section className="container">
+    <section className="container mb-[25px] border border-red-700">
 
       <div className="border border-red-700">
         <p className="font-bold text-[32px] text-center  my-[25px]">Contact Us</p>
