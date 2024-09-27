@@ -1,50 +1,71 @@
 import React from "react";
+//logo
+import logo from "../../public/logo/wood_city_white_logo.png"
 
 function Footer() {
   return (
-    <section className="bg-beige">
+    <section className="bg-[#160A06] text-[#E1DFDE]">
 
       <div className="container">
 
         <div className="grid grid-cols-2 md:grid-cols-4 p-2 md:p-3 lg:p-10 gap-1">
 
         <aside>
-          <i className="bi bi-0-circle-fill text-[50px]"></i>
-          <p> ACME Industries Ltd. <br /> Since 1992 </p>
+          <img src={logo} alt="" className="w-[140px] lg:w-[180px]  my-[15px] lg:my-[25px]" />
+          <p>Wood City "MCHJ"<br />с 2020 года</p>
         </aside>
 
           <nav className="grid grid-cols-1">
             <h6 className="footer-title">О компании</h6>
-            <a className="link link-hover">Branding</a>
-            <a className="link link-hover">Design</a>
-            <a className="link link-hover">Marketing</a>
-            <a className="link link-hover">Advertisement</a>
+            <p>ИП Феденев Евгений Александрович</p>
+            <p>ИНН: 664604291587</p>
+            <p>ОГРН: 320665800112549</p>
+            <p>Способы оплаты: безналичный расчёт, наличный, кредит</p>
+            <p>Гарантия: на все виды работ</p>
           </nav>
 
           <nav className="grid grid-cols-1 mt-10 md:mt-0">
             <h6 className="footer-title">Меню</h6>
-            <a className="link link-hover">About us</a>
-            <a className="link link-hover">Contact</a>
-            <a className="link link-hover">Jobs</a>
-            <a className="link link-hover">Press kit</a>
+            <a className="link link-hover">Главная</a>
+            <a className="link link-hover">О нас</a>
+            <a className="link link-hover">Деревянные дома</a>
+            <a className="link link-hover">Деревянная мебель</a>
+            <a className="link link-hover">Контакты</a>
           </nav>
 
           <nav className="grid grid-cols-1 mt-10 md:mt-0">
             <h6 className="footer-title">Контакты</h6>
-            <a className="link link-hover">Terms of use</a>
-            <a className="link link-hover">Privacy policy</a>
-            <a className="link link-hover">Cookie policy</a>
+            <a className="link link-hover">Uzb, Tashkent, Chirchiq sh.</a>
+            <div className="flex mt-2">
+            <i class="bi bi-telephone mr-[10px]"></i>
+            <p>
+              <a href="" className="link link-hover">+998 (45) 342 45 22</a>
+              <br />
+              <a href="" className="link link-hover">+998 (12) 345 45 52</a>
+            </p>
+            
+            
+            </div>
+            <div className="flex items-center justify-start text-[20px] my-4">
+              <a href=""><i class="bi bi-telegram mr-[10px] hover:text-sky-500 transition-all duration-200"></i></a>
+              <a href=""><i class="bi bi-youtube mx-[10px] hover:text-red-500 transition-all duration-200"></i></a>
+              <a href=""><i class="bi bi-instagram mx-[10px] hover:text-pink-500 transition-all duration-200"></i></a>
+              <a href=""><i class="bi bi-twitter-x mx-[10px] hover:text-white transition-all duration-200"></i></a>
+            </div>
+            <div>
+              <button className="py-1 px-2 rounded-lg border border-[#E1DFDE] hover:bg-[#E1DFDE] hover:text-[#160A06] transition-all duration-200">Оставить заявку</button>
+            </div>
           </nav>
 
         </div>
 
-        <div className="grid grid-cols-2 bg-beige border-olivegreen border-t py-2">
+        {/* <div className="grid grid-cols-2 border-[#E1DFDE] border-t py-2">
           <aside className="flex items-center">
           <i className="bi bi-code-slash text-[24px] mr-5"></i>
             <p>
-              ACME Industries Ltd.
+              OS//Services
               <br />
-              Providing reliable tech since 1992
+              Powered by Shahboz Shirinboyev
             </p>
           </aside>
           <nav className="flex items-center justify-self-end">
@@ -84,7 +105,7 @@ function Footer() {
               </a>
             </div>
           </nav>
-        </div>
+        </div> */}
 
       </div>
 
