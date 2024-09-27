@@ -40,7 +40,14 @@ function WoodenFurniture() {
     if (ulRef.current) {
       ulRef.current.scrollLeft += 150;
     }
+    setTimeout(() => {
+      console.log("scrollLeft: ", ulRef.current.scrollLeft);
+      console.log("scrollWidth: ", ulRef.current.scrollWidth);
+      console.log("clientWidth: ", ulRef.current.clientWidth);
+    }, 400);
   };
+   
+
 
   return (
     <section className="container mb-[25px] border border-red-700">
@@ -111,7 +118,7 @@ function WoodenFurniture() {
       </div>
 
       <div className="bg-beige my-[25px] rounded-lg select-none overflow-hidden relative">
-        
+
         <div
           className="flex p-[8px] cursor-pointer absolute h-full top-0 w-[100px] items-center justify-start px-2 bg-gradient-to-r from-beige to-transparent"
           onClick={scrollLeft}
