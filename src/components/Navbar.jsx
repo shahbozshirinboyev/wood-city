@@ -4,7 +4,7 @@ import { NavbarMenu } from "../data/data";
 import { NavLink, useNavigate } from "react-router-dom";
 
 // logo
-import logo from '../../public/logo/wood_city.png'
+import logo from '../../public/logo/wood_city_whiter.png'
 
 // Farmer Motion 
 import { motion } from "framer-motion";
@@ -34,8 +34,8 @@ function Navbar() {
   }, []);
 
   return (
-    <>
-      <div className={`container border border-red-700 flex justify-between gap-1 items-center bg-white ${isScrolled ? 'py-2 md:py-3 rounded-[25px]' : 'py-8'} transition-all duration-300`}>
+    <section className="bg-[#160A06]">
+      <div className={`container flex justify-between gap-1 items-center ${isScrolled ? 'py-2 md:py-3 rounded-[25px]' : 'py-8'} transition-all duration-300`}>
         {/* logo section */}
         <div className="text-xl flex items-center gap-2 font-bold uppercase cursor-pointer">
           <motion.img src={logo} alt="" className="w-[150px]" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.950 }} transition={{ type: "spring", stiffness: 400, damping: 10 }} onClick={() => {navigate('/')}} />
@@ -46,8 +46,8 @@ function Navbar() {
             {NavbarMenu.map((item) => {
               return <li key={item.id} className="text-[14px] lg:text-[16px]">
                 <NavLink to={item.link} className={({ isActive }) =>
-              `inline-block py-1 px-3 font-semibold whitespace-nowrap hover:text-green-600 transition-all duration-300 ${
-                isActive ? 'text-green-600 bg-green-100 rounded-full' : 'text-gray-600'
+              `inline-block py-1 px-3 font-semibold whitespace-nowrap hover:text-lightwood transition-all duration-300 ${
+                isActive ? 'text-[#160A06] bg-[#E1DFDE] rounded-full' : 'text-[#E1DFDE]'
               }`
             }>{item.title}</NavLink>
               </li>;
@@ -72,7 +72,7 @@ function Navbar() {
       </div>
       {/* Mobile Sidebar Section */}
       <MobileMenu open={open}/>
-    </>
+    </section>
   );
 }
 

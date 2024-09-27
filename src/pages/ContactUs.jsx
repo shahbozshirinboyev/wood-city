@@ -1,15 +1,15 @@
 function ContactUs() {
   return (
-    <section className="container mb-[25px] border border-red-700">
+    <section className="container mb-[25px] text-[#160A06]">
 
-      <div className="border border-red-700">
+      <div className="">
         <p className="font-bold text-[32px] text-center  my-[25px]">Contact Us</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="grid grid-cols-2 gap-4">
 
-          <div className="border p-6">
+          <div className="border rounded-[10px] p-6">
             <i className="bi bi-telephone-forward-fill text-[22px] border p-2 rounded-lg w-[45px] h-[45px] flex justify-center items-center text-forestgreen"></i>
             <p className="mt-[15px] text-[20px] font-semibold">Phone Call</p>
             <span className="text-[14px] lg:text-[16px] block mt-1">
@@ -20,7 +20,7 @@ function ContactUs() {
             </button>
           </div>
 
-          <div className="border p-6">
+          <div className="border rounded-[10px] p-6">
             <i className="bi bi-telegram text-[22px] border p-2 rounded-lg w-[45px] h-[45px] flex justify-center items-center text-sky-500"></i>
             <p className="mt-[15px] text-[20px] font-semibold">
               Chat to Support
@@ -33,7 +33,7 @@ function ContactUs() {
             </button>
           </div>
 
-          <div className="col-span-2 border p-6">
+          <div className="col-span-2 border p-6 rounded-[10px]">
             <i className="bi bi-geo-alt-fill text-[22px] border p-2 rounded-lg w-[45px] h-[45px] flex justify-center items-center text-red-500"></i>
             <p className="mt-[15px] text-[20px] font-semibold">Visit Us</p>
             <span className="text-[14px] lg:text-[16px] block mt-1">
@@ -46,11 +46,11 @@ function ContactUs() {
           </div>
         </div>
 
-        <div className="border">
+        <div className="border rounded-[10px]">
           <iframe
             src="https://yandex.uz/map-widget/v1/?ll=69.281712%2C41.320213&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTQzMTQxMjAzEktPyrt6YmVraXN0b24sIFRvc2hrZW50LCBZdW51c29ib2QgeW_Ku25hbGlzaGksIEFiZHVsbGEgUW9kaXJpeSBtZXRybyBiZWthdGkiCg08kIpCFeZHJUI%2C&z=16.04"
             allowFullScreen
-            className="relative w-full h-full"
+            className="relative w-full h-full rounded-[10px]"
           ></iframe>
         </div>
 
@@ -60,7 +60,7 @@ function ContactUs() {
 
         <div>
           <div className="flex items-center">
-            <span className="text-[60px] font-bold pr-4">6</span><span className="text-[25px]"> простых шагов, которые отделяют вас от дома мечты.</span>
+            <span className="text-[60px] font-bold pr-4 text-[#160A06]">6</span><span className="text-[25px]"> простых шагов, которые отделяют вас от дома мечты.</span>
           </div>
         </div>
         
@@ -73,7 +73,7 @@ function ContactUs() {
 
         <div className="bg-base-200 rounded-lg p-5">
           <div className="grid grid-cols-2 items-center">
-            <span className="text-start font-semibold text-[20px]">Знакомство</span><span className="text-end font-bold text-[25px] opacity-50">01</span>
+            <span className="text-start font-semibold text-[20px]">Знакомство</span><span className="text-end font-bold text-[25px] opacity-50 text-lightwood">01</span>
           </div>
           <div className="py-4">
             <p>Нам поступает ваш звонок. Вы получаете бесплатную консультацию и ответы на интересующие вопросы.</p>
@@ -82,7 +82,7 @@ function ContactUs() {
 
         <div className="bg-base-200 rounded-lg p-5">
           <div className="grid grid-cols-2 items-center">
-            <span className="text-start font-semibold text-[20px]">Презентация</span><span className="text-end font-bold text-[25px] opacity-50">02</span>
+            <span className="text-start font-semibold text-[20px]">Презентация</span><span className="text-end font-bold text-[25px] opacity-50 text-lightwood">02</span>
           </div>
           <div className="py-4">
             <p>Вы смотрите модели, выбираете понравившийся проект или вносите свои пожелания в планировки.</p>
@@ -91,7 +91,7 @@ function ContactUs() {
 
         <div className="bg-base-200 rounded-lg p-5">
           <div className="grid grid-cols-2 items-center">
-            <span className="text-start font-semibold text-[20px]">Договор и оплата</span><span className="text-end font-bold text-[25px] opacity-50">03</span>
+            <span className="text-start font-semibold text-[20px]">Договор и оплата</span><span className="text-end font-bold text-[25px] opacity-50 text-lightwood">03</span>
           </div>
           <div className="py-4">
             <p>Мы заключаем договор и согласовываем сроки. Вы оплачиваете 70% от стоимости дома.</p>
@@ -100,7 +100,7 @@ function ContactUs() {
 
         <div className="bg-base-200 rounded-lg p-5">
           <div className="grid grid-cols-2 items-center">
-            <span className="text-start font-semibold text-[20px]">Изготовление</span><span className="text-end font-bold text-[25px] opacity-50">04</span>
+            <span className="text-start font-semibold text-[20px]">Изготовление</span><span className="text-end font-bold text-[25px] opacity-50 text-lightwood">04</span>
           </div>
           <div className="py-4">
             <p>В среднем изготовление модульного дома занимает от 30 дней, если готовых домов в наличии нет.</p>
@@ -109,7 +109,7 @@ function ContactUs() {
 
         <div className="bg-base-200 rounded-lg p-5">
           <div className="grid grid-cols-2 items-center">
-            <span className="text-start font-semibold text-[20px]">Доставка</span><span className="text-end font-bold text-[25px] opacity-50">05</span>
+            <span className="text-start font-semibold text-[20px]">Доставка</span><span className="text-end font-bold text-[25px] opacity-50 text-lightwood">05</span>
           </div>
           <div className="py-4">
             <p>После полной оплаты мы даем актуальные рекомендации по перевозке и дом доставляется к вам.</p>
@@ -118,7 +118,7 @@ function ContactUs() {
 
         <div className="bg-base-200 rounded-lg p-5">
           <div className="grid grid-cols-2 items-center">
-            <span className="text-start font-semibold text-[20px]">Монтаж</span><span className="text-end font-bold text-[25px] opacity-50">06</span>
+            <span className="text-start font-semibold text-[20px]">Монтаж</span><span className="text-end font-bold text-[25px] opacity-50 text-lightwood">06</span>
           </div>
           <div className="py-4">
             <p>Установка дома на участке в назначенную дату за 1−2 дня, после чего вы можете сразу заезжать в него.</p>

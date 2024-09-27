@@ -1,6 +1,11 @@
 //components
 import ScrollableMenu from "../../components/ScrollableMenu";
 
+//images
+import furniture_1 from "../../../public/furniture/furniture_1.jpg"
+import furniture_2 from "../../../public/furniture/furniture_2.jpg"
+import furniture_3 from "../../../public/furniture/furniture_3.jpg"
+
 function WoodenFurniture() {
   return (
     <section className="container mb-[25px] border border-red-700">
@@ -13,7 +18,7 @@ function WoodenFurniture() {
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         <div className="row-span-2 col-span-2 bg-beige">
           <img
-            src="https://optim.tildacdn.com/stor3666-3764-4565-a337-306435306538/-/format/webp/37587386.jpg"
+            src={furniture_1}
             alt=""
             className="w-full h-full"
           />
@@ -21,12 +26,12 @@ function WoodenFurniture() {
 
         <div className="relative">
           <img
-            src="https://optim.tildacdn.com/tild3639-3263-4430-b766-643137633138/-/format/webp/4-min.jpg"
+            src={furniture_2}
             alt=""
             className="absolute top-0 left-0 w-full h-full object-cover blur-[0px]"
           />
 
-          <div className="relative">
+          {/* <div className="relative">
             <button className="border rounded-lg w-[100px] p-1 font-bold text-white m-4 text-[18px]">
               Client
             </button>
@@ -38,17 +43,18 @@ function WoodenFurniture() {
             <p className="font-bold text-white m-4 text-[35px]">
               Enter in the furniture world
             </p>
-          </div>
+          </div> */}
+
         </div>
 
         <div className="relative">
           <img
-            src="https://optim.tildacdn.com/tild3435-6464-4663-a436-383033653562/-/format/webp/9-min.jpg"
+            src={furniture_3}
             alt=""
             className="absolute top-0 left-0 w-full h-full object-cover  blur-[0px]"
           />
 
-          <div className="relative">
+          {/* <div className="relative">
             <button className="border rounded-lg w-[100px] p-1 font-bold text-white m-4 text-[18px]">
               Client
             </button>
@@ -60,7 +66,8 @@ function WoodenFurniture() {
             <p className="font-bold text-white m-4 text-[35px]">
               Enter in the furniture world
             </p>
-          </div>
+          </div> */}
+          
         </div>
       </div>
 

@@ -1,17 +1,17 @@
 import React from "react";
 //logo
-import logo from "../../public/logo/wood_city_white_logo.png"
+import logo from "../../public/logo/wood_city_whiter.png"
 
 function Footer() {
   return (
-    <section className="bg-[#160A06] text-[#E1DFDE]">
+    <section className="bg-[#160A06] text-[#E1DFDE] text-[14px] md:text-[16px]">
 
       <div className="container">
 
-        <div className="grid grid-cols-2 md:grid-cols-4 p-2 md:p-3 lg:p-10 gap-1">
+        <div className="grid grid-cols-2 lg:grid-cols-4 p-2 md:p-3 lg:p-10 gap-1">
 
         <aside>
-          <img src={logo} alt="" className="w-[140px] lg:w-[180px]  my-[15px] lg:my-[25px]" />
+          <img src={logo} alt="" className="w-[140px] lg:w-[180px]  my-[25px] lg:my-[35px]" />
           <p>Wood City "MCHJ"<br />с 2020 года</p>
         </aside>
 
@@ -24,7 +24,7 @@ function Footer() {
             <p>Гарантия: на все виды работ</p>
           </nav>
 
-          <nav className="grid grid-cols-1 mt-10 md:mt-0">
+          <nav className="grid grid-cols-1 mt-10 lg:mt-0">
             <h6 className="footer-title">Меню</h6>
             <a className="link link-hover">Главная</a>
             <a className="link link-hover">О нас</a>
@@ -33,9 +33,12 @@ function Footer() {
             <a className="link link-hover">Контакты</a>
           </nav>
 
-          <nav className="grid grid-cols-1 mt-10 md:mt-0">
+          <nav className="grid grid-cols-1 mt-10 lg:mt-0">
+
             <h6 className="footer-title">Контакты</h6>
-            <a className="link link-hover">Uzb, Tashkent, Chirchiq sh.</a>
+            <a className="link link-hover">
+            <i class="bi bi-geo-alt mr-[10px]"></i>
+            Uzb, Tashkent, Chirchiq sh.</a>
             <div className="flex mt-2">
             <i class="bi bi-telephone mr-[10px]"></i>
             <p>
@@ -52,9 +55,10 @@ function Footer() {
               <a href=""><i class="bi bi-instagram mx-[10px] hover:text-pink-500 transition-all duration-200"></i></a>
               <a href=""><i class="bi bi-twitter-x mx-[10px] hover:text-white transition-all duration-200"></i></a>
             </div>
-            <div>
+            <div className="mb-[25px]">
               <button className="py-1 px-2 rounded-lg border border-[#E1DFDE] hover:bg-[#E1DFDE] hover:text-[#160A06] transition-all duration-200">Оставить заявку</button>
             </div>
+
           </nav>
 
         </div>
