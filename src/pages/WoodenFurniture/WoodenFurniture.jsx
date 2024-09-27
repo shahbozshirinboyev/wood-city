@@ -1,54 +1,7 @@
-import { useState, useRef, useEffect } from "react";
+//components
+import ScrollableMenu from "../../components/ScrollableMenu";
 
 function WoodenFurniture() {
-  const woodenFurnitureList = [
-    "All",
-    "Music",
-    "Live",
-    "NQE Podcast",
-    "Aziz Rahimov",
-    "NmaGap Podcast",
-    "Konsta+",
-    "Second",
-    "Third",
-    "Okay",
-    "NmaGap",
-    "Shunaqa",
-    "Odamlar sdsducha olar",
-    "Second",
-    "Third",
-    "Okay",
-    "NmaGap",
-    "Shunaqa",
-    "Odamlar ucha olar",
-  ];
-
-  const [activeMenuBtn, setActiveMenuBtn] = useState(0);
-  const ulRef = useRef(null); // ul elementini olish uchun useRef
-
-  const activeMenu = (index) => {
-    setActiveMenuBtn(index);
-  };
-
-  const scrollLeft = () => {
-    if (ulRef.current) {
-      ulRef.current.scrollLeft -= 150;
-    }
-  };
-
-  const scrollRight = () => {
-    if (ulRef.current) {
-      ulRef.current.scrollLeft += 150;
-    }
-    setTimeout(() => {
-      console.log("scrollLeft: ", ulRef.current.scrollLeft);
-      console.log("scrollWidth: ", ulRef.current.scrollWidth);
-      console.log("clientWidth: ", ulRef.current.clientWidth);
-    }, 400);
-  };
-   
-
-
   return (
     <section className="container mb-[25px] border border-red-700">
       <div className="border border-red-700">
@@ -117,43 +70,8 @@ function WoodenFurniture() {
         </p>
       </div>
 
-      <div className="bg-beige my-[25px] rounded-lg select-none overflow-hidden relative">
-
-        <div
-          className="flex p-[8px] cursor-pointer absolute h-full top-0 w-[100px] items-center justify-start px-2 bg-gradient-to-r from-beige to-transparent"
-          onClick={scrollLeft}
-        >
-          <i className="bi bi-chevron-left text-[24px] text-black"></i>
-        </div>
-
-        <ul
-          ref={ulRef}
-          className="btnscroll scrollbar-hide flex gap-6 p-3 overflow-x-auto"
-        >
-          {woodenFurnitureList.map((name, index) => (
-            <li className="" key={index}>
-              <button
-                className={`whitespace-nowrap px-2 py-1 font-medium rounded-xl ${
-                  activeMenuBtn === index
-                    ? "bg-black text-white"
-                    : "bg-lightgray text-gray"
-                } transition-all duration-300 border border-black
-                      hover:bg-black hover:text-white`}
-                onClick={() => activeMenu(index)}
-              >
-                {name}
-              </button>
-            </li>
-          ))}
-        </ul>
-
-        <div
-          className="p-[8px] cursor-pointer absolute h-full top-0 w-[100px] flex items-center justify-end px-2 bg-gradient-to-l from-beige to-transparent right-0"
-          onClick={scrollRight}
-        >
-          <i className="bi bi-chevron-right text-[24px] text-black"></i>
-        </div>
-
+      <div>
+        <ScrollableMenu />
       </div>
     </section>
   );
