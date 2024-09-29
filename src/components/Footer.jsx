@@ -37,10 +37,10 @@ function Footer() {
 
             <h6 className="footer-title">Контакты</h6>
             <a className="link link-hover">
-            <i class="bi bi-geo-alt mr-[10px]"></i>
+            <i className="bi bi-geo-alt mr-[10px]"></i>
             Uzb, Tashkent, Chirchiq sh.</a>
             <div className="flex mt-2">
-            <i class="bi bi-telephone mr-[10px]"></i>
+            <i className="bi bi-telephone mr-[10px]"></i>
             <p>
               <a href="" className="link link-hover">+998 (45) 342 45 22</a>
               <br />
@@ -50,10 +50,10 @@ function Footer() {
             
             </div>
             <div className="flex items-center justify-start text-[20px] my-4">
-              <a href=""><i class="bi bi-telegram mr-[10px] hover:text-sky-500 transition-all duration-200"></i></a>
-              <a href=""><i class="bi bi-youtube mx-[10px] hover:text-red-500 transition-all duration-200"></i></a>
-              <a href=""><i class="bi bi-instagram mx-[10px] hover:text-pink-500 transition-all duration-200"></i></a>
-              <a href=""><i class="bi bi-twitter-x mx-[10px] hover:text-white transition-all duration-200"></i></a>
+              <a href=""><i className="bi bi-telegram mr-[10px] hover:text-sky-500 transition-all duration-200"></i></a>
+              <a href=""><i className="bi bi-youtube mx-[10px] hover:text-red-500 transition-all duration-200"></i></a>
+              <a href=""><i className="bi bi-instagram mx-[10px] hover:text-pink-500 transition-all duration-200"></i></a>
+              <a href=""><i className="bi bi-twitter-x mx-[10px] hover:text-white transition-all duration-200"></i></a>
             </div>
             <div className="mb-[25px]">
               <button className="py-1 px-2 rounded-lg border border-[#E1DFDE] hover:bg-[#E1DFDE] hover:text-[#160A06] transition-all duration-200">Оставить заявку</button>

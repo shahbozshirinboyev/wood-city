@@ -7,6 +7,11 @@ import furniture_2 from "../../../public/furniture/furniture_2.jpg"
 import furniture_3 from "../../../public/furniture/furniture_3.jpg"
 
 function WoodenFurniture() {
+
+  const handleMenuIndex = (index) => {
+    console.log("Bu menu indexi:", index)
+  }
+
   return (
     <section className="container mb-[25px] border border-red-700">
       <div className="border border-red-700">
@@ -78,7 +83,7 @@ function WoodenFurniture() {
       </div>
 
       <div>
-        <ScrollableMenu />
+        <ScrollableMenu onMenuIndex={handleMenuIndex} />
       </div>
     </section>
   );

@@ -1,10 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: false, // Disable dark mode in Tailwind CSS
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -19,7 +16,7 @@ export default {
       container: {
         center: true,
         padding: {
-          DEFAULT: '0.5rem',
+          DEFAULT: "0.5rem",
           sm: "0.5rem",
           lg: "4rem",
           xl: "5rem",
@@ -28,13 +25,11 @@ export default {
       },
     },
   },
-  plugins: [
-    require('daisyui'),
-  ], 
+  plugins: [require("daisyui"), require("tailwind-scrollbar")],
   daisyui: {
     darkTheme: false, // Disable dark mode in DaisyUI
   },
   corePlugins: {
     preflight: true,
   },
-}
+};

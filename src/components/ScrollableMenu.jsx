@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 
-function ScrollableMenu() {
+function ScrollableMenu({ onMenuIndex }) {
   const menus = [
     "All",
     "Music",
@@ -23,6 +23,10 @@ function ScrollableMenu() {
   const tabsListRef = useRef(null);
   const [scrollPos, setScrollPos] = useState(0);
   const [maxScroll, setMaxScroll] = useState(0);
+
+  useEffect (() => {
+    onMenuIndex(activeMenuBtn);
+  }, [activeMenuBtn]);
 
   const activeMenu = (index) => {
     setActiveMenuBtn(index);
@@ -56,7 +60,7 @@ function ScrollableMenu() {
     <div className="relative mx-auto rounded-md bg-black overflow-hidden">
       <div
         className={`absolute top-0 left-0 h-full w-[100px] bg-gradient-to-r from-black to-transparent flex items-center justify-start px-2
-          ${ scrollPos > 20 ? "flex" : "hidden"}`}
+          ${scrollPos > 20 ? "flex" : "hidden"}`}
       >
         <i
           onClick={scrollLeft}
