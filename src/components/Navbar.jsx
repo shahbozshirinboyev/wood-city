@@ -37,17 +37,17 @@ function Navbar() {
     <section className="bg-[#160A06]">
       <div className={`container flex justify-between gap-1 items-center ${isScrolled ? 'py-2 md:py-3 rounded-[25px]' : 'py-8'} transition-all duration-300`}>
         {/* logo section */}
-        <div className="text-xl flex items-center gap-2 font-bold uppercase cursor-pointer">
+        <div className="flex items-center gap-2 text-xl font-bold uppercase cursor-pointer">
           <motion.img src={logo} alt="" className="w-[150px]" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.950 }} transition={{ type: "spring", stiffness: 400, damping: 10 }} onClick={() => {navigate('/')}} />
         </div>
         {/* Menu section */}
         <div className="hidden md:block">
-          <ul className="flex items-center gap-1 md:gap-2 lg:gap-4 text-gray-600">
+          <ul className="flex items-center gap-1 text-gray-600 md:gap-2 lg:gap-4">
             {NavbarMenu.map((item) => {
               return <li key={item.id} className="text-[14px] lg:text-[16px]">
                 <NavLink to={item.link} className={({ isActive }) =>
               `inline-block py-1 px-3 font-semibold whitespace-nowrap hover:text-lightwood transition-all duration-300 ${
-                isActive ? 'text-[#160A06] bg-[#E1DFDE] rounded-full' : 'text-[#E1DFDE]'
+                isActive ? 'text-[#160A06] bg-[#E1DFDE] rounded-[10px]' : 'text-[#E1DFDE]'
               }`
             }>{item.title}</NavLink>
               </li>;
@@ -56,7 +56,7 @@ function Navbar() {
         </div>
         {/* Icons section */}
         <div className="hidden md:hidden lg:hidden xl:flex items-center gap-1 text-[14px] lg:text-[14px]">
-          <motion.button className="bg-green-600 whitespace-nowrap font-semibold text-white rounded-md border-2 border-green-600 px-2 py-1" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.950 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+          <motion.button className="px-2 py-1 font-semibold text-white bg-green-600 border-2 border-green-600 rounded-md whitespace-nowrap" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.950 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
           <i className="bi bi-telephone"></i>
           <span className="ml-2">+998 93 456 34 21</span>
           </motion.button>
@@ -65,9 +65,9 @@ function Navbar() {
         <label className="btn btn-circle swap swap-rotate md:hidden">
           <input type="checkbox" checked={open} onChange={handleToggle} />
           {/* hamburger icon */}
-          <i className="swap-off fill-current bi bi-list text-3xl"></i>
+          <i className="text-3xl fill-current swap-off bi bi-list"></i>
           {/* close icon */}
-          <i className="swap-on fill-current bi bi-x text-3xl"></i>
+          <i className="text-3xl fill-current swap-on bi bi-x"></i>
         </label>  
       </div>
       {/* Mobile Sidebar Section */}

@@ -54,29 +54,29 @@ function ScrollableMenu({ onMenuIndex }) {
     setScrollPos(tabsListRef.current.scrollLeft);
   };
   return (
-    <div className="relative mx-auto overflow-hidden bg-black rounded-md">
+    <div className="relative mx-auto overflow-hidden rounded-md shadow-md bg-base-200">
       <div
-        className={`absolute top-0 left-0 h-full w-[100px] bg-gradient-to-r from-black to-transparent flex items-center justify-start px-2
+        className={`absolute top-0 left-0 h-full w-[100px] bg-gradient-to-r from-base-200 to-transparent flex items-center justify-start px-2
           ${scrollPos > 20 ? "flex" : "hidden"}`}
       >
         <i
           onClick={scrollLeft}
-          className="bi bi-chevron-left text-white text-[14px] cursor-pointer hover:bg-gray-700 flex justify-center items-center w-[40px] h-[40px] rounded-full transition-all duration-200"
+          className="bi bi-chevron-left text-black text-[14px] cursor-pointer hover:bg-gray-700 hover:text-white flex justify-center items-center w-[40px] h-[40px] rounded-full transition-all duration-200"
         ></i>
       </div>
 
       <ul
         ref={tabsListRef}
         onScroll={manageIcons}
-        className="flex gap-4 px-6 py-3 overflow-x-scroll select-none scrollbar-hide"
+        className="flex gap-4 px-6 py-3 overflow-x-scroll font-semibold select-none scrollbar-hide"
       >
         {menus.map((menu, index) => (
           <li key={index}>
             <button
-              className={`no-underline px-5 py-1 rounded-md whitespace-nowrap transition-all duration-200 ${
+              className={`no-underline px-5 py-1 rounded-md whitespace-nowrap transition-all duration-200 border ${
                 activeMenuBtn === index
-                  ? "bg-white text-black"
-                  : "bg-gray-800 text-white"
+                  ? "bg-sky-500 text-white"
+                  : "bg-white text-[#160A06]"
               }`}
               onClick={() => activeMenu(index)}
             >
@@ -87,13 +87,13 @@ function ScrollableMenu({ onMenuIndex }) {
       </ul>
 
       <div
-        className={`absolute top-0 right-0 h-full w-[100px] bg-gradient-to-l from-black to-transparent flex items-center justify-end px-2 ${
+        className={`absolute top-0 right-0 h-full w-[100px] bg-gradient-to-l from-base-200 to-transparent flex items-center justify-end px-2 ${
           scrollPos < maxScroll ? "flex" : "hidden"
         }`}
       >
         <i
           onClick={scrollRight}
-          className="bi bi-chevron-right text-white text-[14px] cursor-pointer hover:bg-gray-700 flex justify-center items-center w-[40px] h-[40px] rounded-full transition-all duration-200"
+          className="bi bi-chevron-right text-black text-[14px] cursor-pointer hover:bg-gray-700 hover:text-white flex justify-center items-center w-[40px] h-[40px] rounded-full transition-all duration-200"
         ></i>
       </div>
     </div>
