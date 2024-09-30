@@ -2,22 +2,19 @@ import { useState, useRef, useEffect } from "react";
 
 function ScrollableMenu({ onMenuIndex }) {
   const menus = [
-    "All",
-    "Music",
-    "Live",
-    "NmaGap",
-    "NQE Podcast",
-    "Konsta",
-    "Konsta+",
-    "Brbalo",
-    "Tutorials",
-    "Soqqa",
-    "Chumoli",
-    "Done!",
-    "ShunaqaGap",
-    "EveryTime",
-    "Ko'kJuguli",
-    "NmaGap+",
+    "Barcha bo'limlar",
+    "1-tur mebellar",
+    "2-tur mebellar",
+    "3-tur mebellar",
+    "4-tur mebellar",
+    "5-tur mebellar",
+    "6-tur mebellar+",
+    "7-tur mebellar",
+    "8-tur mebellar",
+    "9-tur mebellar",
+    "10-tur mebellar",
+    "11-tur mebellar",
+    "12-tur mebellar",
   ];
   const [activeMenuBtn, setActiveMenuBtn] = useState(0);
   const tabsListRef = useRef(null);
@@ -57,7 +54,7 @@ function ScrollableMenu({ onMenuIndex }) {
     setScrollPos(tabsListRef.current.scrollLeft);
   };
   return (
-    <div className="relative mx-auto rounded-md bg-black overflow-hidden">
+    <div className="relative mx-auto overflow-hidden bg-black rounded-md">
       <div
         className={`absolute top-0 left-0 h-full w-[100px] bg-gradient-to-r from-black to-transparent flex items-center justify-start px-2
           ${scrollPos > 20 ? "flex" : "hidden"}`}
@@ -71,7 +68,7 @@ function ScrollableMenu({ onMenuIndex }) {
       <ul
         ref={tabsListRef}
         onScroll={manageIcons}
-        className="scrollbar-hide select-none flex gap-4 py-3 px-6 overflow-x-scroll scrollbar-hide"
+        className="flex gap-4 px-6 py-3 overflow-x-scroll select-none scrollbar-hide"
       >
         {menus.map((menu, index) => (
           <li key={index}>
