@@ -61,7 +61,7 @@ function ScrollableMenu({ onMenuIndex }) {
       >
         <i
           onClick={scrollLeft}
-          className="bi bi-chevron-left text-black text-[14px] cursor-pointer hover:bg-gray-700 hover:text-white flex justify-center items-center w-[40px] h-[40px] rounded-full transition-all duration-200"
+          className="bi bi-chevron-left text-black text-[14px] cursor-pointer hover:bg-gray-300 hover:text-black flex justify-center items-center w-[40px] h-[40px] rounded-full transition-all duration-200"
         ></i>
       </div>
 
@@ -93,7 +93,7 @@ function ScrollableMenu({ onMenuIndex }) {
       >
         <i
           onClick={scrollRight}
-          className="bi bi-chevron-right text-black text-[14px] cursor-pointer hover:bg-gray-700 hover:text-white flex justify-center items-center w-[40px] h-[40px] rounded-full transition-all duration-200"
+          className="bi bi-chevron-right text-black text-[14px] cursor-pointer hover:bg-gray-300 hover:text-black flex justify-center items-center w-[40px] h-[40px] rounded-full transition-all duration-200"
         ></i>
       </div>
     </div>

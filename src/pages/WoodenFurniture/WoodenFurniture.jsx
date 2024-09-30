@@ -562,7 +562,7 @@ function WoodenFurniture() {
             </p>
             <span className="text-[18px] text-red-700 font-semibold mb-2 block">
               <span className="font-bold">$</span>
-              &nbsp;92
+              &nbsp;30
             </span>
             <div className="flex gap-4">
               <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">Звонить</button>
