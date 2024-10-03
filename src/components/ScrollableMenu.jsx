@@ -75,7 +75,7 @@ function ScrollableMenu({ onMenuIndex }) {
             <button
               className={`no-underline px-5 py-1 rounded-md whitespace-nowrap transition-all duration-200 border ${
                 activeMenuBtn === index
-                  ? "bg-sky-500 text-white"
+                  ? "bg-[#160A06] text-white"
                   : "bg-white text-[#160A06]"
               }`}
               onClick={() => activeMenu(index)}
