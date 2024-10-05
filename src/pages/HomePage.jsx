@@ -4,7 +4,7 @@ function HomePage() {
   const arr = [
     {
       id: 0,
-      image: "./home_img/1.jpeg",
+      image: "./home_img/1.jpg",
       title: "SLIDER",
       name: "EAGLE",
       description:
@@ -44,52 +44,52 @@ function HomePage() {
     },
     {
       id: 5,
-      image: "./home_img/6.jpeg",
+      image: "./home_img/6.jpg",
       title: "SLIDER",
       name: "EAGLE",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.",
     },
-    {
-      id: 6,
-      image: "./home_img/1.jpeg",
-      title: "SLIDER",
-      name: "KINGFISHER",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.",
-    },
-    {
-      id: 7,
-      image: "./home_img/8.jpg",
-      title: "SLIDER",
-      name: "PARROT",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.",
-    },
-    {
-      id: 8,
-      image: "./home_img/9.jpg",
-      title: "SLIDER",
-      name: "HERON",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.",
-    },
-    {
-      id: 9,
-      image: "./home_img/10.jpg",
-      title: "SLIDER",
-      name: "BUTTERFLY",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.",
-    },
-    {
-      id: 10,
-      image: "./home_img/11.jpg",
-      title: "SLIDER",
-      name: "PARROT",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.",
-    },
+    // {
+    //   id: 6,
+    //   image: "./home_img/1.jpeg",
+    //   title: "SLIDER",
+    //   name: "KINGFISHER",
+    //   description:
+    //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.",
+    // },
+    // {
+    //   id: 7,
+    //   image: "./home_img/8.jpg",
+    //   title: "SLIDER",
+    //   name: "PARROT",
+    //   description:
+    //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.",
+    // },
+    // {
+    //   id: 8,
+    //   image: "./home_img/9.jpg",
+    //   title: "SLIDER",
+    //   name: "HERON",
+    //   description:
+    //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.",
+    // },
+    // {
+    //   id: 9,
+    //   image: "./home_img/10.jpg",
+    //   title: "SLIDER",
+    //   name: "BUTTERFLY",
+    //   description:
+    //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.",
+    // },
+    // {
+    //   id: 10,
+    //   image: "./home_img/11.jpg",
+    //   title: "SLIDER",
+    //   name: "PARROT",
+    //   description:
+    //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.",
+    // },
   ];
   const sliceStart = 1;
   const sliceEnd = 6;
@@ -132,14 +132,15 @@ function HomePage() {
             key={index}
             className={`absolute transition-all duration-500 ease-in-out ${index === 0
               ? "w-full h-full"
-              : "w-[180px] h-[250px] top-[60%] rounded-[20px]"
-              } bg-cover bg-center shadow-lg`}
+              : "w-[180px] h-[250px] top-[60%] rounded-[20px] grayscale shadow-2xl"
+              } bg-cover bg-center`}
             style={{
               backgroundImage: `url(${item.image})`,
               left: index === 0 ? "0" : `calc(50% + ${(index - 1) * 200}px)`,
             }}
           >
-            {index === 0 && (
+
+            {/* {index === 0 && (
               <div className="absolute top-1/3 left-[100px] transform -translate-y-1/2 text-white w-[650px]">
                 <h1 className="text-6xl font-bold uppercase">{item.title}</h1>
                 <h2 className="text-4xl font-semibold">{item.name}</h2>
@@ -153,7 +154,8 @@ function HomePage() {
                   </button>
                 </div>
               </div>
-            )}
+            )} */}
+            
           </div>
         ))}
 
