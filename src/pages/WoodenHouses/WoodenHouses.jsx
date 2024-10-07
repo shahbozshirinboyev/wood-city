@@ -1,5 +1,8 @@
 import ScrollableMenu from "../../components/ScrollableMenu";
 
+// motion farmer
+import { motion } from "framer-motion";
+
 function WoodenHouses() {
 
   const handleMenuIndex = (index) => {
@@ -48,14 +51,64 @@ function WoodenHouses() {
       </div>
 
 
-      <div className="grid grid-cols-1 gap-4">
+      <div className="grid grid-cols-2 gap-4 my-[50px]">
 
-        <div className=""></div>
+        <div className="border rounded-lg grid grid-cols-1">
+
+          <motion.div className="group relative" whileHover={{ scale: 1.00 }} whileTap={{ scale: 0.950 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+            <img className="h-[450px] w-full object-cover" src="https://optim.tildacdn.com/stor6663-3264-4630-b536-353537643736/-/format/webp/76691465.jpg" alt="" />
+            {/* <img className="w-[200px]" src="https://optim.tildacdn.com/stor6532-6434-4933-b537-613962363530/-/format/webp/99134150.jpg" alt="" /> */}
+            
+            <div  className="absolute top-0 left-0 z-[1234] bg-red-300 w-full h-[450px] hidden group-hover:block"></div>
+            
+          </motion.div>
+
+          <div>
+            <p>Комплекс «Скандинавия» 1</p>
+            <span>DP-Module</span>
+            <br />
+            <span>SKU: ks_ekb</span>
+            <br />
+            <b>1 635 000р.</b>
+          </div>
+
+          <div className="grid grid-cols-2">
+            <button className="btn mr-2">Оставить заявку</button>
+            <button className="btn ml-2">Подробнее →</button>
+          </div>
+
+        </div>
+
+        <div className="border rounded-lg grid grid-cols-1">
+
+          <div className="group">
+            <img className="h-[450px] w-full object-cover" src="https://optim.tildacdn.com/stor6663-3264-4630-b536-353537643736/-/format/webp/76691465.jpg" alt="" />
+            {/* <img className="w-[200px]" src="https://optim.tildacdn.com/stor6532-6434-4933-b537-613962363530/-/format/webp/99134150.jpg" alt="" /> */}
+            <div className="relative">
+              <div className="absolute top-0 left-0 z-[1234] bg-red-400 w-full h-full"></div>
+            </div>
+          </div>
+
+          <div>
+            <p>Комплекс «Скандинавия» 1</p>
+            <span>DP-Module</span>
+            <br />
+            <span>SKU: ks_ekb</span>
+            <br />
+            <b>1 635 000р.</b>
+          </div>
+
+          <div className="grid grid-cols-2">
+            <button className="btn mr-2">Оставить заявку</button>
+            <button className="btn ml-2">Подробнее →</button>
+          </div>
+
+        </div>
 
       </div>
 
 
-      
+
 
     </section>
   );
