@@ -55,11 +55,15 @@ function WoodenHouses() {
 
         <div className="border rounded-lg grid grid-cols-1">
 
-          <motion.div className="group relative" whileHover={{ scale: 1.00 }} whileTap={{ scale: 0.950 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-            <img className="h-[450px] w-full object-cover" src="https://optim.tildacdn.com/stor6663-3264-4630-b536-353537643736/-/format/webp/76691465.jpg" alt="" />
-            {/* <img className="w-[200px]" src="https://optim.tildacdn.com/stor6532-6434-4933-b537-613962363530/-/format/webp/99134150.jpg" alt="" /> */}
+          <motion.div className="relative" whileHover={{ scale: 1.00 }} whileTap={{ scale: 0.950 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+
+            <img className="h-[450px] w-full object-cover" src="https://img.freepik.com/free-photo/3d-rendering-wooden-house_23-2151264506.jpg" alt="" />
             
-            <div  className="absolute top-0 left-0 z-[1234] bg-red-300 w-full h-[450px] hidden group-hover:block"></div>
+            <div  className="absolute top-5 left-5 border border-red-700 group hover:top-0 hover:left-0 hover:w-full">
+            <img className="w-[200px] group-hover:w-full group-hover:h-[450px] object-cover" src="https://optim.tildacdn.com/stor6532-6434-4933-b537-613962363530/-/format/webp/99134150.jpg" alt="" />
+            </div>
+
+
             
           </motion.div>
 
