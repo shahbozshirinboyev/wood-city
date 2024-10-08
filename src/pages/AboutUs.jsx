@@ -22,9 +22,10 @@ function AboutUs() {
     <section className="container">
 
       <p className="font-bold text-[32px] text-center my-[50px]"> О нас </p>
+ 
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 grid-col-reverse">
 
-      <div className="grid grid-cols-3 gap-8">
-        <div className="col-span-2">
+        <div className="col-span-1 md:col-span-2 order-2 md:order-1">
           <p className="text-[45px] font-bold">Часть чего-то большего</p>
           <span className="my-4 block text-[22px]">
             DP-Group — это группа компаний, занимающаяся коммерческой недвижимостью, малоэтажным строительством и развитием сферы внутреннего туризма в России. 
@@ -34,7 +35,8 @@ function AboutUs() {
           </span>
           <button className="btn mt-[35px] text-[22px]">Узнать больше</button>
         </div>
-        <div className="justify-end grid">
+
+        <div className="justify-center md:justify-end grid order-1 md:order-2">
           <img src="./logo/wood_city_vertical.png" alt="" className="w-[250px]" />
         </div>
         

@@ -159,9 +159,9 @@ function HomePage() {
           </div>
         ))}
 
-        <div className="absolute text-white top-[500px] left-[100px] select-none">
-          <button className="py-1 px-6 border rounded-xl mr-4 hover:bg-white hover:text-black transition-all duration-300" onClick={handlePrevious}> {"<"} </button>
-          <button className="py-1 px-6 border rounded-xl mr-4 hover:bg-white hover:text-black transition-all duration-300" onClick={handleNext}> {">"} </button>
+        <div className="absolute text-[#160A06] top-[600px] left-[30px] md:left-[100px] select-none">
+          <button className="py-1 px-6 border rounded-xl mr-4 bg-white transition-all duration-300" onClick={handlePrevious}> {"<"} </button>
+          <button className="py-1 px-6 border rounded-xl mr-4 bg-white transition-all duration-300" onClick={handleNext}> {">"} </button>
         </div>
 
       </div>
@@ -173,7 +173,7 @@ function HomePage() {
           Для Гос заказов ЕИС
         </p>
 
-        <div className="card card-side bg-base-100 border">
+        <div className=" grid grid-cols-1 md:grid-cols-2 card card-side bg-base-100 border">
 
           <figure>
             <div className="carousel carousel-vertical h-96">
@@ -192,9 +192,9 @@ function HomePage() {
           <div className="card-body">
             <h2 className="card-title">New movie is released!</h2>
             <p>Click the button to watch on Jetflix app.</p>
-            <div className="card-actions justify-end">
-              <button className="btn"><i class="bi bi-card-list"></i> Оставить заявку</button>
-              <button className="btn"><i class="bi bi-telephone"></i> +998 (87) 456 73 23</button>
+            <div className="card-actions justify-center md:justify-end ">
+              <button className="btn"><i className="bi bi-card-list"></i> Оставить заявку</button>
+              <button className="btn"><i className="bi bi-telephone"></i> +998 (87) 456 73 23</button>
             </div>
           </div>
 
@@ -267,51 +267,7 @@ function HomePage() {
         quam eaque hic, aperiam sunt, amet et magni vel minus accusamus! Iure at
         doloribus corporis temporibus. Ab sint eos ullam incidunt vero neque
         laudantium voluptate illo quidem, atque recusandae quisquam cupiditate
-        ut maiores rem itaque. Deserunt assumenda molestiae temporibus eaque
-        maiores, perspiciatis in possimus quam reprehenderit quisquam ipsa
-        tempora quaerat. At dicta alias hic sed nihil voluptates beatae ab
-        recusandae neque magnam consequuntur perspiciatis debitis, modi suscipit
-        eos dolorum voluptate iusto officia ea error unde necessitatibus!
-        Voluptatum perspiciatis consequatur quos cumque distinctio ducimus
-        assumenda totam odio, possimus molestiae voluptatibus tenetur accusamus
-        maiores maxime atque omnis impedit commodi asperiores et veniam
-        necessitatibus illo! Eum, repellendus, quibusdam placeat distinctio
-        officiis rem ipsum molestiae alias vitae architecto blanditiis
-        excepturi! Debitis saepe nihil ab nam impedit laudantium similique quo
-        tempora voluptas quidem ad porro odit cum dolor facere recusandae, esse
-        autem necessitatibus. Ea error at delectus fuga ex porro consequuntur
-        dolorum sapiente repellat dolor vitae illum, corrupti libero, quam
-        tempore quos quasi vero enim expedita adipisci! Repudiandae maiores
-        optio sapiente harum est quae inventore magnam veritatis asperiores
-        neque earum, perferendis reprehenderit dignissimos laboriosam cumque
-        atque rem ut itaque reiciendis qui vero praesentium quo veniam.
-        Perspiciatis cupiditate id vitae libero cum error assumenda, minus sit
-        doloremque nulla quasi ad adipisci, rem corrupti repellendus non natus
-        odit facere. Dolore earum id at, sunt, recusandae laudantium, tempora
-        nesciunt error vero ad commodi! Eveniet perferendis error modi incidunt
-        molestiae cumque exercitationem, quod explicabo eius magni quis quas
-        maiores ullam dignissimos similique provident quaerat quos aut, nam
-        recusandae. Minima soluta id iusto neque. Nobis aliquam ad illum quaerat
-        explicabo ullam laborum magni ea voluptatibus aut inventore,
-        reprehenderit perferendis earum quidem, unde ratione tempora illo
-        cupiditate asperiores iste repellendus dignissimos debitis? Quas
-        perferendis amet voluptate aut fugiat, provident temporibus ex deleniti,
-        facere quibusdam eius molestias excepturi suscipit eos ipsa cumque
-        laboriosam incidunt quisquam cupiditate mollitia ducimus ipsam modi.
-        Illum, ipsam delectus temporibus cupiditate ipsum quidem cum vel neque
-        pariatur deleniti minus dicta nihil. Eveniet quisquam repellat alias,
-        ipsa quis quidem reiciendis itaque illo voluptas nemo vero perferendis
-        nisi architecto totam odit debitis voluptatum inventore ducimus unde
-        eius incidunt odio. Autem ipsam quod aut nam esse. Molestiae tempore in
-        alias velit autem, labore neque dolorum, vero omnis cumque reiciendis,
-        odit dolorem mollitia! Consequatur dolor facilis possimus, nam ipsam,
-        cumque iusto quae iste blanditiis aliquam, ducimus pariatur minima
-        officia corrupti tempore laborum quisquam debitis. Nesciunt nihil
-        suscipit voluptate ea eum quaerat vitae necessitatibus culpa impedit
-        consectetur a labore, reprehenderit accusamus, itaque beatae explicabo
-        quis. Natus alias saepe in expedita fugiat et ipsam exercitationem quia
-        est? Sunt repellendus ex eius, minima in pariatur corporis excepturi,
-        laboriosam quae, fugit eligendi odit ut debitis nulla at aperiam.
+        ut maiores rem itaque.
       </p>
 
     </section>

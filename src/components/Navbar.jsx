@@ -61,17 +61,21 @@ function Navbar() {
           <span className="ml-2">+998 93 456 34 21</span>
           </motion.button>
         </div>
+
         {/* Mobile hamburger section */}
-        <label className="btn btn-circle swap swap-rotate md:hidden">
+        <label className="btn-circle bg-transparent border-transparent text-white swap swap-rotate md:hidden">
           <input type="checkbox" checked={open} onChange={handleToggle} />
           {/* hamburger icon */}
           <i className="text-3xl fill-current swap-off bi bi-list"></i>
           {/* close icon */}
           <i className="text-3xl fill-current swap-on bi bi-x"></i>
-        </label>  
+        </label> 
+        
       </div>
+
       {/* Mobile Sidebar Section */}
-      <MobileMenu open={open}/>
+      <MobileMenu open={open} setOpen={setOpen}/>
+
     </section>
   );
 }

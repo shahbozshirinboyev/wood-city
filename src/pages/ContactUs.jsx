@@ -7,9 +7,9 @@ function ContactUs() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="grid grid-cols-2 gap-4">
-          <div className="border rounded-[10px] p-6">
+          <div className="border rounded-[10px] p-3 lg:p-6">
             <i className="bi bi-telephone-forward-fill text-[22px] border p-2 rounded-lg w-[45px] h-[45px] flex justify-center items-center text-forestgreen"></i>
-            <p className="mt-[15px] text-[20px] font-semibold">Phone Call</p>
+            <p className="mt-[15px] text-[16px] lg:text-[20px] font-semibold">Phone Call</p>
             <span className="text-[14px] lg:text-[16px] block mt-1">
               +998 94 005 78 56
             </span>
@@ -18,9 +18,9 @@ function ContactUs() {
             </button>
           </div>
 
-          <div className="border rounded-[10px] p-6">
+          <div className="border rounded-[10px] p-3 lg:p-6">
             <i className="bi bi-telegram text-[22px] border p-2 rounded-lg w-[45px] h-[45px] flex justify-center items-center text-sky-500"></i>
-            <p className="mt-[15px] text-[20px] font-semibold">
+            <p className="mt-[15px] text-[16px] lg:text-[20px] font-semibold">
               Chat to Support
             </p>
             <span className="text-[14px] lg:text-[16px] block mt-1">
@@ -31,7 +31,7 @@ function ContactUs() {
             </button>
           </div>
 
-          <div className="col-span-2 border p-6 rounded-[10px]">
+          <div className="col-span-2 border p-3 lg:p-6 rounded-[10px]">
             <i className="bi bi-geo-alt-fill text-[22px] border p-2 rounded-lg w-[45px] h-[45px] flex justify-center items-center text-red-500"></i>
             <p className="mt-[15px] text-[20px] font-semibold">Visit Us</p>
             <span className="text-[14px] lg:text-[16px] block mt-1">

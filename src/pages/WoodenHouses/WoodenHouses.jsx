@@ -35,7 +35,7 @@ function WoodenHouses() {
         </div>
 
         <div className="">
-          <video className="w-full h-auto" muted loop autoplay controls>
+          <video className="w-full h-auto" muted loop autoPlay controls>
             <source
               src="./video/DP-Module - Модульные дома и бани.mp4"
               type="video/mp4"
