@@ -177,48 +177,117 @@ function ContactUs() {
         <p className="font-bold text-[32px] text-start  my-[25px]">
           Часто задаваемые вопросы
         </p>
-      
 
-      <div className="collapse collapse-plus bg-base-200 mb-[15px]">
-        <input type="checkbox" name="my-accordion-3" defaultChecked />
-        <div className="collapse-title text-xl font-bold">
-          Сезонность, энергоэффективность, отопление
+        <div className="collapse collapse-plus bg-base-200 mb-[15px]">
+          <input type="checkbox" name="my-accordion-3" />
+          <div className="collapse-title text-xl font-semibold">
+            Сезонность, энергоэффективность, отопление
+          </div>
+          <div className="collapse-content">
+            <p className="font-bold mb-2">
+              Подходит ли такой дом для круглогодичного проживания, тепло ли в
+              доме?
+            </p>
+            <ul className="list-disc">
+              <li className="ml-7 mb-[15px]">
+                Дом подходит для круглогодичного проживания. Стены с
+                высокоэффективным утеплителем и герметичные ПВХ-окна со
+                стеклопакетами хорошо сохраняют тепло даже в сильные морозы.
+                Наши дома можно размещать во всех климатических зонах, от
+                крайнего Севера до Южных районов. Даже полярники в Арктике живут
+                в аналогичных домах, построенных по технологии модульного дома.
+              </li>
+            </ul>
+            <p className="font-bold mb-2">Как решается отопление модулей?</p>
+            <ul className="list-disc">
+              <li className="ml-7 mb-[15px]">
+                Стандартная комплектация подразумевает отопление электрическими
+                конвекторами с автоматической терморегуляцией. За счёт низкой
+                теплопроводности утеплителя, расходы на отопление получаются
+                небольшие.
+              </li>
+            </ul>
+            <p className="font-bold mb-2">
+              В описании проекта указана толщина утеплителя — 100 мм. Крыша и
+              пол утеплены так же?
+            </p>
+            <ul className="list-disc">
+              <li className="ml-7 mb-[15px]">
+                Нет, дом утеплён по всему периметру одинаково. А потолок и пол
+                имеют толщину — 150 мм.
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="collapse-content">
-          <p className="font-bold mb-2">Подходит ли такой дом для круглогодичного проживания, тепло ли в доме?</p>
-          <ul className="list-disc">
-            <li className="ml-7 mb-[15px]">Дом подходит для круглогодичного проживания. Стены с высокоэффективным утеплителем и герметичные ПВХ-окна со стеклопакетами хорошо сохраняют тепло даже в сильные морозы. Наши дома можно размещать во всех климатических зонах, от крайнего Севера до Южных районов. Даже полярники в Арктике живут в аналогичных домах, построенных по технологии модульного дома.</li>
-          </ul>
-          <p className="font-bold mb-2">Как решается отопление модулей?</p>
-          <ul className="list-disc">
-            <li className="ml-7 mb-[15px]">Стандартная комплектация подразумевает отопление электрическими конвекторами с автоматической терморегуляцией. За счёт низкой теплопроводности утеплителя, расходы на отопление получаются небольшие.</li>
-          </ul>
-          <p className="font-bold mb-2">В описании проекта указана толщина утеплителя — 100 мм. Крыша и пол утеплены так же?</p>
-          <ul className="list-disc">
-            <li className="ml-7 mb-[15px]">Нет, дом утеплён по всему периметру одинаково. А потолок и пол имеют толщину — 150 мм.</li>
-          </ul>
-        </div>
-      </div>
 
-      <div className="collapse collapse-plus bg-base-200 mb-[15px]">
-        <input type="checkbox" name="my-accordion-3" />
-        <div className="collapse-title text-xl font-medium">
-          Материалы и конструкция
-        </div>
-        <div className="collapse-content">
-          <p>Ответ</p>
-        </div>
-      </div>
+        <div className="collapse collapse-plus bg-base-200 mb-[15px]">
+          <input type="checkbox" name="my-accordion-3" />
+          <div className="collapse-title text-xl font-semibold">
+            Фундамент и доставка
+          </div>
 
-      <div className="collapse collapse-plus bg-base-200 ">
-        <input type="checkbox" name="my-accordion-3" />
-        <div className="collapse-title text-xl font-medium">
-          Фундамент и доставка
+          <div className="collapse-content">
+            <p className="font-bold mb-2">
+              Есть ли рекомендованная конфигурация фундамента?
+            </p>
+            <ul className="list-disc">
+              <li className="ml-7 mb-[15px]">
+                Конечно, для установки дома достаточно выставленных по уровню
+                фундаментных блоков или сваи.
+              </li>
+            </ul>
+            <p className="font-bold mb-2">Какой нужен фундамент?</p>
+            <ul className="list-disc">
+              <li className="ml-7 mb-[15px]">
+                По умолчанию для установки дома достаточно выставленных по
+                уровню фундаментных блоков или свайный фундамент.
+              </li>
+            </ul>
+            <p className="font-bold mb-2">Фундамент делает заказчик?</p>
+            <ul className="list-disc">
+              <li className="ml-7 mb-[15px]">
+                По умолчанию для установки дома достаточно выставленных по
+                уровню фундаментных блоков или свайный фундамент. Также заказчик
+                может заказать установку свайного фундамента у наших
+                рекомендованных подрядчиков.
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="collapse-content">
-          <p>Ответ</p>
+
+        <div className="collapse collapse-plus bg-base-200 mb-[15px]">
+          <input type="checkbox" name="my-accordion-3" />
+          <div className="collapse-title text-xl font-semibold">
+            Общие вопросы, оплата, договор и сроки
+          </div>
+          <div className="collapse-content">
+            <p className="font-bold mb-2">Какие условия оплаты?</p>
+            <ul className="list-disc">
+              <li className="ml-7 mb-[15px]">
+                70% оплата в момент подписания договора, 30% по готовности дома
+                на заводе, перед перевозкой и монтажем.
+              </li>
+            </ul>
+            <p className="font-bold mb-2">
+              Если ли возможность посетить место производства?
+            </p>
+            <ul className="list-disc">
+              <li className="ml-7 mb-[15px]">
+                Да, необходимо заранее договориться с менеджером на просмотр
+                производства.
+              </li>
+            </ul>
+            <p className="font-bold mb-2">
+              Каковы гарантии изготовителя на дома от «DP-module»?
+            </p>
+            <ul className="list-disc">
+              <li className="ml-7 mb-[15px]">
+                Мы предоставляем гарантию 5 лет на силовой каркас и 1 год на
+                отделку и прочие элементы.
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
       </div>
     </section>
   );

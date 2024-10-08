@@ -1,8 +1,5 @@
 import ScrollableMenu from "../../components/ScrollableMenu";
 
-// motion farmer
-import { motion } from "framer-motion";
-
 function WoodenHouses() {
   const handleMenuIndex = (index) => {
     console.log("Bu menu indexi:", index);
@@ -57,67 +54,26 @@ function WoodenHouses() {
         <ScrollableMenu onMenuIndex={handleMenuIndex} />
       </div>
 
-      <div className="grid grid-cols-2 gap-4 my-[50px]">
-
-        <div className="border rounded-lg grid grid-cols-1 p-2">
-          
-          <motion.div
-            className="relative"
-            whileHover={{ scale: 1.0 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          >
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-[50px]">
+        <div className="border rounded-2xl grid grid-cols-1 px-4 py-4">
+          <div className="relative">
             <img
-              className="h-[450px] w-full object-cover"
+              className="h-[350px] w-full object-cover rounded-2xl"
               src="https://img.freepik.com/free-photo/3d-rendering-wooden-house_23-2151264506.jpg"
               alt=""
             />
-
-            <div className="absolute top-5 left-5 border border-red-700 group hover:top-0 hover:left-0 hover:w-full">
-              <img
-                className="w-[200px] group-hover:w-full group-hover:h-[450px] object-cover"
-                src="https://optim.tildacdn.com/stor6532-6434-4933-b537-613962363530/-/format/webp/99134150.jpg"
-                alt=""
-              />
-            </div>
-          </motion.div>
-
-          <div>
-            <p>Комплекс «Скандинавия» 1</p>
-            <span>DP-Module</span>
-            <br />
-            <span>SKU: ks_ekb</span>
-            <br />
-            <b>1 635 000р.</b>
-          </div>
-
-          <div className="grid grid-cols-2">
-            <button className="btn mr-2">Оставить заявку</button>
-            <button className="btn ml-2">Подробнее →</button>
-          </div>
-
-        </div>
-
-        <div className="border rounded-lg grid grid-cols-1">
-          <div className="group">
             <img
-              className="h-[450px] w-full object-cover"
-              src="https://optim.tildacdn.com/stor6663-3264-4630-b536-353537643736/-/format/webp/76691465.jpg"
+              className="border rounded-2xl cursor-pointer absolute top-3 left-3 w-[160px] hover:w-full hover:h-[350px] hover:top-0 hover:left-0 object-cover transition-all duration-300"
+              src="https://optim.tildacdn.com/stor6532-6434-4933-b537-613962363530/-/format/webp/99134150.jpg"
               alt=""
             />
-            {/* <img className="w-[200px]" src="https://optim.tildacdn.com/stor6532-6434-4933-b537-613962363530/-/format/webp/99134150.jpg" alt="" /> */}
-            <div className="relative">
-              <div className="absolute top-0 left-0 z-[1234] bg-red-400 w-full h-full"></div>
-            </div>
           </div>
 
-          <div>
-            <p>Комплекс «Скандинавия» 1</p>
-            <span>DP-Module</span>
-            <br />
-            <span>SKU: ks_ekb</span>
-            <br />
-            <b>1 635 000р.</b>
+          <div className="py-2">
+            <p className="text-[20px] font-bold">Комплекс «Скандинавия» 1</p>
+            <p className="">DP-Module</p>
+            <p className="">SKU: ks_ekb</p>
+            <b className="text-[25px]">1 635 000р.</b>
           </div>
 
           <div className="grid grid-cols-2">
@@ -126,6 +82,86 @@ function WoodenHouses() {
           </div>
         </div>
 
+        <div className="border rounded-2xl grid grid-cols-1 px-4 py-4">
+          <div className="relative">
+            <img
+              className="h-[350px] w-full object-cover rounded-2xl"
+              src="https://img.freepik.com/free-photo/3d-rendering-wooden-house_23-2151264506.jpg"
+              alt=""
+            />
+            <img
+              className="border rounded-2xl cursor-pointer absolute top-3 left-3 w-[160px] hover:w-full hover:h-[350px] hover:top-0 hover:left-0 object-cover transition-all duration-300"
+              src="https://optim.tildacdn.com/stor6532-6434-4933-b537-613962363530/-/format/webp/99134150.jpg"
+              alt=""
+            />
+          </div>
+
+          <div className="py-2">
+            <p className="text-[20px] font-bold">Комплекс «Скандинавия» 1</p>
+            <p className="">DP-Module</p>
+            <p className="">SKU: ks_ekb</p>
+            <b className="text-[25px]">1 635 000р.</b>
+          </div>
+
+          <div className="grid grid-cols-2">
+            <button className="btn mr-2">Оставить заявку</button>
+            <button className="btn ml-2">Подробнее →</button>
+          </div>
+        </div>
+
+        <div className="border rounded-2xl grid grid-cols-1 px-4 py-4">
+          <div className="relative">
+            <img
+              className="h-[350px] w-full object-cover rounded-2xl"
+              src="https://img.freepik.com/free-photo/3d-rendering-wooden-house_23-2151264506.jpg"
+              alt=""
+            />
+            <img
+              className="border rounded-2xl cursor-pointer absolute top-3 left-3 w-[160px] hover:w-full hover:h-[350px] hover:top-0 hover:left-0 object-cover transition-all duration-300"
+              src="https://optim.tildacdn.com/stor6532-6434-4933-b537-613962363530/-/format/webp/99134150.jpg"
+              alt=""
+            />
+          </div>
+
+          <div className="py-2">
+            <p className="text-[20px] font-bold">Комплекс «Скандинавия» 1</p>
+            <p className="">DP-Module</p>
+            <p className="">SKU: ks_ekb</p>
+            <b className="text-[25px]">1 635 000р.</b>
+          </div>
+
+          <div className="grid grid-cols-2">
+            <button className="btn mr-2">Оставить заявку</button>
+            <button className="btn ml-2">Подробнее →</button>
+          </div>
+        </div>
+
+        <div className="border rounded-2xl grid grid-cols-1 px-4 py-4">
+          <div className="relative">
+            <img
+              className="h-[350px] w-full object-cover rounded-2xl"
+              src="https://img.freepik.com/free-photo/3d-rendering-wooden-house_23-2151264506.jpg"
+              alt=""
+            />
+            <img
+              className="border rounded-2xl cursor-pointer absolute top-3 left-3 w-[160px] hover:w-full hover:h-[350px] hover:top-0 hover:left-0 object-cover transition-all duration-300"
+              src="https://optim.tildacdn.com/stor6532-6434-4933-b537-613962363530/-/format/webp/99134150.jpg"
+              alt=""
+            />
+          </div>
+
+          <div className="py-2">
+            <p className="text-[20px] font-bold">Комплекс «Скандинавия» 1</p>
+            <p className="">DP-Module</p>
+            <p className="">SKU: ks_ekb</p>
+            <b className="text-[25px]">1 635 000р.</b>
+          </div>
+
+          <div className="grid grid-cols-2">
+            <button className="btn mr-2">Оставить заявку</button>
+            <button className="btn ml-2">Подробнее →</button>
+          </div>
+        </div>
       </div>
     </section>
   );
