@@ -4,9 +4,12 @@ import { useEffect, useState } from "react";
 // components
 import Nabar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Loading from "../components/Loading";
 
 function RootLayout() {
 
+  const [loading, setLoading] = useState(true);
+  
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -25,6 +28,7 @@ function RootLayout() {
 
   return (
     <>
+      {loading && <Loading />}
       {/* Navbar START top-1 md:top-2 */}
       <nav className={`sticky ${ isScrolled ? "top-0" : "top-0" } z-[999] transition duration-300`}>
         <Nabar />

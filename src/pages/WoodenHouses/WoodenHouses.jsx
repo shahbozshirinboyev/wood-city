@@ -7,21 +7,21 @@ function WoodenHouses() {
 
   return (
     <section className="container">
-      <div className="grid grid-cols-2 mt-[50px] gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-[50px] gap-8">
         <div className="">
-          <img className="w-[300px]" src="./logo/wood_city_black.png" alt="" />
+          <img className="w-[300px] mx-auto md:ml-0" src="./logo/wood_city_black.png" alt="" />
 
-          <p className="font-bold text-[60px] mt-[25px]">
+          <p className="font-bold text-[30px] text-center md:text-start md:text-[60px] mt-[25px]">
             Готовые модульные дома и бани
           </p>
 
-          <p className="text-[30px] mt-[25px]">
+          <p className="text-[25px] text-center md:text-start md:text-[30px] mt-[25px] ">
             Загородная жизнь с комфортом{" "}
             <span className="font-bold">от 518 000 рублей</span> с установкой за
             1 день
           </p>
 
-          <div className="mt-[50px]">
+          <div className="mt-[50px] flex justify-center md:justify-start">
             <button className="btn mr-[25px]">Оставить заявку</button>
             <button className="btn">Получить каталог</button>
           </div>
