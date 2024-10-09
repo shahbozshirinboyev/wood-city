@@ -37,11 +37,13 @@ export const woodenFurniture = [
     name: "Двери",
     counts: [
       {
+        image: "./furniture/1.jpg",
         title: "1-eshik",
         price: "100",
         date: "29392838",
       },
       {
+        image: "./furniture/2.jpg",
         title: "2-eshik",
         price: "100",
         date: "29392838",
@@ -54,11 +56,13 @@ export const woodenFurniture = [
     name: "Диваны - Кровати",
     counts: [
       {
+        image: "./furniture/3.jpg",
         title: "1-Диваны",
         price: "100",
         date: "29392838",
       },
       {
+        image: "./furniture/4.jpg",
         title: "2-Диваны",
         price: "100",
         date: "29392838",
@@ -71,11 +75,13 @@ export const woodenFurniture = [
     name: "Люстры - Светильники",
     counts: [
       {
+        image: "./furniture/5.jpg",
         title: "1-Светильники",
         price: "100",
         date: "29392838",
       },
       {
+        image: "./furniture/6.jpg",
         title: "2-Светильники",
         price: "100",
         date: "29392838",
@@ -88,11 +94,13 @@ export const woodenFurniture = [
     name: "Столы - Стулья",
     counts: [
       {
+        image: "./furniture/7.jpg",
         title: "1-Стулья",
         price: "100",
         date: "29392838",
       },
       {
+        image: "./furniture/8.jpg",
         title: "2-Стулья",
         price: "100",
         date: "29392838",
@@ -105,11 +113,13 @@ export const woodenFurniture = [
     name: "Эпоксидные Столы",
     counts: [
       {
+        image: "./furniture/9.jpg",
         title: "1-Эпоксидные",
         price: "100",
         date: "29392838",
       },
       {
+        image: "./furniture/10.jpg",
         title: "2-Эпоксидные",
         price: "100",
         date: "29392838",
@@ -122,11 +132,13 @@ export const woodenFurniture = [
     name: "Декоративные Балки",
     counts: [
       {
+        image: "./furniture/11.jpg",
         title: "1-Декоративные",
         price: "100",
         date: "29392838",
       },
       {
+        image: "./furniture/12.jpg",
         title: "2-Декоративные",
         price: "100",
         date: "29392838",
@@ -139,11 +151,13 @@ export const woodenFurniture = [
     name: "Шкафы и Кухни",
     counts: [
       {
+        image: "./furniture/13.jpg",
         title: "1-Кухни",
         price: "100",
         date: "29392838",
       },
       {
+        image: "./furniture/14.jpg",
         title: "2-Кухни",
         price: "100",
         date: "29392838",
@@ -156,11 +170,13 @@ export const woodenFurniture = [
     name: "Kомоды",
     counts: [
       {
+        image: "./furniture/15.jpg",
         title: "1-Комоды",
         price: "100",
         date: "29392838",
       },
       {
+        image: "./furniture/16.jpg",
         title: "2-Комоды",
         price: "100",
         date: "29392838",
