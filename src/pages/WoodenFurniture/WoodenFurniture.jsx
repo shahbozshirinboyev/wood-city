@@ -6,7 +6,6 @@ import furniture_1 from "../../../public/furniture/6.jpg";
 import furniture_2 from "../../../public/furniture/24.jpg";
 import furniture_3 from "../../../public/furniture/16.jpg";
 
-
 function WoodenFurniture() {
   const [activeMenuBtn, setActiveMenuBtn] = useState(0);
   const tabsListRef = useRef(null);
@@ -14,10 +13,6 @@ function WoodenFurniture() {
   const [maxScroll, setMaxScroll] = useState(0);
 
   // scoll menu section START
-  useEffect(() => {
-    console.log(activeMenuBtn);
-  }, [activeMenuBtn]);
-
   const activeMenu = (id) => {
     setActiveMenuBtn(id);
   };
@@ -50,22 +45,16 @@ function WoodenFurniture() {
 
   const getCounts = (activeMenuBtn) => {
     if (activeMenuBtn === 0) {
-      // Barcha counts larni yig'ish
       return woodenFurniture
-        .filter((item) => item.counts) // counts bo'lmagan itemlarni filtrlaymiz
+        .filter((item) => item.counts)
         .flatMap((item) => item.counts);
     } else {
-      // Id ga mos keluvchi counts ni olish
       const category = woodenFurniture.find(
         (item) => item.id === activeMenuBtn
       );
       return category ? category.counts : [];
     }
   };
-
-  useEffect(() => {
-    console.log(getCounts(activeMenuBtn));
-  }, [activeMenuBtn]);
 
   return (
     <section className="container mb-[25px] text-[#160A06]">
@@ -151,47 +140,196 @@ function WoodenFurniture() {
 
       {/* Cards START */}
       <div className="grid grid-cols-1 gap-3 py-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        
         {getCounts(activeMenuBtn).map((card) => (
-          <div key={card.title} className="relative rounded-[10px] border bg-white shadow-md">
-          <div className="absolute grid w-full grid-cols-2 px-4 py-2 font-normal text-white">
-            <div className="text-start">
-              <span>{card.date}</span>
+          <div key={card.title} className="rounded-[10px] border bg-white">
+            <div className="p-3">
+              <img
+                src={card.image}
+                alt=""
+                className="object-cover object-center h-[250px] w-full rounded-[10px]"
+              />
             </div>
-            <div className="text-end">
-              <i className="bi bi-star"></i>
-            </div>
-          </div>
 
-          <div>
-            <img
-              src={card.image}
-              alt=""
-              className="object-cover object-center h-[250px] w-full rounded-t-[10px]"
-            />
-          </div>
-
-          <div className="p-4">
-            <p className="font-semibold text-[16px] mb-2">
-              {card.title}
-            </p>
-            <span className="text-[18px] text-red-700 font-semibold mb-2 block">
-              <span className="font-bold">$</span>
-              &nbsp;92
-            </span>
-            <div className="flex gap-4">
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">
-                Звонить
-              </button>
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">
-                Заказить
-              </button>
+            <div className="p-3">
+              <p className="font-semibold text-[16px] mb-2">{card.title}</p>
+              <span className="text-[18px] text-red-700 font-semibold mb-2 block">
+                <span className="font-bold">$</span>
+                &nbsp;92
+              </span>
+              <div className="grid grid-cols-2 gap-4">
+                {/* <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">
+                  Звонить
+                </button> */}
+                <button
+                  className="btn"
+                  onClick={() =>
+                    document.getElementById(`order_${card.id}`).showModal()
+                  }
+                >
+                  Оставить заявку
+                </button>
+                {/* Modal button */}
+                <button
+                  className="btn"
+                  onClick={() =>
+                    document.getElementById(`info_${card.id}`).showModal()
+                  }
+                >
+                  Подробнее →
+                </button>
+              </div>
             </div>
+
+            {/* Modal START */}
+            {/* Open the modal using document.getElementById('ID').showModal() method */}
+
+            <dialog id={`order_${card.id}`} className="modal">
+              <div className="modal-box w-11/12 max-w-5xl p-0">
+                {/* Modal header Start */}
+                <form
+                  method="dialog"
+                  className="border-b-[2px] border-base-200 h-[60px] grid grid-cols-2 items-center px-[24px] bg-custom-green-10"
+                >
+                  <span className="text-custom-green-dark font-bold">
+                    {card.id}
+                  </span>
+                  <div className="text-end">
+                    <button className="btn btn-sm border-0 btn-circle text-custom-green-dark bg-custom-green-10 hover:bg-custom-green-30">
+                      ✕
+                    </button>
+                  </div>
+                </form>
+                {/* Modal header End */}
+                <div className="border border-red-700 p-2">
+                  <p>
+                    ORDER <br />
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum soluta expedita qui officia tempore reiciendis nobis
+                    quod repellat sed doloremque perspiciatis totam
+                    voluptatibus, sint eligendi perferendis incidunt tenetur
+                    dolores iste ullam laudantium ratione debitis distinctio!
+                    Molestias mollitia quibusdam officiis voluptates nisi dicta
+                    architecto iusto placeat laudantium explicabo sint
+                    distinctio, deserunt beatae facilis voluptatum voluptatibus
+                    est exercitationem asperiores et corporis illo enim
+                    possimus. At asperiores cum recusandae iste voluptate
+                    accusantium eius nam, aliquam possimus ad necessitatibus
+                    illum adipisci praesentium repudiandae consequuntur
+                    perferendis illo nostrum nesciunt obcaecati aspernatur
+                    excepturi, provident beatae laudantium. Consectetur, hic!
+                    Id, necessitatibus accusantium sunt natus minima facilis
+                    tempora. Quod voluptates in maxime perspiciatis hic eum,
+                    eaque, aliquid animi molestias reiciendis, porro praesentium
+                    quos nesciunt blanditiis doloremque consequatur vitae
+                    deserunt provident totam sequi excepturi. Veritatis ducimus
+                    molestias, assumenda rem vero commodi quaerat, doloremque
+                    cupiditate cumque magni atque labore aliquid nostrum. Vitae
+                    nemo nisi assumenda hic rem recusandae officiis ab vel error
+                    accusamus quae cupiditate dolorum tempore soluta, at aut.
+                    Fugiat explicabo perspiciatis ut magni sapiente a sunt
+                    ducimus earum quas cupiditate dolor porro ipsa quis animi at
+                    quia, autem suscipit nulla. Fugiat est itaque voluptate
+                    nobis eveniet expedita, fugit animi exercitationem tenetur
+                    illo porro. Nisi impedit dolorem nemo! Ea voluptas ullam hic
+                    facilis cumque doloribus beatae consequatur iure
+                    reprehenderit. Id vel numquam voluptatibus adipisci? Sit,
+                    fuga! Perferendis impedit dolorem accusamus perspiciatis
+                    reiciendis libero obcaecati dicta dolore ex nihil corporis
+                    placeat veritatis doloribus eveniet ab repudiandae at
+                    necessitatibus illum recusandae expedita, consequuntur ea
+                    odio? Reiciendis at corrupti quod. Obcaecati laboriosam,
+                    iusto quis quibusdam ipsam excepturi officia necessitatibus
+                    asperiores sit recusandae, aliquam mollitia soluta
+                    exercitationem repellat aut. Tempora blanditiis dicta ut
+                    quam quidem, nemo nesciunt possimus laboriosam quae!
+                    Asperiores et illo reprehenderit vel vero voluptas sint non,
+                    necessitatibus laborum temporibus perferendis dolorem
+                    exercitationem corporis quia est consectetur laboriosam,
+                    dolores error voluptatibus.
+                  </p>
+                </div>
+              </div>
+              {/* Outside close section */}
+              <form method="dialog" className="modal-backdrop">
+                <button>close</button>
+              </form>
+              {/* Outside close section */}
+            </dialog>
+            {/* Order Modal */}
+            <dialog id={`info_${card.id}`} className="modal">
+              <div className="modal-box w-11/12 max-w-5xl p-0">
+                {/* Modal header Start */}
+                <form
+                  method="dialog"
+                  className="border-b-[2px] border-base-200 h-[60px] grid grid-cols-2 items-center px-[24px] bg-custom-green-10"
+                >
+                  <span className="text-custom-green-dark font-bold">
+                    {card.id}
+                  </span>
+                  <div className="text-end">
+                    <button className="btn btn-sm border-0 btn-circle text-custom-green-dark bg-custom-green-10 hover:bg-custom-green-30">
+                      ✕
+                    </button>
+                  </div>
+                </form>
+                {/* Modal header End */}
+                <div className="border border-red-700 p-2">
+                  <p>
+                    INFO Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Earum soluta expedita qui officia tempore reiciendis
+                    nobis quod repellat sed doloremque perspiciatis totam
+                    voluptatibus, sint eligendi perferendis incidunt tenetur
+                    dolores iste ullam laudantium ratione debitis distinctio!
+                    Molestias mollitia quibusdam officiis voluptates nisi dicta
+                    architecto iusto placeat laudantium explicabo sint
+                    distinctio, deserunt beatae facilis voluptatum voluptatibus
+                    est exercitationem asperiores et corporis illo enim
+                    possimus. At asperiores cum recusandae iste voluptate
+                    accusantium eius nam, aliquam possimus ad necessitatibus
+                    illum adipisci praesentium repudiandae consequuntur
+                    perferendis illo nostrum nesciunt obcaecati aspernatur
+                    excepturi, provident beatae laudantium. Consectetur, hic!
+                    Id, necessitatibus accusantium sunt natus minima facilis
+                    tempora. Quod voluptates in maxime perspiciatis hic eum,
+                    eaque, aliquid animi molestias reiciendis, porro praesentium
+                    quos nesciunt blanditiis doloremque consequatur vitae
+                    deserunt provident totam sequi excepturi. Veritatis ducimus
+                    molestias, assumenda rem vero commodi quaerat, doloremque
+                    cupiditate cumque magni atque labore aliquid nostrum. Vitae
+                    nemo nisi assumenda hic rem recusandae officiis ab vel error
+                    accusamus quae cupiditate dolorum tempore soluta, at aut.
+                    Fugiat explicabo perspiciatis ut magni sapiente a sunt
+                    ducimus earum quas cupiditate dolor porro ipsa quis animi at
+                    quia, autem suscipit nulla. Fugiat est itaque voluptate
+                    nobis eveniet expedita, fugit animi exercitationem tenetur
+                    illo porro. Nisi impedit dolorem nemo! Ea voluptas ullam hic
+                    facilis cumque doloribus beatae consequatur iure
+                    reprehenderit. Id vel numquam voluptatibus adipisci? Sit,
+                    fuga! Perferendis impedit dolorem accusamus perspiciatis
+                    reiciendis libero obcaecati dicta dolore ex nihil corporis
+                    placeat veritatis doloribus eveniet ab repudiandae at
+                    necessitatibus illum recusandae expedita, consequuntur ea
+                    odio? Reiciendis at corrupti quod. Obcaecati laboriosam,
+                    iusto quis quibusdam ipsam excepturi officia necessitatibus
+                    asperiores sit recusandae, aliquam mollitia soluta
+                    exercitationem repellat aut. Tempora blanditiis dicta ut
+                    quam quidem, nemo nesciunt possimus laboriosam quae!
+                    Asperiores et illo reprehenderit vel vero voluptas sint non,
+                    necessitatibus laborum temporibus perferendis dolorem
+                    exercitationem corporis quia est consectetur laboriosam,
+                    dolores error voluptatibus.
+                  </p>
+                </div>
+              </div>
+              {/* Outside close section */}
+              <form method="dialog" className="modal-backdrop">
+                <button>close</button>
+              </form>
+              {/* Outside close section */}
+            </dialog>
+            {/* Modal END */}
           </div>
-        </div>
         ))}
-        
-
       </div>
       {/* Cards END */}
     </section>

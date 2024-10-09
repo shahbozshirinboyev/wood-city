@@ -42,9 +42,9 @@ function Footer() {
                     <NavLink
                       to={item.link}
                       className={({ isActive }) =>
-                        `inline-block py-1 px-2 font-semibold whitespace-nowrap hover:text-lightwood transition-all duration-300 ${
+                        `inline-block py-1 font-semibold whitespace-nowrap hover:text-lightwood transition-all duration-300 ${
                           isActive
-                            ? "text-[#160A06] bg-[#E1DFDE] rounded-[10px]"
+                            ? "text-[#160A06] bg-[#E1DFDE] rounded-[10px] px-2"
                             : "text-[#E1DFDE]"
                         }`
                       }
