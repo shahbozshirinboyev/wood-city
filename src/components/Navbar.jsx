@@ -57,8 +57,10 @@ function Navbar() {
         {/* Icons section */}
         <div className="hidden md:hidden lg:hidden xl:flex items-center gap-1 text-[14px] lg:text-[14px]">
           <motion.button className="px-2 py-1 font-semibold text-white bg-green-600 border-2 border-green-600 rounded-md whitespace-nowrap" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.950 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+          <NavLink to="tel:+998934563421">
           <i className="bi bi-telephone"></i>
           <span className="ml-2">+998 93 456 34 21</span>
+          </NavLink>
           </motion.button>
         </div>
 

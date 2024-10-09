@@ -1,19 +1,24 @@
-import React from "react";
+import { NavbarMenu } from "../data/data";
+import { NavLink } from "react-router-dom";
 //logo
-import logo from "../../public/logo/wood_city_whiter.png"
+import logo from "../../public/logo/wood_city_whiter.png";
 
 function Footer() {
   return (
     <section className="bg-[#160A06] text-[#E1DFDE] text-[14px] md:text-[16px]">
-
       <div className="container">
-
         <div className="grid grid-cols-2 lg:grid-cols-4 p-2 md:p-3 lg:p-10 gap-1">
-
-        <aside>
-          <img src={logo} alt="" className="w-[140px] lg:w-[180px]  my-[25px] lg:my-[35px]" />
-          <p>Wood City "MCHJ"<br />с 2020 года</p>
-        </aside>
+          <aside>
+            <img
+              src={logo}
+              alt=""
+              className="w-[140px] lg:w-[180px]  my-[25px] lg:my-[35px]"
+            />
+            <p>
+              Wood City "MCHJ"
+              <br />с 2020 года
+            </p>
+          </aside>
 
           <nav className="grid grid-cols-1">
             <h6 className="footer-title">О компании</h6>
@@ -26,41 +31,70 @@ function Footer() {
 
           <nav className="grid grid-cols-1 mt-10 lg:mt-0">
             <h6 className="footer-title">Меню</h6>
-            <a className="link link-hover">Главная</a>
-            <a className="link link-hover">О нас</a>
-            <a className="link link-hover">Деревянные дома</a>
-            <a className="link link-hover">Деревянная мебель</a>
-            <a className="link link-hover">Контакты</a>
+            {/* Menu section */}
+
+            <ul className="grid items-center gap-1 text-gray-600 md:gap-1 lg:gap-2">
+              {NavbarMenu.map((item) => {
+                return (
+                  <li key={item.id} className="text-[14px] lg:text-[16px]">
+                    <NavLink
+                      to={item.link}
+                      className={({ isActive }) =>
+                        `inline-block py-1 px-2 font-semibold whitespace-nowrap hover:text-lightwood transition-all duration-300 ${
+                          isActive
+                            ? "text-[#160A06] bg-[#E1DFDE] rounded-[10px]"
+                            : "text-[#E1DFDE]"
+                        }`
+                      }
+                    >
+                      {item.title}
+                    </NavLink>
+                  </li>
+                );
+              })}
+            </ul>
+
+            {/* Icons section */}
           </nav>
 
           <nav className="grid grid-cols-1 mt-10 lg:mt-0">
-
             <h6 className="footer-title">Контакты</h6>
-            <a className="link link-hover">
-            <i className="bi bi-geo-alt mr-[10px]"></i>
-            Uzb, Tashkent, Chirchiq sh.</a>
-            <div className="flex mt-2">
-            <i className="bi bi-telephone mr-[10px]"></i>
             <p>
-              <a href="" className="link link-hover">+998 (45) 342 45 22</a>
-              <br />
-              <a href="" className="link link-hover">+998 (12) 345 45 52</a>
+              <i className="bi bi-geo-alt mr-[10px]"></i>
+              Uzb, Tashkent, Chirchiq sh.
             </p>
-            
-            
+            <div className="flex mt-2">
+              <i className="bi bi-telephone mr-[10px]"></i>
+              <p>
+                <NavLink to="tel:+998934563421" className="border border-[#160A06] hover:border-white px-2 py-1 rounded-[5px]">
+                  +998 (45) 342 45 22
+                </NavLink>
+                <hr className="block h-[5px] border-[#160A06]" />
+                <NavLink to="tel:+998934563421" className="border border-[#160A06] hover:border-white px-2 py-1 rounded-[5px]">
+                  +998 (12) 345 45 52
+                </NavLink>
+              </p>
             </div>
             <div className="flex items-center justify-start text-[20px] my-4">
-              <a href=""><i className="bi bi-telegram mr-[10px] hover:text-sky-500 transition-all duration-200"></i></a>
-              <a href=""><i className="bi bi-youtube mx-[10px] hover:text-red-500 transition-all duration-200"></i></a>
-              <a href=""><i className="bi bi-instagram mx-[10px] hover:text-pink-500 transition-all duration-200"></i></a>
-              <a href=""><i className="bi bi-twitter-x mx-[10px] hover:text-white transition-all duration-200"></i></a>
+              <NavLink to="">
+                <i className="bi bi-telegram mr-[10px] hover:text-sky-500 transition-all duration-200"></i>
+              </NavLink>
+              <NavLink to="">
+                <i className="bi bi-youtube mx-[10px] hover:text-red-500 transition-all duration-200"></i>
+              </NavLink>
+              <NavLink to="">
+                <i className="bi bi-instagram mx-[10px] hover:text-pink-500 transition-all duration-200"></i>
+              </NavLink>
+              <NavLink to="">
+                <i className="bi bi-twitter-x mx-[10px] hover:text-white transition-all duration-200"></i>
+              </NavLink>
             </div>
             <div className="mb-[25px]">
-              <button className="py-1 px-2 rounded-lg border border-[#E1DFDE] hover:bg-[#E1DFDE] hover:text-[#160A06] transition-all duration-200">Оставить заявку</button>
+              <button className="py-1 px-2 rounded-lg border border-[#E1DFDE] hover:bg-[#E1DFDE] hover:text-[#160A06] transition-all duration-200">
+                Оставить заявку
+              </button>
             </div>
-
           </nav>
-
         </div>
 
         {/* <div className="grid grid-cols-2 border-[#E1DFDE] border-t py-2">
@@ -110,9 +144,7 @@ function Footer() {
             </div>
           </nav>
         </div> */}
-
       </div>
-
     </section>
   );
 }
