@@ -6,8 +6,11 @@ import logo from "../../public/logo/wood_city_whiter.png";
 function Footer() {
   return (
     <section className="bg-[#160A06] text-[#E1DFDE] text-[14px] md:text-[16px]">
+
       <div className="container">
-        <div className="grid grid-cols-2 lg:grid-cols-4 p-2 md:p-3 lg:p-10 gap-1">
+
+        <div className="py-[25px] grid grid-cols-2 lg:grid-cols-4 px-2 md:px-3 lg:px-10 gap-4">
+          
           <aside>
             <img
               src={logo}
@@ -29,11 +32,10 @@ function Footer() {
             <p>Гарантия: на все виды работ</p>
           </nav>
 
-          <nav className="grid grid-cols-1 mt-10 lg:mt-0">
+          <nav className="mt-10 lg:mt-0">
             <h6 className="footer-title">Меню</h6>
             {/* Menu section */}
-
-            <ul className="grid items-center gap-1 text-gray-600 md:gap-1 lg:gap-2">
+            <ul className="grid gap-1 md:gap-1 lg:gap-2">
               {NavbarMenu.map((item) => {
                 return (
                   <li key={item.id} className="text-[14px] lg:text-[16px]">
@@ -69,7 +71,7 @@ function Footer() {
                 <NavLink to="tel:+998934563421" className="border border-[#160A06] hover:border-white px-2 py-1 rounded-[5px]">
                   +998 (45) 342 45 22
                 </NavLink>
-                <hr className="block h-[5px] border-[#160A06]" />
+                <br className="block h-[5px] border-[#160A06]" />
                 <NavLink to="tel:+998934563421" className="border border-[#160A06] hover:border-white px-2 py-1 rounded-[5px]">
                   +998 (12) 345 45 52
                 </NavLink>
@@ -95,6 +97,7 @@ function Footer() {
               </button>
             </div>
           </nav>
+
         </div>
 
         {/* <div className="grid grid-cols-2 border-[#E1DFDE] border-t py-2">
@@ -144,6 +147,7 @@ function Footer() {
             </div>
           </nav>
         </div> */}
+
       </div>
     </section>
   );
