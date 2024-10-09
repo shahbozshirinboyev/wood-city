@@ -8,7 +8,7 @@ import Loading from "../components/Loading";
 
 function RootLayout() {
 
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   
   const [isScrolled, setIsScrolled] = useState(false);
 

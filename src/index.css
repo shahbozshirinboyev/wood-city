@@ -32,9 +32,3 @@
   box-sizing: border-box;
   font-family: "Afacad Flux", sans-serif;
 }
-
-html, body {
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
