@@ -167,7 +167,7 @@ function HomePage() {
       </div>
 
 
-      <div>
+      <div className="mb-[50px]">
 
         <p className="font-bold text-[32px] text-center my-[25px]">
           Для Гос заказов ЕИС
@@ -201,74 +201,6 @@ function HomePage() {
         </div>
 
       </div>
-
-      <p className="mt-[25px]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-        accusantium illo amet, tempore dolorum laudantium corporis saepe.
-        Aliquid eveniet explicabo corrupti corporis alias, nam, temporibus
-        reprehenderit voluptatem ut repudiandae sed deserunt! Nihil id nemo
-        fugit. Optio labore voluptatibus distinctio suscipit delectus non
-        reiciendis deleniti, quasi voluptas. Omnis veniam provident culpa
-        corrupti eligendi cupiditate adipisci quibusdam blanditiis debitis
-        reiciendis numquam dolor tempore aliquid molestiae nisi cum, sint
-        distinctio harum asperiores itaque assumenda! Facilis sapiente
-        necessitatibus assumenda. Hic itaque assumenda cumque quod impedit
-        incidunt ut odio deleniti voluptatibus quibusdam fugit, vitae
-        aspernatur, quasi voluptatem architecto inventore consequatur nam?
-        Possimus ipsa, quod distinctio iste architecto animi harum facere non?
-        Incidunt, eligendi? Esse delectus harum dicta laboriosam atque mollitia
-        tempore hic adipisci? Sunt, laborum soluta facere corporis blanditiis
-        optio placeat velit deserunt sed ab eius inventore iusto fuga rerum
-        libero, non dolorem rem quo autem temporibus ipsam et, maxime possimus!
-        Animi nihil excepturi libero suscipit non debitis error ullam, illum
-        cum? Nihil optio cum mollitia similique quae, harum consequuntur aperiam
-        alias culpa dolor a dolores officia maiores, earum quia natus libero
-        temporibus, debitis facilis assumenda voluptas! Voluptate numquam, illo
-        sint, nulla ab veniam eveniet repellat quae reprehenderit praesentium,
-        adipisci ipsum at rerum impedit sequi voluptatibus facere quibusdam cum
-        accusantium tempora? Delectus iste optio itaque libero nobis provident,
-        laudantium amet a officia sit exercitationem aspernatur cum quod numquam
-        aperiam necessitatibus animi quaerat possimus et nulla. Esse eum
-        incidunt recusandae sapiente quis labore molestias nesciunt dolor ipsum,
-        voluptas culpa quibusdam aspernatur ipsa rerum. A deleniti, cupiditate
-        officia consequuntur praesentium odit nisi nam officiis soluta voluptas
-        enim maxime minima blanditiis expedita ex nostrum eos odio eveniet quia
-        exercitationem ea. Impedit labore rem laudantium reiciendis porro culpa
-        quod perspiciatis fuga nesciunt enim, qui eius maiores vero pariatur,
-        asperiores ducimus ea tenetur? Quisquam assumenda officiis natus,
-        similique perspiciatis asperiores. Vitae voluptas atque, impedit velit
-        quibusdam ab molestiae nostrum maxime necessitatibus libero nihil alias
-        illo sit aliquid voluptates nisi minima dolore laudantium doloribus et!
-        Ducimus repellendus in excepturi cum earum! Dolor officia consequatur
-        qui sunt, commodi tempora dolorem quo consequuntur optio ducimus iusto
-        assumenda aut! Id fuga vel soluta perferendis eaque ea ipsam, velit
-        magni debitis aliquid, eos doloribus dolores ab ipsum ullam labore
-        commodi et culpa fugit similique quae sunt? Laboriosam architecto
-        ducimus accusamus! Sit debitis iusto enim. Vel optio voluptatum commodi
-        ullam aliquid voluptatibus asperiores, labore explicabo minima ratione
-        aut quas, deleniti harum? Velit iure libero odio delectus voluptatum cum
-        iusto, non nemo? A deserunt reprehenderit at accusantium facilis quia
-        iusto cum, sequi eum ad nisi dolorum sunt nemo voluptatibus corrupti
-        voluptatem provident explicabo veniam itaque. Fuga exercitationem, animi
-        sit veniam quos facilis reprehenderit doloribus alias, eos ad magnam
-        quia, sint corrupti commodi esse eius cum architecto delectus?
-        Consectetur doloremque maiores quaerat dolor? Doloribus ex rerum culpa,
-        aliquam quaerat placeat animi, et laboriosam exercitationem quas
-        quibusdam quod, perspiciatis ipsam expedita veritatis reprehenderit est
-        recusandae esse assumenda sapiente qui! Nisi delectus et, dicta fugiat
-        explicabo unde libero eius provident doloremque optio? Adipisci ipsam,
-        reiciendis deserunt harum cum nulla earum eius suscipit deleniti
-        obcaecati est eos, consectetur laudantium inventore porro autem ducimus
-        consequuntur veritatis id impedit iure at? Similique consectetur eveniet
-        error vitae facilis quis saepe veniam vel fugiat hic eos corporis quo
-        soluta deserunt optio, recusandae perferendis animi velit repellendus ea
-        accusantium et veritatis! Illo voluptate temporibus laudantium quibusdam
-        quasi enim repudiandae cupiditate, cum reprehenderit impedit consequatur
-        quam eaque hic, aperiam sunt, amet et magni vel minus accusamus! Iure at
-        doloribus corporis temporibus. Ab sint eos ullam incidunt vero neque
-        laudantium voluptate illo quidem, atque recusandae quisquam cupiditate
-        ut maiores rem itaque.
-      </p>
 
     </section>
   );

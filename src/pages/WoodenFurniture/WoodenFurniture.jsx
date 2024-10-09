@@ -6,18 +6,6 @@ import furniture_1 from "../../../public/furniture/6.jpg";
 import furniture_2 from "../../../public/furniture/24.jpg";
 import furniture_3 from "../../../public/furniture/16.jpg";
 
-import product1 from "../../../public/furniture/1.jpg";
-import product2 from "../../../public/furniture/2.jpg";
-import product3 from "../../../public/furniture/3.jpg";
-import product4 from "../../../public/furniture/4.jpg";
-import product5 from "../../../public/furniture/5.jpg";
-import product6 from "../../../public/furniture/6.jpg";
-import product7 from "../../../public/furniture/7.jpg";
-import product8 from "../../../public/furniture/8.jpg";
-import product9 from "../../../public/furniture/9.jpg";
-import product10 from "../../../public/furniture/10.jpg";
-import product11 from "../../../public/furniture/11.jpg";
-import product12 from "../../../public/furniture/12.jpg";
 
 function WoodenFurniture() {
   const [activeMenuBtn, setActiveMenuBtn] = useState(0);
@@ -165,7 +153,7 @@ function WoodenFurniture() {
       <div className="grid grid-cols-1 gap-3 py-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         
         {getCounts(activeMenuBtn).map((card) => (
-          <div className="relative rounded-[10px] border bg-white shadow-md">
+          <div key={card.title} className="relative rounded-[10px] border bg-white shadow-md">
           <div className="absolute grid w-full grid-cols-2 px-4 py-2 font-normal text-white">
             <div className="text-start">
               <span>{card.date}</span>
