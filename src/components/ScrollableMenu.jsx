@@ -14,7 +14,7 @@ function ScrollableMenu({ onMenuIndex }) {
     "9-tur mebellar",
     "10-tur mebellar",
     "11-tur mebellar",
-    "12-tur mebellar",
+    "Шкафы и Кухни",
   ];
   const [activeMenuBtn, setActiveMenuBtn] = useState(0);
   const tabsListRef = useRef(null);
@@ -29,6 +29,7 @@ function ScrollableMenu({ onMenuIndex }) {
     setActiveMenuBtn(index);
   };
 
+  
   useEffect(() => {
     const updateMaxScroll = () => {
       setMaxScroll(

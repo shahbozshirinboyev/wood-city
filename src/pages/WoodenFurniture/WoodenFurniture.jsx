@@ -1,5 +1,5 @@
-//components
-import ScrollableMenu from "../../components/ScrollableMenu";
+import { useState, useRef, useEffect } from "react";
+import { woodenFurniture } from "../../data/data";
 
 //images
 import furniture_1 from "../../../public/furniture/6.jpg";
@@ -18,24 +18,66 @@ import product9 from "../../../public/furniture/9.jpg";
 import product10 from "../../../public/furniture/10.jpg";
 import product11 from "../../../public/furniture/11.jpg";
 import product12 from "../../../public/furniture/12.jpg";
-import product13 from "../../../public/furniture/13.jpg";
-import product14 from "../../../public/furniture/14.jpg";
-import product15 from "../../../public/furniture/15.jpg";
-import product16 from "../../../public/furniture/16.jpg";
-import product17 from "../../../public/furniture/17.jpg";
-import product18 from "../../../public/furniture/18.jpg";
-import product19 from "../../../public/furniture/19.jpg";
-import product20 from "../../../public/furniture/20.jpg";
-import product21 from "../../../public/furniture/21.jpg";
-import product22 from "../../../public/furniture/22.jpg";
-import product23 from "../../../public/furniture/23.jpg";
-import product24 from "../../../public/furniture/24.jpg";
-
 
 function WoodenFurniture() {
-  const handleMenuIndex = (index) => {
-    console.log("Bu menu indexi:", index);
+  const [activeMenuBtn, setActiveMenuBtn] = useState(0);
+  const tabsListRef = useRef(null);
+  const [scrollPos, setScrollPos] = useState(0);
+  const [maxScroll, setMaxScroll] = useState(0);
+
+  // scoll menu section START
+  useEffect(() => {
+    console.log(activeMenuBtn);
+  }, [activeMenuBtn]);
+
+  const activeMenu = (id) => {
+    setActiveMenuBtn(id);
   };
+
+  useEffect(() => {
+    const updateMaxScroll = () => {
+      setMaxScroll(
+        tabsListRef.current.scrollWidth - tabsListRef.current.clientWidth
+      );
+    };
+    updateMaxScroll();
+    window.addEventListener("resize", updateMaxScroll);
+    return () => window.removeEventListener("resize", updateMaxScroll);
+  }, []);
+
+  const scrollRight = () => {
+    tabsListRef.current.scrollLeft += 200;
+    setScrollPos(tabsListRef.current.scrollLeft);
+  };
+
+  const scrollLeft = () => {
+    tabsListRef.current.scrollLeft -= 200;
+    setScrollPos(tabsListRef.current.scrollLeft);
+  };
+
+  const manageIcons = () => {
+    setScrollPos(tabsListRef.current.scrollLeft);
+  };
+  // scoll menu section END
+
+  const getCounts = (activeMenuBtn) => {
+    if (activeMenuBtn === 0) {
+      // Barcha counts larni yig'ish
+      return woodenFurniture
+        .filter((item) => item.counts) // counts bo'lmagan itemlarni filtrlaymiz
+        .flatMap((item) => item.counts);
+    } else {
+      // Id ga mos keluvchi counts ni olish
+      const category = woodenFurniture.find(
+        (item) => item.id === activeMenuBtn
+      );
+      return category ? category.counts : [];
+    }
+  };
+
+  useEffect(() => {
+    console.log(getCounts(activeMenuBtn));
+  }, [activeMenuBtn]);
 
   return (
     <section className="container mb-[25px] text-[#160A06]">
@@ -56,20 +98,6 @@ function WoodenFurniture() {
             alt=""
             className="absolute top-0 left-0 w-full h-full object-cover blur-[0px]"
           />
-
-          {/* <div className="relative">
-            <button className="border rounded-lg w-[100px] p-1 font-bold text-white m-4 text-[18px]">
-              Client
-            </button>
-
-            <p className="font-normal text-white m-4 text-[25px]">
-              Become a <span className="uppercase">regular customer</span>
-            </p>
-
-            <p className="font-bold text-white m-4 text-[35px]">
-              Enter in the furniture world
-            </p>
-          </div> */}
         </div>
 
         <div className="relative">
@@ -78,20 +106,6 @@ function WoodenFurniture() {
             alt=""
             className="absolute top-0 left-0 w-full h-full object-cover  blur-[0px]"
           />
-
-          {/* <div className="relative">
-            <button className="border rounded-lg w-[100px] p-1 font-bold text-white m-4 text-[18px]">
-              Client
-            </button>
-
-            <p className="font-normal text-white m-4 text-[25px]">
-              Become a <span className="uppercase">regular customer</span>
-            </p>
-
-            <p className="font-bold text-white m-4 text-[35px]">
-              Enter in the furniture world
-            </p>
-          </div> */}
         </div>
       </div>
 
@@ -101,15 +115,55 @@ function WoodenFurniture() {
         </p>
       </div>
 
-      <div>
-        <ScrollableMenu onMenuIndex={handleMenuIndex} />
-      </div>
+      <>
+        <div className="relative mx-auto overflow-hidden rounded-md shadow-md bg-base-200">
+          <div
+            className={`absolute top-0 left-0 h-full w-[100px] bg-gradient-to-r from-base-200 to-transparent flex items-center justify-start px-2
+          ${scrollPos > 20 ? "flex" : "hidden"}`}
+          >
+            <i
+              onClick={scrollLeft}
+              className="bi bi-chevron-left text-black text-[14px] cursor-pointer hover:bg-gray-300 hover:text-black flex justify-center items-center w-[40px] h-[40px] rounded-full transition-all duration-200"
+            ></i>
+          </div>
+
+          <ul
+            ref={tabsListRef}
+            onScroll={manageIcons}
+            className="flex gap-4 px-6 py-3 overflow-x-scroll font-semibold select-none scrollbar-hide"
+          >
+            {woodenFurniture.map((menu) => (
+              <li key={menu.id}>
+                <button
+                  className={`no-underline px-5 py-1 rounded-md whitespace-nowrap transition-all duration-200 border ${
+                    activeMenuBtn === menu.id
+                      ? "bg-[#160A06] text-white"
+                      : "bg-white text-[#160A06]"
+                  }`}
+                  onClick={() => activeMenu(menu.id)}
+                >
+                  {menu.name}
+                </button>
+              </li>
+            ))}
+          </ul>
+
+          <div
+            className={`absolute top-0 right-0 h-full w-[100px] bg-gradient-to-l from-base-200 to-transparent flex items-center justify-end px-2 ${
+              scrollPos < maxScroll ? "flex" : "hidden"
+            }`}
+          >
+            <i
+              onClick={scrollRight}
+              className="bi bi-chevron-right text-black text-[14px] cursor-pointer hover:bg-gray-300 hover:text-black flex justify-center items-center w-[40px] h-[40px] rounded-full transition-all duration-200"
+            ></i>
+          </div>
+        </div>
+      </>
 
       {/* Cards START */}
-      <div className="grid grid-cols-1 gap-3 py-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        
+      <div className="border border-red-600 grid grid-cols-1 gap-3 py-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         <div className="relative rounded-[10px] border bg-white shadow-md">
-          
           <div className="absolute grid w-full grid-cols-2 px-4 py-2 font-normal text-white">
             <div className="text-start">
               <span>20.04.2025</span>
@@ -136,8 +190,12 @@ function WoodenFurniture() {
               &nbsp;92
             </span>
             <div className="flex gap-4">
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">Звонить</button>
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">Заказить</button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">
+                Звонить
+              </button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">
+                Заказить
+              </button>
             </div>
           </div>
         </div>
@@ -169,8 +227,12 @@ function WoodenFurniture() {
               &nbsp;92
             </span>
             <div className="flex gap-4">
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">Звонить</button>
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">Заказить</button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">
+                Звонить
+              </button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">
+                Заказить
+              </button>
             </div>
           </div>
         </div>
@@ -202,8 +264,12 @@ function WoodenFurniture() {
               &nbsp;92
             </span>
             <div className="flex gap-4">
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">Звонить</button>
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">Заказить</button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">
+                Звонить
+              </button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">
+                Заказить
+              </button>
             </div>
           </div>
         </div>
@@ -235,8 +301,12 @@ function WoodenFurniture() {
               &nbsp;92
             </span>
             <div className="flex gap-4">
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">Звонить</button>
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">Заказить</button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">
+                Звонить
+              </button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">
+                Заказить
+              </button>
             </div>
           </div>
         </div>
@@ -268,8 +338,12 @@ function WoodenFurniture() {
               &nbsp;92
             </span>
             <div className="flex gap-4">
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">Звонить</button>
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">Заказить</button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">
+                Звонить
+              </button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">
+                Заказить
+              </button>
             </div>
           </div>
         </div>
@@ -301,8 +375,12 @@ function WoodenFurniture() {
               &nbsp;92
             </span>
             <div className="flex gap-4">
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">Звонить</button>
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">Заказить</button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">
+                Звонить
+              </button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">
+                Заказить
+              </button>
             </div>
           </div>
         </div>
@@ -334,8 +412,12 @@ function WoodenFurniture() {
               &nbsp;92
             </span>
             <div className="flex gap-4">
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">Звонить</button>
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">Заказить</button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">
+                Звонить
+              </button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">
+                Заказить
+              </button>
             </div>
           </div>
         </div>
@@ -367,8 +449,12 @@ function WoodenFurniture() {
               &nbsp;92
             </span>
             <div className="flex gap-4">
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">Звонить</button>
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">Заказить</button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">
+                Звонить
+              </button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">
+                Заказить
+              </button>
             </div>
           </div>
         </div>
@@ -400,8 +486,12 @@ function WoodenFurniture() {
               &nbsp;92
             </span>
             <div className="flex gap-4">
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">Звонить</button>
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">Заказить</button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">
+                Звонить
+              </button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">
+                Заказить
+              </button>
             </div>
           </div>
         </div>
@@ -433,8 +523,12 @@ function WoodenFurniture() {
               &nbsp;92
             </span>
             <div className="flex gap-4">
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">Звонить</button>
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">Заказить</button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">
+                Звонить
+              </button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">
+                Заказить
+              </button>
             </div>
           </div>
         </div>
@@ -466,8 +560,12 @@ function WoodenFurniture() {
               &nbsp;92
             </span>
             <div className="flex gap-4">
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">Звонить</button>
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">Заказить</button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">
+                Звонить
+              </button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">
+                Заказить
+              </button>
             </div>
           </div>
         </div>
@@ -499,8 +597,12 @@ function WoodenFurniture() {
               &nbsp;92
             </span>
             <div className="flex gap-4">
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">Звонить</button>
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">Заказить</button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">
+                Звонить
+              </button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">
+                Заказить
+              </button>
             </div>
           </div>
         </div>
@@ -532,8 +634,12 @@ function WoodenFurniture() {
               &nbsp;92
             </span>
             <div className="flex gap-4">
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">Звонить</button>
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">Заказить</button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">
+                Звонить
+              </button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">
+                Заказить
+              </button>
             </div>
           </div>
         </div>
@@ -565,13 +671,15 @@ function WoodenFurniture() {
               &nbsp;30
             </span>
             <div className="flex gap-4">
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">Звонить</button>
-              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">Заказить</button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-green-500 hover:text-white font-semibold transition-all duration-300">
+                Звонить
+              </button>
+              <button className="w-full px-2 py-1 border rounded-[5px] hover:bg-sky-500 hover:text-white font-semibold transition-all duration-300">
+                Заказить
+              </button>
             </div>
           </div>
         </div>
-
-
       </div>
       {/* Cards END */}
     </section>
