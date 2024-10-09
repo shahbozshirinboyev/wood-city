@@ -19,10 +19,8 @@ function AboutUs() {
 
   return (
     <section className="container">
-      <p className="font-bold text-[32px] text-center md:text-start my-[50px]">
-        {" "}
-        О нас{" "}
-      </p>
+      
+      <p className="font-bold text-[32px] text-center md:text-start my-[50px]">{" "}О нас{" "}</p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 grid-col-reverse">
         <div className="col-span-1 md:col-span-2 order-2 md:order-1">

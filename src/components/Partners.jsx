@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 function Partners({ images, from, to }) {
   return (
-    <div className="flex MyGradient">
+    <div className="flex MyGradient overflow-x-hidden">
       <motion.div
         initial={{ x: `${from}` }}
         animate={{ x: `${to}` }}
