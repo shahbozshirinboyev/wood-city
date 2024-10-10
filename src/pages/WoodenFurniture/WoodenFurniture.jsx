@@ -67,12 +67,14 @@ function WoodenFurniture() {
   };
 
   // -----------------------order
-  const [nameValue, setNameValue] = useState('');
+    const [nameValue, setNameValue] = useState('');
     const [phoneValue, setPhoneValue] = useState('');
     const [closeModalId, setCloseModalId] = useState('');
+    const [activeCardInfo, setActiveCardInfo] = useState([]);
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log(activeCardInfo)
         // Ism va telefon raqamini tekshirish
         if (!nameValue) {
             toast.error("Ismingizni kiriting!")
@@ -84,25 +86,32 @@ function WoodenFurniture() {
             return;
         }
 
-        // Formani muvaffaqiyatli yuborish
-        // console.log('Ism:', nameValue);
-        // console.log('Telefon raqami:', phoneValue);
-        // Boshqa submit funksiyalarini qo'shing
+        const formData = new FormData();
+        const photo = activeCardInfo?.image?.fileInput?.files[0];
+        formData.append("chat_id", "-1002294640036");
+        formData.append("photo", photo);
+        formData.append("caption", 
+          `
+          Order: ${activeCardInfo.title}
+          👤Имя: ${nameValue}
+          📱Телефон: +${phoneValue}
+          `
+        ); 
 
         toast.promise(
-              http.post('/sendMessage', 
-                {
+              http.post('/sendPhoto', FormData),
+                // {
                 //   chat_id: "660100854",
-                  chat_id: "-1002294640036",
+                //   chat_id: "-1002294640036",
                 // yangi chat ID olish uchun so'rov yuborish kerak: https://api.telegram.org/bot8110745041:AAGgqllrE9mwsCkQK8mhFsiG2quMGJHkD8I/getUpdates
                 //                                                  https://api.telegram.org/bot${token}/getUpdates
-                  text: `
-                  Запрос отложен:
+                //   text: `
+                //   Запрос отложен:
 
-                  👤Имя: ${nameValue}
-                  📱Телефон: +${phoneValue}`
-                }
-              ),
+                //   👤Имя: ${nameValue}
+                //   📱Телефон: +${phoneValue}`
+                // }
+              
               {
                 loading: 'Отправка сообщения...', // Kutish holati
                 success: (response) => {
@@ -237,7 +246,7 @@ function WoodenFurniture() {
               </span>
 
               <div className="grid grid-cols-2 gap-4 pt-4">
-                <button className="btn" onClick={() => {document.getElementById(`order_${card.id}`).showModal(); setCloseModalId(`order_${card.id}`);}} >
+                <button className="btn" onClick={() => {document.getElementById(`order_${card.id}`).showModal(); setCloseModalId(`order_${card.id}`); setActiveCardInfo({card})}} >
                   Оставить заявку
                 </button>
                 <button className="btn" onClick={() => document.getElementById(`info_${card.id}`).showModal()}>
@@ -267,11 +276,24 @@ function WoodenFurniture() {
 
               <div className="p-4">
 
-                  <p className="text-center py-4 font-bold text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px]">Заказать обратный звонок</p>
+                <div className="px-6 mb-4">
+                  <p className="font-bold">Ваш заказ:</p>
+                  <div className="flex gap-8 p-2">
+                    <div>
+                      <img className="w-[100px] h-[100px] object-cover" src={card.image} alt="" />
+                    </div>
+                    <div className="">
+                      <p className="font-semibold text-[20px]">{card.title}</p>
+                      <p className="font-bold text-[16px] opacity-70">$ {card.price}</p>
+                      <p>Размер: {card.size} см</p>
+                    </div>
 
-                  <p className='p-4 text-center text-[14px] lg:text-[16px]'>
-                  Специалист компании свяжется с вами в ближайшее время, а на вашу почту будет отправлена презентация проекта для ознакомления.
-                  </p>
+                  </div>
+                </div>
+
+                  {/* <p className="text-center py-4 font-bold text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px]">Заказать обратный звонок</p> */}
+
+                  
 
                   <form action="" className="px-6" onSubmit={handleSubmit} >
 
@@ -294,7 +316,7 @@ function WoodenFurniture() {
 
                   </label>
 
-                  <label className="form-control w-full mb-10">
+                  <label className="form-control w-full mb-2">
 
                       <div className="label">
                           <span className="label-text">Ваше номер телефона:</span>
@@ -319,6 +341,10 @@ function WoodenFurniture() {
                       />
                       
                   </label>
+
+                  <p className='py-2 text-start text-[14px] lg:text-[16px]'>
+                  Специалист компании свяжется с вами в ближайшее время, а на вашу почту будет отправлена презентация проекта для ознакомления.
+                  </p>
 
                   <button className="btn my-4 w-full" >Отправить</button>
 
