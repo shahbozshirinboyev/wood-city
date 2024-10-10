@@ -5,6 +5,7 @@ import { woodenFurniture } from "../../data/data";
 import furniture_1 from "../../../public/furniture/6.jpg";
 import furniture_2 from "../../../public/furniture/24.jpg";
 import furniture_3 from "../../../public/furniture/16.jpg";
+import FurnitureProductInfo from "../../components/FurnitureProductInfo";
 
 function WoodenFurniture() {
   const [activeMenuBtn, setActiveMenuBtn] = useState(0);
@@ -261,53 +262,9 @@ function WoodenFurniture() {
                 </form>
                 {/* Modal header End */}
 
-                <div className="border border-red-700 p-2">
-                  <p>
-                    INFO Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Earum soluta expedita qui officia tempore reiciendis
-                    nobis quod repellat sed doloremque perspiciatis totam
-                    voluptatibus, sint eligendi perferendis incidunt tenetur
-                    dolores iste ullam laudantium ratione debitis distinctio!
-                    Molestias mollitia quibusdam officiis voluptates nisi dicta
-                    architecto iusto placeat laudantium explicabo sint
-                    distinctio, deserunt beatae facilis voluptatum voluptatibus
-                    est exercitationem asperiores et corporis illo enim
-                    possimus. At asperiores cum recusandae iste voluptate
-                    accusantium eius nam, aliquam possimus ad necessitatibus
-                    illum adipisci praesentium repudiandae consequuntur
-                    perferendis illo nostrum nesciunt obcaecati aspernatur
-                    excepturi, provident beatae laudantium. Consectetur, hic!
-                    Id, necessitatibus accusantium sunt natus minima facilis
-                    tempora. Quod voluptates in maxime perspiciatis hic eum,
-                    eaque, aliquid animi molestias reiciendis, porro praesentium
-                    quos nesciunt blanditiis doloremque consequatur vitae
-                    deserunt provident totam sequi excepturi. Veritatis ducimus
-                    molestias, assumenda rem vero commodi quaerat, doloremque
-                    cupiditate cumque magni atque labore aliquid nostrum. Vitae
-                    nemo nisi assumenda hic rem recusandae officiis ab vel error
-                    accusamus quae cupiditate dolorum tempore soluta, at aut.
-                    Fugiat explicabo perspiciatis ut magni sapiente a sunt
-                    ducimus earum quas cupiditate dolor porro ipsa quis animi at
-                    quia, autem suscipit nulla. Fugiat est itaque voluptate
-                    nobis eveniet expedita, fugit animi exercitationem tenetur
-                    illo porro. Nisi impedit dolorem nemo! Ea voluptas ullam hic
-                    facilis cumque doloribus beatae consequatur iure
-                    reprehenderit. Id vel numquam voluptatibus adipisci? Sit,
-                    fuga! Perferendis impedit dolorem accusamus perspiciatis
-                    reiciendis libero obcaecati dicta dolore ex nihil corporis
-                    placeat veritatis doloribus eveniet ab repudiandae at
-                    necessitatibus illum recusandae expedita, consequuntur ea
-                    odio? Reiciendis at corrupti quod. Obcaecati laboriosam,
-                    iusto quis quibusdam ipsam excepturi officia necessitatibus
-                    asperiores sit recusandae, aliquam mollitia soluta
-                    exercitationem repellat aut. Tempora blanditiis dicta ut
-                    quam quidem, nemo nesciunt possimus laboriosam quae!
-                    Asperiores et illo reprehenderit vel vero voluptas sint non,
-                    necessitatibus laborum temporibus perferendis dolorem
-                    exercitationem corporis quia est consectetur laboriosam,
-                    dolores error voluptatibus.
-                  </p>
-                </div>
+                
+                  <FurnitureProductInfo />
+                
 
               </div>
               {/* Outside close section start */}

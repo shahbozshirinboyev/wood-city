@@ -41,8 +41,8 @@ function LeaveRequest() {
                   text: `
                   Запрос отложен:
 
-                  Имя: ${nameValue}
-                  Телефон: +${phoneValue}`
+                  👤Имя: ${nameValue}
+                  📱Телефон: +${phoneValue}`
                 }
               ),
               {
