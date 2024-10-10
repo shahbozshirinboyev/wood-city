@@ -92,7 +92,9 @@ function Footer() {
               </NavLink>
             </div>
             <div className="mb-[25px]">
-              <button className="py-1 px-2 rounded-lg border border-[#E1DFDE] hover:bg-[#E1DFDE] hover:text-[#160A06] transition-all duration-200">
+              <button 
+                  onClick={() => document.getElementById("LeaveRequest").showModal()}
+                  className="py-1 px-2 rounded-lg border border-[#E1DFDE] hover:bg-[#E1DFDE] hover:text-[#160A06] transition-all duration-200">
                 Оставить заявку
               </button>
             </div>
