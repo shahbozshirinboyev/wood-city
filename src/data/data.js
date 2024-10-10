@@ -40,10 +40,13 @@ export const woodenFurniture = [
     counts: [
       {
         id: uuidv4(),
-        image: "./furniture/1.jpg",
-        title: "1-eshik",
-        price: "100",
-        date: "29392838",
+        image: "./furniture/doors/1.jpg",
+        title: "Дверь под старину Добрыня",
+        price: "154",
+        material: "Сосна",
+        availability: "Под заказ",
+        size: "2000-800-40",
+        comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
       },
       {
         id: uuidv4(),
