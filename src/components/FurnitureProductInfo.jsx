@@ -3,10 +3,10 @@ import React, { useState } from 'react'
 function FurnitureProductInfo() {
 
     const [images, setImages] = useState({
-        img1 : "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,b_rgb:f5f5f5/3396ee3c-08cc-4ada-baa9-655af12e3120/scarpa-da-running-su-strada-invincible-3-xk5gLh.png",
-        img2 : "https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_440/e44d151a-e27a-4f7b-8650-68bc2e8cd37e/scarpa-da-running-su-strada-invincible-3-xk5gLh.png",
-        img3 : "https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_440/44fc74b6-0553-4eef-a0cc-db4f815c9450/scarpa-da-running-su-strada-invincible-3-xk5gLh.png",
-        img4 : "https://static.nike.com/a/images/f_auto,b_rgb:f5f5f5,w_440/d3eb254d-0901-4158-956a-4610180545e5/scarpa-da-running-su-strada-invincible-3-xk5gLh.png"
+        img1 : "https://optim.tildacdn.com/stor3662-3066-4630-a134-343731316562/-/format/webp/53149545.jpg",
+        img2 : "https://optim.tildacdn.com/stor3036-6335-4031-b038-353837623437/-/format/webp/58415204.jpg",
+        img3 : "https://optim.tildacdn.com/stor3338-6432-4034-b838-326466646463/-/format/webp/53095761.jpg",
+        img4 : "https://optim.tildacdn.com/stor6166-3463-4366-b865-326537303862/-/format/webp/90456582.jpg"
     })
 
     const [activeImg, setActiveImage] = useState(images.img1)
@@ -18,14 +18,14 @@ function FurnitureProductInfo() {
         setTimeout(() => {
             setActiveImage(newImg); // Yangi rasmni qo'yish
             setAnimate(false); // Animatsiyani to'xtatish
-        }, 300); // 300ms davomida animatsiya
+        }, 200); // 300ms davomida animatsiya
     };
 
     const [amount, setAmount] = useState(1);
 
   return (
     <>
-        <div className='flex flex-col justify-between lg:flex-row gap-16 lg:items-center p-4'>
+        <div className='flex flex-col justify-between lg:flex-row gap-6 p-6'>
 
             <div className='flex flex-col gap-6 lg:w-2/4'>
 
@@ -45,26 +45,47 @@ function FurnitureProductInfo() {
             </div>
 
             
-            <div className='flex flex-col gap-4 lg:w-2/4'>
+            <div className='flex flex-col gap-4 lg:w-2/4 h-full'>
 
                 <div>
-                    <span className=' text-violet-600 font-semibold'>Special Sneaker</span>
-                    <h1 className='text-3xl font-bold'>Nike Invincible 3</h1>
+                    <p className='text-3xl py-4'>«Модерн» 30-2</p>
+                    <p className='text-[18px]'>DP-Module</p>
+                    <p className='text-[16px]'>SKU: mod30-2_ekb</p>
                 </div>
 
-                <p className='text-gray-700'>
-                Con un'ammortizzazione incredibile per sostenerti in tutti i tuoi chilometri, Invincible 3 offre un livello di comfort elevatissimo sotto il piede per aiutarti a dare il massimo oggi, domani e oltre. Questo modello incredibilmente elastico e sostenitivo, è pensato per dare il massimo lungo il tuo percorso preferito e fare ritorno a casa carico di energia, in attesa della prossima corsa.
-                </p>
+                <div>
+                    <p className='font-bold text-xl'>1 405 000р.</p>
+                </div>
 
-                <h6 className='text-2xl font-semibold'>$ 199.00</h6>
+                <div>
+                    <button className='btn mr-4'>Прямой звонок</button>
+                    <button className='btn'>Оставить заявку</button>
+                </div>
 
-                <div className='flex flex-row items-center gap-12'>
-                    <div className='flex flex-row items-center'>
-                        <button className='bg-gray-200 py-2 px-5 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev - 1)}>-</button>
-                        <span className='py-4 px-6 rounded-lg'>{amount}</span>
-                        <button className='bg-gray-200 py-2 px-4 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev + 1)}>+</button>
-                    </div>
-                    <button className='bg-violet-800 text-white font-semibold py-3 px-16 rounded-xl h-full'>Add to Cart</button>
+                <div>
+                    <ul className='mt-5'>
+                        <li>
+                            <span className='font-semibold'>Проект:</span>                      <span>Модерн</span>                         
+                        </li>
+                        <li>
+                            <span className='font-semibold'>Тип проекта:</span>                 <span>Дом</span>
+                        </li>
+                        <li>
+                            <span className='font-semibold'>Проект:</span>                      <span>30м²</span>
+                        </li>
+                        <li>
+                            <span className='font-semibold'>Количество модулей:</span>          <span>2</span>
+                        </li>
+                        <li>
+                            <span className='font-semibold'>LxWxH:</span>                       <span>600x500x270 sm</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>
+                    Продумана каждая деталь: просторная гостиная, совмещенная со спальней, полноценная кухонная зона с обеденным столом и санузел.
+                    </p>
                 </div>
 
             </div>
