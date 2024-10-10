@@ -63,7 +63,7 @@ function Footer() {
             <h6 className="footer-title">Контакты</h6>
             <p>
               <i className="bi bi-geo-alt mr-[10px]"></i>
-              Uzb, Tashkent, Chirchiq sh.
+              Tashkent, Chirchiq sh.
             </p>
             <div className="flex mt-2">
               <i className="bi bi-telephone mr-[10px]"></i>

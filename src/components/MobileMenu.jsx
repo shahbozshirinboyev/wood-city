@@ -44,7 +44,7 @@ function MobileMenu({ open, setOpen }) {
                 <h6 className="footer-title">Контакты</h6>
                 <p>
                   <i className="bi bi-geo-alt mr-[10px]"></i>
-                  Uzb, Tashkent, Chirchiq sh.
+                    Tashkent, Chirchiq sh.
                 </p>
                 <div className="flex mt-2">
                   <i className="bi bi-telephone mr-[10px]"></i>
@@ -73,7 +73,9 @@ function MobileMenu({ open, setOpen }) {
                   </NavLink>
                 </div>
                 <div>
-                  <button className="py-1 px-2 rounded-lg border border-[#E1DFDE] hover:bg-[#E1DFDE] hover:text-[#160A06] transition-all duration-200">
+                  <button 
+                    onClick={() => document.getElementById("LeaveRequest").showModal()}
+                    className="py-1 px-2 rounded-lg border border-[#E1DFDE] hover:bg-[#E1DFDE] hover:text-[#160A06] transition-all duration-200">
                     Оставить заявку
                   </button>
                 </div>

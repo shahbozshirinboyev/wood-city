@@ -95,7 +95,7 @@ function LeaveRequest() {
 
                 <form action="" className="px-6" onSubmit={handleSubmit} >
 
-                <label className="form-control w-full">
+                <label className="form-control w-full mb-2">
 
                     <div className="label">
                         <span className="label-text">Ваше имя:</span>
@@ -114,7 +114,7 @@ function LeaveRequest() {
 
                 </label>
 
-                <label className="form-control w-full">
+                <label className="form-control w-full mb-10">
 
                     <div className="label">
                         <span className="label-text">Ваше номер телефона:</span>
