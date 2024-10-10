@@ -11,6 +11,16 @@ function FurnitureProductInfo() {
 
     const [activeImg, setActiveImage] = useState(images.img1)
 
+    const [animate, setAnimate] = useState(false);
+
+    const changeImage = (newImg) => {
+        setAnimate(true); // Animatsiyani boshlash
+        setTimeout(() => {
+            setActiveImage(newImg); // Yangi rasmni qo'yish
+            setAnimate(false); // Animatsiyani to'xtatish
+        }, 300); // 300ms davomida animatsiya
+    };
+
     const [amount, setAmount] = useState(1);
 
   return (
@@ -19,15 +29,17 @@ function FurnitureProductInfo() {
 
             <div className='flex flex-col gap-6 lg:w-2/4'>
 
-                <img 
-                    src={activeImg} alt="" className='w-full h-full aspect-square object-cover rounded-xl transition-all duration-300 border border-base-200'   
-                />
+            <img 
+                src={activeImg} 
+                alt="Active" 
+                className={`w-full h-full aspect-square object-cover rounded-xl transition-all duration-200 border border-base-200 ${animate ? '-translate-x-[5%] opacity-0' : '-translate-x-0 opacity-100'}`} 
+            />
 
                 <div className='flex flex-row justify-between h-26 border-[2px] border-base-200 p-2 rounded-lg'>
-                    <img src={images.img1} alt="" className='w-24 h-24 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200' onClick={() => setActiveImage(images.img1)}/>
-                    <img src={images.img2} alt="" className='w-24 h-24 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200' onClick={() => setActiveImage(images.img2)}/>
-                    <img src={images.img3} alt="" className='w-24 h-24 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200' onClick={() => setActiveImage(images.img3)}/>
-                    <img src={images.img4} alt="" className='w-24 h-24 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200' onClick={() => setActiveImage(images.img4)}/>
+                    <img src={images.img1} alt="" className='w-24 h-24 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200' onClick={() => changeImage(images.img1)} />
+                    <img src={images.img2} alt="" className='w-24 h-24 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200' onClick={() => changeImage(images.img2)} />
+                    <img src={images.img3} alt="" className='w-24 h-24 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200' onClick={() => changeImage(images.img3)} />
+                    <img src={images.img4} alt="" className='w-24 h-24 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200' onClick={() => changeImage(images.img4)} />
                 </div>
 
             </div>
