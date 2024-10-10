@@ -32,7 +32,9 @@ function RootLayout() {
 
   return (
     <>
-    
+
+      <Toaster />
+
       {loading && <Loading />}
 
       <LeaveRequest />

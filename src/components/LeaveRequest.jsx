@@ -3,7 +3,11 @@ import 'react-phone-input-2/lib/style.css'
 
 import { useState } from 'react';
 
+// react-hot-toast
 import { Toaster, toast } from 'react-hot-toast';
+
+// http
+import http from '../services/http'
 
 function LeaveRequest() {
 
@@ -23,9 +27,44 @@ function LeaveRequest() {
         }
 
         // Formani muvaffaqiyatli yuborish
-        console.log('Ism:', nameValue);
-        console.log('Telefon raqami:', phoneValue);
+        // console.log('Ism:', nameValue);
+        // console.log('Telefon raqami:', phoneValue);
         // Boshqa submit funksiyalarini qo'shing
+
+        toast.promise(
+              http.post('/sendMessage', 
+                {
+                //   chat_id: "660100854",
+                  chat_id: "-1002294640036",
+                // yangi chat ID olish uchun so'rov yuborish kerak: https://api.telegram.org/bot8110745041:AAGgqllrE9mwsCkQK8mhFsiG2quMGJHkD8I/getUpdates
+                //                                                  https://api.telegram.org/bot${token}/getUpdates
+                  text: `
+                  Запрос отложен:
+
+                  Имя: ${nameValue}
+                  Телефон: +${phoneValue}`
+                }
+              ),
+              {
+                loading: 'Отправка сообщения...', // Kutish holati
+                success: (response) => {
+                    closeModal();
+                //   console.log(response); // Muvaffaqiyatli natija
+                  return <b>Сообщение успешно отправлено!</b>;
+                },
+                error: (error) => {
+                //   console.log(error); // Xato holati
+                  return <b>Не удалось отправить сообщение.</b>;
+                },
+              }
+            );
+    };
+
+    const closeModal = () => {
+        const modal = document.getElementById("LeaveRequest");
+        modal.close(); // Modalni yopish
+        setNameValue(''); // Ism inputini tozalash
+        setPhoneValue('998'); // Telefon raqami inputini tozalash
     };
 
   return (
@@ -67,6 +106,7 @@ function LeaveRequest() {
                     value={nameValue} // Ism qiymatini boshqarish
                     onChange={(e) => setNameValue(e.target.value)} // Ism o'zgarganda yangilash 
                     type="text" 
+                    required
                     placeholder="Ваше имя" 
                     className="input input-bordered w-full"
                     style={{borderRadius: '.25rem', height: '45px', fontSize: '16px',}}
