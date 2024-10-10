@@ -15,33 +15,37 @@ function FurnitureProductInfo() {
 
   return (
     <>
-        <div className='flex flex-col justify-between lg:flex-row gap-16 lg:items-center p-4 border-[5px] border-red-500'>
+        <div className='flex flex-col justify-between lg:flex-row gap-16 lg:items-center p-4'>
 
             <div className='flex flex-col gap-6 lg:w-2/4'>
 
                 <img 
-                    src={activeImg} alt="" className='w-full h-full aspect-square object-cover rounded-xl transition-all duration-300'   
+                    src={activeImg} alt="" className='w-full h-full aspect-square object-cover rounded-xl transition-all duration-300 border border-base-200'   
                 />
 
                 <div className='flex flex-row justify-between h-26 border-[2px] border-base-200 p-2 rounded-lg'>
-                    <img src={images.img1} alt="" className='w-24 h-24 rounded-md cursor-pointer border border-base-200' onClick={() => setActiveImage(images.img1)}/>
-                    <img src={images.img2} alt="" className='w-24 h-24 rounded-md cursor-pointer border border-base-200' onClick={() => setActiveImage(images.img2)}/>
-                    <img src={images.img3} alt="" className='w-24 h-24 rounded-md cursor-pointer border border-base-200' onClick={() => setActiveImage(images.img3)}/>
-                    <img src={images.img4} alt="" className='w-24 h-24 rounded-md cursor-pointer border border-base-200' onClick={() => setActiveImage(images.img4)}/>
+                    <img src={images.img1} alt="" className='w-24 h-24 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200' onClick={() => setActiveImage(images.img1)}/>
+                    <img src={images.img2} alt="" className='w-24 h-24 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200' onClick={() => setActiveImage(images.img2)}/>
+                    <img src={images.img3} alt="" className='w-24 h-24 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200' onClick={() => setActiveImage(images.img3)}/>
+                    <img src={images.img4} alt="" className='w-24 h-24 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200' onClick={() => setActiveImage(images.img4)}/>
                 </div>
 
             </div>
 
             
             <div className='flex flex-col gap-4 lg:w-2/4'>
+
                 <div>
                     <span className=' text-violet-600 font-semibold'>Special Sneaker</span>
                     <h1 className='text-3xl font-bold'>Nike Invincible 3</h1>
                 </div>
+
                 <p className='text-gray-700'>
                 Con un'ammortizzazione incredibile per sostenerti in tutti i tuoi chilometri, Invincible 3 offre un livello di comfort elevatissimo sotto il piede per aiutarti a dare il massimo oggi, domani e oltre. Questo modello incredibilmente elastico e sostenitivo, è pensato per dare il massimo lungo il tuo percorso preferito e fare ritorno a casa carico di energia, in attesa della prossima corsa.
                 </p>
+
                 <h6 className='text-2xl font-semibold'>$ 199.00</h6>
+
                 <div className='flex flex-row items-center gap-12'>
                     <div className='flex flex-row items-center'>
                         <button className='bg-gray-200 py-2 px-5 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev - 1)}>-</button>
@@ -50,6 +54,7 @@ function FurnitureProductInfo() {
                     </div>
                     <button className='bg-violet-800 text-white font-semibold py-3 px-16 rounded-xl h-full'>Add to Cart</button>
                 </div>
+
             </div>
 
         </div>
