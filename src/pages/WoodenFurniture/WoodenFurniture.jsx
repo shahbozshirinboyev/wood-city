@@ -1,6 +1,15 @@
 import { useState, useRef, useEffect } from "react";
 import { woodenFurniture } from "../../data/data";
 
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
+
+// react-hot-toast
+import { Toaster, toast } from 'react-hot-toast';
+
+// http
+import http from '../../services/http'
+
 //images
 import furniture_1 from "../../../public/furniture/6.jpg";
 import furniture_2 from "../../../public/furniture/24.jpg";
@@ -56,6 +65,66 @@ function WoodenFurniture() {
       return category ? category.counts : [];
     }
   };
+
+  // -----------------------order
+  const [nameValue, setNameValue] = useState('');
+    const [phoneValue, setPhoneValue] = useState('');
+    const [closeModalId, setCloseModalId] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Ism va telefon raqamini tekshirish
+        if (!nameValue) {
+            toast.error("Ismingizni kiriting!")
+            // console.log(closeModalId)
+            return;
+        }
+        if (!phoneValue) {
+            toast.error("Telefon raqamingizni kiriting!")
+            return;
+        }
+
+        // Formani muvaffaqiyatli yuborish
+        // console.log('Ism:', nameValue);
+        // console.log('Telefon raqami:', phoneValue);
+        // Boshqa submit funksiyalarini qo'shing
+
+        toast.promise(
+              http.post('/sendMessage', 
+                {
+                //   chat_id: "660100854",
+                  chat_id: "-1002294640036",
+                // yangi chat ID olish uchun so'rov yuborish kerak: https://api.telegram.org/bot8110745041:AAGgqllrE9mwsCkQK8mhFsiG2quMGJHkD8I/getUpdates
+                //                                                  https://api.telegram.org/bot${token}/getUpdates
+                  text: `
+                  Запрос отложен:
+
+                  👤Имя: ${nameValue}
+                  📱Телефон: +${phoneValue}`
+                }
+              ),
+              {
+                loading: 'Отправка сообщения...', // Kutish holati
+                success: (response) => {
+                    closeModal();
+                  console.log(response); // Muvaffaqiyatli natija
+                  return <b>Сообщение успешно отправлено!</b>;
+                },
+                error: (error) => {
+                  console.log(error); // Xato holati
+                  return <b>Не удалось отправить сообщение.</b>;
+                },
+              }
+            );
+    };
+
+    const closeModal = () => {
+        const modal = document.getElementById(closeModalId);
+        modal.close(); // Modalni yopish
+        setNameValue(''); // Ism inputini tozalash
+        setPhoneValue('998'); // Telefon raqami inputini tozalash
+        // setCloseModalId('');
+    };
 
   return (
     <section className="container mb-[25px] text-[#160A06]">
@@ -168,7 +237,7 @@ function WoodenFurniture() {
               </span>
 
               <div className="grid grid-cols-2 gap-4 pt-4">
-                <button className="btn" onClick={() => document.getElementById(`order_${card.id}`).showModal()} >
+                <button className="btn" onClick={() => {document.getElementById(`order_${card.id}`).showModal(); setCloseModalId(`order_${card.id}`);}} >
                   Оставить заявку
                 </button>
                 <button className="btn" onClick={() => document.getElementById(`info_${card.id}`).showModal()}>
@@ -182,71 +251,87 @@ function WoodenFurniture() {
 
             {/* Modal Info */}
             <dialog id={`order_${card.id}`} className="modal">
-              <div className="modal-box w-11/12 max-w-5xl p-0">
 
-                {/* Modal header Start */}
-                <form method="dialog" className="border-b-[2px] border-base-200 h-[60px] grid grid-cols-2 items-center px-[24px] bg-custom-green-10">
+            <Toaster />
+
+              <div className="modal-box w-11/12 max-w-xl p-0 ">             
+
+              {/* Modal header Start */}
+              <form method="dialog" className="border-b-[2px] border-base-200 h-[60px] grid grid-cols-2 items-center px-[24px] bg-custom-green-10">
                   <span className="text-custom-green-dark font-bold">Оставить заявку</span>
                   <div className="text-end">
-                    <button className="btn btn-sm border-0 btn-circle text-custom-green-dark bg-custom-green-10 hover:bg-custom-green-30"> ✕ </button>
+                  <button className="btn btn-sm border-0 btn-circle text-custom-green-dark bg-custom-green-10 hover:bg-custom-green-30"> ✕ </button>
                   </div>
-                </form>
-                {/* Modal header End */}
+              </form>
+              {/* Modal header End */}
 
-                <div className="border border-red-700 p-2">
-                  <p className="">
-                    ORDER <br />
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla officia commodi sapiente? Esse porro maxime, sed, exercitationem quas nulla quo modi voluptatibus repellat laborum velit, ut tempora ab. Non possimus, id aperiam accusantium eveniet sed mollitia! Officiis unde, nulla illum dolorum necessitatibus minima itaque ullam molestias dignissimos est distinctio veniam ducimus. Reprehenderit aperiam possimus, cum veritatis architecto minus ex quaerat sit unde harum laudantium quisquam ad, facilis pariatur? Perspiciatis cupiditate porro, blanditiis deleniti, omnis animi saepe ut sit quia consequuntur explicabo autem quaerat doloremque sed distinctio. Quibusdam similique numquam nostrum ab officia, corrupti ipsam voluptatibus dolores mollitia et pariatur consectetur doloribus iure animi error saepe accusamus, explicabo, ullam neque ad ex? Nostrum eaque tempore ipsam deserunt in alias praesentium voluptatibus, sapiente voluptates quisquam sed cum ab, ex rem repellat cumque sequi? Est, impedit numquam? Voluptatum eius quo, sint quod aliquid fuga dolores error sed quam! Voluptatem iste, est omnis consequatur, enim fugit ipsa sint modi saepe assumenda ducimus nesciunt doloribus natus mollitia sed incidunt possimus fuga quam recusandae velit ut sequi! Magnam libero eum dolorum soluta iure ab deserunt nam saepe distinctio aspernatur optio adipisci, ducimus labore, enim est? Quos fugiat neque iure numquam quo blanditiis autem possimus consectetur ullam aliquam quaerat magni saepe, quidem aspernatur, nostrum, facere perspiciatis! Non earum, voluptate aliquam ex exercitationem ipsum sapiente odit eveniet accusamus, deserunt autem molestias sed asperiores itaque architecto nostrum laboriosam! Laudantium necessitatibus itaque, nemo aliquid facilis sunt vitae ipsum consectetur labore soluta atque. Nemo itaque facilis enim cumque dolorum harum, architecto doloribus obcaecati assumenda exercitationem eveniet odio, quam qui reprehenderit nulla, quas voluptatum quaerat rerum ipsum illum voluptas id autem earum! Suscipit, eaque doloribus consequatur mollitia repellat quos. Quos doloribus modi ullam placeat asperiores, possimus a voluptas officia atque tempora excepturi blanditiis eaque earum quod sed, ab doloremque sapiente. Nam eius quibusdam commodi labore, consequuntur cum, qui sint aliquid numquam corrupti nemo modi recusandae atque id perspiciatis? Pariatur deleniti excepturi natus dolore. Illo cumque cupiditate temporibus, explicabo quasi, accusamus, voluptate dolores dolor numquam minima ratione id dignissimos expedita nemo? Expedita delectus esse accusamus numquam quibusdam harum fuga animi perferendis architecto at? Odio amet quo iusto esse eaque sed ipsa sit aperiam distinctio ea, blanditiis possimus temporibus animi, architecto earum voluptatem? Consequuntur, sapiente. Consequatur ab molestias quibusdam dolorem magnam consequuntur magni quidem incidunt repellendus ratione voluptatum vitae doloribus beatae maiores repudiandae alias delectus aliquam optio saepe voluptates officia, quo, nulla maxime. Quo eaque, cumque vel tempore corporis impedit, laborum eos fugit maxime modi veritatis beatae minus illum magnam non tenetur itaque earum ipsa quod voluptates nemo eum voluptatem! Laboriosam animi natus iste velit saepe iusto voluptate sint modi maxime omnis fugit sit illum corrupti impedit dolor odit eveniet vel, distinctio, quo odio possimus molestiae culpa? Maxime distinctio repellat dolores quae praesentium voluptatibus! Quibusdam animi dolore pariatur consequuntur eum explicabo totam porro. Dolore repellat autem sed corrupti ratione. Officiis iusto veniam debitis reprehenderit delectus et, officia esse id magni totam quo ipsa quas commodi reiciendis mollitia dolores aliquid aperiam sequi. Temporibus, et facere? Iste rerum, nostrum architecto voluptatum, explicabo unde quas excepturi facere esse laboriosam optio minima vero. Illum vero ipsam veritatis aliquid quos rerum molestiae, eveniet nobis mollitia ut laboriosam temporibus. Minus, tempore, praesentium doloremque omnis adipisci aspernatur iure numquam eos quasi laborum unde nostrum culpa excepturi error provident distinctio facilis, rerum ipsa nam ea repellendus exercitationem? Quae laudantium maiores possimus, delectus consectetur labore sint, commodi quod modi a iusto esse molestiae voluptas deleniti odio, doloribus consequatur adipisci? Repellendus eos modi voluptatem mollitia officiis nulla excepturi odit harum! Voluptatem earum vero non et exercitationem aliquam, enim ducimus. Sit maiores eligendi omnis. Eos quisquam beatae sequi adipisci maiores similique aliquid quibusdam tempore nisi dolore cum eveniet ut veniam reprehenderit nobis numquam amet, esse ea odit tenetur! Hic, labore recusandae laborum neque itaque ab amet! Harum eius doloribus blanditiis nobis assumenda aliquam, incidunt iste? Quia quam ad quae qui dolor et reiciendis fuga. Distinctio iure eos obcaecati ipsam dolores tempora sed earum eius iusto, incidunt nihil at odit quasi? Repudiandae velit tempora praesentium illum aut distinctio culpa ad hic impedit! Possimus delectus labore harum rerum deserunt excepturi cumque nisi sapiente aliquam repudiandae eum pariatur ratione dignissimos quo, ipsam magnam eaque, vitae ipsum natus nobis veniam. Maxime autem dolore aliquid unde nostrum molestias in similique corporis quod nisi odit, soluta omnis itaque, atque iusto blanditiis exercitationem recusandae veniam id! Quidem laborum minima et doloremque animi dignissimos ratione? Eligendi optio veritatis quisquam cumque totam? Sit blanditiis, doloribus iste qui dolorum laborum quis similique ipsum adipisci eos error nesciunt. Hic amet voluptatum molestiae perspiciatis, obcaecati provident. Ipsam molestias placeat quaerat, accusantium iure voluptatem voluptate nam accusamus? Accusantium porro aliquam dignissimos iure, necessitatibus vel obcaecati odio explicabo unde repellendus ipsum nostrum beatae sint quibusdam soluta quam aspernatur rem quisquam doloribus! Maxime facere ipsum enim. Quod ipsum quae nemo eveniet ullam. Itaque cumque velit provident impedit harum soluta nemo enim dignissimos molestiae? Hic, adipisci quisquam quasi, pariatur at nemo voluptates eligendi cum illo vel totam, ducimus eaque a illum veritatis debitis? Quae, quia! At, enim culpa ullam voluptate quae soluta quisquam rem facilis laborum distinctio a quos porro voluptates fuga iste nemo. Nostrum reiciendis quibusdam dolore. Ducimus deleniti dicta, perferendis obcaecati maiores hic odit accusamus, nam praesentium eveniet soluta, qui molestias ullam consequuntur ipsam placeat ipsum voluptatibus architecto. Dicta officiis, deserunt, blanditiis ab, et impedit excepturi maxime voluptatum nulla unde delectus molestias consequuntur dolore iste voluptas error? Ipsum, aliquam. Ratione sint deleniti laudantium animi aliquam voluptatem consequatur laboriosam aut debitis! Veritatis in dicta modi, atque quasi fugiat nam itaque optio quo, beatae iusto hic id eligendi possimus animi est qui officia ex cum officiis enim ratione, quod rerum aspernatur. Voluptas rem delectus aperiam amet repudiandae, quo nostrum voluptatum vel nulla corporis, quas eaque voluptates cumque iste, dignissimos tenetur temporibus ullam minus exercitationem libero fugit perspiciatis quaerat hic! Et dolorum quidem quibusdam laudantium, tenetur itaque illum error suscipit dicta totam in doloribus est, sunt maxime enim debitis expedita magni non consectetur sint iure a veritatis voluptates vitae! Deleniti, quibusdam esse.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Earum soluta expedita qui officia tempore reiciendis nobis
-                    quod repellat sed doloremque perspiciatis totam
-                    voluptatibus, sint eligendi perferendis incidunt tenetur
-                    dolores iste ullam laudantium ratione debitis distinctio!
-                    Molestias mollitia quibusdam officiis voluptates nisi dicta
-                    architecto iusto placeat laudantium explicabo sint
-                    distinctio, deserunt beatae facilis voluptatum voluptatibus
-                    est exercitationem asperiores et corporis illo enim
-                    possimus. At asperiores cum recusandae iste voluptate
-                    accusantium eius nam, aliquam possimus ad necessitatibus
-                    illum adipisci praesentium repudiandae consequuntur
-                    perferendis illo nostrum nesciunt obcaecati aspernatur
-                    excepturi, provident beatae laudantium. Consectetur, hic!
-                    Id, necessitatibus accusantium sunt natus minima facilis
-                    tempora. Quod voluptates in maxime perspiciatis hic eum,
-                    eaque, aliquid animi molestias reiciendis, porro praesentium
-                    quos nesciunt blanditiis doloremque consequatur vitae
-                    deserunt provident totam sequi excepturi. Veritatis ducimus
-                    molestias, assumenda rem vero commodi quaerat, doloremque
-                    cupiditate cumque magni atque labore aliquid nostrum. Vitae
-                    nemo nisi assumenda hic rem recusandae officiis ab vel error
-                    accusamus quae cupiditate dolorum tempore soluta, at aut.
-                    Fugiat explicabo perspiciatis ut magni sapiente a sunt
-                    ducimus earum quas cupiditate dolor porro ipsa quis animi at
-                    quia, autem suscipit nulla. Fugiat est itaque voluptate
-                    nobis eveniet expedita, fugit animi exercitationem tenetur
-                    illo porro. Nisi impedit dolorem nemo! Ea voluptas ullam hic
-                    facilis cumque doloribus beatae consequatur iure
-                    reprehenderit. Id vel numquam voluptatibus adipisci? Sit,
-                    fuga! Perferendis impedit dolorem accusamus perspiciatis
-                    reiciendis libero obcaecati dicta dolore ex nihil corporis
-                    placeat veritatis doloribus eveniet ab repudiandae at
-                    necessitatibus illum recusandae expedita, consequuntur ea
-                    odio? Reiciendis at corrupti quod. Obcaecati laboriosam,
-                    iusto quis quibusdam ipsam excepturi officia necessitatibus
-                    asperiores sit recusandae, aliquam mollitia soluta
-                    exercitationem repellat aut. Tempora blanditiis dicta ut
-                    quam quidem, nemo nesciunt possimus laboriosam quae!
-                    Asperiores et illo reprehenderit vel vero voluptas sint non,
-                    necessitatibus laborum temporibus perferendis dolorem
-                    exercitationem corporis quia est consectetur laboriosam,
-                    dolores error voluptatibus.
+              <div className="p-4">
+
+                  <p className="text-center py-4 font-bold text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px]">Заказать обратный звонок</p>
+
+                  <p className='p-4 text-center text-[14px] lg:text-[16px]'>
+                  Специалист компании свяжется с вами в ближайшее время, а на вашу почту будет отправлена презентация проекта для ознакомления.
                   </p>
-                </div>
+
+                  <form action="" className="px-6" onSubmit={handleSubmit} >
+
+                  <label className="form-control w-full mb-2">
+
+                      <div className="label">
+                          <span className="label-text">Ваше имя:</span>
+                          {/* <span className="label-text-alt">Top Right label</span> */}
+                      </div>
+
+                      <input 
+                      value={nameValue} // Ism qiymatini boshqarish
+                      onChange={(e) => setNameValue(e.target.value)} // Ism o'zgarganda yangilash 
+                      type="text" 
+                      // required
+                      placeholder="Ваше имя" 
+                      className="input input-bordered w-full"
+                      style={{borderRadius: '.25rem', height: '45px', fontSize: '16px',}}
+                      />
+
+                  </label>
+
+                  <label className="form-control w-full mb-10">
+
+                      <div className="label">
+                          <span className="label-text">Ваше номер телефона:</span>
+                          {/* <span className="label-text-alt">Top Right label</span> */}
+                      </div>
+                      
+                      <PhoneInput
+                          value={phoneValue} // Telefon raqami qiymatini boshqarish
+                          onChange={setPhoneValue} // Telefon raqami o'zgarganda yangilash
+                          country={'uz'}
+                          onlyCountries={['uz', 'kz', 'kg', 'tj', 'tm']}
+                          masks={{
+                              uz: '(..) ...-..-..', // O'zbekiston
+                              kz: '(...) ...-..-..', // Qozog'iston
+                              kg: '(..) ...-..-..', // Qirg'iziston
+                              tj: '(..) ...-..-..', // Tojikiston
+                              tm: '(..) ..-..-..', // Turkmaniston
+                              }}
+                          inputClass="input input-bordered w-full"
+                          inputStyle={{ width: '100%', height: '45px', border: '1px solid #ccc', borderRadius: '.25rem', transition: 'border-color 0.2s', fontSize: '16px', }}
+                          inputProps={{ name: 'phone', required: true }}
+                      />
+                      
+                  </label>
+
+                  <button className="btn my-4 w-full" >Отправить</button>
+
+                  </form>
 
               </div>
+
+              </div>
+
               {/* Outside close section start */}
               <form method="dialog" className="modal-backdrop"><button>close</button></form>
               {/* Outside close section end */}
+
             </dialog>
 
             {/* Order Modal */}
