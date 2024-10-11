@@ -4,6 +4,8 @@ import { woodenFurniture } from "../../data/data";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
+import { NavLink } from "react-router-dom";
+
 // react-hot-toast
 import { Toaster, toast } from "react-hot-toast";
 
@@ -14,7 +16,6 @@ import http from "../../services/http";
 import furniture_1 from "../../../public/furniture/6.jpg";
 import furniture_2 from "../../../public/furniture/24.jpg";
 import furniture_3 from "../../../public/furniture/16.jpg";
-import FurnitureProductInfo from "../../components/FurnitureProductInfo";
 
 function WoodenFurniture() {
   const [activeMenuBtn, setActiveMenuBtn] = useState(0);
@@ -116,6 +117,42 @@ function WoodenFurniture() {
     setNameValue(""); // Ism inputini tozalash
     setPhoneValue("998"); // Telefon raqami inputini tozalash
     // setCloseModalId('');
+  };
+
+  // Produc Info =============================================>
+    const [images, setImages] = useState({
+      img1: "",
+      img2: "",
+      img3: "",
+      img4: "",
+    });
+  
+    const [activeImg, setActiveImage] = useState(images.img1);
+  
+    useEffect(() => {
+      if (activeCardInfo?.card) {
+        setImages({
+          img1: activeCardInfo.card.image ? activeCardInfo.card.image : "",
+          img2: activeCardInfo.card.image1 ? activeCardInfo.card.image1 : "",
+          img3: activeCardInfo.card.image2 ? activeCardInfo.card.image2 : "",
+          img4: activeCardInfo.card.image3 ? activeCardInfo.card.image3 : "",
+        });
+      }
+    }, [activeCardInfo]);
+  
+    // To update the active image whenever images.img1 changes
+    useEffect(() => {
+      setActiveImage(images.img1);
+    }, [images.img1]);
+
+  const [animate, setAnimate] = useState(false);
+
+  const changeImage = (newImg) => {
+    setAnimate(true); // Animatsiyani boshlash
+    setTimeout(() => {
+      setActiveImage(newImg); // Yangi rasmni qo'yish
+      setAnimate(false); // Animatsiyani to'xtatish
+    }, 200); // 300ms davomida animatsiya
   };
 
   return (
@@ -239,8 +276,9 @@ function WoodenFurniture() {
                 </button>
                 <button
                   className="btn"
-                  onClick={() =>
-                    document.getElementById(`info_${card.id}`).showModal()
+                  onClick={() =>{
+                    document.getElementById(`info_${card.id}`).showModal(); setActiveCardInfo({ card });
+                  }
                   }
                 >
                   Подробнее →
@@ -388,7 +426,106 @@ function WoodenFurniture() {
                 </form>
                 {/* Modal header End */}
 
-                <FurnitureProductInfo />
+                {/* <FurnitureProductInfo  /> */}
+
+                <>
+                  <div className="flex flex-col justify-between lg:flex-row gap-6 p-6">
+                    <div className="flex flex-col gap-6 lg:w-2/4">
+                      <img
+                        src={activeImg}
+                        alt="Active"
+                        className={`w-full h-full aspect-square object-cover rounded-xl transition-all duration-200 border border-base-200 ${
+                          animate
+                            ? "-translate-x-[5%] opacity-0"
+                            : "-translate-x-0 opacity-100"
+                        }`}
+                      />
+
+                      <div className="flex flex-row justify-between h-26 border-[2px] border-base-200 p-2 rounded-lg">
+                        <img
+                          src={images.img1}
+                          alt=""
+                          className="w-24 h-24 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          onClick={() => changeImage(images.img1)}
+                        />
+                        <img
+                          src={images.img2}
+                          alt=""
+                          className="w-24 h-24 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          onClick={() => changeImage(images.img2)}
+                        />
+                        <img
+                          src={images.img3}
+                          alt=""
+                          className="w-24 h-24 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          onClick={() => changeImage(images.img3)}
+                        />
+                        <img
+                          src={images.img4}
+                          alt=""
+                          className="w-24 h-24 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          onClick={() => changeImage(images.img4)}
+                        />
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col gap-4 lg:w-2/4 h-full">
+                      <div>
+                        <p className="text-3xl py-4">«Модерн» 30-2</p>
+                        <p className="text-[18px]">DP-Module</p>
+                        <p className="text-[16px]">SKU: mod30-2_ekb</p>
+                      </div>
+
+                      <div>
+                        <p className="font-bold text-xl">1 405 000р.</p>
+                      </div>
+
+                      <div>
+                        <NavLink 
+                        to="tel:+998934563421"
+                        className="btn mr-4" >Прямой звонок</NavLink>
+                        <button 
+                        onClick={() => { document.getElementById(`order_${card.id}`).showModal(); setCloseModalId(`order_${card.id}`); setActiveCardInfo({ card }); }}
+                        className="btn" >Оставить заявку</button>
+                      </div>
+
+                      <div>
+                        <ul className="mt-5">
+                          <li>
+                            <span className="font-semibold">Проект:</span>{" "}
+                            <span>Модерн</span>
+                          </li>
+                          <li>
+                            <span className="font-semibold">Тип проекта:</span>{" "}
+                            <span>Дом</span>
+                          </li>
+                          <li>
+                            <span className="font-semibold">Проект:</span>{" "}
+                            <span>30м²</span>
+                          </li>
+                          <li>
+                            <span className="font-semibold">
+                              Количество модулей:
+                            </span>{" "}
+                            <span>2</span>
+                          </li>
+                          <li>
+                            <span className="font-semibold">LxWxH:</span>{" "}
+                            <span>600x500x270 sm</span>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <p>
+                          Продумана каждая деталь: просторная гостиная,
+                          совмещенная со спальней, полноценная кухонная зона с
+                          обеденным столом и санузел.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </>
               </div>
               {/* Outside close section start */}
               <form method="dialog" className="modal-backdrop">

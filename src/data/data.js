@@ -41,6 +41,9 @@ export const woodenFurniture = [
       {
         id: uuidv4(),
         image: "/furniture/doors/1.jpg",
+        image1: "/furniture/1.jpg",
+        image2: "/furniture/6.jpg",
+        image3: "/furniture/7.jpg",
         title: "Дверь под старину Добрыня",
         price: "154",
         material: "Сосна",
