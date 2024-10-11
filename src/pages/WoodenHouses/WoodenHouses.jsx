@@ -2,7 +2,6 @@ import { useState, useRef, useEffect } from "react";
 import { woodenHouse } from "../../data/data";
 
 function WoodenHouses() {
-
   const [activeMenuBtn, setActiveMenuBtn] = useState(0);
   const tabsListRef = useRef(null);
   const [scrollPos, setScrollPos] = useState(0);
@@ -51,9 +50,7 @@ function WoodenHouses() {
         .flatMap((item) => item.counts);
     } else {
       // Id ga mos keluvchi counts ni olish
-      const category = woodenHouse.find(
-        (item) => item.id === activeMenuBtn
-      );
+      const category = woodenHouse.find((item) => item.id === activeMenuBtn);
       return category ? category.counts : [];
     }
   };
@@ -66,7 +63,11 @@ function WoodenHouses() {
     <section className="container">
       <div className="grid grid-cols-1 md:grid-cols-2 mt-[50px] gap-8">
         <div className="">
-          <img className="w-[300px] mx-auto md:ml-0" src="./logo/wood_city_black.png" alt="" />
+          <img
+            className="w-[300px] mx-auto md:ml-0"
+            src="./logo/wood_city_black.png"
+            alt=""
+          />
 
           <p className="font-bold text-[30px] text-center md:text-start md:text-[60px] mt-[25px]">
             Готовые модульные дома и бани
@@ -154,9 +155,8 @@ function WoodenHouses() {
       </>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-[50px]">
-
         {getCounts(activeMenuBtn).map((card) => (
-            <div className="border rounded-2xl grid grid-cols-1 px-4 py-4">
+          <div className="border rounded-2xl grid grid-cols-1 px-4 py-4">
             <div className="relative">
               <img
                 className="h-[350px] w-full object-cover rounded-2xl"
@@ -169,23 +169,20 @@ function WoodenHouses() {
                 alt=""
               />
             </div>
-  
+
             <div className="py-2">
               <p className="text-[20px] font-bold">{card.title}</p>
               <p className="">DP-Module</p>
               <p className="">SKU: ks_ekb</p>
               <b className="text-[25px]">1 635 000р.</b>
             </div>
-  
+
             <div className="grid grid-cols-2">
               <button className="btn mr-2">Оставить заявку</button>
               <button className="btn ml-2">Подробнее →</button>
             </div>
           </div>
         ))}
-
-        
-
       </div>
     </section>
   );
