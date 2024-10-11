@@ -25,6 +25,10 @@ function LeaveRequest() {
             toast.error("Telefon raqamingizni kiriting!")
             return;
         }
+        if (phoneValue.length !== 12) {
+          toast.error("Telefon raqam to'g'ri kiritilmagan :(");
+          return;
+        }
 
         // Formani muvaffaqiyatli yuborish
         // console.log('Ism:', nameValue);
