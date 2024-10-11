@@ -87,7 +87,7 @@ function WoodenFurniture() {
         }
 
         const formData = new FormData();
-        const photo = activeCardInfo?.image?.fileInput?.files[0];
+        const photo = activeCardInfo.image.fileInput.files[0];
         formData.append("chat_id", "-1002294640036");
         formData.append("photo", photo);
         formData.append("caption", 
@@ -97,9 +97,10 @@ function WoodenFurniture() {
           📱Телефон: +${phoneValue}
           `
         ); 
+        console.log("photo url:" + photo)
 
         toast.promise(
-              http.post('/sendPhoto', FormData),
+              http.post('/sendPhoto', formData),
                 // {
                 //   chat_id: "660100854",
                 //   chat_id: "-1002294640036",
