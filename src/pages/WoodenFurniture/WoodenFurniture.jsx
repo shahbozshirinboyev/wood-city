@@ -211,7 +211,7 @@ function WoodenFurniture() {
             {/* Card elements Start */}
             <>
             <div className="p-3">
-              <img onClick={() => document.getElementById(`info_${card.id}`).showModal()} src={card.image} alt={card.title} className="cursor-pointer object-cover object-center h-[250px] w-full rounded-[10px]"/>
+              <img onClick={() => { document.getElementById(`info_${card.id}`).showModal(); setActiveCardInfo({card}); }} src={card.image} alt={card.title} className="cursor-pointer object-cover object-center h-[250px] w-full rounded-[10px]"/>
             </div>
 
             <div className="p-3"> 
