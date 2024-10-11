@@ -1,17 +1,23 @@
 import { useState, useRef, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+// react-hot-toast
+import { Toaster, toast } from "react-hot-toast";
+// react phone input 2
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+// data
 import { woodenHouse } from "../../data/data";
+// http
+import http from "../../services/http";
 
 function WoodenHouses() {
+
   const [activeMenuBtn, setActiveMenuBtn] = useState(0);
   const tabsListRef = useRef(null);
   const [scrollPos, setScrollPos] = useState(0);
   const [maxScroll, setMaxScroll] = useState(0);
 
-  // scoll menu section START
-  useEffect(() => {
-    console.log(activeMenuBtn);
-  }, [activeMenuBtn]);
-
+  // Scoll Menu Section START
   const activeMenu = (id) => {
     setActiveMenuBtn(id);
   };
@@ -40,27 +46,110 @@ function WoodenHouses() {
   const manageIcons = () => {
     setScrollPos(tabsListRef.current.scrollLeft);
   };
-  // scoll menu section END
+  // Scoll Menu Section END
 
   const getCounts = (activeMenuBtn) => {
     if (activeMenuBtn === 0) {
-      // Barcha counts larni yig'ish
       return woodenHouse
-        .filter((item) => item.counts) // counts bo'lmagan itemlarni filtrlaymiz
+        .filter((item) => item.counts)
         .flatMap((item) => item.counts);
     } else {
-      // Id ga mos keluvchi counts ni olish
-      const category = woodenHouse.find((item) => item.id === activeMenuBtn);
+      const category = woodenHouse.find(
+        (item) => item.id === activeMenuBtn
+      );
       return category ? category.counts : [];
     }
   };
 
+  // Order Modal START
+  const [nameValue, setNameValue] = useState("");
+  const [phoneValue, setPhoneValue] = useState("");
+  const [closeModalId, setCloseModalId] = useState("");
+  const [activeCardInfo, setActiveCardInfo] = useState([]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(activeCardInfo);
+    if (!nameValue) {
+      toast.error("Ismingizni kiriting!");
+      return;
+    }
+    if (!phoneValue) {
+      toast.error("Telefon raqamingizni kiriting!");
+      return;
+    }
+
+    const photo = `${window.location.origin}${activeCardInfo.card.image}`;
+
+    toast.promise(
+      http.post("/sendPhoto", {
+        chat_id: "-1002294640036",
+        photo: photo,
+        caption: ` Запрос отложен:\n\nOrder: ${activeCardInfo.card.title}\n👤Имя: ${nameValue}\n📱Телефон: +${phoneValue}`,
+      }),
+      {
+        loading: "Отправка сообщения...",
+        success: (response) => {
+          closeModal();
+          console.log(response);
+          return <b>Сообщение успешно отправлено!</b>;
+        },
+        error: (error) => {
+          console.log(error);
+          return <b>Не удалось отправить сообщение.</b>;
+        },
+      }
+    );
+  };
+
+  const closeModal = () => {
+    const modal = document.getElementById(closeModalId);
+    modal.close();
+    setNameValue("");
+    setPhoneValue("998");
+  };
+  // Order Modal END
+
+  // Product Info Modal START
+  const [images, setImages] = useState({
+    img1: "",
+    img2: "",
+    img3: "",
+    img4: "",
+  });
+
+  const [activeImg, setActiveImage] = useState(images.img1);
+
   useEffect(() => {
-    console.log(getCounts(activeMenuBtn));
-  }, [activeMenuBtn]);
+    if (activeCardInfo?.card) {
+      setImages({
+        img1: activeCardInfo.card.image ? activeCardInfo.card.image : "",
+        img2: activeCardInfo.card.image1 ? activeCardInfo.card.image1 : "",
+        img3: activeCardInfo.card.image2 ? activeCardInfo.card.image2 : "",
+        img4: activeCardInfo.card.image3 ? activeCardInfo.card.image3 : "",
+        img5: activeCardInfo.card.plan2d ? activeCardInfo.card.plan2d : "",
+      });
+    }
+  }, [activeCardInfo]);
+
+  useEffect(() => {
+    setActiveImage(images.img1);
+  }, [images.img1]);
+
+  const [animate, setAnimate] = useState(false);
+
+  const changeImage = (newImg) => {
+    setAnimate(true);
+    setTimeout(() => {
+      setActiveImage(newImg);
+      setAnimate(false);
+    }, 200);
+  };
+  // Product Info Modal END
 
   return (
-    <section className="container">
+    <section className="container mb-[25px] text-[#160A06]">
+      
       <div className="grid grid-cols-1 md:grid-cols-2 mt-[50px] gap-8">
         <div className="">
           <img
@@ -103,11 +192,10 @@ function WoodenHouses() {
       </div>
 
       <div className="mt-[25px]">
-        <p className="font-bold text-[32px] text-center my-[25px]">
-          Choose the wooden Home you need
-        </p>
+        <p className="font-bold text-[32px] text-center my-[25px]">Choose the wooden Home you need</p>
       </div>
 
+      {/* Scroll Navigation links START */}
       <>
         <div className="relative mx-auto overflow-hidden rounded-md shadow-md bg-base-200">
           <div
@@ -119,7 +207,6 @@ function WoodenHouses() {
               className="bi bi-chevron-left text-black text-[14px] cursor-pointer hover:bg-gray-300 hover:text-black flex justify-center items-center w-[40px] h-[40px] rounded-full transition-all duration-200"
             ></i>
           </div>
-
           <ul
             ref={tabsListRef}
             onScroll={manageIcons}
@@ -153,19 +240,26 @@ function WoodenHouses() {
           </div>
         </div>
       </>
+      {/* Scroll Navigation links END */}
 
+      {/* Cards START */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-[50px]">
         {getCounts(activeMenuBtn).map((card) => (
-          <div className="border rounded-2xl grid grid-cols-1 px-4 py-4">
+          <div key={card.title} className="border rounded-2xl grid grid-cols-1 px-4 py-4">
+
+            {/* Card elements Start */}
+            <>
             <div className="relative">
               <img
+                onClick={() => { document.getElementById(`info_${card.id}`).showModal(); setActiveCardInfo({card}); }}
                 className="h-[350px] w-full object-cover rounded-2xl"
                 src="https://img.freepik.com/free-photo/3d-rendering-wooden-house_23-2151264506.jpg"
                 alt=""
               />
               <img
+                // onClick={() => { document.getElementById(`info_${card.id}`).showModal(); setActiveCardInfo({card}); }}
                 className="border rounded-2xl cursor-pointer absolute top-3 left-3 w-[160px] hover:w-full hover:h-[350px] hover:top-0 hover:left-0 object-cover transition-all duration-300"
-                src="https://optim.tildacdn.com/stor6532-6434-4933-b537-613962363530/-/format/webp/99134150.jpg"
+                src={card.plan2d}
                 alt=""
               />
             </div>
@@ -178,12 +272,236 @@ function WoodenHouses() {
             </div>
 
             <div className="grid grid-cols-2">
-              <button className="btn mr-2">Оставить заявку</button>
-              <button className="btn ml-2">Подробнее →</button>
+              <button className="btn mr-2" onClick={() => { document.getElementById(`order_${card.id}`).showModal(); setActiveCardInfo({card}); setCloseModalId(`order_${card.id}`); }}>
+                Оставить заявку
+              </button>
+              <button className="btn ml-2" onClick={() => { document.getElementById(`info_${card.id}`).showModal(); setActiveCardInfo({card}); }}>
+                Подробнее →
+              </button>
             </div>
+            </>
+            {/* Card elements Start */}
+
+            {/* Modals START */}
+
+            {/* Order Modal Start */}
+            <dialog id={`order_${card.id}`} className="modal">
+              <Toaster />
+              <div className="modal-box w-11/12 max-w-xl p-0 ">
+                {/* Modal header Start */}
+                <form method="dialog" className="border-b-[2px] border-base-200 h-[60px] grid grid-cols-2 items-center px-[24px] bg-custom-green-10">
+                  <span className="text-custom-green-dark font-bold">Оставить заявку</span>
+                  <div className="text-end">
+                    <button className="btn btn-sm border-0 btn-circle text-custom-green-dark bg-custom-green-10 hover:bg-custom-green-30">{" "}✕{" "}</button>
+                  </div>
+                </form>
+                {/* Modal header End */}
+
+                <div className="p-4">
+                  <div className="px-6 mb-4">
+
+                    <p className="font-bold">Ваш заказ:</p>
+
+                    <div className="flex gap-8 p-2">
+
+                      <div> <img className="w-[100px] h-[100px] object-cover" src={card.image} alt="" /> </div>
+
+                      <div className="">
+                        <p className="font-semibold text-[20px]">{card.title}</p>
+                        <p className="font-bold text-[16px] opacity-70">$ {card.price}</p>
+                        <p>Размер: {card.size} см</p>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  {/* <p className="text-center py-4 font-bold text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px]">Заказать обратный звонок</p> */}
+
+                  <form action="" className="px-6" onSubmit={handleSubmit}>
+
+                    <label className="form-control w-full mb-2">
+                      <div className="label">
+                        <span className="label-text">Ваше имя:</span>
+                        {/* <span className="label-text-alt">Top Right label</span> */}
+                      </div>
+                      <input
+                        value={nameValue}
+                        onChange={(e) => setNameValue(e.target.value)}
+                        type="text"
+                        // required
+                        placeholder="Ваше имя"
+                        className="input input-bordered w-full"
+                        style={{ borderRadius: ".25rem", height: "45px", fontSize: "16px", }}
+                      />
+                    </label>
+
+                    <label className="form-control w-full mb-2">
+                      <div className="label">
+                        <span className="label-text">Ваше номер телефона:</span>
+                        {/* <span className="label-text-alt">Top Right label</span> */}
+                      </div>
+                      <PhoneInput
+                        value={phoneValue} 
+                        onChange={setPhoneValue}
+                        country={"uz"}
+                        onlyCountries={["uz", "kz", "kg", "tj", "tm"]}
+                        masks={{
+                          uz: "(..) ...-..-..", // O'zbekiston
+                          kz: "(...) ...-..-..", // Qozog'iston
+                          kg: "(..) ...-..-..", // Qirg'iziston
+                          tj: "(..) ...-..-..", // Tojikiston
+                          tm: "(..) ..-..-..", // Turkmaniston
+                        }}
+                        inputClass="input input-bordered w-full"
+                        inputStyle={{ width: "100%", height: "45px", border: "1px solid #ccc", borderRadius: ".25rem", transition: "border-color 0.2s", fontSize: "16px",}}
+                        inputProps={{ name: "phone", required: true }}
+                      />
+                    </label>
+
+                    <p className="py-2 text-start text-[14px] lg:text-[16px]">Специалист компании свяжется с вами в ближайшее время, а на вашу почту будет отправлена презентация проекта для ознакомления</p>
+
+                    <button className="btn my-4 w-full">Отправить</button>
+
+                  </form>
+                </div>
+              </div>
+              {/* Outside close section start */}
+              <form method="dialog" className="modal-backdrop"><button>close</button></form>
+              {/* Outside close section end */}
+            </dialog>
+            {/* Order Modal End */}
+
+            {/* Information Modal Start */}
+            <dialog id={`info_${card.id}`} className="modal">
+              <div className="modal-box w-11/12 max-w-5xl p-0">
+                {/* Modal header Start */}
+                <form method="dialog" className="border-b-[2px] border-base-200 h-[60px] grid grid-cols-2 items-center px-[24px] bg-custom-green-10">
+                  <span className="text-custom-green-dark font-bold">Подробнее →</span>
+                  <div className="text-end">
+                    <button className="btn btn-sm border-0 btn-circle text-custom-green-dark bg-custom-green-10 hover:bg-custom-green-30">{" "}✕{" "}</button>
+                  </div>
+                </form>
+                {/* Modal header End */}
+
+                {/* <FurnitureProductInfo  /> birinchi component yasab ko'rdim */}
+                <>
+                  <div className="flex flex-col justify-between lg:flex-row gap-6 p-6">
+
+                    <div className="flex flex-col gap-6 lg:w-2/4">
+                      <img
+                        src={activeImg}
+                        alt="Active"
+                        className={`w-full h-full aspect-square object-cover rounded-xl transition-all duration-200 border border-base-200 ${
+                          animate
+                            ? "-translate-x-[5%] opacity-0"
+                            : "-translate-x-0 opacity-100"
+                        }`}
+                      />
+
+                      <div className="flex flex-row justify-between h-26 border-[2px] border-base-200 p-2 rounded-lg">
+                        <img
+                          src={images.img1}
+                          alt=""
+                          className="w-20 h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          onClick={() => changeImage(images.img1)}
+                        />
+                        <img
+                          src={images.img2}
+                          alt=""
+                          className="w-20 h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          onClick={() => changeImage(images.img2)}
+                        />
+                        <img
+                          src={images.img3}
+                          alt=""
+                          className="w-20 h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          onClick={() => changeImage(images.img3)}
+                        />
+                        <img
+                          src={images.img4}
+                          alt=""
+                          className="w-20 h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          onClick={() => changeImage(images.img4)}
+                        />
+                        <img
+                          src={images.img5}
+                          alt=""
+                          className="w-20 h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          onClick={() => changeImage(images.img5)}
+                        />
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col gap-4 lg:w-2/4 h-full">
+
+                      <div>
+                        <p className="text-3xl py-4">«Модерн» 30-2</p>
+                        <p className="text-[18px]">DP-Module</p>
+                        <p className="text-[16px]">SKU: mod30-2_ekb</p>
+                      </div>
+
+                      <div>
+                        <p className="font-bold text-xl">1 405 000р.</p>
+                      </div>
+
+                      <div>
+                        <NavLink to="tel:+998934563421" className="btn mr-4">Прямой звонок</NavLink>
+                        <button onClick={() => { document.getElementById(`order_${card.id}`).showModal(); setCloseModalId(`order_${card.id}`); setActiveCardInfo({ card }); }} 
+                                className="btn">
+                          Оставить заявку
+                        </button>
+                      </div>
+
+                      <div>
+                        <ul className="mt-5">
+                          <li>
+                            <span className="font-semibold">Проект:</span>{" "}
+                            <span>Модерн</span>
+                          </li>
+                          <li>
+                            <span className="font-semibold">Тип проекта:</span>{" "}
+                            <span>Дом</span>
+                          </li>
+                          <li>
+                            <span className="font-semibold">Проект:</span>{" "}
+                            <span>30м²</span>
+                          </li>
+                          <li>
+                            <span className="font-semibold">
+                              Количество модулей:
+                            </span>{" "}
+                            <span>2</span>
+                          </li>
+                          <li>
+                            <span className="font-semibold">LxWxH:</span>{" "}
+                            <span>600x500x270 sm</span>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <p>
+                          Продумана каждая деталь: просторная гостиная,
+                          совмещенная со спальней, полноценная кухонная зона с
+                          обеденным столом и санузел.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              </div>
+              {/* Outside close section start */}
+              <form method="dialog" className="modal-backdrop"><button>close</button></form>
+              {/* Outside close section end */}
+            </dialog>
+            {/* Information Modal End */}
+
+            {/* Modals END */}
           </div>
         ))}
       </div>
+      {/* Cards END */}
     </section>
   );
 }
