@@ -40,7 +40,7 @@ export const woodenFurniture = [
     counts: [
       {
         id: uuidv4(),
-        image: "./furniture/doors/1.jpg",
+        image: "/furniture/doors/1.jpg",
         title: "Дверь под старину Добрыня",
         price: "154",
         material: "Сосна",
@@ -50,7 +50,7 @@ export const woodenFurniture = [
       },
       {
         id: uuidv4(),
-        image: "./furniture/2.jpg",
+        image: "/furniture/2.jpg",
         title: "2-eshik",
         price: "100",
         date: "29392838",
@@ -64,14 +64,14 @@ export const woodenFurniture = [
     counts: [
       {
         id: uuidv4(),
-        image: "./furniture/3.jpg",
+        image: "/furniture/3.jpg",
         title: "1-Диваны",
         price: "100",
         date: "29392838",
       },
       {
         id: uuidv4(),
-        image: "./furniture/4.jpg",
+        image: "/furniture/4.jpg",
         title: "2-Диваны",
         price: "100",
         date: "29392838",
@@ -85,14 +85,14 @@ export const woodenFurniture = [
     counts: [
       {
         id: uuidv4(),
-        image: "./furniture/5.jpg",
+        image: "/furniture/5.jpg",
         title: "1-Светильники",
         price: "100",
         date: "29392838",
       },
       {
         id: uuidv4(),
-        image: "./furniture/6.jpg",
+        image: "/furniture/6.jpg",
         title: "2-Светильники",
         price: "100",
         date: "29392838",
@@ -106,14 +106,14 @@ export const woodenFurniture = [
     counts: [
       {
         id: uuidv4(),
-        image: "./furniture/7.jpg",
+        image: "/furniture/7.jpg",
         title: "1-Стулья",
         price: "100",
         date: "29392838",
       },
       {
         id: uuidv4(),
-        image: "./furniture/8.jpg",
+        image: "/furniture/8.jpg",
         title: "2-Стулья",
         price: "100",
         date: "29392838",
@@ -127,14 +127,14 @@ export const woodenFurniture = [
     counts: [
       {
         id: uuidv4(),
-        image: "./furniture/9.jpg",
+        image: "/furniture/9.jpg",
         title: "1-Эпоксидные",
         price: "100",
         date: "29392838",
       },
       {
         id: uuidv4(),
-        image: "./furniture/10.jpg",
+        image: "/furniture/10.jpg",
         title: "2-Эпоксидные",
         price: "100",
         date: "29392838",
@@ -148,14 +148,14 @@ export const woodenFurniture = [
     counts: [
       {
         id: uuidv4(),
-        image: "./furniture/11.jpg",
+        image: "/furniture/11.jpg",
         title: "1-Декоративные",
         price: "100",
         date: "29392838",
       },
       {
         id: uuidv4(),
-        image: "./furniture/12.jpg",
+        image: "/furniture/12.jpg",
         title: "2-Декоративные",
         price: "100",
         date: "29392838",
@@ -169,14 +169,14 @@ export const woodenFurniture = [
     counts: [
       {
         id: uuidv4(),
-        image: "./furniture/13.jpg",
+        image: "/furniture/13.jpg",
         title: "1-Кухни",
         price: "100",
         date: "29392838",
       },
       {
         id: uuidv4(),
-        image: "./furniture/14.jpg",
+        image: "/furniture/14.jpg",
         title: "2-Кухни",
         price: "100",
         date: "29392838",
@@ -190,14 +190,14 @@ export const woodenFurniture = [
     counts: [
       {
         id: uuidv4(),
-        image: "./furniture/15.jpg",
+        image: "/furniture/15.jpg",
         title: "1-Комоды",
         price: "100",
         date: "29392838",
       },
       {
         id: uuidv4(),
-        image: "./furniture/16.jpg",
+        image: "/furniture/16.jpg",
         title: "2-Комоды",
         price: "100",
         date: "29392838",
@@ -218,14 +218,14 @@ export const woodenHouse = [
     counts: [
       {
         id: uuidv4(),
-        image: "./furniture/1.jpg",
+        image: "/furniture/1.jpg",
         title: "1-eshik",
         price: "100",
         date: "29392838",
       },
       {
         id: uuidv4(),
-        image: "./furniture/2.jpg",
+        image: "/furniture/2.jpg",
         title: "2-eshik",
         price: "100",
         date: "29392838",
@@ -239,14 +239,14 @@ export const woodenHouse = [
     counts: [
       {
         id: uuidv4(),
-        image: "./furniture/3.jpg",
+        image: "/furniture/3.jpg",
         title: "1-Диваны",
         price: "100",
         date: "29392838",
       },
       {
         id: uuidv4(),
-        image: "./furniture/4.jpg",
+        image: "/furniture/4.jpg",
         title: "2-Диваны",
         price: "100",
         date: "29392838",
@@ -260,14 +260,14 @@ export const woodenHouse = [
     counts: [
       {
         id: uuidv4(),
-        image: "./furniture/5.jpg",
+        image: "/furniture/5.jpg",
         title: "1-Светильники",
         price: "100",
         date: "29392838",
       },
       {
         id: uuidv4(),
-        image: "./furniture/6.jpg",
+        image: "/furniture/6.jpg",
         title: "2-Светильники",
         price: "100",
         date: "29392838",
@@ -281,14 +281,14 @@ export const woodenHouse = [
     counts: [
       {
         id: uuidv4(),
-        image: "./furniture/7.jpg",
+        image: "/furniture/7.jpg",
         title: "1-Стулья",
         price: "100",
         date: "29392838",
       },
       {
         id: uuidv4(),
-        image: "./furniture/8.jpg",
+        image: "/furniture/8.jpg",
         title: "2-Стулья",
         price: "100",
         date: "29392838",
@@ -302,14 +302,14 @@ export const woodenHouse = [
     counts: [
       {
         id: uuidv4(),
-        image: "./furniture/9.jpg",
+        image: "/furniture/9.jpg",
         title: "1-Эпоксидные",
         price: "100",
         date: "29392838",
       },
       {
         id: uuidv4(),
-        image: "./furniture/10.jpg",
+        image: "/furniture/10.jpg",
         title: "2-Эпоксидные",
         price: "100",
         date: "29392838",
@@ -323,14 +323,14 @@ export const woodenHouse = [
     counts: [
       {
         id: uuidv4(),
-        image: "./furniture/11.jpg",
+        image: "/furniture/11.jpg",
         title: "1-Декоративные",
         price: "100",
         date: "29392838",
       },
       {
         id: uuidv4(),
-        image: "./furniture/12.jpg",
+        image: "/furniture/12.jpg",
         title: "2-Декоративные",
         price: "100",
         date: "29392838",
@@ -344,14 +344,14 @@ export const woodenHouse = [
     counts: [
       {
         id: uuidv4(),
-        image: "./furniture/13.jpg",
+        image: "/furniture/13.jpg",
         title: "1-Кухни",
         price: "100",
         date: "29392838",
       },
       {
         id: uuidv4(),
-        image: "./furniture/14.jpg",
+        image: "/furniture/14.jpg",
         title: "2-Кухни",
         price: "100",
         date: "29392838",
@@ -365,14 +365,14 @@ export const woodenHouse = [
     counts: [
       {
         id: uuidv4(),
-        image: "./furniture/15.jpg",
+        image: "/furniture/15.jpg",
         title: "1-Комоды",
         price: "100",
         date: "29392838",
       },
       {
         id: uuidv4(),
-        image: "./furniture/16.jpg",
+        image: "/furniture/16.jpg",
         title: "2-Комоды",
         price: "100",
         date: "29392838",
