@@ -87,17 +87,17 @@ function WoodenFurniture() {
         }
 
         const formData = new FormData();
-        const photo = activeCardInfo.image.fileInput.files[0];
+        const photo = `${window.location.origin}${activeCardInfo.card.image}`;
         formData.append("chat_id", "-1002294640036");
         formData.append("photo", photo);
         formData.append("caption", 
           `
-          Order: ${activeCardInfo.title}
+          Order: ${activeCardInfo.card.title}
           👤Имя: ${nameValue}
           📱Телефон: +${phoneValue}
           `
         ); 
-        console.log("photo url:" + photo)
+        console.log("photo url: " + photo)
 
         toast.promise(
               http.post('/sendPhoto', formData),
