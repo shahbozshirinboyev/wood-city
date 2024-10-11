@@ -358,25 +358,25 @@ function WoodenFurniture() {
                         <img
                           src={images.img1}
                           alt=""
-                          className="w-24 h-24 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          className="w-16 h-16 md:w-20 md:h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
                           onClick={() => changeImage(images.img1)}
                         />
                         <img
                           src={images.img2}
                           alt=""
-                          className="w-24 h-24 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          className="w-16 h-16 md:w-20 md:h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
                           onClick={() => changeImage(images.img2)}
                         />
                         <img
                           src={images.img3}
                           alt=""
-                          className="w-24 h-24 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          className="w-16 h-16 md:w-20 md:h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
                           onClick={() => changeImage(images.img3)}
                         />
                         <img
                           src={images.img4}
                           alt=""
-                          className="w-24 h-24 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          className="w-16 h-16 md:w-20 md:h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
                           onClick={() => changeImage(images.img4)}
                         />
                       </div>

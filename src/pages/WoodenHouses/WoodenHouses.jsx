@@ -378,6 +378,7 @@ function WoodenHouses() {
 
             {/* Information Modal Start */}
             <dialog id={`info_${card.id}`} className="modal">
+              <Toaster />
               <div className="modal-box w-11/12 max-w-5xl p-0">
                 {/* Modal header Start */}
                 <form method="dialog" className="border-b-[2px] border-base-200 h-[60px] grid grid-cols-2 items-center px-[24px] bg-custom-green-10">
@@ -407,31 +408,31 @@ function WoodenHouses() {
                         <img
                           src={images.img1}
                           alt=""
-                          className="w-20 h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          className="w-16 h-16 md:w-20 md:h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
                           onClick={() => changeImage(images.img1)}
                         />
                         <img
                           src={images.img2}
                           alt=""
-                          className="w-20 h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          className="w-16 h-16 md:w-20 md:h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
                           onClick={() => changeImage(images.img2)}
                         />
                         <img
                           src={images.img3}
                           alt=""
-                          className="w-20 h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          className="w-16 h-16 md:w-20 md:h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
                           onClick={() => changeImage(images.img3)}
                         />
                         <img
                           src={images.img4}
                           alt=""
-                          className="w-20 h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          className="w-16 h-16 md:w-20 md:h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
                           onClick={() => changeImage(images.img4)}
                         />
                         <img
                           src={images.img5}
                           alt=""
-                          className="w-20 h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          className="w-16 h-16 md:w-20 md:h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
                           onClick={() => changeImage(images.img5)}
                         />
                       </div>
