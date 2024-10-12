@@ -11,11 +11,13 @@ function MobileMenu({ open, setOpen }) {
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -100 }}
-            transition={{ duration: 0.3, delay: 0.3 }}
-            className="absolute top-25 left-0 w-full h-screen z-20"
-            // onClick={() => { setOpen(false); }}
+            transition={{ duration: 0.2, delay: 0.2 }}
+            className="absolute top-25 left-0 w-full h-screen z-20 bg-black bg-opacity-40"
+            onClick={() => { setOpen(false); }}
           >
-            <div className="bg-[#160A06] z-[22] text-white py-10 m-2 rounded-xl">
+            <div 
+            onClick={ (e) => { e.stopPropagation(); } }
+            className="bg-[#160A06] z-[22323] text-white py-10 m-2 rounded-xl">
               <ul className="text-start px-10">
                 {NavbarMenu.map((item) => {
                   return (
@@ -47,7 +49,7 @@ function MobileMenu({ open, setOpen }) {
                   <NavLink to="tel:+998934563421" className="border border-[#160A06] hover:border-white px-2 py-1 rounded-[5px]">
                   +998 (45) 342 45 22
                 </NavLink>
-                <hr className="block h-[5px] border-[#160A06]" />
+                <span className="block h-[5px] border-[#160A06]"></span>
                 <NavLink to="tel:+998934563421" className="border border-[#160A06] hover:border-white px-2 py-1 rounded-[5px]">
                   +998 (12) 345 45 52
                 </NavLink>
@@ -75,8 +77,6 @@ function MobileMenu({ open, setOpen }) {
                   </button>
                 </div>
               </nav>
-
-
             </div>
           </motion.div>
         )}

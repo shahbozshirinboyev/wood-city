@@ -194,7 +194,6 @@ function HomePage() {
 
             <div className="py-3 pt-3 md:pt-0">
               <h2 className="card-title">Для Гос заказов ЕИС</h2>
-              <p>
                 <ul className="list-disc ml-[25px] py-4">
                   <li className="mb-4">
                     Раздел "Для Гос заказов ЕИС" предлагает эффективную платформу для оформления и мониторинга государственных заказов.
@@ -206,7 +205,6 @@ function HomePage() {
                     Раздел "Для Гос заказов ЕИС" обеспечивает удобный и быстрый процесс работы с государственными заказами для государственного сектора.
                   </li>
                 </ul>
-              </p>
             </div>
 
             <div className="card-actions justify-center items-end h-full grid grid-cols-2 gap-4">
