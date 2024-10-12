@@ -12,15 +12,8 @@ function Footer() {
         <div className="py-[25px] grid grid-cols-2 lg:grid-cols-4 px-2 md:px-3 lg:px-10 gap-4">
           
           <aside>
-            <img
-              src={logo}
-              alt=""
-              className="w-[140px] lg:w-[180px]  my-[25px] lg:my-[35px]"
-            />
-            <p>
-              Wood City "MCHJ"
-              <br />с 2020 года
-            </p>
+            <img src={logo} alt="" className="w-[140px] lg:w-[180px]  my-[25px] lg:my-[35px]" />
+            <p>Wood City "ООО" <br />с 2020 года</p>
           </aside>
 
           <nav className="grid grid-cols-1">
@@ -60,11 +53,11 @@ function Footer() {
           </nav>
 
           <nav className="grid grid-cols-1 mt-10 lg:mt-0">
+
             <h6 className="footer-title">Контакты</h6>
-            <p>
-              <i className="bi bi-geo-alt mr-[10px]"></i>
-              Tashkent, Chirchiq sh.
-            </p>
+
+            <p> <i className="bi bi-geo-alt mr-[10px]"></i>Ташкент, г. Чирчик </p>
+
             <div className="flex mt-2">
               <i className="bi bi-telephone mr-[10px]"></i>
               <p>
@@ -77,6 +70,7 @@ function Footer() {
                 </NavLink>
               </p>
             </div>
+
             <div className="flex items-center justify-start text-[20px] my-4">
               <NavLink to="">
                 <i className="bi bi-telegram mr-[10px] hover:text-sky-500 transition-all duration-200"></i>
@@ -91,6 +85,7 @@ function Footer() {
                 <i className="bi bi-tiktok mx-[10px] hover:text-[#FE2C55] transition-all duration-200"></i>
               </NavLink>
             </div>
+
             <div className="mb-[25px]">
               <button 
                   onClick={() => document.getElementById("LeaveRequest").showModal()}
@@ -98,6 +93,7 @@ function Footer() {
                 Оставить заявку
               </button>
             </div>
+
           </nav>
 
         </div>
