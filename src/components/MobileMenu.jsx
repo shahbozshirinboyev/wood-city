@@ -22,9 +22,7 @@ function MobileMenu({ open, setOpen }) {
                     <li key={item.id} className="text-[14px] py-1">
                       <NavLink
                         to={item.link}
-                        onClick={() => {
-                          setOpen(false);
-                        }}
+                        onClick={() => { setOpen(false); }}
                         className={({ isActive }) =>
                           `inline-block py-1 px-2 font-semibold whitespace-nowrap transition-all duration-300 ${
                             isActive
@@ -42,10 +40,7 @@ function MobileMenu({ open, setOpen }) {
 
               <nav className="grid grid-cols-1 mt-10 px-10">
                 <h6 className="footer-title">Контакты</h6>
-                <p>
-                  <i className="bi bi-geo-alt mr-[10px]"></i>
-                    Tashkent, Chirchiq sh.
-                </p>
+                <p><i className="bi bi-geo-alt mr-[10px]"></i>Ташкент, г. Чирчик</p>
                 <div className="flex mt-2">
                   <i className="bi bi-telephone mr-[10px]"></i>
                   <p>
@@ -69,7 +64,7 @@ function MobileMenu({ open, setOpen }) {
                     <i className="bi bi-instagram mx-[10px] hover:text-pink-500 transition-all duration-200"></i>
                   </NavLink>
                   <NavLink to="">
-                    <i className="bi bi-twitter-x mx-[10px] hover:text-white transition-all duration-200"></i>
+                    <i className="bi bi-tiktok mx-[10px] hover:text-[#FE2C55] transition-all duration-200"></i>
                   </NavLink>
                 </div>
                 <div>

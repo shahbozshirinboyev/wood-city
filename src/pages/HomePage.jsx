@@ -173,29 +173,34 @@ function HomePage() {
           Для Гос заказов ЕИС
         </p>
 
-        <div className=" grid grid-cols-1 md:grid-cols-2 card card-side bg-base-100 border rounded-none">
+        <div className=" grid grid-cols-1 md:grid-cols-2 card card-side gap-0 md:gap-8  bg-base-100 border p-3 rounded-[20px]">
 
           <figure>
-            <div className="carousel carousel-vertical h-96">
-              <div className="carousel-item h-full w-[550px]">
-                <img src="./state_orders/1.jpg" className="object-cover" />
+            <div className="carousel carousel-vertical h-96 rounded-[20px]">
+              <div className="carousel-item h-full w-full">
+                <img src="./state_orders/1.jpg" className="object-cover w-full h-full" />
               </div>
-              <div className="carousel-item h-full w-[550px]">
-                <img src="./state_orders/2.jpg" className="object-cover" />
+              <div className="carousel-item h-full w-full">
+                <img src="./state_orders/2.jpg" className="object-cover w-full h-full" />
               </div>
-              <div className="carousel-item h-full w-[550px]">
-                <img src="./state_orders/3.jpg" className="object-cover" />
+              <div className="carousel-item h-full w-full">
+                <img src="./state_orders/3.jpg" className="object-cover w-full h-full" />
               </div>
             </div>
           </figure>
 
-          <div className="card-body">
-            <h2 className="card-title">New movie is released!</h2>
-            <p>Click the button to watch on Jetflix app.</p>
-            <div className="card-actions justify-center md:justify-end ">
-              <button className="btn"><i className="bi bi-card-list"></i> Оставить заявку</button>
-              <button className="btn"><i className="bi bi-telephone"></i> +998 (87) 456 73 23</button>
+          <div className="card-body py-0 px-0 bt">
+
+            <div className="py-5">
+              <h2 className="card-title">New movie is released!</h2>
+              <p>Click the button to watch on Jetflix app.</p>
             </div>
+
+            <div className="card-actions justify-center md:justify-end grid grid-cols-2 gap-4">
+              <button className="btn whitespace-nowrap text-[14px] md:text-[12px] lg:text-[14px]"><i className="bi bi-card-list"></i>Оставить заявку</button>
+              <button className="btn whitespace-nowrap text-[14px] md:text-[12px] lg:text-[14px]"><i className="bi bi-telephone"></i>+998 (87) 456 73 23</button>
+            </div>
+
           </div>
 
         </div>

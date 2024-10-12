@@ -88,7 +88,7 @@ function Footer() {
                 <i className="bi bi-instagram mx-[10px] hover:text-pink-500 transition-all duration-200"></i>
               </NavLink>
               <NavLink to="">
-                <i className="bi bi-twitter-x mx-[10px] hover:text-white transition-all duration-200"></i>
+                <i className="bi bi-tiktok mx-[10px] hover:text-[#FE2C55] transition-all duration-200"></i>
               </NavLink>
             </div>
             <div className="mb-[25px]">
