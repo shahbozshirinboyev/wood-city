@@ -68,8 +68,8 @@ function Footer() {
             <div className="flex mt-2">
               <i className="bi bi-telephone mr-[10px]"></i>
               <p>
-                <NavLink to="tel:+998934563421" className="border border-[#160A06] hover:border-white px-2 py-1 rounded-[5px]">
-                  +998 (45) 342 45 22
+                <NavLink to="tel:+998770086563" className="border border-[#160A06] hover:border-white px-2 py-1 rounded-[5px]">
+                  +998 (77) 008 65 63
                 </NavLink>
                 <br className="block h-[5px] border-[#160A06]" />
                 <NavLink to="tel:+998934563421" className="border border-[#160A06] hover:border-white px-2 py-1 rounded-[5px]">

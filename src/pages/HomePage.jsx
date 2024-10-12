@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function HomePage() {
   const arr = [
@@ -173,7 +174,7 @@ function HomePage() {
           Для Гос заказов ЕИС
         </p>
 
-        <div className=" grid grid-cols-1 md:grid-cols-2 card card-side gap-0 md:gap-8  bg-base-100 border p-3 rounded-[20px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 card card-side gap-0 md:gap-8  bg-base-100 border p-3 rounded-[20px]">
 
           <figure>
             <div className="carousel carousel-vertical h-96 rounded-[20px]">
@@ -189,16 +190,39 @@ function HomePage() {
             </div>
           </figure>
 
-          <div className="card-body py-0 px-0 bt">
+          <div className="card-body py-0 px-0">
 
-            <div className="py-5">
-              <h2 className="card-title">New movie is released!</h2>
-              <p>Click the button to watch on Jetflix app.</p>
+            <div className="py-3 pt-3 md:pt-0">
+              <h2 className="card-title">Для Гос заказов ЕИС</h2>
+              <p>
+                <ul className="list-disc ml-[25px] py-4">
+                  <li className="mb-4">
+                    Раздел "Для Гос заказов ЕИС" предлагает эффективную платформу для оформления и мониторинга государственных заказов.
+                  </li>
+                  <li className="mb-4">
+                    Через этот раздел организации могут управлять своими госзакупками и отслеживать документы в системе ЕИС.
+                  </li>
+                  <li>
+                    Раздел "Для Гос заказов ЕИС" обеспечивает удобный и быстрый процесс работы с государственными заказами для государственного сектора.
+                  </li>
+                </ul>
+              </p>
             </div>
 
-            <div className="card-actions justify-center md:justify-end grid grid-cols-2 gap-4">
-              <button className="btn whitespace-nowrap text-[14px] md:text-[12px] lg:text-[14px]"><i className="bi bi-card-list"></i>Оставить заявку</button>
-              <button className="btn whitespace-nowrap text-[14px] md:text-[12px] lg:text-[14px]"><i className="bi bi-telephone"></i>+998 (87) 456 73 23</button>
+            <div className="card-actions justify-center items-end h-full grid grid-cols-2 gap-4">
+
+              <button 
+                onClick={() => document.getElementById("LeaveRequest").showModal()}
+                className="btn whitespace-nowrap text-[14px] md:text-[12px] lg:text-[14px]">
+                  <i className="bi bi-card-list"></i>Оставить заявку
+              </button>
+
+              <NavLink 
+                to="tel:+998770086563"
+                className="btn whitespace-nowrap text-[14px] md:text-[12px] lg:text-[14px]">
+                  <i className="bi bi-telephone"></i>+998 (77) 008 65 63
+              </NavLink>
+
             </div>
 
           </div>
