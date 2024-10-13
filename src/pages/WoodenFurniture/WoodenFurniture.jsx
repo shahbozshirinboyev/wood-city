@@ -332,6 +332,7 @@ function WoodenFurniture() {
 
             {/* Information Modal Start */}
             <dialog id={`info_${card.id}`} className="modal">
+              <Toaster />
               <div className="modal-box w-11/12 max-w-5xl p-0">
                 {/* Modal header Start */}
                 <form method="dialog" className="border-b-[2px] border-base-200 h-[60px] grid grid-cols-2 items-center px-[24px] bg-custom-green-10">
