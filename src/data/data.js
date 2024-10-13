@@ -395,38 +395,6 @@ export const woodenFurniture = [
       {
         id: uuidv4(),
 
-        image: "/furniture/cabinets_kitchens/winecellar0.jpg",
-        image1: "/furniture/cabinets_kitchens/winecellar1.jpg",
-        image2: "/furniture/cabinets_kitchens/winecellar2.jpg",
-        image3: "/furniture/cabinets_kitchens/winecellar3.jpg",
-        
-        title: "Винный Погреб",
-        price: "от 19 300 000 сум",
-
-        availability: "Под заказ",
-        material: "Сосна",
-        size: "ДxВxГ: 220x240x45 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
-      },
-      {
-        id: uuidv4(),
-
-        image: "/furniture/cabinets_kitchens/barrelcellar0.jpg",
-        image1: "/no_images.jpg",
-        image2: "/no_images.jpg",
-        image3: "/no_images.jpg",
-        
-        title: "Бочка Погреб",
-        price: "от 7 200 000 сум",
-
-        availability: "Под заказ",
-        material: "Сосна",
-        size: "Диаметр: 80 см, Высота: 90 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
-      },
-      {
-        id: uuidv4(),
-
         image: "/furniture/cabinets_kitchens/esabel0.jpg",
         image1: "/furniture/cabinets_kitchens/esabel1.jpg",
         image2: "/furniture/cabinets_kitchens/esabel2.jpg",
@@ -503,6 +471,214 @@ export const woodenFurniture = [
         material: "Сосна",
         size: "-",
         comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/cabinets_kitchens/taiga0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Кухня Тайга",
+        price: "от 6 200 000 сум пг/м",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "-",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/cabinets_kitchens/winecellar0.jpg",
+        image1: "/furniture/cabinets_kitchens/winecellar1.jpg",
+        image2: "/furniture/cabinets_kitchens/winecellar2.jpg",
+        image3: "/furniture/cabinets_kitchens/winecellar3.jpg",
+        
+        title: "Винный Погреб",
+        price: "от 19 300 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 220x240x45 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/cabinets_kitchens/barrelcellar0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Бочка Погреб",
+        price: "от 7 200 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Диаметр: 80 см, Высота: 90 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/cabinets_kitchens/prince0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Буфет Князь",
+        price: "от 19 800 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 240x220x50 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/cabinets_kitchens/hottabych0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Буфет Хатабич",
+        price: "от 13 700 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 120x220x50 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/cabinets_kitchens/caesar0.jpg",
+        image1: "/furniture/cabinets_kitchens/caesar1.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Буфет Цезарь",
+        price: "от 14 000 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 120x220x50 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/cabinets_kitchens/special0.jpg",
+        image1: "/furniture/cabinets_kitchens/special1.jpg",
+        image2: "/furniture/cabinets_kitchens/special2.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Буфет Особый",
+        price: "от 17 500 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 190x220x50 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/cabinets_kitchens/provence0.jpg",
+        image1: "/furniture/cabinets_kitchens/provence1.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Буфет Прованс",
+        price: "от 17 500 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 150x220x55 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/cabinets_kitchens/furniturehallway0.jpg",
+        image1: "/furniture/cabinets_kitchens/furniturehallway1.jpg",
+        image2: "/furniture/cabinets_kitchens/furniturehallway2.jpg",
+        image3: "/furniture/cabinets_kitchens/furniturehallway3.jpg",
+        
+        title: "Мебель для Прихожей",
+        price: "Договорная",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Возможно изготовление любых размеров.",
+        comment: "Ручная работа, состаренное дерево."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/cabinets_kitchens/hangertantny0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Обувьница вешалка Знатный",
+        price: "от 6 500 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВ: 120x220 см",
+        comment: "Ручная работа, состаренное дерево."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/cabinets_kitchens/guestwardrobe0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Гардероб Гость",
+        price: "от 8 700 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 130x220x50 см",
+        comment: "Ручная работа, состаренное дерево."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/cabinets_kitchens/hangercomfort0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Обувница вешалка Уют",
+        price: "от 7 200 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 130x220x45 см",
+        comment: "Ручная работа, состаренное дерево."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/cabinets_kitchens/hangerhunter0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Обувница вешалка Охотник",
+        price: "от 7 100 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 140x220x45 см",
+        comment: "Ручная работа, состаренное дерево."
       },
     ],
   },
