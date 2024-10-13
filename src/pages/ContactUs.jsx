@@ -1,45 +1,46 @@
+import { NavLink } from "react-router-dom";
+
 function ContactUs() {
   return (
     <section className="container mb-[25px] text-[#160A06]">
       <div className="">
-        <p className="font-bold text-[32px] text-start  my-[25px]">Контакты</p>
+        <p className="font-bold text-[32px] text-center  my-[25px]">Контакты</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="grid grid-cols-2 gap-4">
           <div className="border rounded-[10px] p-3 lg:p-6">
             <i className="bi bi-telephone-forward-fill text-[22px] border p-2 rounded-lg w-[45px] h-[45px] flex justify-center items-center text-forestgreen"></i>
-            <p className="mt-[15px] text-[16px] lg:text-[20px] font-semibold">Phone Call</p>
+            <p className="mt-[15px] text-[16px] lg:text-[20px] font-semibold">Телефонный звонок</p>
             <span className="text-[14px] lg:text-[16px] block mt-1">
               +998 94 005 78 56
             </span>
             <button className="border p-1 rounded-md mt-2 w-[150px] hover:bg-forestgreen font-medium hover:text-white transition-all duration-300 hover:border-forestgreen">
-              Call Phone
+              <NavLink to="tel:+998770086563" className="block w-full h-full" >Позвонить</NavLink>
             </button>
           </div>
 
           <div className="border rounded-[10px] p-3 lg:p-6">
             <i className="bi bi-telegram text-[22px] border p-2 rounded-lg w-[45px] h-[45px] flex justify-center items-center text-sky-500"></i>
             <p className="mt-[15px] text-[16px] lg:text-[20px] font-semibold">
-              Chat to Support
+              Чат для поддержки
             </p>
             <span className="text-[14px] lg:text-[16px] block mt-1">
-              t.me/wood_city
+              t.me/wood_city_uz
             </span>
             <button className="border p-1 rounded-md mt-2 w-[150px] hover:bg-sky-500 font-medium hover:text-white transition-all duration-300 hover:border-sky-500">
-              Open Telegram
+              <NavLink to="tel:+998770086563" className="block w-full h-full" >Телеграм</NavLink>
             </button>
           </div>
 
           <div className="col-span-2 border p-3 lg:p-6 rounded-[10px]">
             <i className="bi bi-geo-alt-fill text-[22px] border p-2 rounded-lg w-[45px] h-[45px] flex justify-center items-center text-red-500"></i>
-            <p className="mt-[15px] text-[20px] font-semibold">Visit Us</p>
+            <p className="mt-[15px] text-[20px] font-semibold">Посетите нас</p>
             <span className="text-[14px] lg:text-[16px] block mt-1">
-              Visit our offices
+              Посетите наши офисы
             </span>
             <p>
-              <span className="italic font-semibold">Address:</span> Uzbekistan,
-              Tashkent vil. Chirchiq shahar 10-mavze, Wood City MCHJ
+              <span className="font-semibold">Адрес: </span>г. Чирчик, ул. Амира Темура, 68А.
             </p>
           </div>
         </div>

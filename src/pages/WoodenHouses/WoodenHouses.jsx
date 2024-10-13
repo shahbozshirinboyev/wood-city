@@ -154,39 +154,59 @@ function WoodenHouses() {
   return (
     <section className="container mb-[25px] text-[#160A06]">
       
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-[50px] gap-8">
-        <div className="">
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-[25px] gap-8 p-5">
+        <div>
           <img
-            className="w-[300px] mx-auto md:ml-0"
+            className="w-[200px] md:w-[220px] lg:w-[280px] xl:w-[320px] mx-auto md:ml-0"
             src="./logo/wood_city_black.png"
             alt=""
           />
 
-          <p className="font-bold text-[30px] text-center md:text-start md:text-[60px] mt-[25px]">
+          <p className="font-bold text-[30px] md:text-[25px] xl:text-[30px] text-center md:text-start mt-[25px]">
             Готовые модульные дома и бани
           </p>
 
-          <p className="text-[25px] text-center md:text-start md:text-[30px] mt-[25px] ">
-            Загородная жизнь с комфортом{" "}
-            <span className="font-bold">от 518 000 рублей</span> с установкой за
-            1 день
+          <p className="text-[20px] md:text-[18px] text-center md:text-start mt-[25px]">
+            Загородная жизнь с комфортом{" "}<span className="font-bold">от 4 400 000 сум</span>{" "}с установкой за 1 день
           </p>
 
-          <div className="mt-[50px] flex justify-center md:justify-start">
-            <button className="btn mr-[25px]">Оставить заявку</button>
-            <button className="btn">Получить каталог</button>
+            <br />
+
+          <div className="text-[20px] md:text-[18px]">
+            <p className="text-center md:text-start"> Под Крышу – от 4 400 000 сум </p>
+            <p className="text-center md:text-start"> Под Ключ – от 6 980 000 сум  </p>
           </div>
 
-          <div className="mt-[40px] text-[20px]">
-            <p>
-              Получите готовый модульный дом или баню с установкой за 1 день и
-              доставкой по всей России
+            <br />
+
+          <div className="flex justify-center md:justify-start">
+
+            <button 
+              onClick={() => document.getElementById("LeaveRequest").showModal()}
+              className="btn mr-[20px] text-[14px] lg:text-[18px]">
+                Оставить заявку
+            </button>
+
+            <button 
+              onClick={() => document.getElementById("LeaveRequest").showModal()}
+              className="btn text-[14px] lg:text-[18px]">
+                Получить каталог
+            </button>
+
+          </div>
+
+            <br />
+
+          <div className="text-[14px] md:text-[16px]">
+            <p className="text-center md:text-start">
+              Получите готовый модульный дом или баню с установкой за 1 день и доставкой по всей СНГ
             </p>
           </div>
+          
         </div>
 
-        <div className="">
-          <video className="w-full h-auto" muted loop autoPlay controls>
+        <div>
+          <video className="w-full h-[500px] object-cover rounded-[20px]" muted loop autoPlay controls>
             <source
               src="./video/DP-Module - Модульные дома и бани.mp4"
               type="video/mp4"
@@ -196,7 +216,7 @@ function WoodenHouses() {
       </div>
 
       <div className="mt-[25px]">
-        <p className="font-bold text-[32px] text-center my-[25px]">Choose the wooden Home you need</p>
+        <p className="font-bold text-[32px] text-center my-[25px]">Выберите нужный вам деревянный дом</p>
       </div>
 
       {/* Scroll Navigation links START */}

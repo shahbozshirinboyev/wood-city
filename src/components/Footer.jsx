@@ -13,15 +13,15 @@ function Footer() {
           
           <aside>
             <img src={logo} alt="" className="w-[140px] lg:w-[180px]  my-[25px] lg:my-[35px]" />
-            <p>Wood City "ООО" <br />с 2020 года</p>
+            <p>Wood City "ООО" <br />с 2018 года</p>
           </aside>
 
           <nav className="grid grid-cols-1">
             <h6 className="footer-title">О компании</h6>
-            <p>ИП Феденев Евгений Александрович</p>
-            <p>ИНН: 664604291587</p>
-            <p>ОГРН: 320665800112549</p>
-            <p>Способы оплаты: безналичный расчёт, наличный, кредит</p>
+            <p>"ООО" ART OLD WOOD</p>
+            <p>ИНН: 308676996</p>
+            <p>Р/с: 2020 8000 6054 1811 8001</p>
+            <p>Способы оплаты: безналичный расчёт, наличный</p>
             <p>Гарантия: на все виды работ</p>
           </nav>
 
@@ -56,7 +56,7 @@ function Footer() {
 
             <h6 className="footer-title">Контакты</h6>
 
-            <p> <i className="bi bi-geo-alt mr-[10px]"></i>Ташкент, г. Чирчик </p>
+            <p> <i className="bi bi-geo-alt mr-[10px]"></i>г. Чирчик, ул. Амира Темура, 68А.</p>
 
             <div className="flex mt-2">
               <i className="bi bi-telephone mr-[10px]"></i>

@@ -9,7 +9,7 @@ function HomePage() {
       title: "SLIDER",
       name: "EAGLE",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.",
+        " Мы производим домокомплекты каркасных домов для постоянного проживания и доставляем их по всему СНГ.",
     },
     {
       id: 1,
@@ -17,7 +17,7 @@ function HomePage() {
       title: "SLIDER",
       name: "OWL",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.",
+        "Мы производим домокомплекты каркасных домов для постоянного проживания и доставляем их по всему СНГ.",
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ function HomePage() {
       title: "SLIDER",
       name: "CROW",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.",
+        "Мы производим домокомплекты каркасных домов для постоянного проживания и доставляем их по всему СНГ.",
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ function HomePage() {
       title: "SLIDER",
       name: "BUTTERFLY",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.",
+        "Закажите каркасный дом из сухой строганой доски от завода производителя по отличной цене!",
     },
     {
       id: 4,
@@ -41,7 +41,7 @@ function HomePage() {
       title: "SLIDER",
       name: "OWL",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.",
+        "Закажите каркасный дом из сухой строганой доски от завода производителя по отличной цене!",
     },
     {
       id: 5,
@@ -49,7 +49,7 @@ function HomePage() {
       title: "SLIDER",
       name: "EAGLE",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.",
+        "Закажите каркасный дом из сухой строганой доски от завода производителя по отличной цене!",
     },
     // {
     //   id: 6,
@@ -127,13 +127,13 @@ function HomePage() {
   return (
     <section className="container">
 
-      <div className="overflow-hidden relative h-[700px] mt-[25px] rounded-[20px]">
+      <div className="overflow-hidden relative h-[700px] mt-[25px] rounded-[20px] border">
         {slicedValues.map((item, index) => (
           <div
             key={index}
             className={`absolute transition-all duration-500 ease-in-out ${index === 0
               ? "w-full h-full"
-              : "w-[180px] h-[250px] top-[60%] rounded-[20px] grayscale shadow-2xl"
+              : "w-[180px] h-[250px] top-[60%] rounded-[20px] grayscale shadow-2xl shadow-black"
               } bg-cover bg-center`}
             style={{
               backgroundImage: `url(${item.image})`,
@@ -141,28 +141,42 @@ function HomePage() {
             }}
           >
 
-            {/* {index === 0 && (
-              <div className="absolute top-1/3 left-[100px] transform -translate-y-1/2 text-white w-[650px]">
-                <h1 className="text-6xl font-bold uppercase">{item.title}</h1>
-                <h2 className="text-4xl font-semibold">{item.name}</h2>
-                <p className="mt-4">{item.description}</p>
+            {index === 0 && (
+              <div className="absolute top-0 left-0 rounded-[20px] transition duration-300 p-5 w-full text-white h-full bg-black bg-opacity-30">
+
+                <h1 className="text-2xl leading-normal md:text-3xl md:leading-normal lg:text-4xl lg:leading-normal xl:text-5xl xl:leading-relaxed font-bold z-[1000] uppercase md:w-[85%] mt-[50px]">
+                   {item.description}
+                </h1>
+
+                {/* <h2 className="text-4xl font-semibold">
+                  Закажите каркасный дом из сухой строганой доски от завода производителя по отличной цене!
+                </h2> */}
+
+                {/* <p className="mt-4">
+                  Мы производим домокомплекты каркасных домов для постоянного проживания и доставляем их по всему СНГ. Закажите каркасный дом из сухой строганой доски от завода производителя по отличной цене!
+                </p> */}
+
                 <div className="mt-8 space-x-4">
-                  <button className="px-6 py-2 border border-white text-white hover:bg-white hover:text-black transition">
-                    See More
+
+                  <button className="btn" onClick={() => document.getElementById("LeaveRequest").showModal()}>
+                    Оставить заявку
                   </button>
-                  <button className="px-6 py-2 bg-transparent text-green-500 border border-white hover:bg-green-500 hover:text-white transition">
+
+                  {/* <button className="btn">
                     Subscribe
-                  </button>
+                  </button> */}
+
                 </div>
+
               </div>
-            )} */}
+            )}
             
           </div>
         ))}
 
         <div className="absolute text-[#160A06] top-[600px] left-[30px] md:left-[100px] select-none">
-          <button className="py-1 px-6 border rounded-xl mr-4 bg-white transition-all duration-300" onClick={handlePrevious}> {"<"} </button>
-          <button className="py-1 px-6 border rounded-xl mr-4 bg-white transition-all duration-300" onClick={handleNext}> {">"} </button>
+          <button className="btn w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] border rounded-full mr-4 bg-white transition-all duration-300 font-bold text-[18px]" onClick={handlePrevious}> {"<"} </button>
+          <button className="btn w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] border rounded-full mr-4 bg-white transition-all duration-300 font-bold text-[18px]" onClick={handleNext}> {">"} </button>
         </div>
 
       </div>

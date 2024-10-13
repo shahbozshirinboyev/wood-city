@@ -155,8 +155,9 @@ function WoodenFurniture() {
 
   return (
     <section className="container mb-[25px] text-[#160A06]">
-      <div>
-        <p className="font-bold text-[32px] text-center my-[25px]">Wooden furniture</p>
+      
+      {/* <div>
+        <p className="font-bold text-[32px] text-center my-[25px]">Деревянная мебель</p>
       </div>
 
       <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
@@ -171,10 +172,10 @@ function WoodenFurniture() {
         <div className="relative">
           <img src={furniture_3} alt="" className="absolute top-0 left-0 w-full h-full object-cover  blur-[0px]" />
         </div>
-      </div>
+      </div> */}
 
       <div className="mt-[25px]">
-        <p className="font-bold text-[32px] text-center my-[25px]">Choose the wooden furniture you need</p>
+        <p className="font-bold text-[32px] text-center my-[25px]">Выберите нужную вам деревянную мебель</p>
       </div>
 
       {/* Scroll Navigation links START */}

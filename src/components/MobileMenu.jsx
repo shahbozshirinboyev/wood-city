@@ -42,17 +42,17 @@ function MobileMenu({ open, setOpen }) {
 
               <nav className="grid grid-cols-1 mt-10 px-10">
                 <h6 className="footer-title">Контакты</h6>
-                <p><i className="bi bi-geo-alt mr-[10px]"></i>Ташкент, г. Чирчик</p>
+                <p><i className="bi bi-geo-alt mr-[10px]"></i>г. Чирчик, ул. Амира Темура, 68А.</p>
                 <div className="flex mt-2">
                   <i className="bi bi-telephone mr-[10px]"></i>
                   <p>
-                  <NavLink to="tel:+998934563421" className="border border-[#160A06] hover:border-white px-2 py-1 rounded-[5px]">
-                  +998 (45) 342 45 22
-                </NavLink>
+                  <NavLink to="tel:+998770086563" className="border border-[#160A06] hover:border-white px-2 py-1 rounded-[5px]">
+                    +998 (77) 008 65 63
+                  </NavLink>
                 <span className="block h-[5px] border-[#160A06]"></span>
-                <NavLink to="tel:+998934563421" className="border border-[#160A06] hover:border-white px-2 py-1 rounded-[5px]">
-                  +998 (12) 345 45 52
-                </NavLink>
+                  <NavLink to="tel:+998934563421" className="border border-[#160A06] hover:border-white px-2 py-1 rounded-[5px]">
+                    +998 (12) 345 45 52
+                  </NavLink>
                   </p>
                 </div>
                 <div className="flex items-center justify-start text-[20px] my-4">
