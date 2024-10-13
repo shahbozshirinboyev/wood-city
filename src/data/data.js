@@ -40,10 +40,12 @@ export const woodenFurniture = [
     counts: [
       {
         id: uuidv4(),
+
         image: "/furniture/doors/1.jpg",
         image1: "/furniture/1.jpg",
         image2: "/furniture/6.jpg",
         image3: "/furniture/7.jpg",
+
         title: "Дверь под старину Добрыня",
         price: "154",
         material: "Сосна",
@@ -53,12 +55,17 @@ export const woodenFurniture = [
       },
       {
         id: uuidv4(),
-        image: "/furniture/doors/2.jpg",
-        title: "Дверь под старину Древняя",
-        price: "147",
-        material: "Массив сосны",
+
+        image: "/furniture/doors/1.jpg",
+        image1: "/furniture/1.jpg",
+        image2: "/furniture/6.jpg",
+        image3: "/furniture/7.jpg",
+        
+        title: "Дверь под старину Добрыня",
+        price: "154",
+        material: "Сосна",
         availability: "Под заказ",
-        size: "2200-850-45",
+        size: "2000-800-40",
         comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
       },
     ],
@@ -70,17 +77,33 @@ export const woodenFurniture = [
     counts: [
       {
         id: uuidv4(),
-        image: "/furniture/3.jpg",
-        title: "1-Диваны",
-        price: "100",
-        date: "29392838",
+
+        image: "/furniture/doors/1.jpg",
+        image1: "/furniture/1.jpg",
+        image2: "/furniture/6.jpg",
+        image3: "/furniture/7.jpg",
+        
+        title: "Дверь под старину Добрыня",
+        price: "154",
+        material: "Сосна",
+        availability: "Под заказ",
+        size: "2000-800-40",
+        comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
       },
       {
         id: uuidv4(),
-        image: "/furniture/4.jpg",
-        title: "2-Диваны",
-        price: "100",
-        date: "29392838",
+
+        image: "/furniture/doors/1.jpg",
+        image1: "/furniture/1.jpg",
+        image2: "/furniture/6.jpg",
+        image3: "/furniture/7.jpg",
+        
+        title: "Дверь под старину Добрыня",
+        price: "154",
+        material: "Сосна",
+        availability: "Под заказ",
+        size: "2000-800-40",
+        comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
       },
     ],
   },
@@ -91,17 +114,33 @@ export const woodenFurniture = [
     counts: [
       {
         id: uuidv4(),
-        image: "/furniture/5.jpg",
-        title: "1-Светильники",
-        price: "100",
-        date: "29392838",
+
+        image: "/furniture/doors/1.jpg",
+        image1: "/furniture/1.jpg",
+        image2: "/furniture/6.jpg",
+        image3: "/furniture/7.jpg",
+        
+        title: "Дверь под старину Добрыня",
+        price: "154",
+        material: "Сосна",
+        availability: "Под заказ",
+        size: "2000-800-40",
+        comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
       },
       {
         id: uuidv4(),
-        image: "/furniture/6.jpg",
-        title: "2-Светильники",
-        price: "100",
-        date: "29392838",
+
+        image: "/furniture/doors/1.jpg",
+        image1: "/furniture/1.jpg",
+        image2: "/furniture/6.jpg",
+        image3: "/furniture/7.jpg",
+        
+        title: "Дверь под старину Добрыня",
+        price: "154",
+        material: "Сосна",
+        availability: "Под заказ",
+        size: "2000-800-40",
+        comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
       },
     ],
   },
@@ -112,17 +151,33 @@ export const woodenFurniture = [
     counts: [
       {
         id: uuidv4(),
-        image: "/furniture/7.jpg",
-        title: "1-Стулья",
-        price: "100",
-        date: "29392838",
+
+        image: "/furniture/doors/1.jpg",
+        image1: "/furniture/1.jpg",
+        image2: "/furniture/6.jpg",
+        image3: "/furniture/7.jpg",
+        
+        title: "Дверь под старину Добрыня",
+        price: "154",
+        material: "Сосна",
+        availability: "Под заказ",
+        size: "2000-800-40",
+        comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
       },
       {
         id: uuidv4(),
-        image: "/furniture/8.jpg",
-        title: "2-Стулья",
-        price: "100",
-        date: "29392838",
+
+        image: "/furniture/doors/1.jpg",
+        image1: "/furniture/1.jpg",
+        image2: "/furniture/6.jpg",
+        image3: "/furniture/7.jpg",
+        
+        title: "Дверь под старину Добрыня",
+        price: "154",
+        material: "Сосна",
+        availability: "Под заказ",
+        size: "2000-800-40",
+        comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
       },
     ],
   },
@@ -133,17 +188,33 @@ export const woodenFurniture = [
     counts: [
       {
         id: uuidv4(),
-        image: "/furniture/9.jpg",
-        title: "1-Эпоксидные",
-        price: "100",
-        date: "29392838",
+
+        image: "/furniture/doors/1.jpg",
+        image1: "/furniture/1.jpg",
+        image2: "/furniture/6.jpg",
+        image3: "/furniture/7.jpg",
+        
+        title: "Дверь под старину Добрыня",
+        price: "154",
+        material: "Сосна",
+        availability: "Под заказ",
+        size: "2000-800-40",
+        comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
       },
       {
         id: uuidv4(),
-        image: "/furniture/10.jpg",
-        title: "2-Эпоксидные",
-        price: "100",
-        date: "29392838",
+
+        image: "/furniture/doors/1.jpg",
+        image1: "/furniture/1.jpg",
+        image2: "/furniture/6.jpg",
+        image3: "/furniture/7.jpg",
+        
+        title: "Дверь под старину Добрыня",
+        price: "154",
+        material: "Сосна",
+        availability: "Под заказ",
+        size: "2000-800-40",
+        comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
       },
     ],
   },
@@ -154,17 +225,33 @@ export const woodenFurniture = [
     counts: [
       {
         id: uuidv4(),
-        image: "/furniture/11.jpg",
-        title: "1-Декоративные",
-        price: "100",
-        date: "29392838",
+
+        image: "/furniture/doors/1.jpg",
+        image1: "/furniture/1.jpg",
+        image2: "/furniture/6.jpg",
+        image3: "/furniture/7.jpg",
+        
+        title: "Дверь под старину Добрыня",
+        price: "154",
+        material: "Сосна",
+        availability: "Под заказ",
+        size: "2000-800-40",
+        comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
       },
       {
         id: uuidv4(),
-        image: "/furniture/12.jpg",
-        title: "2-Декоративные",
-        price: "100",
-        date: "29392838",
+
+        image: "/furniture/doors/1.jpg",
+        image1: "/furniture/1.jpg",
+        image2: "/furniture/6.jpg",
+        image3: "/furniture/7.jpg",
+        
+        title: "Дверь под старину Добрыня",
+        price: "154",
+        material: "Сосна",
+        availability: "Под заказ",
+        size: "2000-800-40",
+        comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
       },
     ],
   },
@@ -175,17 +262,33 @@ export const woodenFurniture = [
     counts: [
       {
         id: uuidv4(),
-        image: "/furniture/13.jpg",
-        title: "1-Кухни",
-        price: "100",
-        date: "29392838",
+
+        image: "/furniture/doors/1.jpg",
+        image1: "/furniture/1.jpg",
+        image2: "/furniture/6.jpg",
+        image3: "/furniture/7.jpg",
+        
+        title: "Дверь под старину Добрыня",
+        price: "154",
+        material: "Сосна",
+        availability: "Под заказ",
+        size: "2000-800-40",
+        comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
       },
       {
         id: uuidv4(),
-        image: "/furniture/14.jpg",
-        title: "2-Кухни",
-        price: "100",
-        date: "29392838",
+
+        image: "/furniture/doors/1.jpg",
+        image1: "/furniture/1.jpg",
+        image2: "/furniture/6.jpg",
+        image3: "/furniture/7.jpg",
+        
+        title: "Дверь под старину Добрыня",
+        price: "154",
+        material: "Сосна",
+        availability: "Под заказ",
+        size: "2000-800-40",
+        comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
       },
     ],
   },
@@ -196,17 +299,33 @@ export const woodenFurniture = [
     counts: [
       {
         id: uuidv4(),
-        image: "/furniture/15.jpg",
-        title: "1-Комоды",
-        price: "100",
-        date: "29392838",
+
+        image: "/furniture/doors/1.jpg",
+        image1: "/furniture/1.jpg",
+        image2: "/furniture/6.jpg",
+        image3: "/furniture/7.jpg",
+        
+        title: "Дверь под старину Добрыня",
+        price: "154",
+        material: "Сосна",
+        availability: "Под заказ",
+        size: "2000-800-40",
+        comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
       },
       {
         id: uuidv4(),
-        image: "/furniture/16.jpg",
-        title: "2-Комоды",
-        price: "100",
-        date: "29392838",
+
+        image: "/furniture/doors/1.jpg",
+        image1: "/furniture/1.jpg",
+        image2: "/furniture/6.jpg",
+        image3: "/furniture/7.jpg",
+        
+        title: "Дверь под старину Добрыня",
+        price: "154",
+        material: "Сосна",
+        availability: "Под заказ",
+        size: "2000-800-40",
+        comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
       },
     ],
   },
@@ -224,16 +343,19 @@ export const woodenHouse = [
     counts: [
       {
         id: uuidv4(),
+
         image: "/houses/buran_plus/buran_1.jpg",
         image1: "/houses/buran_plus/buran_2.jpg",
         image2: "/houses/buran_plus/buran_3.jpg",
         image3: "/houses/buran_plus/buran_4.jpg",
+
         plan2d: "/houses/buran_plus/plan2d_1.jpg",
+
         title: "«Норвегия» 40",
         price: "154",
+        
         project: "Дом",
         square: "35",
-        module: "2",
         size: "2000-800-40",
         comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
       },

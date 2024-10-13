@@ -20,7 +20,7 @@ function AboutUs() {
   return (
     <section className="container">
       
-      <p className="font-bold text-[32px] text-center md:text-start my-[50px]">{" "}О нас{" "}</p>
+      <p className="font-bold text-[32px] text-center md:text-center my-[50px]">{" "}О нас{" "}</p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 grid-col-reverse">
         <div className="col-span-1 md:col-span-2 order-2 md:order-1">
@@ -138,14 +138,14 @@ function AboutUs() {
         {/* Show All Photo START */}
         {!showAllGallery && (
           <div className="md:col-span-3 grid  grid-cols-4 gap- my-[25px] ">
-            <div className="col-span-3">
-              <p className="font-bold text-[20px] md:text-[35px]">
+            <div className="col-span-3 flex items-center">
+              <p className="font-bold text-[16px] md:text-[25px] lg:text-[30px] xl:text-[35px]">
                 Ещё больше фотографий здесь
               </p>
             </div>
             <div className="flex justify-end items-center">
               <button
-                className="btn font-bold text-[16px] md:text-[20px]"
+                className="btn font-bold text-[14px] md:text-[16px] lg:text-[20px]"
                 onClick={() => setShowAllGallery(true)}
               >
                 Смотреть фото

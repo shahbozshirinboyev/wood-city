@@ -162,12 +162,13 @@ function WoodenHouses() {
             alt=""
           />
 
-          <p className="font-bold text-[30px] md:text-[25px] xl:text-[30px] text-center md:text-start mt-[25px]">
+          {/* <p className="font-bold text-[30px] md:text-[25px] xl:text-[30px] text-center md:text-start mt-[25px]">
             Готовые модульные дома и бани
-          </p>
+          </p> */}
 
           <p className="text-[20px] md:text-[18px] text-center md:text-start mt-[25px]">
-            Загородная жизнь с комфортом{" "}<span className="font-bold">от 4 400 000 сум</span>{" "}с установкой за 1 день
+            
+          Загородный жизнь с комфортом<br /><span><b>от 4 400 000 сум кв/м.</b></span>
           </p>
 
             <br />
@@ -177,6 +178,10 @@ function WoodenHouses() {
             <p className="text-center md:text-start"> Под Ключ – от 6 980 000 сум  </p>
           </div>
 
+            <br />
+            <p className="text-center md:text-start">
+              Деревянные каркасные дома + Деревянные мебели под старину из массива.
+            </p>
             <br />
 
           <div className="flex justify-center md:justify-start">
@@ -195,18 +200,18 @@ function WoodenHouses() {
 
           </div>
 
-            <br />
+            {/* <br /> */}
 
-          <div className="text-[14px] md:text-[16px]">
+          {/* <div className="text-[14px] md:text-[16px]">
             <p className="text-center md:text-start">
               Получите готовый модульный дом или баню с установкой за 1 день и доставкой по всей СНГ
             </p>
-          </div>
+          </div> */}
           
         </div>
 
         <div>
-          <video className="w-full h-[500px] object-cover rounded-[20px]" muted loop autoPlay controls>
+          <video className="w-full h-[400px] md:h-[500px] object-cover rounded-[20px]" muted loop autoPlay controls>
             <source
               src="./video/DP-Module - Модульные дома и бани.mp4"
               type="video/mp4"
