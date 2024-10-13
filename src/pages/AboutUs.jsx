@@ -28,18 +28,16 @@ function AboutUs() {
             Часть чего-то большего
           </p>
           <span className="my-4 mx-3 md:mx-0 block text-[18px] md:text-[22px]">
-            DP-Group — это группа компаний, занимающаяся коммерческой
-            недвижимостью, малоэтажным строительством и развитием сферы
-            внутреннего туризма в России.
+          <b>Wood City</b> это строительство домиков, беседок, кафе ресторанов из натурального дерева. Занимающаяся коммерческой недвижимостью, малоэтажным строительством и развитием сферы внутреннего туризма в Узбекистане. Все проекты <b>Wood City</b> активно развиваются по территории Узбекистан и СНГ. Имеем ряд успешных проектов в сфере загородного отдыха и малоэтажного строительства.
           </span>
-          <span className="my-4 mx-3 md:mx-0 block text-[18px] md:text-[22px]">
+          {/* <span className="my-4 mx-3 md:mx-0 block text-[18px] md:text-[22px]">
             Все проекты DP-Group активно развиваются по территории России и СНГ.
             Имеем ряд успешных проектов в сфере загородного отдыха и
             малоэтажного строительства.
-          </span>
-          <button className="btn mx-3 md:mx-0 mt-[15px] md:mt-[35px] text-[18px] md:text-[22px]">
+          </span> */}
+          {/* <button className="btn mx-3 md:mx-0 mt-[15px] md:mt-[35px] text-[18px] md:text-[22px]">
             Узнать больше
-          </button>
+          </button> */}
         </div>
 
         <div className="justify-center md:justify-end grid order-1 md:order-2">
@@ -51,7 +49,7 @@ function AboutUs() {
         </div>
       </div>
 
-      <p className="font-bold text-[32px] text-center my-[50px] "> Partners </p>
+      <p className="font-bold text-[32px] text-center my-[50px] ">Партнеры</p>
 
       <div className="mb-[50px]">
         <Partners images={partners} from={0} to={"-100%"} />
@@ -65,7 +63,7 @@ function AboutUs() {
             alt="All Staffs"
           />
           <p className="text-[20px] mt-[20px] text-center">
-            «Знакомство с командой DP-Module»
+            «Знакомство с командой <b>Wood City</b>»
           </p>
         </div>
 
@@ -106,7 +104,7 @@ function AboutUs() {
         </div>
       </div>
 
-      <p className="font-bold text-[32px] text-center my-[50px] "> Gallery </p>
+      <p className="font-bold text-[32px] text-center my-[50px] "> Галерея </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-[50px]">
         {/* First show STRAT */}

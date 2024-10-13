@@ -274,7 +274,7 @@ function WoodenHouses() {
       {/* Cards START */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-[50px]">
         {getCounts(activeMenuBtn).map((card) => (
-          <div key={card.title} className="border rounded-2xl grid grid-cols-1 px-4 py-4">
+          <div key={card.id} className="border rounded-2xl grid grid-cols-1 px-4 py-4">
 
             {/* Card elements Start */}
             <>

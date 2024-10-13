@@ -152,32 +152,130 @@ export const woodenFurniture = [
       {
         id: uuidv4(),
 
-        image: "/furniture/doors/1.jpg",
-        image1: "/furniture/1.jpg",
-        image2: "/furniture/6.jpg",
-        image3: "/furniture/7.jpg",
+        image: "/furniture/tables_chairs/dining0.jpg",
+        image1: "/furniture/tables_chairs/dining1.jpg",
+        image2: "/furniture/tables_chairs/dining2.jpg",
+        image3: "/furniture/tables_chairs/dining3.jpg",
         
-        title: "Дверь под старину Добрыня",
-        price: "154",
-        material: "Сосна",
+        title: "Стол Обеденный",
+        price: "от 7 500 000 сум",
+        
         availability: "Под заказ",
-        size: "2000-800-40",
-        comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
+        material: "Сосна",
+        size: "200x90 см",
+        comment: "300x1000 см = цена от 12 000 000 сум. Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
       },
       {
         id: uuidv4(),
 
-        image: "/furniture/doors/1.jpg",
-        image1: "/furniture/1.jpg",
-        image2: "/furniture/6.jpg",
-        image3: "/furniture/7.jpg",
+        image: "/furniture/tables_chairs/n2dining0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
         
-        title: "Дверь под старину Добрыня",
-        price: "154",
-        material: "Сосна",
+        title: "Стол Обеденный N2",
+        price: "от 6 700 000 сум",
+
         availability: "Под заказ",
-        size: "2000-800-40",
-        comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
+        material: "Сосна",
+        size: "200x80 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/tables_chairs/sailor0.jpg",
+        image1: "/furniture/tables_chairs/sailor1.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Стол Моряк",
+        price: "от 4 800 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "120x80 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/tables_chairs/conversation0.jpg",
+        image1: "/furniture/tables_chairs/conversation1.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Стол Беседа",
+        price: "от 3 200 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "120x80 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/tables_chairs/massive0.jpg",
+        image1: "/furniture/tables_chairs/massive1.jpg",
+        image2: "/furniture/tables_chairs/massive2.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Стол Массивный",
+        price: "от 6 300 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "200x90 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/tables_chairs/lord0.jpg",
+        image1: "/furniture/tables_chairs/lord1.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Стол Лорд",
+        price: "от 12 000 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "300x100 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/tables_chairs/snaffle0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Стол Трензель",
+        price: "от 7 500 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "200x90 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/tables_chairs/compound0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Стол Kомпонион",
+        price: "от 13 000 000 сум за комплект",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "120x80 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
       },
     ],
   },
@@ -189,32 +287,66 @@ export const woodenFurniture = [
       {
         id: uuidv4(),
 
-        image: "/furniture/doors/1.jpg",
-        image1: "/furniture/1.jpg",
-        image2: "/furniture/6.jpg",
-        image3: "/furniture/7.jpg",
+        image: "/furniture/epoxy_table/vintage0.jpg",
+        image1: "/furniture/epoxy_table/vintage1.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
         
-        title: "Дверь под старину Добрыня",
-        price: "154",
-        material: "Сосна",
+        title: "Эпоксидный стол Винтаж",
+        price: "от 16 500 000 сум",
+        
         availability: "Под заказ",
-        size: "2000-800-40",
-        comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
+        material: "Сосна",
+        size: "200x90 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
       },
       {
         id: uuidv4(),
 
-        image: "/furniture/doors/1.jpg",
-        image1: "/furniture/1.jpg",
-        image2: "/furniture/6.jpg",
-        image3: "/furniture/7.jpg",
+        image: "/furniture/epoxy_table/river0.jpg",
+        image1: "/furniture/epoxy_table/river1.jpg",
+        image2: "/furniture/epoxy_table/river2.jpg",
+        image3: "/no_images.jpg",
         
-        title: "Дверь под старину Добрыня",
-        price: "154",
-        material: "Сосна",
+        title: "Эпоксидный стол Река",
+        price: "от 19 000 000 сум",
+        
         availability: "Под заказ",
-        size: "2000-800-40",
-        comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
+        material: "Сосна",
+        size: "250x95 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/epoxy_table/oval0.jpg",
+        image1: "/furniture/epoxy_table/oval1.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Эпоксидный стол Овал",
+        price: "от 12 800 000 сум",
+        
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "140x85 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/epoxy_table/loft0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Эпоксидный стол Лофт",
+        price: "от 12 800 000 сум",
+        
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "140x90 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
       },
     ],
   },
@@ -263,32 +395,114 @@ export const woodenFurniture = [
       {
         id: uuidv4(),
 
-        image: "/furniture/doors/1.jpg",
-        image1: "/furniture/1.jpg",
-        image2: "/furniture/6.jpg",
-        image3: "/furniture/7.jpg",
+        image: "/furniture/cabinets_kitchens/winecellar0.jpg",
+        image1: "/furniture/cabinets_kitchens/winecellar1.jpg",
+        image2: "/furniture/cabinets_kitchens/winecellar2.jpg",
+        image3: "/furniture/cabinets_kitchens/winecellar3.jpg",
         
-        title: "Дверь под старину Добрыня",
-        price: "154",
-        material: "Сосна",
+        title: "Винный Погреб",
+        price: "от 19 300 000 сум",
+
         availability: "Под заказ",
-        size: "2000-800-40",
-        comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
+        material: "Сосна",
+        size: "ДxВxГ: 220x240x45 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
       },
       {
         id: uuidv4(),
 
-        image: "/furniture/doors/1.jpg",
-        image1: "/furniture/1.jpg",
-        image2: "/furniture/6.jpg",
-        image3: "/furniture/7.jpg",
+        image: "/furniture/cabinets_kitchens/barrelcellar0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
         
-        title: "Дверь под старину Добрыня",
-        price: "154",
-        material: "Сосна",
+        title: "Бочка Погреб",
+        price: "от 7 200 000 сум",
+
         availability: "Под заказ",
-        size: "2000-800-40",
-        comment: "Заполняя данную форму, я даю свое согласие на обработку моих персональных данных в сети интернет."
+        material: "Сосна",
+        size: "Диаметр: 80 см, Высота: 90 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/cabinets_kitchens/esabel0.jpg",
+        image1: "/furniture/cabinets_kitchens/esabel1.jpg",
+        image2: "/furniture/cabinets_kitchens/esabel2.jpg",
+        image3: "/furniture/cabinets_kitchens/esabel3.jpg",
+        
+        title: "Кухня Эсабель",
+        price: "от 6 500 000 сум пг/м",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "-",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/cabinets_kitchens/space0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Кухня Простор",
+        price: "от 6 300 000 сум пг/м",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "-",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/cabinets_kitchens/lord0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Кухня Лорд",
+        price: "от 7 800 000 сум пг/м",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "-",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/cabinets_kitchens/arabica0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Кухня Арабика",
+        price: "от 6 700 000 сум пг/м",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "-",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/cabinets_kitchens/catherine0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Кухня Екатерина",
+        price: "от 7 700 000 сум пг/м",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "-",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
       },
     ],
   },

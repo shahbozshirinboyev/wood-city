@@ -211,7 +211,7 @@ function WoodenFurniture() {
       {/* Cards START */}
       <div className="grid grid-cols-1 gap-3 py-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {getCounts(activeMenuBtn).map((card) => (
-          <div key={card.title} className="rounded-[10px] border bg-white">
+          <div key={card.id} className="rounded-[10px] border bg-white">
 
             {/* Card elements Start */}
             <>
@@ -220,10 +220,11 @@ function WoodenFurniture() {
             </div>
 
             <div className="p-3"> 
-              <p className="font-semibold text-[18px] pl-2 mb-2">{card.title}</p>
 
-              <span className="text-[20px] text-orange-500 font-semibold mb-2 block">
-                <span className="font-bold pl-2">$</span> &nbsp;{card.price}
+              <p className="font-bold text-[20px] pl-2">{card.title}</p>
+
+              <span className="text-[16px] text-black text-opacity-70 font-semibold mb-2 block">
+                <span className="font-bold pl-2">{card.price}</span>
               </span>
 
               <div className="grid grid-cols-2 gap-4 pt-4">
@@ -234,6 +235,7 @@ function WoodenFurniture() {
                   Подробнее →
                 </button>
               </div>
+
             </div>
             </>
             {/* Card elements Start */}
@@ -260,12 +262,12 @@ function WoodenFurniture() {
 
                     <div className="flex gap-8 p-2">
 
-                      <div> <img className="w-[100px] h-[100px] object-cover" src={card.image} alt="" /> </div>
+                      <div> <img className="w-[100px] h-[100px] object-cover rounded-[15px]" src={card.image} alt="" /> </div>
 
                       <div className="">
-                        <p className="font-semibold text-[20px]">{card.title}</p>
-                        <p className="font-bold text-[16px] opacity-70">$ {card.price}</p>
-                        <p>Размер: {card.size} см</p>
+                        <p className="font-bold text-[20px]">{card.title}</p>
+                        <p className="font-bold text-[16px] opacity-70">{card.price}</p>
+                        <p><span className="font-semibold">Размер:</span>{" "}<span>{card.size}</span></p>
                       </div>
 
                     </div>
@@ -359,25 +361,25 @@ function WoodenFurniture() {
                         <img
                           src={images.img1}
                           alt=""
-                          className="w-16 h-16 md:w-20 md:h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          className="w-16 h-16 md:w-20 md:h-20 rounded-md cursor-pointer object-cover border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
                           onClick={() => changeImage(images.img1)}
                         />
                         <img
                           src={images.img2}
                           alt=""
-                          className="w-16 h-16 md:w-20 md:h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          className="w-16 h-16 md:w-20 md:h-20 rounded-md cursor-pointer object-cover border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
                           onClick={() => changeImage(images.img2)}
                         />
                         <img
                           src={images.img3}
                           alt=""
-                          className="w-16 h-16 md:w-20 md:h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          className="w-16 h-16 md:w-20 md:h-20 rounded-md cursor-pointer object-cover border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
                           onClick={() => changeImage(images.img3)}
                         />
                         <img
                           src={images.img4}
                           alt=""
-                          className="w-16 h-16 md:w-20 md:h-20 rounded-md cursor-pointer border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
+                          className="w-16 h-16 md:w-20 md:h-20 rounded-md cursor-pointer object-cover border border-base-200 hover:opacity-50 hover:scale-[95%] transition-all duration-200"
                           onClick={() => changeImage(images.img4)}
                         />
                       </div>
@@ -386,16 +388,30 @@ function WoodenFurniture() {
                     <div className="flex flex-col gap-4 lg:w-2/4 h-full">
 
                       <div>
-                        <p className="text-3xl py-4">«Модерн» 30-2</p>
-                        <p className="text-[18px]">DP-Module</p>
-                        <p className="text-[16px]">SKU: mod30-2_ekb</p>
+                        <p className="text-3xl font-bold py-4 pb-0">{card.title}</p>
+                        <p className="font-semibold text-lg">{card.price}</p>
                       </div>
 
-                      <div>
-                        <p className="font-bold text-xl">1 405 000р.</p>
-                      </div>
+                      
 
                       <div>
+                        <ul>
+                          <li>
+                            <span className="font-semibold">Наличие:</span>{" "}<span>{card.availability}</span>
+                          </li>
+                          <li>
+                            <span className="font-semibold">Материал:</span>{" "}<span>{card.material}</span>
+                          </li>
+                          <li>
+                            <span className="font-semibold">Размер:</span>{" "}<span>{card.size}</span>
+                          </li>
+                          <li>
+                            <span className="font-semibold">Примечание:</span>{" "}<span>{card.comment}</span>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div className="">
                         <NavLink to="tel:+998934563421" className="btn mr-4">Прямой звонок</NavLink>
                         <button onClick={() => { document.getElementById(`order_${card.id}`).showModal(); setCloseModalId(`order_${card.id}`); setActiveCardInfo({ card }); }} 
                                 className="btn">
@@ -403,40 +419,6 @@ function WoodenFurniture() {
                         </button>
                       </div>
 
-                      <div>
-                        <ul className="mt-5">
-                          <li>
-                            <span className="font-semibold">Проект:</span>{" "}
-                            <span>Модерн</span>
-                          </li>
-                          <li>
-                            <span className="font-semibold">Тип проекта:</span>{" "}
-                            <span>Дом</span>
-                          </li>
-                          <li>
-                            <span className="font-semibold">Проект:</span>{" "}
-                            <span>30м²</span>
-                          </li>
-                          <li>
-                            <span className="font-semibold">
-                              Количество модулей:
-                            </span>{" "}
-                            <span>2</span>
-                          </li>
-                          <li>
-                            <span className="font-semibold">LxWxH:</span>{" "}
-                            <span>600x500x270 sm</span>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div>
-                        <p>
-                          Продумана каждая деталь: просторная гостиная,
-                          совмещенная со спальней, полноценная кухонная зона с
-                          обеденным столом и санузел.
-                        </p>
-                      </div>
                     </div>
                   </div>
                 </>
