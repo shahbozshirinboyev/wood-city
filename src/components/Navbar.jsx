@@ -50,8 +50,8 @@ const handleToggle = () => { setOpen(!open); };
 
         <div className="flex-grow md:hidden h-full text-end text-[13px] justify-end text-greener">
          <NavLink to="tel:+998770086563" className="inline-block mr-2">
-          <p className="font-normal">+998 (77) 008 65 63</p>
-          <p className="opacity-50 text-[11px]">Быстрый звонок</p>
+          <p className="font-semibold">+998 (77) 008 65 63</p>
+          <p className="opacity-50 text-[11px] font-semibold">Быстрый звонок</p>
          </NavLink>
         </div>
 

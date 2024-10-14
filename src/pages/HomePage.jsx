@@ -133,7 +133,7 @@ function HomePage() {
             key={index}
             className={`absolute transition-all duration-500 ease-in-out ${index === 0
               ? "w-full h-full"
-              : "w-[180px] h-[250px] top-[60%] rounded-[20px] grayscale shadow-2xl shadow-black"
+              : "w-[180px] h-[250px] top-[60%] rounded-[20px] shadow-2xl shadow-black" //grayscale - remove
               } bg-cover bg-center`}
             style={{
               backgroundImage: `url(${item.image})`,
@@ -188,7 +188,7 @@ function HomePage() {
           Для Гос заказов ЕИС
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 card card-side gap-0 md:gap-8  bg-base-100 border p-3 rounded-[20px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 card card-side gap-0 md:gap-8  bg-base-100 border border-greener border-opacity-30 p-3 rounded-[20px]">
 
           <figure>
             <div className="carousel carousel-vertical h-96 rounded-[20px]">
