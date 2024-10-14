@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Partners from "../components/Partners";
 
+// logo
+import logo from '../../public/logo/wood_city.png';
+
 function AboutUs() {
   const [showAllGallery, setShowAllGallery] = useState(false);
 
@@ -18,7 +21,7 @@ function AboutUs() {
   ];
 
   return (
-    <section className="container">
+    <section className="container text-greener">
       
       <p className="font-bold text-[32px] text-center md:text-center my-[50px]">{" "}О нас{" "}</p>
 
@@ -70,7 +73,7 @@ function AboutUs() {
         <div className="pt-5">
           <img
             className="w-[350px] mx-auto md:ml-0"
-            src="./logo/wood_city_black.png"
+            src={logo}
             alt=""
           />
 
@@ -143,7 +146,7 @@ function AboutUs() {
             </div>
             <div className="flex justify-end items-center">
               <button
-                className="btn font-bold text-[14px] md:text-[16px] lg:text-[20px]"
+                className="btn font-bold text-[14px] md:text-[16px] lg:text-[18px] text-greener hover:text-lighter bg-lighter hover:bg-greener border-0"
                 onClick={() => setShowAllGallery(true)}
               >
                 Смотреть фото

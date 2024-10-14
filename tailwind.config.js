@@ -5,13 +5,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        lightwood: "#D9A673",
-        forestgreen: "#228B22",
-        olivegreen: "#808000",
-        beige: "#F5F5DC",
-        lightgray: "#D3D3D3",
-        warmorange: "#FF8C00",
-        lightpink: "#FFB6C1",
+        lighter: "#F5F2DC",
+        oranger: "#F0AF18",
+        greener: "#34853D",
       },
       container: {
         center: true,

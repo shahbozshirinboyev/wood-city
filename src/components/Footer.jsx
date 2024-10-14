@@ -1,11 +1,11 @@
 import { NavbarMenu } from "../data/data";
 import { NavLink } from "react-router-dom";
 //logo
-import logo from "../../public/logo/wood_city_whiter.png";
+import logo from "../../public/logo/wood_city.png";
 
 function Footer() {
   return (
-    <section className="bg-[#160A06] text-[#E1DFDE] text-[14px] md:text-[16px]">
+    <section className="bg-lighter text-greener text-[14px] font-semibold md:text-[16px] shadow-md">
 
       <div className="container">
 
@@ -37,8 +37,8 @@ function Footer() {
                       className={({ isActive }) =>
                         `inline-block py-1 font-semibold whitespace-nowrap hover:text-lightwood transition-all duration-300 ${
                           isActive
-                            ? "text-[#160A06] bg-[#E1DFDE] rounded-[10px] px-2"
-                            : "text-[#E1DFDE]"
+                            ? "text-lighter bg-greener rounded-[10px] px-2"
+                            : "text-greener"
                         }`
                       }
                     >
@@ -61,11 +61,11 @@ function Footer() {
             <div className="flex mt-2">
               <i className="bi bi-telephone mr-[10px]"></i>
               <p>
-                <NavLink to="tel:+998770086563" className="border border-[#160A06] hover:border-white px-2 py-1 rounded-[5px]">
+                <NavLink to="tel:+998770086563" className="border border-lighter hover:border-greener px-2 py-1 rounded-[5px]">
                   +998 (77) 008 65 63
                 </NavLink>
-                <br className="block h-[5px] border-[#160A06]" />
-                <NavLink to="tel:+998934563421" className="border border-[#160A06] hover:border-white px-2 py-1 rounded-[5px]">
+                <span className="block h-[5px] border-[3px] border-transparent"></span>
+                <NavLink to="tel:+998934563421" className="border border-lighter hover:border-greener px-2 py-1 rounded-[5px]">
                   +998 (12) 345 45 52
                 </NavLink>
               </p>
@@ -89,7 +89,7 @@ function Footer() {
             <div className="mb-[25px]">
               <button 
                   onClick={() => document.getElementById("LeaveRequest").showModal()}
-                  className="py-1 px-2 rounded-lg border border-[#E1DFDE] hover:bg-[#E1DFDE] hover:text-[#160A06] transition-all duration-200">
+                  className="py-1 px-2 rounded-lg border border-greener hover:bg-greener hover:text-lighter transition-all duration-200">
                 Оставить заявку
               </button>
             </div>

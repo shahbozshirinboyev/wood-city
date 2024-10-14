@@ -125,7 +125,7 @@ function HomePage() {
   };
 
   return (
-    <section className="container">
+    <section className="container text-greener">
 
       <div className="overflow-hidden relative h-[700px] mt-[25px] rounded-[20px] border">
         {slicedValues.map((item, index) => (
@@ -142,7 +142,7 @@ function HomePage() {
           >
 
             {index === 0 && (
-              <div className="absolute top-0 left-0 rounded-[20px] transition duration-300 p-5 w-full text-white h-full bg-black bg-opacity-30">
+              <div className="absolute top-0 left-0 rounded-[20px] transition duration-300 p-5 w-full text-lighter h-full bg-black bg-opacity-30">
 
                 <h1 className="text-2xl leading-normal md:text-3xl md:leading-normal lg:text-4xl lg:leading-normal xl:text-5xl xl:leading-relaxed font-bold z-[1000] uppercase md:w-[85%] mt-[50px]">
                    {item.description}
@@ -158,7 +158,7 @@ function HomePage() {
 
                 <div className="mt-8 space-x-4">
 
-                  <button className="btn" onClick={() => document.getElementById("LeaveRequest").showModal()}>
+                  <button className="btn bg-lighter text-greener hover:bg-greener hover:text-lighter border-0" onClick={() => document.getElementById("LeaveRequest").showModal()}>
                     Оставить заявку
                   </button>
 
@@ -184,7 +184,7 @@ function HomePage() {
 
       <div className="mb-[50px]">
 
-        <p className="font-bold text-[32px] text-center my-[25px]">
+        <p className="font-bold text-[32px] text-center my-[25px] text-greener">
           Для Гос заказов ЕИС
         </p>
 
@@ -225,13 +225,13 @@ function HomePage() {
 
               <button 
                 onClick={() => document.getElementById("LeaveRequest").showModal()}
-                className="btn whitespace-nowrap text-[14px] md:text-[12px] lg:text-[14px]">
+                className="btn whitespace-nowrap text-[14px] md:text-[12px] lg:text-[14px] text-greener hover:text-lighter bg-lighter hover:bg-greener border-0">
                   <i className="bi bi-card-list"></i>Оставить заявку
               </button>
 
               <NavLink 
                 to="tel:+998770086563"
-                className="btn whitespace-nowrap text-[14px] md:text-[12px] lg:text-[14px]">
+                className="btn whitespace-nowrap text-[14px] md:text-[12px] lg:text-[14px] text-greener hover:text-lighter bg-lighter hover:bg-greener border-0">
                   <i className="bi bi-telephone"></i>+998 (77) 008 65 63
               </NavLink>
 

@@ -17,7 +17,7 @@ function MobileMenu({ open, setOpen }) {
           >
             <div 
             onClick={ (e) => { e.stopPropagation(); } }
-            className="bg-[#160A06] z-[22323] text-white py-10 m-2 rounded-xl">
+            className="bg-lighter z-[22323] text-greener py-10 m-2 rounded-xl">
               <ul className="text-start px-10">
                 {NavbarMenu.map((item) => {
                   return (
@@ -28,8 +28,8 @@ function MobileMenu({ open, setOpen }) {
                         className={({ isActive }) =>
                           `inline-block py-1 px-2 font-semibold whitespace-nowrap transition-all duration-300 ${
                             isActive
-                              ? "text-[#160A06] bg-[#E1DFDE] rounded-[10px]"
-                              : "text-[#E1DFDE]"
+                              ? "text-lighter bg-greener rounded-[10px]"
+                              : "text-greener"
                           }`
                         }
                       >
@@ -46,11 +46,11 @@ function MobileMenu({ open, setOpen }) {
                 <div className="flex mt-2">
                   <i className="bi bi-telephone mr-[10px]"></i>
                   <p>
-                  <NavLink to="tel:+998770086563" className="border border-[#160A06] hover:border-white px-2 py-1 rounded-[5px]">
+                  <NavLink to="tel:+998770086563" className="border border-lighter hover:border-greener px-2 py-1 rounded-[5px]">
                     +998 (77) 008 65 63
                   </NavLink>
-                <span className="block h-[5px] border-[#160A06]"></span>
-                  <NavLink to="tel:+998934563421" className="border border-[#160A06] hover:border-white px-2 py-1 rounded-[5px]">
+                <span className="block h-[5px] border-[3px] border-transparent"></span>
+                  <NavLink to="tel:+998934563421" className="border border-lighter hover:border-greener px-2 py-1 rounded-[5px]">
                     +998 (12) 345 45 52
                   </NavLink>
                   </p>
@@ -72,7 +72,7 @@ function MobileMenu({ open, setOpen }) {
                 <div>
                   <button 
                     onClick={() => document.getElementById("LeaveRequest").showModal()}
-                    className="py-1 px-2 rounded-lg border border-[#E1DFDE] hover:bg-[#E1DFDE] hover:text-[#160A06] transition-all duration-200">
+                    className="py-1 px-2 rounded-lg border border-greener hover:bg-greener hover:text-lighter transition-all duration-200">
                     Оставить заявку
                   </button>
                 </div>
