@@ -174,9 +174,9 @@ function HomePage() {
           </div>
         ))}
 
-        <div className="absolute text-[#160A06] top-[600px] left-[30px] md:left-[100px] select-none">
-          <button className="btn w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] border rounded-full mr-4 bg-white transition-all duration-300 font-bold text-[18px]" onClick={handlePrevious}> {"<"} </button>
-          <button className="btn w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] border rounded-full mr-4 bg-white transition-all duration-300 font-bold text-[18px]" onClick={handleNext}> {">"} </button>
+        <div className="absolute top-[600px] left-[30px] md:left-[100px] select-none">
+          <button className="btn w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] border-0 rounded-full mr-4 text-greener bg-lighter transition-all duration-300 font-bold text-[18px] hover:bg-greener hover:text-lighter" onClick={handlePrevious}> {"<"} </button>
+          <button className="btn w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] border-0 rounded-full mr-4 text-greener bg-lighter transition-all duration-300 font-bold text-[18px] hover:bg-greener hover:text-lighter" onClick={handleNext}> {">"} </button>
         </div>
 
       </div>
