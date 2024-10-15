@@ -240,17 +240,129 @@ export const woodenFurniture = [
       {
         id: uuidv4(),
 
-        image: "/no_images.jpg",
+        image: "/furniture/sofas_beds/lord0.jpg",
+        image1: "/furniture/sofas_beds/lord1.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Кровать Лорд",
+        price: "от 6 200 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "матраса 180х200 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/elena0.jpg",
+        image1: "/furniture/sofas_beds/elena1.jpg",
+        image2: "/furniture/sofas_beds/elena2.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Кровать Елена",
+        price: "от 5 400 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "матраса 180х200 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/tsarevich0.jpg",
+        image1: "/furniture/sofas_beds/tsarevich1.jpg",
+        image2: "/furniture/sofas_beds/tsarevich2.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Кровать Царевич",
+        price: "от 5 600 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "матраса 180х200 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/loft0.jpg",
+        image1: "/furniture/sofas_beds/loft1.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Кровать Лофт 1",
+        price: "от 8 200 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "матраса 180х200 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/loft20.jpg",
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
         
-        title: "-",
-        price: "от - --- --- сум",
+        title: "Кровать Лофт 2",
+        price: "от 7 800 000 сум",
 
         availability: "Под заказ",
-        material: "-",
-        size: "-",
+        material: "Сосна",
+        size: "матраса 180х200 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/loft30.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Кровать Лофт 3",
+        price: "от 7 800 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "матраса 180х200 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/loft40.jpg",
+        image1: "/furniture/sofas_beds/loft41.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Кровать Лофт 4",
+        price: "от 6 500 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "матраса 180х200 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/loft50.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Кровать Лофт 5",
+        price: "от 7 100 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "матраса 180х200 см",
         comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
       },
     ],
@@ -865,19 +977,73 @@ export const woodenHouse = [
       {
         id: uuidv4(),
 
-        image: "/houses/buran_plus/buran_1.jpg",
-        image1: "/houses/buran_plus/buran_2.jpg",
-        image2: "/houses/buran_plus/buran_3.jpg",
-        image3: "/houses/buran_plus/buran_4.jpg",
+        image: "/houses/bath_villas/bathvill0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
 
-        plan2d: "/houses/buran_plus/plan2d_1.jpg",
+        plan2d: "/houses/bath_villas/bathvill0_plan2d.jpg",
 
-        title: "«Норвегия» 40",
-        price: "154",
+        title: "Баня вилл",
+        price: "от 6 990 000 сум кв/м под ключ",
         
-        project: "Дом",
-        square: "35",
-        size: "2000-800-40",
+        project: "Баня",
+        square: "15 м²",
+        size: "3x5 м",
+        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/houses/bath_villas/bath4x40.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+
+        plan2d: "/houses/bath_villas/bath4x40_plan2d.jpg",
+
+        title: "Баня 4х4",
+        price: "от 6 990 000 сум кв/м под ключ",
+        
+        project: "Баня",
+        square: "16 м²",
+        size: "4x4 м",
+        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/houses/bath_villas/bath3x30.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+
+        plan2d: "/houses/bath_villas/bath3x30_plan2d.jpg",
+
+        title: "Баня Мини",
+        price: "от 6 990 000 сум кв/м под ключ",
+        
+        project: "Баня",
+        square: "9 м²",
+        size: "3x3 м",
+        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/houses/bath_villas/bathterrace0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+
+        plan2d: "/houses/bath_villas/bathterrace0_plan2d.jpg",
+
+        title: "Баня Каркасная",
+        price: "от 6 990 000 сум кв/м под ключ",
+        
+        project: "Баня",
+        square: "16 м²",
+        size: "4x4 м",
         comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
       },
     ],
@@ -893,9 +1059,9 @@ export const woodenHouse = [
         image: "/houses/terrace/terrace0.jpg",
         image1: "/houses/terrace/terrace1.jpg",
         image2: "/houses/terrace/terrace2.jpg",
-        image3: "/houses/terrace/terrace3.jpg",
+        image3: "/no_images.jpg",
 
-        plan2d: "/houses/buran_plus/plan2d_1.jpg",
+        plan2d: "/no_images.jpg",
 
         title: "Беседка",
         price: "от - --- --- сум",

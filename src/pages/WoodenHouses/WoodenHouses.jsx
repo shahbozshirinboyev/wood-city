@@ -5,6 +5,8 @@ import { Toaster, toast } from "react-hot-toast";
 // react phone input 2
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+// logo
+import logo from '/logo/wood_city.png'
 // data
 import { woodenHouse } from "../../data/data";
 // http
@@ -158,7 +160,7 @@ function WoodenHouses() {
         <div>
           <img
             className="w-[200px] md:w-[220px] lg:w-[280px] xl:w-[320px] mx-auto md:ml-0"
-            src="./logo/wood_city_black.png"
+            src={logo}
             alt=""
           />
 
@@ -282,7 +284,7 @@ function WoodenHouses() {
               <img
                 onClick={() => { document.getElementById(`info_${card.id}`).showModal(); setActiveCardInfo({card}); }}
                 className="h-[350px] w-full object-cover rounded-2xl"
-                src="https://img.freepik.com/free-photo/3d-rendering-wooden-house_23-2151264506.jpg"
+                src={card.image}
                 alt=""
               />
               <img
@@ -295,10 +297,10 @@ function WoodenHouses() {
 
             <div className="py-2 ml-2">
               <p className="text-[20px] font-bold">{card.title}</p>
-              <b className="text-[25px] opacity-70">{card.price}</b>
+              <b className="text-[18px] opacity-70">{card.price}</b>
             </div>
 
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-2 pt-4">
               <button className="btn mr-2" onClick={() => { document.getElementById(`order_${card.id}`).showModal(); setActiveCardInfo({card}); setCloseModalId(`order_${card.id}`); }}>
                 Оставить заявку
               </button>
@@ -331,7 +333,7 @@ function WoodenHouses() {
 
                     <div className="flex gap-8 p-2">
 
-                      <div> <img className="w-[100px] h-[100px] object-cover" src={card.image} alt="" /> </div>
+                      <div> <img className="w-[100px] h-[100px] object-cover rounded-[15px]" src={card.image} alt="" /> </div>
 
                       <div className="">
                         <p className="font-semibold text-[20px]">{card.title}</p>

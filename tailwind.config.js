@@ -30,7 +30,7 @@ export default {
       },
     },
   },
-  plugins: [require("daisyui"), require("tailwind-scrollbar")],
+  plugins: [require("daisyui")],
   daisyui: {
     darkTheme: false, // Disable dark mode in DaisyUI
   },
