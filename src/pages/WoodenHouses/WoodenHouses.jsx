@@ -293,11 +293,9 @@ function WoodenHouses() {
               />
             </div>
 
-            <div className="py-2">
+            <div className="py-2 ml-2">
               <p className="text-[20px] font-bold">{card.title}</p>
-              <p className="">DP-Module</p>
-              <p className="">SKU: ks_ekb</p>
-              <b className="text-[25px]">1 635 000р.</b>
+              <b className="text-[25px] opacity-70">{card.price}</b>
             </div>
 
             <div className="grid grid-cols-2">
@@ -337,8 +335,8 @@ function WoodenHouses() {
 
                       <div className="">
                         <p className="font-semibold text-[20px]">{card.title}</p>
-                        <p className="font-bold text-[16px] opacity-70">$ {card.price}</p>
-                        <p>Размер: {card.size} см</p>
+                        <p className="font-bold text-[16px] opacity-70">{card.price}</p>
+                        <p><span className="font-semibold">Размер:</span>{" "}<span>{card.size}</span></p>
                       </div>
 
                     </div>
@@ -466,13 +464,8 @@ function WoodenHouses() {
                     <div className="flex flex-col gap-4 lg:w-2/4 h-full">
 
                       <div>
-                        <p className="text-3xl py-4">«Модерн» 30-2</p>
-                        <p className="text-[18px]">DP-Module</p>
-                        <p className="text-[16px]">SKU: mod30-2_ekb</p>
-                      </div>
-
-                      <div>
-                        <p className="font-bold text-xl">1 405 000р.</p>
+                        <p className="text-3xl py-4">{card.title}</p>
+                        <p className="font-bold text-xl">{card.price}</p>
                       </div>
 
                       <div>
@@ -486,35 +479,20 @@ function WoodenHouses() {
                       <div>
                         <ul className="mt-5">
                           <li>
-                            <span className="font-semibold">Проект:</span>{" "}
-                            <span>Модерн</span>
+                            <span className="font-semibold">Тип проекта:</span>{" "}<span>{card.project}</span>
                           </li>
                           <li>
-                            <span className="font-semibold">Тип проекта:</span>{" "}
-                            <span>Дом</span>
+                            <span className="font-semibold">Площадь:</span>{" "}<span>{card.square}</span>
                           </li>
                           <li>
-                            <span className="font-semibold">Проект:</span>{" "}
-                            <span>30м²</span>
-                          </li>
-                          <li>
-                            <span className="font-semibold">
-                              Количество модулей:
-                            </span>{" "}
-                            <span>2</span>
-                          </li>
-                          <li>
-                            <span className="font-semibold">LxWxH:</span>{" "}
-                            <span>600x500x270 sm</span>
+                            <span className="font-semibold">Размер:</span>{" "}<span>{card.size}</span>
                           </li>
                         </ul>
                       </div>
 
                       <div>
                         <p>
-                          Продумана каждая деталь: просторная гостиная,
-                          совмещенная со спальней, полноценная кухонная зона с
-                          обеденным столом и санузел.
+                          {card.comment}
                         </p>
                       </div>
                     </div>

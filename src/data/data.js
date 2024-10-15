@@ -41,18 +41,194 @@ export const woodenFurniture = [
       {
         id: uuidv4(),
 
-        image: "/no_images.jpg",
+        image: "/furniture/doors/suzdal0.jpg",
+        image1: "/furniture/doors/suzdal1.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Дверь Суздальская",
+        price: "от  2 400 000 сум кв/м",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Возможно изготовление любых размеров.",
+        comment: "Ручная работа, состаренное дерево."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/doors/real0.jpg",
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
         
-        title: "-",
-        price: "от - --- --- сум",
+        title: "Дверь Real",
+        price: "от  2 200 000 сум кв/м",
 
         availability: "Под заказ",
-        material: "-",
-        size: "-",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        material: "Сосна",
+        size: "Возможно изготовление любых размеров.",
+        comment: "Ручная работа, состаренное дерево."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/doors/oldboard0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Дверь Старая доска",
+        price: "от  2 200 000 сум кв/м",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Возможно изготовление любых размеров.",
+        comment: "Ручная работа, состаренное дерево."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/doors/glass0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Дверь Стекло 1",
+        price: "от  2 250 000 сум кв/м",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Возможно изготовление любых размеров.",
+        comment: "Ручная работа, состаренное дерево."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/doors/enigma0.jpg",
+        image1: "/furniture/doors/enigma1.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Дверь двухстворчатый Энигма",
+        price: "от  2 200 000 сум кв/м",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Возможно изготовление любых размеров.",
+        comment: "Ручная работа, состаренное дерево."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/doors/paradisglass0.jpg",
+        image1: "/furniture/doors/paradisglass1.jpg",
+        image2: "/furniture/doors/paradisglass2.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Дверь Парадис со стеклом",
+        price: "от  2 300 000 сум кв/м",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Возможно изготовление любых размеров.",
+        comment: "Ручная работа, состаренное дерево."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/doors/noble0.jpg",
+        image1: "/furniture/doors/noble1.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Дверь Знатный",
+        price: "от  2 250 000 сум кв/м",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Возможно изготовление любых размеров.",
+        comment: "Ручная работа, состаренное дерево."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/doors/archie0.jpg",
+        image1: "/furniture/doors/archie1.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Дверь Арчи",
+        price: "от  2 350 000 сум кв/м",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Возможно изготовление любых размеров.",
+        comment: "Ручная работа, состаренное дерево."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/doors/everest0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Дверь Эверест",
+        price: "от  2 300 000 сум кв/м",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Возможно изготовление любых размеров.",
+        comment: "Ручная работа, состаренное дерево."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/doors/babadoor0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Дверь Баба Яга",
+        price: "от  2 500 000 сум кв/м",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Возможно изготовление любых размеров.",
+        comment: "Ручная работа, состаренное дерево."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/doors/paradis2glass0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Дверь Парадис 2 со стеклом",
+        price: "от  2 300 000 сум кв/м",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Возможно изготовление любых размеров.",
+        comment: "Ручная работа, состаренное дерево."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/doors/colors0.jpg",
+        image1: "/furniture/doors/colors1.jpg",
+        image2: "/furniture/doors/colors2.jpg",
+        image3: "/furniture/doors/colors3.jpg",
+        
+        title: "Дверь Расцветки",
+        price: "от  2 200 000 сум кв/м",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Возможно изготовление любых размеров.",
+        comment: "Ручная работа, состаренное дерево."
       },
     ],
   },
@@ -254,7 +430,7 @@ export const woodenFurniture = [
         price: "от 16 500 000 сум",
         
         availability: "Под заказ",
-        material: "Сосна",
+        material: "из слэба Платан, Орех, Карагач",
         size: "200x90 см",
         comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
       },
@@ -270,7 +446,7 @@ export const woodenFurniture = [
         price: "от 19 000 000 сум",
         
         availability: "Под заказ",
-        material: "Сосна",
+        material: "из слэба Платан, Орех, Карагач",
         size: "250x95 см",
         comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
       },
@@ -286,7 +462,7 @@ export const woodenFurniture = [
         price: "от 12 800 000 сум",
         
         availability: "Под заказ",
-        material: "Сосна",
+        material: "из слэба Платан, Орех, Карагач",
         size: "140x85 см",
         comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
       },
@@ -302,7 +478,7 @@ export const woodenFurniture = [
         price: "от 12 800 000 сум",
         
         availability: "Под заказ",
-        material: "Сосна",
+        material: "из слэба Платан, Орех, Карагач",
         size: "140x90 см",
         comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
       },
@@ -714,19 +890,19 @@ export const woodenHouse = [
       {
         id: uuidv4(),
 
-        image: "/houses/buran_plus/buran_1.jpg",
-        image1: "/houses/buran_plus/buran_2.jpg",
-        image2: "/houses/buran_plus/buran_3.jpg",
-        image3: "/houses/buran_plus/buran_4.jpg",
+        image: "/houses/terrace/terrace0.jpg",
+        image1: "/houses/terrace/terrace1.jpg",
+        image2: "/houses/terrace/terrace2.jpg",
+        image3: "/houses/terrace/terrace3.jpg",
 
         plan2d: "/houses/buran_plus/plan2d_1.jpg",
 
-        title: "«Норвегия» 40",
-        price: "154",
+        title: "Беседка",
+        price: "от - --- --- сум",
         
-        project: "Дом",
-        square: "35",
-        size: "2000-800-40",
+        project: "Беседка",
+        square: "10 м²",
+        size: "ДxВxГ: 220x240x45 см",
         comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
       },
     ],
