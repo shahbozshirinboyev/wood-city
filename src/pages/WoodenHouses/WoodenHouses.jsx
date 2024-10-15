@@ -9,6 +9,8 @@ import "react-phone-input-2/lib/style.css";
 import logo from '/logo/wood_city.png'
 // data
 import { woodenHouse } from "../../data/data";
+// video
+import video from '/video/video.mp4'
 // http
 import http from "../../services/http";
 
@@ -215,7 +217,7 @@ function WoodenHouses() {
         <div>
           <video className="w-full h-[400px] md:h-[500px] object-cover rounded-[20px]" muted loop autoPlay controls>
             <source
-              src="./video/DP-Module - Модульные дома и бани.mp4"
+              src={video}
               type="video/mp4"
             />
           </video>
