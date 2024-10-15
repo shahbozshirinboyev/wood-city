@@ -154,7 +154,7 @@ function WoodenHouses() {
   // Product Info Modal END
 
   return (
-    <section className="container mb-[25px] text-[#160A06]">
+    <section className="container mb-[25px] text-greener">
       
       <div className="grid grid-cols-1 md:grid-cols-2 mt-[25px] gap-8 p-5">
         <div>
@@ -190,13 +190,13 @@ function WoodenHouses() {
 
             <button 
               onClick={() => document.getElementById("LeaveRequest").showModal()}
-              className="btn mr-[20px] text-[14px] lg:text-[18px]">
+              className="btn mr-[20px] text-[14px] lg:text-[18px] text-greener hover:text-lighter bg-lighter hover:bg-greener border-0">
                 Оставить заявку
             </button>
 
             <button 
               onClick={() => document.getElementById("LeaveRequest").showModal()}
-              className="btn text-[14px] lg:text-[18px]">
+              className="btn text-[14px] lg:text-[18px] text-greener hover:text-lighter bg-lighter hover:bg-greener border-0">
                 Получить каталог
             </button>
 
@@ -228,14 +228,14 @@ function WoodenHouses() {
 
       {/* Scroll Navigation links START */}
       <>
-        <div className="relative mx-auto overflow-hidden rounded-md shadow-md bg-base-200">
+        <div className="relative mx-auto overflow-hidden rounded-md shadow-md bg-lighter">
           <div
-            className={`absolute top-0 left-0 h-full w-[100px] bg-gradient-to-r from-base-200 to-transparent flex items-center justify-start px-2
+            className={`absolute top-0 left-0 h-full w-[100px] bg-gradient-to-r from-lighter to-transparent flex items-center justify-start px-2
           ${scrollPos > 20 ? "flex" : "hidden"}`}
           >
             <i
               onClick={scrollLeft}
-              className="bi bi-chevron-left text-black text-[14px] cursor-pointer hover:bg-gray-300 hover:text-black flex justify-center items-center w-[40px] h-[40px] rounded-full transition-all duration-200"
+              className="bi bi-chevron-left text-greener text-[14px] cursor-pointer hover:bg-lighter hover:text-greener flex justify-center items-center w-[40px] h-[40px] rounded-full transition-all duration-200"
             ></i>
           </div>
           <ul
@@ -246,10 +246,10 @@ function WoodenHouses() {
             {woodenHouse.map((menu) => (
               <li key={menu.id}>
                 <button
-                  className={`no-underline px-5 py-1 rounded-md whitespace-nowrap transition-all duration-200 border ${
+                  className={`no-underline px-5 py-1 rounded-md whitespace-nowrap transition-all duration-200 border-0 ${
                     activeMenuBtn === menu.id
-                      ? "bg-[#160A06] text-white"
-                      : "bg-white text-[#160A06]"
+                      ? "bg-greener text-lighter"
+                      : "bg-white text-greener"
                   }`}
                   onClick={() => activeMenu(menu.id)}
                 >
@@ -260,13 +260,13 @@ function WoodenHouses() {
           </ul>
 
           <div
-            className={`absolute top-0 right-0 h-full w-[100px] bg-gradient-to-l from-base-200 to-transparent flex items-center justify-end px-2 ${
+            className={`absolute top-0 right-0 h-full w-[100px] bg-gradient-to-l from-lighter to-transparent flex items-center justify-end px-2 ${
               scrollPos < maxScroll ? "flex" : "hidden"
             }`}
           >
             <i
               onClick={scrollRight}
-              className="bi bi-chevron-right text-black text-[14px] cursor-pointer hover:bg-gray-300 hover:text-black flex justify-center items-center w-[40px] h-[40px] rounded-full transition-all duration-200"
+              className="bi bi-chevron-right text-greener text-[14px] cursor-pointer hover:bg-lighter hover:text-greener flex justify-center items-center w-[40px] h-[40px] rounded-full transition-all duration-200"
             ></i>
           </div>
         </div>
@@ -276,7 +276,7 @@ function WoodenHouses() {
       {/* Cards START */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-[50px]">
         {getCounts(activeMenuBtn).map((card) => (
-          <div key={card.id} className="border rounded-2xl grid grid-cols-1 px-4 py-4">
+          <div key={card.id} className="border border-lighter rounded-2xl grid grid-cols-1 px-4 py-4">
 
             {/* Card elements Start */}
             <>
@@ -289,7 +289,7 @@ function WoodenHouses() {
               />
               <img
                 // onClick={() => { document.getElementById(`info_${card.id}`).showModal(); setActiveCardInfo({card}); }}
-                className="border rounded-2xl cursor-pointer absolute top-3 left-3 w-[160px] hover:w-full hover:h-[350px] hover:top-0 hover:left-0 object-cover transition-all duration-300"
+                className="rounded-2xl cursor-pointer absolute top-3 left-3 w-[160px] hover:w-full hover:h-[350px] hover:top-0 hover:left-0 object-cover transition-all duration-300"
                 src={card.plan2d}
                 alt=""
               />
@@ -301,10 +301,12 @@ function WoodenHouses() {
             </div>
 
             <div className="grid grid-cols-2 pt-4">
-              <button className="btn mr-2" onClick={() => { document.getElementById(`order_${card.id}`).showModal(); setActiveCardInfo({card}); setCloseModalId(`order_${card.id}`); }}>
+              <button className="btn mr-2 text-greener hover:text-lighter bg-lighter hover:bg-greener border-0" 
+                onClick={() => { document.getElementById(`order_${card.id}`).showModal(); setActiveCardInfo({card}); setCloseModalId(`order_${card.id}`); }}>
                 Оставить заявку
               </button>
-              <button className="btn ml-2" onClick={() => { document.getElementById(`info_${card.id}`).showModal(); setActiveCardInfo({card}); }}>
+              <button className="btn ml-2 text-oranger hover:text-lighter bg-lighter hover:bg-oranger border-0" 
+                onClick={() => { document.getElementById(`info_${card.id}`).showModal(); setActiveCardInfo({card}); }}>
                 Подробнее →
               </button>
             </div>
@@ -351,7 +353,7 @@ function WoodenHouses() {
 
                     <label className="form-control w-full mb-2">
                       <div className="label">
-                        <span className="label-text">Ваше имя:</span>
+                        <span className="label-text text-greener">Ваше имя:</span>
                         {/* <span className="label-text-alt">Top Right label</span> */}
                       </div>
                       <input
@@ -360,14 +362,14 @@ function WoodenHouses() {
                         type="text"
                         // required
                         placeholder="Ваше имя"
-                        className="input input-bordered w-full"
+                        className="input input-bordered border-lighter w-full focus:border-lighter"
                         style={{ borderRadius: ".25rem", height: "45px", fontSize: "16px", }}
                       />
                     </label>
 
                     <label className="form-control w-full mb-2">
                       <div className="label">
-                        <span className="label-text">Ваше номер телефона:</span>
+                        <span className="label-text text-greener">Ваше номер телефона:</span>
                         {/* <span className="label-text-alt">Top Right label</span> */}
                       </div>
                       <PhoneInput
@@ -383,14 +385,15 @@ function WoodenHouses() {
                           tm: "(..) ..-..-..", // Turkmaniston
                         }}
                         inputClass="input input-bordered w-full"
-                        inputStyle={{ width: "100%", height: "45px", border: "1px solid #ccc", borderRadius: ".25rem", transition: "border-color 0.2s", fontSize: "16px",}}
+                        inputStyle={{ width: "100%", height: "45px", border: "1px solid #F5F2DC", borderRadius: ".25rem", transition: "border-color 0.2s", fontSize: "16px",}}
                         inputProps={{ name: "phone", required: true }}
+                        buttonStyle={{border: "1px solid #F5F2DC"}}
                       />
                     </label>
 
                     <p className="py-2 text-start text-[14px] lg:text-[16px]">Специалист компании свяжется с вами в ближайшее время, а на вашу почту будет отправлена презентация проекта для ознакомления</p>
 
-                    <button className="btn my-4 w-full">Отправить</button>
+                    <button className="btn my-4 w-full mr-2 text-greener hover:text-lighter bg-lighter hover:bg-greener border-0">Отправить</button>
 
                   </form>
                 </div>
@@ -466,14 +469,14 @@ function WoodenHouses() {
                     <div className="flex flex-col gap-4 lg:w-2/4 h-full">
 
                       <div>
-                        <p className="text-3xl py-4">{card.title}</p>
+                        <p className="text-2xl font-bold py-4 pb-0">{card.title}</p>
                         <p className="font-bold text-xl">{card.price}</p>
                       </div>
 
                       <div>
-                        <NavLink to="tel:+998934563421" className="btn mr-4">Прямой звонок</NavLink>
+                        <NavLink to="tel:+998934563421" className="mr-4 btn text-greener hover:text-lighter bg-lighter hover:bg-greener border-0">Прямой звонок</NavLink>
                         <button onClick={() => { document.getElementById(`order_${card.id}`).showModal(); setCloseModalId(`order_${card.id}`); setActiveCardInfo({ card }); }} 
-                                className="btn">
+                                className="btn mr-2 text-greener hover:text-lighter bg-lighter hover:bg-greener border-0">
                           Оставить заявку
                         </button>
                       </div>

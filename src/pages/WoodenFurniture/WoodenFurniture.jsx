@@ -154,7 +154,7 @@ function WoodenFurniture() {
   // Product Info Modal END
 
   return (
-    <section className="container mb-[25px] text-[#160A06]">
+    <section className="container mb-[25px] text-greener">
       
       {/* <div>
         <p className="font-bold text-[32px] text-center my-[25px]">Деревянная мебель</p>
@@ -180,19 +180,19 @@ function WoodenFurniture() {
 
       {/* Scroll Navigation links START */}
       <>
-        <div className="relative mx-auto overflow-hidden rounded-md shadow-md bg-base-200">
+        <div className="relative mx-auto overflow-hidden rounded-md shadow-md bg-lighter">
           {/* Left button start */}
-          <div className={`absolute top-0 left-0 h-full w-[100px] bg-gradient-to-r from-base-200 to-transparent flex items-center justify-start px-2 ${scrollPos > 20 ? "flex" : "hidden"}`}>
-            <i onClick={scrollLeft} className="bi bi-chevron-left text-black text-[14px] cursor-pointer hover:bg-gray-300 hover:text-black flex justify-center items-center w-[40px] h-[40px] rounded-full transition-all duration-200"></i>
+          <div className={`absolute top-0 left-0 h-full w-[100px] bg-gradient-to-r from-lighter to-transparent flex items-center justify-start px-2 ${scrollPos > 20 ? "flex" : "hidden"}`}>
+            <i onClick={scrollLeft} className="bi bi-chevron-left text-greener text-[14px] cursor-pointer hover:bg-lighter hover:text-greener flex justify-center items-center w-[40px] h-[40px] rounded-full transition-all duration-200"></i>
           </div>
           {/* Left button end */}
           <ul ref={tabsListRef} onScroll={manageIcons} className="flex gap-4 px-6 py-3 overflow-x-scroll font-semibold select-none scrollbar-hide">
             {woodenFurniture.map((menu) => (
               <li key={menu.id}>
-                <button className={`no-underline px-5 py-1 rounded-md whitespace-nowrap transition-all duration-200 border 
+                <button className={`no-underline px-5 py-1 rounded-md whitespace-nowrap transition-all duration-200 border-0 
                   ${activeMenuBtn === menu.id
-                      ? "bg-[#160A06] text-white"
-                      : "bg-white text-[#160A06]"
+                      ? "bg-greener text-lighter"
+                      : "bg-white text-greener"
                   }`}
                   onClick={() => activeMenu(menu.id)}
                 >{menu.name}</button>
@@ -200,8 +200,8 @@ function WoodenFurniture() {
             ))}
           </ul>
           {/* Right button start */}
-          <div className={`absolute top-0 right-0 h-full w-[100px] bg-gradient-to-l from-base-200 to-transparent flex items-center justify-end px-2 ${scrollPos < maxScroll ? "flex" : "hidden"}`}>
-            <i onClick={scrollRight} className="bi bi-chevron-right text-black text-[14px] cursor-pointer hover:bg-gray-300 hover:text-black flex justify-center items-center w-[40px] h-[40px] rounded-full transition-all duration-200"></i>
+          <div className={`absolute top-0 right-0 h-full w-[100px] bg-gradient-to-l from-lighter to-transparent flex items-center justify-end px-2 ${scrollPos < maxScroll ? "flex" : "hidden"}`}>
+            <i onClick={scrollRight} className="bi bi-chevron-right text-greener text-[14px] cursor-pointer hover:bg-lighter hover:text-greener flex justify-center items-center w-[40px] h-[40px] rounded-full transition-all duration-200"></i>
           </div>
           {/* Right button end */}
         </div>
@@ -211,7 +211,7 @@ function WoodenFurniture() {
       {/* Cards START */}
       <div className="grid grid-cols-1 gap-3 py-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {getCounts(activeMenuBtn).map((card) => (
-          <div key={card.id} className="rounded-[10px] border bg-white">
+          <div key={card.id} className="rounded-[10px] border border-lighter bg-white">
 
             {/* Card elements Start */}
             <>
@@ -223,15 +223,17 @@ function WoodenFurniture() {
 
               <p className="font-bold text-[20px] pl-2">{card.title}</p>
 
-              <span className="text-[16px] text-black text-opacity-70 font-semibold mb-2 block">
+              <span className="text-[16px] text-greener text-opacity-70 font-semibold mb-2 block">
                 <span className="font-bold pl-2">{card.price}</span>
               </span>
 
-              <div className="grid grid-cols-2 gap-4 pt-4">
-                <button className="btn" onClick={() => { document.getElementById(`order_${card.id}`).showModal(); setActiveCardInfo({card}); setCloseModalId(`order_${card.id}`); }} >
+              <div className="grid grid-cols-2 pt-4">
+                <button className="btn mr-2 text-greener hover:text-lighter bg-lighter hover:bg-greener border-0"
+                 onClick={() => { document.getElementById(`order_${card.id}`).showModal(); setActiveCardInfo({card}); setCloseModalId(`order_${card.id}`); }} >
                   Оставить заявку
                 </button>
-                <button className="btn" onClick={() => { document.getElementById(`info_${card.id}`).showModal(); setActiveCardInfo({card}); }} > 
+                <button className="btn ml-2 text-oranger hover:text-lighter bg-lighter hover:bg-oranger border-0" 
+                  onClick={() => { document.getElementById(`info_${card.id}`).showModal(); setActiveCardInfo({card}); }} > 
                   Подробнее →
                 </button>
               </div>
@@ -389,8 +391,8 @@ function WoodenFurniture() {
                     <div className="flex flex-col gap-4 lg:w-2/4 h-full">
 
                       <div>
-                        <p className="text-3xl font-bold py-4 pb-0">{card.title}</p>
-                        <p className="font-semibold text-lg">{card.price}</p>
+                        <p className="text-2xl font-bold py-4 pb-0">{card.title}</p>
+                        <p className="font-semibold text-xl opacity-80">{card.price}</p>
                       </div>
 
                       
@@ -413,9 +415,9 @@ function WoodenFurniture() {
                       </div>
 
                       <div className="">
-                        <NavLink to="tel:+998934563421" className="btn mr-4">Прямой звонок</NavLink>
+                        <NavLink to="tel:+998934563421" className="btn mr-4 text-greener hover:text-lighter bg-lighter hover:bg-greener border-0">Прямой звонок</NavLink>
                         <button onClick={() => { document.getElementById(`order_${card.id}`).showModal(); setCloseModalId(`order_${card.id}`); setActiveCardInfo({ card }); }} 
-                                className="btn">
+                                className="btn text-greener hover:text-lighter bg-lighter hover:bg-greener border-0">
                           Оставить заявку
                         </button>
                       </div>

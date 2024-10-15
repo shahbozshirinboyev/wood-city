@@ -2,39 +2,39 @@ import { NavLink } from "react-router-dom";
 
 function ContactUs() {
   return (
-    <section className="container mb-[25px] text-[#160A06]">
+    <section className="container mb-[25px] text-greener">
       <div className="">
         <p className="font-bold text-[32px] text-center  my-[25px]">Контакты</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="grid grid-cols-2 gap-4">
-          <div className="border rounded-[10px] p-3 lg:p-6">
-            <i className="bi bi-telephone-forward-fill text-[22px] border p-2 rounded-lg w-[45px] h-[45px] flex justify-center items-center text-forestgreen"></i>
+          <div className="border border-lighter rounded-[10px] p-3 lg:p-6">
+            <i className="bi bi-telephone-forward-fill text-[22px] border border-lighter p-2 rounded-lg w-[45px] h-[45px] flex justify-center items-center text-forestgreen"></i>
             <p className="mt-[15px] text-[16px] lg:text-[20px] font-semibold">Телефонный звонок</p>
             <span className="text-[14px] lg:text-[16px] block mt-1">
               +998 94 005 78 56
             </span>
-            <button className="border p-1 rounded-md mt-2 w-[150px] hover:bg-forestgreen font-medium hover:text-white transition-all duration-300 hover:border-forestgreen">
+            <button className="border border-lighter p-1 rounded-md mt-2 w-[150px] hover:bg-greener font-medium hover:text-lighter transition-all duration-300 hover:border-forestgreen">
               <NavLink to="tel:+998770086563" className="block w-full h-full" >Позвонить</NavLink>
             </button>
           </div>
 
-          <div className="border rounded-[10px] p-3 lg:p-6">
-            <i className="bi bi-telegram text-[22px] border p-2 rounded-lg w-[45px] h-[45px] flex justify-center items-center text-sky-500"></i>
+          <div className="border border-lighter rounded-[10px] p-3 lg:p-6">
+            <i className="bi bi-telegram text-[22px] border border-lighter p-2 rounded-lg w-[45px] h-[45px] flex justify-center items-center text-sky-500"></i>
             <p className="mt-[15px] text-[16px] lg:text-[20px] font-semibold">
               Чат для поддержки
             </p>
             <span className="text-[14px] lg:text-[16px] block mt-1">
               t.me/wood_city_uz
             </span>
-            <button className="border p-1 rounded-md mt-2 w-[150px] hover:bg-sky-500 font-medium hover:text-white transition-all duration-300 hover:border-sky-500">
+            <button className="border border-lighter p-1 rounded-md mt-2 w-[150px] hover:bg-sky-500 font-medium hover:text-lighter transition-all duration-300 hover:border-sky-500">
               <NavLink to="tel:+998770086563" className="block w-full h-full" >Телеграм</NavLink>
             </button>
           </div>
 
-          <div className="col-span-2 border p-3 lg:p-6 rounded-[10px]">
-            <i className="bi bi-geo-alt-fill text-[22px] border p-2 rounded-lg w-[45px] h-[45px] flex justify-center items-center text-red-500"></i>
+          <div className="col-span-2 border border-lighter p-3 lg:p-6 rounded-[10px]">
+            <i className="bi bi-geo-alt-fill text-[22px] border border-lighter p-2 rounded-lg w-[45px] h-[45px] flex justify-center items-center text-red-500"></i>
             <p className="mt-[15px] text-[20px] font-semibold">Посетите нас</p>
             <span className="text-[14px] lg:text-[16px] block mt-1">
               Посетите наши офисы
@@ -45,7 +45,7 @@ function ContactUs() {
           </div>
         </div>
 
-        <div className="border rounded-[10px]">
+        <div className="border border-lighter rounded-[10px]">
           <iframe
             src="https://yandex.uz/map-widget/v1/?ll=69.281712%2C41.320213&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTQzMTQxMjAzEktPyrt6YmVraXN0b24sIFRvc2hrZW50LCBZdW51c29ib2QgeW_Ku25hbGlzaGksIEFiZHVsbGEgUW9kaXJpeSBtZXRybyBiZWthdGkiCg08kIpCFeZHJUI%2C&z=16.04"
             allowFullScreen
@@ -57,7 +57,7 @@ function ContactUs() {
       <div className="grid grid-cols-1 md:grid-cols-2 my-[25px]">
         <div>
           <div className="flex items-center">
-            <span className="text-[60px] font-bold pr-4 text-[#160A06]">6</span>
+            <span className="text-[60px] font-bold pr-4 text-oranger opacity-80">6</span>
             <span className="text-[25px]">
               {" "}
               простых шагов, которые отделяют вас от дома мечты.
@@ -66,19 +66,19 @@ function ContactUs() {
         </div>
 
         <div className="hidden md:flex justify-end items-center">
-          <button className="border flex justify-end items-end rounded-lg p-2 hover:bg-beige hover:border-beige transition-all duration-300">
+          <button className="flex justify-end items-end rounded-lg p-2 text-greener hover:text-lighter bg-lighter hover:bg-greener border-0 transition-all duration-300">
             Оставить заявку
           </button>
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div className="bg-base-200 rounded-lg p-5">
+        <div className="bg-lighter rounded-lg p-5">
           <div className="grid grid-cols-2 items-center">
             <span className="text-start font-semibold text-[20px]">
               Знакомство
             </span>
-            <span className="text-end font-bold text-[25px] opacity-50 text-lightwood">
+            <span className="text-end font-bold text-[25px] opacity-50 text-oranger">
               01
             </span>
           </div>
@@ -90,12 +90,12 @@ function ContactUs() {
           </div>
         </div>
 
-        <div className="bg-base-200 rounded-lg p-5">
+        <div className="bg-lighter rounded-lg p-5">
           <div className="grid grid-cols-2 items-center">
             <span className="text-start font-semibold text-[20px]">
               Презентация
             </span>
-            <span className="text-end font-bold text-[25px] opacity-50 text-lightwood">
+            <span className="text-end font-bold text-[25px] opacity-50 text-oranger">
               02
             </span>
           </div>
@@ -107,12 +107,12 @@ function ContactUs() {
           </div>
         </div>
 
-        <div className="bg-base-200 rounded-lg p-5">
+        <div className="bg-lighter rounded-lg p-5">
           <div className="grid grid-cols-2 items-center">
             <span className="text-start font-semibold text-[20px]">
               Договор и оплата
             </span>
-            <span className="text-end font-bold text-[25px] opacity-50 text-lightwood">
+            <span className="text-end font-bold text-[25px] opacity-50 text-oranger">
               03
             </span>
           </div>
@@ -124,12 +124,12 @@ function ContactUs() {
           </div>
         </div>
 
-        <div className="bg-base-200 rounded-lg p-5">
+        <div className="bg-lighter rounded-lg p-5">
           <div className="grid grid-cols-2 items-center">
             <span className="text-start font-semibold text-[20px]">
               Изготовление
             </span>
-            <span className="text-end font-bold text-[25px] opacity-50 text-lightwood">
+            <span className="text-end font-bold text-[25px] opacity-50 text-oranger">
               04
             </span>
           </div>
@@ -141,12 +141,12 @@ function ContactUs() {
           </div>
         </div>
 
-        <div className="bg-base-200 rounded-lg p-5">
+        <div className="bg-lighter rounded-lg p-5">
           <div className="grid grid-cols-2 items-center">
             <span className="text-start font-semibold text-[20px]">
               Доставка
             </span>
-            <span className="text-end font-bold text-[25px] opacity-50 text-lightwood">
+            <span className="text-end font-bold text-[25px] opacity-50 text-oranger">
               05
             </span>
           </div>
@@ -158,10 +158,10 @@ function ContactUs() {
           </div>
         </div>
 
-        <div className="bg-base-200 rounded-lg p-5">
+        <div className="bg-lighter rounded-lg p-5">
           <div className="grid grid-cols-2 items-center">
             <span className="text-start font-semibold text-[20px]">Монтаж</span>
-            <span className="text-end font-bold text-[25px] opacity-50 text-lightwood">
+            <span className="text-end font-bold text-[25px] opacity-50 text-oranger">
               06
             </span>
           </div>
@@ -179,7 +179,7 @@ function ContactUs() {
           Часто задаваемые вопросы
         </p>
 
-        <div className="collapse collapse-plus bg-base-200 mb-[15px]">
+        <div className="collapse collapse-plus bg-lighter mb-[15px]">
           <input type="checkbox" name="my-accordion-3" />
           <div className="collapse-title text-xl font-semibold">
             Сезонность, энергоэффективность, отопление
@@ -221,7 +221,7 @@ function ContactUs() {
           </div>
         </div>
 
-        <div className="collapse collapse-plus bg-base-200 mb-[15px]">
+        <div className="collapse collapse-plus bg-lighter mb-[15px]">
           <input type="checkbox" name="my-accordion-3" />
           <div className="collapse-title text-xl font-semibold">
             Фундамент и доставка
@@ -256,7 +256,7 @@ function ContactUs() {
           </div>
         </div>
 
-        <div className="collapse collapse-plus bg-base-200 mb-[15px]">
+        <div className="collapse collapse-plus bg-lighter mb-[15px]">
           <input type="checkbox" name="my-accordion-3" />
           <div className="collapse-title text-xl font-semibold">
             Общие вопросы, оплата, договор и сроки
