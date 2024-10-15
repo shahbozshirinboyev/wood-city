@@ -365,6 +365,342 @@ export const woodenFurniture = [
         size: "матраса 180х200 см",
         comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
       },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/loft60.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Кровать Лофт 6",
+        price: "от 7 200 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "матраса 180х200 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/loft70.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Кровать Лофт 7",
+        price: "от 7 400 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "матраса 180х200 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/loft80.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Кровать Лофт 8",
+        price: "от 7 300 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "матраса 180х200 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/loft90.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Кровать Лофт 9",
+        price: "от 7 400 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "матраса 180х200 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/loft100.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Кровать Лофт 10",
+        price: "от 7 300 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "матраса 180х200 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/eduard0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Кровать Эдуард",
+        price: "от 7 200 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "матраса 180х200 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/emeliya0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Кровать Эмилия",
+        price: "от 8 200 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "матраса 180х200 см, Высота: 170 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/emeliya20.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Кровать Эмилия 2",
+        price: "от 8 100 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "матраса 180х200 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/sofaelite0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Диван Элит",
+        price: "от 9 000 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Длина: 150 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/santa0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Диван угловой Санта",
+        price: "от 11 000 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "150x130 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/vizanti0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Диван угловой Византи",
+        price: "от 14 000 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "150x130 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/sofaprince0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Диван угловой князь",
+        price: "от 11 800 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "140x140 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/vizanti10.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Диван Византи 1",
+        price: "от 9 500 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Длина: 200 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/sofaideal0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Диван угловой Идеал",
+        price: "от 14 800 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "170x130 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/hug0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Диван HuG",
+        price: "от 9 500 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Длина: 180 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/viking0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Диван Викинг",
+        price: "от 8 700 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Длина: 140 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/retro0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Диван Ретро угловой",
+        price: "от 14 800 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "180x120 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/tsars0.jpg",
+        image1: "/furniture/sofas_beds/tsars1.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Диван Царский",
+        price: "от 6 500 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Длина: 130 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/trinity0.jpg",
+        image1: "/furniture/sofas_beds/trinity1.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Диван Троица",
+        price: "от 8 200 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Длина: 150 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/sofacomfort0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Диван комфорт",
+        price: "от 6 800 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Длина: 140 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/sofas_beds/sofaquest0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Диван Квест",
+        price: "от 6 900 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Длина: 140 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
     ],
   },
 
@@ -393,6 +729,159 @@ export const woodenFurniture = [
 
   {
     id: 4,
+    name: "Скамейки",
+    counts: [
+      {
+        id: uuidv4(),
+
+        image: "/furniture/benches/shopprovence0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Лавка Прованс",
+        price: "1 400 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Длина: 130 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/benches/wheels0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Скамья Колёс",
+        price: "1 900 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Длина: 150 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/benches/home0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Скамья домашняя",
+        price: "1 400 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Длина: 130 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      
+      {
+        id: uuidv4(),
+
+        image: "/furniture/benches/countrybench0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Скамья дачная",
+        price: "1 750 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Длина: 150 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      
+      {
+        id: uuidv4(),
+
+        image: "/furniture/benches/love0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Скамья Любава",
+        price: "1 800 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Длина: 120 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/benches/grannybench0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Скамья бабуля",
+        price: "2 000 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Длина: 130 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/benches/softbench0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Скамья мягкая",
+        price: "2 200 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Длина: 120 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/benches/triumph0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Скамья Триумф",
+        price: "1 600 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Длина: 120 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/benches/spaceplus0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Скамья простор плюс",
+        price: "1 600 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Длина: 140 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+    ],
+  },
+
+  {
+    id: 5,
     name: "Столы - Стулья",
     counts: [
       {
@@ -527,7 +1016,7 @@ export const woodenFurniture = [
   },
 
   {
-    id: 5,
+    id: 6,
     name: "Эпоксидные Столы",
     counts: [
       {
@@ -598,30 +1087,30 @@ export const woodenFurniture = [
   },
 
   {
-    id: 6,
+    id: 7,
     name: "Декоративные Балки",
     counts: [
       {
         id: uuidv4(),
 
-        image: "/no_images.jpg",
-        image1: "/no_images.jpg",
-        image2: "/no_images.jpg",
-        image3: "/no_images.jpg",
+        image: "/furniture/decorative_beams/decorativebeams0.jpg",
+        image1: "/furniture/decorative_beams/decorativebeams1.jpg",
+        image2: "/furniture/decorative_beams/decorativebeams2.jpg",
+        image3: "/furniture/decorative_beams/decorativebeams3.jpg",
         
-        title: "-",
-        price: "от - --- --- сум",
+        title: "Декоративные фалщ балки",
+        price: "от 250 000 сум за метр",
 
         availability: "Под заказ",
-        material: "-",
-        size: "-",
+        material: "Сосна",
+        size: "15х15х15 см П образный",
         comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
       },
     ],
   },
 
   {
-    id: 7,
+    id: 8,
     name: "Шкафы и Кухни",
     counts: [
       {
@@ -916,7 +1405,7 @@ export const woodenFurniture = [
   },
 
   {
-    id: 8,
+    id: 9,
     name: "Kомоды",
     counts: [
       {
