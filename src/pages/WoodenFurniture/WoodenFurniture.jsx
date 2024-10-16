@@ -13,12 +13,18 @@ import http from "../../services/http";
 import furniture_1 from "../../../public/furniture/6.jpg";
 import furniture_2 from "../../../public/furniture/24.jpg";
 import furniture_3 from "../../../public/furniture/16.jpg";
+// npm install yet-another-react-lightbox
+import Lightbox from "yet-another-react-lightbox";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/styles.css";
 
 function WoodenFurniture() {
   const [activeMenuBtn, setActiveMenuBtn] = useState(0);
   const tabsListRef = useRef(null);
   const [scrollPos, setScrollPos] = useState(0);
   const [maxScroll, setMaxScroll] = useState(0);
+  // img modal
+  const [open, setOpen] = useState(false);
 
   // Scoll Menu Section START
   const activeMenu = (id) => {
@@ -154,6 +160,7 @@ function WoodenFurniture() {
   // Product Info Modal END
 
   return (
+    <>
     <section className="container mb-[25px] text-greener">
       
       {/* <div>
@@ -216,7 +223,11 @@ function WoodenFurniture() {
             {/* Card elements Start */}
             <>
             <div className="p-3">
-              <img onClick={() => { document.getElementById(`info_${card.id}`).showModal(); setActiveCardInfo({card}); }} src={card.image} alt={card.title} className="cursor-pointer object-cover object-center h-[250px] w-full rounded-[10px]"/>
+
+              <label htmlFor={`info_${card.id}`} onClick={()=>{setActiveCardInfo({card})}}>
+                <img src={card.image} alt={card.title} className="cursor-pointer object-cover object-center h-[250px] w-full rounded-[10px]"/>
+              </label>
+
             </div>
 
             <div className="p-3"> 
@@ -232,10 +243,14 @@ function WoodenFurniture() {
                  onClick={() => { document.getElementById(`order_${card.id}`).showModal(); setActiveCardInfo({card}); setCloseModalId(`order_${card.id}`); }} >
                   Оставить заявку
                 </button>
-                <button className="btn ml-2 text-oranger hover:text-lighter bg-lighter hover:bg-oranger border-0" 
+                {/* <button className="btn ml-2 text-oranger hover:text-lighter bg-lighter hover:bg-oranger border-0" 
                   onClick={() => { document.getElementById(`info_${card.id}`).showModal(); setActiveCardInfo({card}); }} > 
                   Подробнее →
-                </button>
+                </button> */}
+                  <label className="btn ml-2 text-oranger hover:text-lighter bg-lighter hover:bg-oranger border-0"
+                         htmlFor={`info_${card.id}`} onClick={ ()=>{ setActiveCardInfo({card}) } }>
+                  Подробнее →
+                  </label>
               </div>
 
             </div>
@@ -333,24 +348,28 @@ function WoodenFurniture() {
             {/* Order Modal End */}
 
             {/* Information Modal Start */}
-            <dialog id={`info_${card.id}`} className="modal">
-              <Toaster />
-              <div className="modal-box w-11/12 max-w-5xl p-0">
+            <>
+              <input type="checkbox" id={`info_${card.id}`} className="modal-toggle" />
+
+              <div className="modal transition-all duration-300" role="dialog">
+                <Toaster />
+
+                <div className="modal-box w-11/12 max-w-5xl p-0">
                 {/* Modal header Start */}
                 <form method="dialog" className="border-b-[2px] border-base-200 h-[60px] grid grid-cols-2 items-center px-[24px] bg-custom-green-10">
                   <span className="text-custom-green-dark font-bold">Подробнее →</span>
                   <div className="text-end">
-                    <button className="btn btn-sm border-0 btn-circle text-custom-green-dark bg-custom-green-10 hover:bg-custom-green-30">{" "}✕{" "}</button>
+                  <label htmlFor={`info_${card.id}`} className="btn btn-sm border-0 btn-circle">{" "}✕{" "}</label>
                   </div>
                 </form>
                 {/* Modal header End */}
 
-                {/* <FurnitureProductInfo  /> birinchi component yasab ko'rdim */}
                 <>
                   <div className="flex flex-col justify-between lg:flex-row gap-6 p-6">
 
                     <div className="flex flex-col gap-6 lg:w-2/4">
                       <img
+                        onClick={ () => { setOpen(true); }}
                         src={activeImg}
                         alt="Active"
                         className={`w-full h-full aspect-square object-cover rounded-xl transition-all duration-200 border border-base-200 ${
@@ -425,11 +444,12 @@ function WoodenFurniture() {
                     </div>
                   </div>
                 </>
+                  
+                </div>
+                {/* Outside close section start */}
+                <label class="modal-backdrop" for={`info_${card.id}`}> Close </label>
               </div>
-              {/* Outside close section start */}
-              <form method="dialog" className="modal-backdrop"><button>close</button></form>
-              {/* Outside close section end */}
-            </dialog>
+            </>
             {/* Information Modal End */}
 
             {/* Modals END */}
@@ -438,6 +458,28 @@ function WoodenFurniture() {
       </div>
       {/* Cards END */}
     </section>
+      <>
+        <Lightbox
+            open={open}
+            plugins={[Zoom]}
+            close={() => setOpen(false)}
+            slides={[ { src: `${activeImg}` } ]}
+            carousel={{ finite: true }}
+            styles={{ container: { backgroundColor: "rgba(0, 0, 0, .8)" } }}
+            render={{
+                buttonPrev: () => null, // Chapga o'tkazuvchi tugmani o'chiradi
+                buttonNext: () => null, // O'ngga o'tkazuvchi tugmani o'chiradi
+              }}
+              zoom={{
+                maxZoomPixelRatio: 5,  // Zoom imkoniyatlarini oshiradi (bu qiymatni oshirishingiz mumkin)
+                zoomInMultiplier: 2,   // Zoom bosqichlari tezligini boshqaradi
+                doubleTapDelay: 300,   // Ikki marta bosish uchun kechikish vaqti (ms)
+                doubleClickDelay: 300, // Ikki marta bosish uchun kechikish vaqti (ms)
+                scrollToZoom: true,    // Skrin qilish orqali zoom qilish imkoniyati
+            }}
+        />
+      </>
+    </>
   );
 }
 
