@@ -1441,19 +1441,109 @@ export const woodenHouse = [
       {
         id: uuidv4(),
 
-        image: "/houses/buran_plus/buran_1.jpg",
-        image1: "/houses/buran_plus/buran_2.jpg",
-        image2: "/houses/buran_plus/buran_3.jpg",
-        image3: "/houses/buran_plus/buran_4.jpg",
+        image: "/houses/frame_houses/hometerrace0.jpg",
+        image1: "/houses/frame_houses/hometerrace1.jpg",
+        image2: "/houses/frame_houses/hometerrace2.jpg",
+        image3: "/houses/frame_houses/hometerrace3.jpg",
 
-        plan2d: "/houses/buran_plus/plan2d_1.jpg",
+        plan2d: "/houses/frame_houses/hometerrace0_plan2d.jpg",
 
-        title: "«Норвегия» 40",
-        price: "154",
+        title: "Дом 10 на 10 с террасой",
+        price: "Под Крышу: от 4 400 000 сум",
         
         project: "Дом",
-        square: "35",
-        size: "2000-800-40",
+        square: "91 м²",
+        size: "10x10 м",
+        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/houses/frame_houses/bighometerrace0.jpg",
+        image1: "/houses/frame_houses/bighometerrace1.jpg",
+        image2: "/houses/frame_houses/bighometerrace2.jpg",
+        image3: "/houses/frame_houses/bighometerrace3.jpg",
+
+        plan2d: "/houses/frame_houses/bighometerrace0_plan2d.jpg",
+
+        title: "Дом 11 на 6 с большой террасой",
+        price: "Под Крышу: от 4 400 000 сум",
+        
+        project: "Дом",
+        square: "66 м²",
+        size: "11x6 м",
+        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/houses/frame_houses/homegableroof0.jpg",
+        image1: "/houses/frame_houses/homegableroof1.jpg",
+        image2: "/houses/frame_houses/homegableroof2.jpg",
+        image3: "/houses/frame_houses/homegableroof3.jpg",
+
+        plan2d: "/houses/frame_houses/homegableroof0_plan2d.jpg",
+
+        title: "Дом 6 на 4 с двухскатной крышей",
+        price: "Под Крышу: от 4 400 000 сум",
+        
+        project: "Дом",
+        square: "21 м²",
+        size: "6x4 м",
+        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/houses/frame_houses/home88terrace0.jpg",
+        image1: "/houses/frame_houses/home88terrace1.jpg",
+        image2: "/houses/frame_houses/home88terrace2.jpg",
+        image3: "/houses/frame_houses/home88terrace3.jpg",
+
+        plan2d: "/houses/frame_houses/home88terrace0_plan2d.jpg",
+
+        title: "Дом 8 на 8 с террасой",
+        price: "Под Крышу: от 4 400 000 сум",
+        
+        project: "Дом",
+        square: "64 м²",
+        size: "8x8 м",
+        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/houses/frame_houses/home88terrace20.jpg",
+        image1: "/houses/frame_houses/home88terrace21.jpg",
+        image2: "/houses/frame_houses/home88terrace22.jpg",
+        image3: "/houses/frame_houses/home88terrace23.jpg",
+
+        plan2d: "/houses/frame_houses/home88terrace20_plan2d.jpg",
+
+        title: "Дом 8 на 8 с террасой 2",
+        price: "Под Крышу: от 4 400 000 сум",
+        
+        project: "Дом",
+        square: "76 м²",
+        size: "8x8 м",
+        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/houses/frame_houses/housewithbedrooms0.jpg",
+        image1: "/houses/frame_houses/housewithbedrooms1.jpg",
+        image2: "/houses/frame_houses/housewithbedrooms2.jpg",
+        image3: "/houses/frame_houses/housewithbedrooms3.jpg",
+
+        plan2d: "/houses/frame_houses/housewithbedrooms0_plan2d.jpg",
+
+        title: "Каркасный дом 10 на 11 с 3 спальнями",
+        price: "Под Крышу: от 4 400 000 сум",
+        
+        project: "Дом",
+        square: "101 м²",
+        size: "11x10 м",
         comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
       },
     ],
