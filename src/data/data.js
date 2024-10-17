@@ -1421,7 +1421,247 @@ export const woodenFurniture = [
 
         availability: "Под заказ",
         material: "Сосна",
-        size: "-",
+        size: "ДxВxГ: 150x80x50 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/drawers/drawerskhatabic0.jpg",
+        image1: "/furniture/drawers/drawerskhatabic1.jpg",
+        image2: "/furniture/drawers/drawerskhatabic2.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Комод Хатабич",
+        price: "от 7 500 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 130x95x50 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/drawers/dresserbrutal0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Комод брутал",
+        price: "от 8 000 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 140x85x50 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/drawers/footwear20.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Обувница 2",
+        price: "от 5 200 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 130x70x45 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/drawers/footwear10.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Обувница 1",
+        price: "от 2 150 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 130x70x45 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/drawers/thebedsidetable0.jpg",
+        image1: "/furniture/drawers/thebedsidetable1.jpg",
+        image2: "/furniture/drawers/thebedsidetable2.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Тумба Прикроватная",
+        price: "от 7 500 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 50x50x45 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/drawers/draweriskra1.jpg",
+        image1: "/furniture/drawers/draweriskra0.jpg",
+        image2: "/furniture/drawers/draweriskra2.jpg",
+        image3: "/furniture/drawers/draweriskra3.jpg",
+        
+        title: "Комод Искра",
+        price: "от 8 700 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 120x90x50 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/drawers/drawersundertv0.jpg",
+        image1: "/furniture/drawers/drawersundertv1.jpg",
+        image2: "/furniture/drawers/drawersundertv2.jpg",
+        image3: "/furniture/drawers/drawersundertv3.jpg",
+        
+        title: "Комод под тв 2",
+        price: "от 4 700 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 140x85x50 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/drawers/cabinetundersink0.jpg",
+        image1: "/furniture/drawers/cabinetundersink1.jpg",
+        image2: "/furniture/drawers/cabinetundersink2.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Тумба под раковина 1",
+        price: "от 7 800 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 70x75x50 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/drawers/cornercabinetfloorbarrel0.jpg",
+        image1: "/furniture/drawers/cornercabinetfloorbarrel1.jpg",
+        image2: "/furniture/drawers/cornercabinetfloorbarrel2.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Угловой шкаф Пол бочка",
+        price: "от 2 300 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 60x200x55 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/drawers/bedsidetablebaby0.jpg",
+        image1: "/furniture/drawers/bedsidetablebaby1.jpg",
+        image2: "/furniture/drawers/bedsidetablebaby2.jpg",
+        image3: "/furniture/drawers/bedsidetablebaby3.jpg",
+        
+        title: "Прикроватная тумба малыш",
+        price: "от 1 900 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 50x60x45 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/drawers/livingroomdrawers0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Комод гостиный",
+        price: "от 12 000 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 170x80x50 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/drawers/drawestsar0.jpg",
+        image1: "/furniture/drawers/drawestsar1.jpg",
+        image2: "/furniture/drawers/drawestsar2.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Комод Царь",
+        price: "от 12 300 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 170x85x50 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/drawers/bedsidetablesimple0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Тумба прикроватный Простой",
+        price: "от 4 100 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 50x50x45 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/drawers/barrelshapedpedestal0.jpg",
+        image1: "/furniture/drawers/barrelshapedpedestal1.jpg",
+        image2: "/furniture/drawers/barrelshapedpedestal2.jpg",
+        image3: "/furniture/drawers/barrelshapedpedestal3.jpg",
+        
+        title: "Тумба пол бочка",
+        price: "от 3 300 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 60x80x50 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/drawers/chestofdrawersclassic0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Комод Классик",
+        price: "от 11 500 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "ДxВxГ: 130x80x55 см",
         comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
       },
     ],
