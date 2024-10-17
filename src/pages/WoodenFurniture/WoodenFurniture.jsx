@@ -10,9 +10,9 @@ import { woodenFurniture } from "../../data/data";
 // http
 import http from "../../services/http";
 //images
-import furniture_1 from "../../../public/furniture/6.jpg";
-import furniture_2 from "../../../public/furniture/24.jpg";
-import furniture_3 from "../../../public/furniture/16.jpg";
+// import furniture_1 from "../../../public/furniture/6.jpg";
+// import furniture_2 from "../../../public/furniture/24.jpg";
+// import furniture_3 from "../../../public/furniture/16.jpg";
 // npm install yet-another-react-lightbox
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";

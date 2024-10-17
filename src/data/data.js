@@ -1411,16 +1411,16 @@ export const woodenFurniture = [
       {
         id: uuidv4(),
 
-        image: "/no_images.jpg",
-        image1: "/no_images.jpg",
-        image2: "/no_images.jpg",
-        image3: "/no_images.jpg",
+        image: "/furniture/drawers/drawersforaquarium0.jpg",
+        image1: "/furniture/drawers/drawersforaquarium1.jpg",
+        image2: "/furniture/drawers/drawersforaquarium2.jpg",
+        image3: "/furniture/drawers/drawersforaquarium3.jpg",
         
-        title: "-",
-        price: "от - --- --- сум",
+        title: "Комод под аквариум",
+        price: "от 10 400 000 сум",
 
         availability: "Под заказ",
-        material: "-",
+        material: "Сосна",
         size: "-",
         comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
       },
