@@ -24,7 +24,7 @@ function LeaveRequest() {
             toast.error("Введите свой номер телефона!")
             return;
         }
-        if (phoneValue.length <= 11) {
+        if (!(phoneValue.length >= 11)) {
           toast.error("Номер телефона введен неверно :(");
           return;
         }
