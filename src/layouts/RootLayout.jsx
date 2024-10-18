@@ -35,12 +35,12 @@ function RootLayout() {
     // Simulate 2 seconds loading
     const loadingTimer = setTimeout(() => {
       setLoadOpacity(false); // Start fade-out effect
-    }, 2000);
+    }, 1000);
 
     // After 1 second of fade-out, remove loading spinner from DOM
     const opacityTimer = setTimeout(() => {
       setLoading(false); // Remove spinner after fade-out completes
-    }, 3000); // 1 second fade-out duration
+    }, 2000); // 1 second fade-out duration
 
     return () => {
       clearTimeout(loadingTimer);

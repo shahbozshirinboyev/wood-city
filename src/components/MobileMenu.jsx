@@ -51,7 +51,7 @@ function MobileMenu({ open, setOpen }) {
                   </NavLink>
                 <span className="block h-[5px] border-[3px] border-transparent"></span>
                   <NavLink to="tel:+998934563421" className="border border-lighter hover:border-greener px-2 py-1 rounded-[5px]">
-                    +998 (12) 345 45 52
+                    +998 (--) --- -- --
                   </NavLink>
                   </p>
                 </div>

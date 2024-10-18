@@ -16,37 +16,25 @@ function LeaveRequest() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Ism va telefon raqamini tekshirish
         if (!nameValue) {
-            toast.error("Ismingizni kiriting!")
+            toast.error("Введите свое имя!")
             return;
         }
         if (!phoneValue) {
-            toast.error("Telefon raqamingizni kiriting!")
+            toast.error("Введите свой номер телефона!")
             return;
         }
-        if (phoneValue.length !== 12) {
-          toast.error("Telefon raqam to'g'ri kiritilmagan :(");
+        if (phoneValue.length >= 11) {
+          toast.error("Номер телефона введен неверно :(");
           return;
         }
-
-        // Formani muvaffaqiyatli yuborish
-        // console.log('Ism:', nameValue);
-        // console.log('Telefon raqami:', phoneValue);
-        // Boshqa submit funksiyalarini qo'shing
-
         toast.promise(
               http.post('/sendMessage', 
                 {
-                //   chat_id: "660100854",
                   chat_id: "-1002294640036",
                 // yangi chat ID olish uchun so'rov yuborish kerak: https://api.telegram.org/bot8110745041:AAGgqllrE9mwsCkQK8mhFsiG2quMGJHkD8I/getUpdates
                 //                                                  https://api.telegram.org/bot${token}/getUpdates
-                  text: `
-                  Запрос отложен:
-
-                  👤Имя: ${nameValue}
-                  📱Телефон: +${phoneValue}`
+                  text: `Новый запрос:\n\nИмя: ${nameValue}\nТелефон: +${phoneValue}\n\nКлиент попросил, чтобы с ним связались по номеру телефона.`
                 }
               ),
               {

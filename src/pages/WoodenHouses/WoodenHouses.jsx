@@ -81,15 +81,15 @@ function WoodenHouses() {
     e.preventDefault();
     console.log(activeCardInfo);
     if (!nameValue) {
-      toast.error("Ismingizni kiriting!");
+      toast.error("Введите свое имя!");
       return;
     }
     if (!phoneValue) {
-      toast.error("Telefon raqamingizni kiriting!");
+      toast.error("Введите свой номер телефона!");
       return;
     }
-    if (phoneValue.length !== 12) {
-      toast.error("Telefon raqam to'g'ri kiritilmagan :(");
+    if (phoneValue.length >= 11) {
+      toast.error("Номер телефона введен неверно :(");
       return;
     }
 
@@ -99,7 +99,7 @@ function WoodenHouses() {
       http.post("/sendPhoto", {
         chat_id: "-1002294640036",
         photo: photo,
-        caption: ` Запрос отложен:\n\nOrder: ${activeCardInfo.card.title}\n👤Имя: ${nameValue}\n📱Телефон: +${phoneValue}`,
+        caption: `Новый запрос:\n\nЗаказ: ${activeCardInfo.card.title}\nЦена: ${activeCardInfo.card.price}\nИмя: ${nameValue}\nТелефон: +${phoneValue}\n\nКлиент выразил интерес к деревянному дому и попросил связаться с ним по номеру телефона.`,
       }),
       {
         loading: "Отправка сообщения...",
