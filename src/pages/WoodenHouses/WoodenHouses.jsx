@@ -97,10 +97,10 @@ function WoodenHouses() {
 
     toast.promise(
       http.post("/sendPhoto", {
-        // chat_id: "-1002294640036", // test my group
-        chat_id: "-1001631640240", // main
+        chat_id: "-1002294640036", // test my group
+        // chat_id: "-1001631640240", // main
         photo: photo,
-        caption: `Новый запрос:\n\nЗаказ: ${activeCardInfo.card.title}\nЦена: ${activeCardInfo.card.price}\nИмя: ${nameValue}\nТелефон: +${phoneValue}\n\nКлиент выразил интерес к деревянному дому и попросил связаться с ним по номеру телефона.`,
+        caption: `Новый запрос:\n\nЗаказ: ${activeCardInfo.card.title}\nЦена: ${activeCardInfo.card.price}\n\nИмя: ${nameValue}\nТелефон: +${phoneValue}\n\nКлиент выразил интерес к деревянному дому и попросил связаться с ним по номеру телефона.`,
       }),
       {
         loading: "Отправка сообщения...",

@@ -31,8 +31,8 @@ function LeaveRequest() {
         toast.promise(
               http.post('/sendMessage', 
                 {
-                  // chat_id: "-1002294640036", // test my group
-                  chat_id: "-1001631640240", // main
+                  chat_id: "-1002294640036", // test my group
+                  // chat_id: "-1001631640240", // main
                 // yangi chat ID olish uchun so'rov yuborish kerak: https://api.telegram.org/bot8110745041:AAGgqllrE9mwsCkQK8mhFsiG2quMGJHkD8I/getUpdates
                 //                                                  https://api.telegram.org/bot${token}/getUpdates
                   text: `Новый запрос:\n\nИмя: ${nameValue}\nТелефон: +${phoneValue}\n\nКлиент попросил, чтобы с ним связались по номеру телефона.`
