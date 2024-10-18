@@ -20,7 +20,7 @@ export default {
         },
       },
       animation: {
-        spinner: 'spinner 1s linear infinite',
+        spinner: 'spinner .7s linear infinite',
       },
       keyframes: {
         spinner: {

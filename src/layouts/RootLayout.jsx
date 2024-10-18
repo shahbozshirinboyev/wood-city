@@ -12,7 +12,8 @@ import LeaveRequest from "../components/LeaveRequest";
 
 function RootLayout() {
 
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [loadOpacity, setLoadOpacity] = useState(true);
   
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -30,12 +31,29 @@ function RootLayout() {
     };
   }, []);
 
+  useEffect(() => {
+    // Simulate 2 seconds loading
+    const loadingTimer = setTimeout(() => {
+      setLoadOpacity(false); // Start fade-out effect
+    }, 2000);
+
+    // After 1 second of fade-out, remove loading spinner from DOM
+    const opacityTimer = setTimeout(() => {
+      setLoading(false); // Remove spinner after fade-out completes
+    }, 3000); // 1 second fade-out duration
+
+    return () => {
+      clearTimeout(loadingTimer);
+      clearTimeout(opacityTimer);
+    };
+  }, []);
+
   return (
     <>
 
-      <Toaster />
+      {loading && <Loading loadOpacity={loadOpacity} />}
 
-      {loading && <Loading />}
+      <Toaster />
 
       <LeaveRequest />
 
