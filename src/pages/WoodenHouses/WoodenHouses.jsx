@@ -304,7 +304,7 @@ function WoodenHouses() {
 
               <img
                 // onClick={() => { document.getElementById(`info_${card.id}`).showModal(); setActiveCardInfo({card}); }}
-                className="rounded-2xl cursor-pointer absolute top-3 left-3 w-[160px] hover:w-full hover:h-[350px] hover:top-0 hover:left-0 object-cover transition-all duration-300"
+                className={` ${card.plan2d === "/no_images.jpg" ? "hidden" : ""} rounded-2xl cursor-pointer absolute top-3 left-3 w-[160px] hover:w-full hover:h-[350px] hover:top-0 hover:left-0 object-cover transition-all duration-300`}
                 src={card.plan2d}
                 alt=""
               />
