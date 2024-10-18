@@ -56,7 +56,7 @@ function MobileMenu({ open, setOpen }) {
                   </p>
                 </div>
                 <div className="flex items-center justify-start text-[20px] my-4">
-                  <NavLink to="">
+                  <NavLink to="https://t.me/wood_city_uz">
                     <i className="bi bi-telegram mr-[10px] hover:text-sky-500 transition-all duration-200"></i>
                   </NavLink>
                   <NavLink to="">

@@ -29,7 +29,7 @@ function ContactUs() {
               t.me/wood_city_uz
             </span>
             <button className="border border-lighter p-1 rounded-md mt-2 w-[150px] hover:bg-sky-500 font-medium hover:text-lighter transition-all duration-300 hover:border-sky-500">
-              <NavLink to="tel:+998770086563" className="block w-full h-full" >Телеграм</NavLink>
+              <NavLink to="https://t.me/wood_city_uz" className="block w-full h-full" >Телеграм</NavLink>
             </button>
           </div>
 

@@ -249,7 +249,7 @@ export const woodenFurniture = [
         price: "от 6 200 000 сум",
 
         availability: "Под заказ",
-        material: "Сосна",
+        material: "",
         size: "матраса 180х200 см",
         comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
       },
@@ -711,16 +711,320 @@ export const woodenFurniture = [
       {
         id: uuidv4(),
 
-        image: "/no_images.jpg",
+        image: "/furniture/chandeliers_lighting/lustawheel0.jpg",
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
         
-        title: "-",
-        price: "от - --- --- сум",
+        title: "Люстра Колесо",
+        price: "от 1 900 000 сум",
 
         availability: "Под заказ",
-        material: "-",
+        material: "Сосна",
+        size: "Д: 100 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/chandeliers_lighting/chandelierbath0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Люстра Банная",
+        price: "от 1 200 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Д: 70 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/chandeliers_lighting/chandelierkolestr0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Люстра Колестр",
+        price: "от 800 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Д: 70 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/chandeliers_lighting/chandelierbrown0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Люстра Браун",
+        price: "от 1 100 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "100x100 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/chandeliers_lighting/calibrichandelier0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Люстра Калибри",
+        price: "от 1 100 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Д: 80 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/chandeliers_lighting/lampwithtorch0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Светильник Колесо с Факел",
+        price: "от 500 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "-",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/chandeliers_lighting/chandelierural0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Люстра Урал",
+        price: "от 750 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "85x75 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/chandeliers_lighting/chandelierbrus0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Люстра Брус",
+        price: "от 1 300 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "100x100 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/chandeliers_lighting/chandeliersteam0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Люстра Парная",
+        price: "от 950 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Д: 70 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/chandeliers_lighting/chandelieroldboard0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Люстра  старая доска",
+        price: "от 1 300 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "120x90 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/chandeliers_lighting/chandeliership0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Люстра Кораблик",
+        price: "от 750 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "120 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/chandeliers_lighting/baron_chandelier0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Люстра Барон",
+        price: "от 950 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "90x90 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/chandeliers_lighting/chandelierwheel20.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Люстра колесо 2",
+        price: "от 3 400 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Д: 120 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/chandeliers_lighting/chandelierkorablik20.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Люстра Кораблик 2",
+        price: "от 950 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Л: 100 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/chandeliers_lighting/chandelierspace0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Люстра простор",
+        price: "от 800 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "75x60 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/chandeliers_lighting/chandelierwheelwithlantern0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Люстра Колесо 3 с фонарь",
+        price: "от 3 700 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "Д: 120 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/chandeliers_lighting/torchlamp0.jpg",
+        image1: "/furniture/chandeliers_lighting/torchlamp1.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Cветильник Факел",
+        price: "от 400 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "60 см",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/chandeliers_lighting/lamplantern0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Светильник Фонарь",
+        price: "от 600 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "-",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/chandeliers_lighting/sconcelamp0.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Светильник Бра",
+        price: "от 450 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "-",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/chandeliers_lighting/sconcelamp20.jpg",
+        image1: "/no_images.jpg",
+        image2: "/no_images.jpg",
+        image3: "/no_images.jpg",
+        
+        title: "Светильник Бра 2",
+        price: "от 450 000 сум",
+
+        availability: "Под заказ",
+        material: "Сосна",
         size: "-",
         comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
       },
@@ -2000,109 +2304,4 @@ export const woodenHouse = [
       },
     ],
   },
-
-  // {
-  //   id: 4,
-  //   name: "Граф",
-  //   counts: [
-  //     {
-  //       id: uuidv4(),
-  //       image: "/furniture/7.jpg",
-  //       title: "1-Стулья",
-  //       price: "100",
-  //       date: "29392838",
-  //     },
-  //     {
-  //       id: uuidv4(),
-  //       image: "/furniture/8.jpg",
-  //       title: "2-Стулья",
-  //       price: "100",
-  //       date: "29392838",
-  //     },
-  //   ],
-  // },
-
-  // {
-  //   id: 5,
-  //   name: "Голд",
-  //   counts: [
-  //     {
-  //       id: uuidv4(),
-  //       image: "/furniture/9.jpg",
-  //       title: "1-Эпоксидные",
-  //       price: "100",
-  //       date: "29392838",
-  //     },
-  //     {
-  //       id: uuidv4(),
-  //       image: "/furniture/10.jpg",
-  //       title: "2-Эпоксидные",
-  //       price: "100",
-  //       date: "29392838",
-  //     },
-  //   ],
-  // },
-
-  // {
-  //   id: 6,
-  //   name: "Форест",
-  //   counts: [
-  //     {
-  //       id: uuidv4(),
-  //       image: "/furniture/11.jpg",
-  //       title: "1-Декоративные",
-  //       price: "100",
-  //       date: "29392838",
-  //     },
-  //     {
-  //       id: uuidv4(),
-  //       image: "/furniture/12.jpg",
-  //       title: "2-Декоративные",
-  //       price: "100",
-  //       date: "29392838",
-  //     },
-  //   ],
-  // },
-
-  // {
-  //   id: 7,
-  //   name: "Браун",
-  //   counts: [
-  //     {
-  //       id: uuidv4(),
-  //       image: "/furniture/13.jpg",
-  //       title: "1-Кухни",
-  //       price: "100",
-  //       date: "29392838",
-  //     },
-  //     {
-  //       id: uuidv4(),
-  //       image: "/furniture/14.jpg",
-  //       title: "2-Кухни",
-  //       price: "100",
-  //       date: "29392838",
-  //     },
-  //   ],
-  // },
-
-  // {
-  //   id: 8,
-  //   name: "Дeрeвянный домик.",
-  //   counts: [
-  //     {
-  //       id: uuidv4(),
-  //       image: "/furniture/15.jpg",
-  //       title: "1-Комоды",
-  //       price: "100",
-  //       date: "29392838",
-  //     },
-  //     {
-  //       id: uuidv4(),
-  //       image: "/furniture/16.jpg",
-  //       title: "2-Комоды",
-  //       price: "100",
-  //       date: "29392838",
-  //     },
-  //   ],
-  // },
 ];
