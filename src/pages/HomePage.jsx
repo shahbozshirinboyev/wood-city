@@ -188,7 +188,7 @@ function HomePage() {
           Для Гос заказов ЕИС
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 card card-side gap-0 md:gap-8  bg-base-100 border border-lighter bg-lighterbg p-3 rounded-[20px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 card card-side gap-0 md:gap-8 border border-lighter bg-lighterbg p-3 rounded-[20px]">
 
           <figure>
             <div className="carousel carousel-vertical h-96 rounded-[20px]">
