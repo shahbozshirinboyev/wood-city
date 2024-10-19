@@ -6,6 +6,7 @@ export default {
     extend: {
       colors: {
         lighter: "#F5F2DC",
+        lighterbg: "#fffef4",
         oranger: "#F0AF18",
         greener: "#34853D",
       },

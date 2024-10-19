@@ -219,7 +219,7 @@ function WoodenFurniture() {
       {/* Cards START */}
       <div className="grid grid-cols-1 gap-3 py-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {getCounts(activeMenuBtn).map((card) => (
-          <div key={card.id} className="rounded-[10px] border border-lighter bg-white">
+          <div key={card.id} className="rounded-[10px] border border-lighter">
 
             {/* Card elements Start */}
             <>

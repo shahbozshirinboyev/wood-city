@@ -49,7 +49,7 @@ function RootLayout() {
   }, []);
 
   return (
-    <>
+    <div className="bg-lighterbg">
 
       {loading && <Loading loadOpacity={loadOpacity} />}
 
@@ -71,7 +71,7 @@ function RootLayout() {
       </footer>
       {/* Footer End */}
 
-    </>
+    </div>
   );
 }
 

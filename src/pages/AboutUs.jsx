@@ -21,7 +21,7 @@ function AboutUs() {
   ];
 
   return (
-    <section className="container text-greener">
+    <section className="container text-greener bg-lighterbg">
       
       <p className="font-bold text-[32px] text-center md:text-center my-[50px]">{" "}О нас{" "}</p>
 
