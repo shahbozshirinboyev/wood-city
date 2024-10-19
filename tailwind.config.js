@@ -29,9 +29,12 @@ export default {
           '100%': { transform: 'rotate(360deg)' },
         },
       },
+      fontFamily:{
+        sans: ['Didact Gothic', 'sans-serif'],
+      }
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"),],
   daisyui: {
     darkTheme: false, // Disable dark mode in DaisyUI
   },
