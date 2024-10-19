@@ -43,12 +43,12 @@ function WoodenFurniture() {
   }, []);
 
   const scrollRight = () => {
-    tabsListRef.current.scrollLeft += 200;
+    tabsListRef.current.scrollLeft += 250;
     setScrollPos(tabsListRef.current.scrollLeft);
   };
 
   const scrollLeft = () => {
-    tabsListRef.current.scrollLeft -= 200;
+    tabsListRef.current.scrollLeft -= 250;
     setScrollPos(tabsListRef.current.scrollLeft);
   };
 
@@ -194,13 +194,13 @@ function WoodenFurniture() {
             <i onClick={scrollLeft} className="bi bi-chevron-left text-greener text-[14px] cursor-pointer hover:bg-lighter hover:text-greener flex justify-center items-center w-[40px] h-[40px] rounded-full transition-all duration-200"></i>
           </div>
           {/* Left button end */}
-          <ul ref={tabsListRef} onScroll={manageIcons} className="flex gap-4 px-6 py-3 overflow-x-scroll font-semibold select-none scrollbar-hide">
+          <ul ref={tabsListRef} onScroll={manageIcons} className="flex gap-3 px-5 py-2 overflow-x-scroll font-semibold select-none scrollbar-hide">
             {woodenFurniture.map((menu) => (
               <li key={menu.id}>
-                <button className={`no-underline px-5 py-1 rounded-md whitespace-nowrap transition-all duration-200 border-0 
+                <button className={`no-underline px-3 py-1 rounded-md whitespace-nowrap transition-all duration-200 border-0 
                   ${activeMenuBtn === menu.id
                       ? "bg-greener text-lighter"
-                      : "bg-white text-greener"
+                      : "bg-lighterbg text-greener"
                   }`}
                   onClick={() => activeMenu(menu.id)}
                 >{menu.name}</button>

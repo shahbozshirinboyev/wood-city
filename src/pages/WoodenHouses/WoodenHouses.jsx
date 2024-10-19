@@ -44,12 +44,12 @@ function WoodenHouses() {
   }, []);
 
   const scrollRight = () => {
-    tabsListRef.current.scrollLeft += 200;
+    tabsListRef.current.scrollLeft += 250;
     setScrollPos(tabsListRef.current.scrollLeft);
   };
 
   const scrollLeft = () => {
-    tabsListRef.current.scrollLeft -= 200;
+    tabsListRef.current.scrollLeft -= 250;
     setScrollPos(tabsListRef.current.scrollLeft);
   };
 
@@ -252,15 +252,15 @@ function WoodenHouses() {
           <ul
             ref={tabsListRef}
             onScroll={manageIcons}
-            className="flex gap-4 px-6 py-3 overflow-x-scroll font-semibold select-none scrollbar-hide"
+            className="flex gap-3 px-5 py-2 overflow-x-scroll font-semibold select-none scrollbar-hide"
           >
             {woodenHouse.map((menu) => (
               <li key={menu.id}>
                 <button
-                  className={`no-underline px-5 py-1 rounded-md whitespace-nowrap transition-all duration-200 border-0 ${
+                  className={`no-underline px-3 py-1 rounded-md whitespace-nowrap transition-all duration-200 border-0 ${
                     activeMenuBtn === menu.id
                       ? "bg-greener text-lighter"
-                      : "bg-white text-greener"
+                      : "bg-lighterbg text-greener"
                   }`}
                   onClick={() => activeMenu(menu.id)}
                 >
