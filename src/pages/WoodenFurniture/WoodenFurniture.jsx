@@ -208,7 +208,8 @@ function WoodenFurniture() {
             ))}
           </ul>
           {/* Right button start */}
-          <div className={`absolute top-0 right-0 h-full w-[100px] bg-gradient-to-l from-lighter to-transparent flex items-center justify-end px-2 ${scrollPos < maxScroll ? "flex" : "hidden"}`}>
+          <div className={`absolute top-0 right-0 h-full w-[100px] bg-gradient-to-l from-lighter to-transparent flex items-center justify-end px-2 
+            ${scrollPos + 10 < maxScroll ? "flex" : "hidden"}`}>
             <i onClick={scrollRight} className="bi bi-chevron-right text-greener text-[14px] cursor-pointer hover:bg-lighter hover:text-greener flex justify-center items-center w-[40px] h-[40px] rounded-full transition-all duration-200"></i>
           </div>
           {/* Right button end */}

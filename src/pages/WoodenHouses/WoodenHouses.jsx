@@ -272,7 +272,7 @@ function WoodenHouses() {
 
           <div
             className={`absolute top-0 right-0 h-full w-[100px] bg-gradient-to-l from-lighter to-transparent flex items-center justify-end px-2 ${
-              scrollPos < maxScroll ? "flex" : "hidden"
+              scrollPos + 10 < maxScroll ? "flex" : "hidden"
             }`}
           >
             <i
