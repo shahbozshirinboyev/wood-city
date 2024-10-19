@@ -46,13 +46,13 @@ function MobileMenu({ open, setOpen }) {
                 <div className="flex mt-2">
                   <i className="bi bi-telephone mr-[10px]"></i>
                   <p>
-                  <NavLink to="tel:+998770086563" className="border border-lighter hover:border-greener px-2 py-1 rounded-[5px]">
-                    +998 (77) 008 65 63
-                  </NavLink>
-                <span className="block h-[5px] border-[3px] border-transparent"></span>
-                  <NavLink to="tel:+998934563421" className="border border-lighter hover:border-greener px-2 py-1 rounded-[5px]">
-                    +998 (--) --- -- --
-                  </NavLink>
+                  <NavLink to="tel:+998770086563" className="border border-transparent hover:border-greener px-2 py-1 rounded-[5px]">
+                  +998 (77) 008 65 63
+                </NavLink>
+                <span className="block h-[5px] bg-transparent border-4 border-transparent"></span>
+                <NavLink to="tel:+998" className="border border-transparent hover:border-greener px-2 py-1 rounded-[5px]">
+                  +998 (99) 999 99 99
+                </NavLink>
                   </p>
                 </div>
                 <div className="flex items-center justify-start text-[20px] my-4">

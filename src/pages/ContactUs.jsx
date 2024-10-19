@@ -13,7 +13,7 @@ function ContactUs() {
             <i className="bi bi-telephone-forward-fill text-[22px] border border-lighter p-2 rounded-lg w-[45px] h-[45px] flex justify-center items-center text-forestgreen"></i>
             <p className="mt-[15px] text-[16px] lg:text-[20px] font-semibold">Телефонный звонок</p>
             <span className="text-[14px] lg:text-[16px] block mt-1">
-              +998 94 005 78 56
+              +998 77 008 65 63
             </span>
             <button className="border border-lighter p-1 rounded-md mt-2 w-[150px] hover:bg-greener font-medium hover:text-lighter transition-all duration-300 hover:border-forestgreen">
               <NavLink to="tel:+998770086563" className="block w-full h-full" >Позвонить</NavLink>
