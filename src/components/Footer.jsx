@@ -6,14 +6,17 @@ import logo from "../../public/logo/wood_city.png";
 function Footer() {
   return (
     <section className="bg-lighter text-greener text-[14px] font-semibold md:text-[16px] shadow-md">
-
       <div className="container">
-
         <div className="py-[25px] grid grid-cols-2 lg:grid-cols-4 px-2 md:px-3 lg:px-10 gap-4">
-          
           <aside>
-            <img src={logo} alt="" className="w-[140px] lg:w-[180px]  my-[25px] lg:my-[35px]" />
-            <p>Wood City "ООО" <br />с 2018 года</p>
+            <img
+              src={logo}
+              alt=""
+              className="w-[140px] lg:w-[180px]  my-[25px] lg:my-[35px]"
+            />
+            <p>
+              Wood City "ООО" <br />с 2018 года
+            </p>
           </aside>
 
           <nav className="grid grid-cols-1">
@@ -53,19 +56,28 @@ function Footer() {
           </nav>
 
           <nav className="grid grid-cols-1 mt-10 lg:mt-0">
-
             <h6 className="footer-title">Контакты</h6>
 
-            <p> <i className="bi bi-geo-alt mr-[10px]"></i>г. Чирчик, ул. Амира Темура, 68А.</p>
+            <p>
+              {" "}
+              <i className="bi bi-geo-alt mr-[10px]"></i>г. Чирчик, ул. Амира
+              Темура, 68А.
+            </p>
 
             <div className="flex mt-2">
               <i className="bi bi-telephone mr-[10px]"></i>
               <p>
-                <NavLink to="tel:+998770086563" className="border border-transparent hover:border-greener px-2 py-1 rounded-[5px]">
+                <NavLink
+                  to="tel:+998770086563"
+                  className="border border-transparent hover:border-greener px-2 py-1 rounded-[5px]"
+                >
                   +998 (77) 008 65 63
                 </NavLink>
                 <span className="block h-[5px] bg-transparent border-4 border-transparent"></span>
-                <NavLink to="tel:+998" className="border border-transparent hover:border-greener px-2 py-1 rounded-[5px]">
+                <NavLink
+                  to="tel:+998"
+                  className="border border-transparent hover:border-greener px-2 py-1 rounded-[5px]"
+                >
                   +998 (99) 999 99 99
                 </NavLink>
               </p>
@@ -87,15 +99,16 @@ function Footer() {
             </div>
 
             <div className="mb-[25px]">
-              <button 
-                  onClick={() => document.getElementById("LeaveRequest").showModal()}
-                  className="py-1 px-2 rounded-lg border border-greener hover:bg-greener hover:text-lighter transition-all duration-200">
+              <button
+                onClick={() =>
+                  document.getElementById("LeaveRequest").showModal()
+                }
+                className="py-1 px-2 rounded-lg border border-greener hover:bg-greener hover:text-lighter transition-all duration-200"
+              >
                 Оставить заявку
               </button>
             </div>
-
           </nav>
-
         </div>
 
         {/* <div className="grid grid-cols-2 border-[#E1DFDE] border-t py-2">
@@ -145,7 +158,6 @@ function Footer() {
             </div>
           </nav>
         </div> */}
-
       </div>
     </section>
   );

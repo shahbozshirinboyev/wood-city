@@ -11,12 +11,16 @@ function ContactUs() {
         <div className="grid grid-cols-2 gap-4">
           <div className="border border-lighter rounded-[10px] p-3 lg:p-6">
             <i className="bi bi-telephone-forward-fill text-[22px] border border-lighter p-2 rounded-lg w-[45px] h-[45px] flex justify-center items-center text-forestgreen"></i>
-            <p className="mt-[15px] text-[16px] lg:text-[20px] font-semibold">Телефонный звонок</p>
+            <p className="mt-[15px] text-[16px] lg:text-[20px] font-semibold">
+              Телефонный звонок
+            </p>
             <span className="text-[14px] lg:text-[16px] block mt-1">
               +998 77 008 65 63
             </span>
             <button className="border border-lighter p-1 rounded-md mt-2 w-[150px] hover:bg-greener font-medium hover:text-lighter transition-all duration-300 hover:border-forestgreen">
-              <NavLink to="tel:+998770086563" className="block w-full h-full" >Позвонить</NavLink>
+              <NavLink to="tel:+998770086563" className="block w-full h-full">
+                Позвонить
+              </NavLink>
             </button>
           </div>
 
@@ -29,7 +33,12 @@ function ContactUs() {
               t.me/wood_city_uz
             </span>
             <button className="border border-lighter p-1 rounded-md mt-2 w-[150px] hover:bg-sky-500 font-medium hover:text-lighter transition-all duration-300 hover:border-sky-500">
-              <NavLink to="https://t.me/wood_city_uz" className="block w-full h-full" >Телеграм</NavLink>
+              <NavLink
+                to="https://t.me/wood_city_uz"
+                className="block w-full h-full"
+              >
+                Телеграм
+              </NavLink>
             </button>
           </div>
 
@@ -40,7 +49,8 @@ function ContactUs() {
               Посетите наши офисы
             </span>
             <p>
-              <span className="font-semibold">Адрес: </span>г. Чирчик, ул. Амира Темура, 68А.
+              <span className="font-semibold">Адрес: </span>г. Чирчик, ул. Амира
+              Темура, 68А.
             </p>
           </div>
         </div>
@@ -57,7 +67,9 @@ function ContactUs() {
       <div className="grid grid-cols-1 md:grid-cols-2 my-[25px]">
         <div>
           <div className="flex items-center">
-            <span className="text-[60px] font-bold pr-4 text-oranger opacity-80">6</span>
+            <span className="text-[60px] font-bold pr-4 text-oranger opacity-80">
+              6
+            </span>
             <span className="text-[25px]">
               {" "}
               простых шагов, которые отделяют вас от дома мечты.

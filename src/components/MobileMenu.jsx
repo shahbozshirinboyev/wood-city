@@ -13,18 +13,25 @@ function MobileMenu({ open, setOpen }) {
             exit={{ opacity: 0, y: -100 }}
             transition={{ duration: 0.2, delay: 0.2 }}
             className="absolute top-25 left-0 w-full h-screen z-20 bg-black bg-opacity-40"
-            onClick={() => { setOpen(false); }}
+            onClick={() => {
+              setOpen(false);
+            }}
           >
-            <div 
-            onClick={ (e) => { e.stopPropagation(); } }
-            className="bg-lighter z-[22323] text-greener py-10 m-2 rounded-xl">
+            <div
+              onClick={(e) => {
+                e.stopPropagation();
+              }}
+              className="bg-lighter z-[22323] text-greener py-10 m-2 rounded-xl"
+            >
               <ul className="text-start px-10">
                 {NavbarMenu.map((item) => {
                   return (
                     <li key={item.id} className="text-[14px] py-1">
                       <NavLink
                         to={item.link}
-                        onClick={() => { setOpen(false); }}
+                        onClick={() => {
+                          setOpen(false);
+                        }}
                         className={({ isActive }) =>
                           `inline-block py-1 px-2 font-semibold whitespace-nowrap transition-all duration-300 ${
                             isActive
@@ -42,17 +49,26 @@ function MobileMenu({ open, setOpen }) {
 
               <nav className="grid grid-cols-1 mt-10 px-10">
                 <h6 className="footer-title">Контакты</h6>
-                <p><i className="bi bi-geo-alt mr-[10px]"></i>г. Чирчик, ул. Амира Темура, 68А.</p>
+                <p>
+                  <i className="bi bi-geo-alt mr-[10px]"></i>г. Чирчик, ул.
+                  Амира Темура, 68А.
+                </p>
                 <div className="flex mt-2">
                   <i className="bi bi-telephone mr-[10px]"></i>
                   <p>
-                  <NavLink to="tel:+998770086563" className="border border-transparent hover:border-greener px-2 py-1 rounded-[5px]">
-                  +998 (77) 008 65 63
-                </NavLink>
-                <span className="block h-[5px] bg-transparent border-4 border-transparent"></span>
-                <NavLink to="tel:+998" className="border border-transparent hover:border-greener px-2 py-1 rounded-[5px]">
-                  +998 (99) 999 99 99
-                </NavLink>
+                    <NavLink
+                      to="tel:+998770086563"
+                      className="border border-transparent hover:border-greener px-2 py-1 rounded-[5px]"
+                    >
+                      +998 (77) 008 65 63
+                    </NavLink>
+                    <span className="block h-[5px] bg-transparent border-4 border-transparent"></span>
+                    <NavLink
+                      to="tel:+998"
+                      className="border border-transparent hover:border-greener px-2 py-1 rounded-[5px]"
+                    >
+                      +998 (99) 999 99 99
+                    </NavLink>
                   </p>
                 </div>
                 <div className="flex items-center justify-start text-[20px] my-4">
@@ -70,9 +86,12 @@ function MobileMenu({ open, setOpen }) {
                   </NavLink>
                 </div>
                 <div>
-                  <button 
-                    onClick={() => document.getElementById("LeaveRequest").showModal()}
-                    className="py-1 px-2 rounded-lg border border-greener hover:bg-greener hover:text-lighter transition-all duration-200">
+                  <button
+                    onClick={() =>
+                      document.getElementById("LeaveRequest").showModal()
+                    }
+                    className="py-1 px-2 rounded-lg border border-greener hover:bg-greener hover:text-lighter transition-all duration-200"
+                  >
                     Оставить заявку
                   </button>
                 </div>

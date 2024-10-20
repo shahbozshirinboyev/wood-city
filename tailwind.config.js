@@ -21,20 +21,20 @@ export default {
         },
       },
       animation: {
-        spinner: 'spinner .7s linear infinite',
+        spinner: "spinner .7s linear infinite",
       },
       keyframes: {
         spinner: {
-          '0%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(360deg)' },
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
         },
       },
-      fontFamily:{
-        sans: ['Didact Gothic', 'sans-serif'],
-      }
+      fontFamily: {
+        sans: ["Didact Gothic", "sans-serif"],
+      },
     },
   },
-  plugins: [require("daisyui"),],
+  plugins: [require("daisyui")],
   daisyui: {
     darkTheme: false, // Disable dark mode in DaisyUI
   },

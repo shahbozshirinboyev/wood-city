@@ -1984,6 +1984,7 @@ export const woodenHouse = [
     counts: [
       {
         id: uuidv4(),
+        table: "yes",
 
         image: "/houses/frame_houses/hometerrace0.jpg",
         image1: "/houses/frame_houses/hometerrace1.jpg",
@@ -2002,6 +2003,7 @@ export const woodenHouse = [
       },
       {
         id: uuidv4(),
+        table: "yes",
 
         image: "/houses/frame_houses/bighometerrace0.jpg",
         image1: "/houses/frame_houses/bighometerrace1.jpg",
@@ -2020,6 +2022,7 @@ export const woodenHouse = [
       },
       {
         id: uuidv4(),
+        table: "yes",
 
         image: "/houses/frame_houses/homegableroof0.jpg",
         image1: "/houses/frame_houses/homegableroof1.jpg",
@@ -2038,6 +2041,7 @@ export const woodenHouse = [
       },
       {
         id: uuidv4(),
+        table: "yes",
 
         image: "/houses/frame_houses/home88terrace0.jpg",
         image1: "/houses/frame_houses/home88terrace1.jpg",
@@ -2056,6 +2060,7 @@ export const woodenHouse = [
       },
       {
         id: uuidv4(),
+        table: "yes",
 
         image: "/houses/frame_houses/home88terrace20.jpg",
         image1: "/houses/frame_houses/home88terrace21.jpg",
@@ -2074,6 +2079,7 @@ export const woodenHouse = [
       },
       {
         id: uuidv4(),
+        table: "yes",
 
         image: "/houses/frame_houses/housewithbedrooms0.jpg",
         image1: "/houses/frame_houses/housewithbedrooms1.jpg",
@@ -2092,6 +2098,7 @@ export const woodenHouse = [
       },    
       {
         id: uuidv4(),
+        table: "yes",
 
         image: "/houses/frame_houses/aframe0.jpg",
         image1: "/houses/frame_houses/aframe1.jpg",
@@ -2117,6 +2124,7 @@ export const woodenHouse = [
     counts: [
       {
         id: uuidv4(),
+        table: "yes",
 
         image: "/houses/bath_villas/bathvill0.jpg",
         image1: "/no_images.jpg",
@@ -2135,6 +2143,7 @@ export const woodenHouse = [
       },
       {
         id: uuidv4(),
+        table: "yes",
 
         image: "/houses/bath_villas/bath4x40.jpg",
         image1: "/no_images.jpg",
@@ -2153,6 +2162,7 @@ export const woodenHouse = [
       },
       {
         id: uuidv4(),
+        table: "yes",
 
         image: "/houses/bath_villas/bath3x30.jpg",
         image1: "/no_images.jpg",
@@ -2171,6 +2181,7 @@ export const woodenHouse = [
       },
       {
         id: uuidv4(),
+        table: "yes",
 
         image: "/houses/bath_villas/bathterrace0.jpg",
         image1: "/no_images.jpg",
@@ -2196,6 +2207,7 @@ export const woodenHouse = [
     counts: [
       {
         id: uuidv4(),
+        table: "no",
 
         image: "/houses/terrace/besedkanational0.jpg",
         image1: "/no_images.jpg",
@@ -2214,6 +2226,7 @@ export const woodenHouse = [
       },
       {
         id: uuidv4(),
+        table: "no",
 
         image: "/houses/terrace/gazeboconversation0.jpg",
         image1: "/no_images.jpg",
@@ -2232,6 +2245,7 @@ export const woodenHouse = [
       },
       {
         id: uuidv4(),
+        table: "no",
 
         image: "/houses/terrace/gazeboprostor0.jpg",
         image1: "/no_images.jpg",
@@ -2250,6 +2264,7 @@ export const woodenHouse = [
       },
       {
         id: uuidv4(),
+        table: "no",
 
         image: "/houses/terrace/gazeboprostor20.jpg",
         image1: "/no_images.jpg",
@@ -2268,6 +2283,7 @@ export const woodenHouse = [
       },
       {
         id: uuidv4(),
+        table: "no",
 
         image: "/houses/terrace/gazebogood0.jpg",
         image1: "/no_images.jpg",
@@ -2286,6 +2302,7 @@ export const woodenHouse = [
       },
       {
         id: uuidv4(),
+        table: "no",
 
         image: "/houses/terrace/gazebogood20.jpg",
         image1: "/no_images.jpg",
