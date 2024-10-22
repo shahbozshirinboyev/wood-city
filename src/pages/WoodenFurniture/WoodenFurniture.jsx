@@ -96,8 +96,8 @@ function WoodenFurniture() {
 
     toast.promise(
       http.post("/sendPhoto", {
-        chat_id: "-1002294640036", // test my group
-        // chat_id: "-1001631640240", // main
+        // chat_id: "-1002294640036", // test my group
+        chat_id: "-1001631640240", // main
         photo: photo,
         caption: `Новый запрос:\n\nЗаказ: ${activeCardInfo.card.title}\nЦена: ${activeCardInfo.card.price}\n\nИмя: ${nameValue}\nТелефон: +${phoneValue}\n\nКлиент выразил интерес к деревянной мебели и попросил связаться с ним по номеру телефона.`,
       }),
@@ -449,7 +449,7 @@ function WoodenFurniture() {
                   
                 </div>
                 {/* Outside close section start */}
-                <label class="modal-backdrop" for={`info_${card.id}`}> Close </label>
+                <label className="modal-backdrop" htmlFor={`info_${card.id}`}> Close </label>
               </div>
             </>
             {/* Information Modal End */}

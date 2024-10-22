@@ -57,7 +57,7 @@ function ContactUs() {
 
         <div className="border border-lighter rounded-[10px]">
           <iframe
-            src="https://yandex.uz/map-widget/v1/?ll=69.281712%2C41.320213&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTQzMTQxMjAzEktPyrt6YmVraXN0b24sIFRvc2hrZW50LCBZdW51c29ib2QgeW_Ku25hbGlzaGksIEFiZHVsbGEgUW9kaXJpeSBtZXRybyBiZWthdGkiCg08kIpCFeZHJUI%2C&z=16.04"
+            src="https://yandex.uz/map-widget/v1/?ll=69.561178%2C41.456412&mode=search&sll=69.566018%2C41.458024&text=41.458024%2C69.566018&z=16.47"
             allowFullScreen
             className="relative w-full h-full rounded-[10px]"
           ></iframe>
@@ -78,7 +78,9 @@ function ContactUs() {
         </div>
 
         <div className="hidden md:flex justify-end items-center">
-          <button className="flex justify-end items-end rounded-lg p-2 text-greener hover:text-lighter bg-lighter hover:bg-greener border-0 transition-all duration-300">
+          <button 
+              onClick={() => document.getElementById("LeaveRequest").showModal()}
+              className="flex justify-end items-end rounded-lg p-2 text-greener hover:text-lighter bg-lighter hover:bg-greener border-0 transition-all duration-300">
             Оставить заявку
           </button>
         </div>

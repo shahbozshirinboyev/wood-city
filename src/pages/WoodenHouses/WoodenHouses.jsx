@@ -94,8 +94,8 @@ function WoodenHouses() {
 
     toast.promise(
       http.post("/sendPhoto", {
-        chat_id: "-1002294640036", // test my group
-        // chat_id: "-1001631640240", // main
+        // chat_id: "-1002294640036", // test my group
+        chat_id: "-1001631640240", // main
         photo: photo,
         caption: `Новый запрос:\n\nЗаказ: ${activeCardInfo.card.title}\nЦена: ${activeCardInfo.card.price}\n\nИмя: ${nameValue}\nТелефон: +${phoneValue}\n\nКлиент выразил интерес к деревянному дому и попросил связаться с ним по номеру телефона.`,
       }),
@@ -650,7 +650,7 @@ function WoodenHouses() {
                             <tr>
                               <th
                                 className="text-center bg-lighter"
-                                colspan="2"
+                                colSpan="2"
                               >
                                 НЕСУЩИЕ КОНСТРУКЦИИ
                               </th>
@@ -747,7 +747,7 @@ function WoodenHouses() {
                             <tr>
                               <th
                                 className="text-center bg-lighter"
-                                colspan="2"
+                                colSpan="2"
                               >
                                 КРОВЛЯ
                               </th>
@@ -792,7 +792,7 @@ function WoodenHouses() {
                             <tr>
                               <th
                                 className="text-center bg-lighter"
-                                colspan="2"
+                                colSpan="2"
                               >
                                 КРОВЛЯ
                               </th>
@@ -838,7 +838,7 @@ function WoodenHouses() {
                     {/* table end */}
                   </div>
                   {/* Outside close section start */}
-                  <label class="modal-backdrop" for={`info_${card.id}`}>
+                  <label className="modal-backdrop" htmlFor={`info_${card.id}`}>
                     {" "}
                     Close{" "}
                   </label>
