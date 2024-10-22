@@ -25,7 +25,7 @@ function Partners({ images, from, to }) {
         })}
       </motion.div>
     </div>
-  )
+  );
 }
 
-export default Partners
+export default Partners;

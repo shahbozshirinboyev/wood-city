@@ -11,10 +11,9 @@ import Loading from "../components/Loading";
 import LeaveRequest from "../components/LeaveRequest";
 
 function RootLayout() {
-
   const [loading, setLoading] = useState(true);
   const [loadOpacity, setLoadOpacity] = useState(true);
-  
+
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -25,7 +24,7 @@ function RootLayout() {
         setIsScrolled(false);
       }
     };
-      window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -50,7 +49,6 @@ function RootLayout() {
 
   return (
     <div className="bg-lighterbg">
-
       {loading && <Loading loadOpacity={loadOpacity} />}
 
       <Toaster />
@@ -58,7 +56,11 @@ function RootLayout() {
       <LeaveRequest />
 
       {/* Navbar START top-1 md:top-2 */}
-      <nav className={`sticky ${ isScrolled ? "top-0" : "top-0" } z-[999] transition duration-300`}>
+      <nav
+        className={`sticky ${
+          isScrolled ? "top-0" : "top-0"
+        } z-[999] transition duration-300`}
+      >
         <Nabar />
       </nav>
       {/* Navbar END */}
@@ -70,7 +72,6 @@ function RootLayout() {
         <Footer />
       </footer>
       {/* Footer End */}
-
     </div>
   );
 }

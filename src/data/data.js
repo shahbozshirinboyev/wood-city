@@ -1,4 +1,4 @@
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
 export const NavbarMenu = [
   {
@@ -45,14 +45,14 @@ export const woodenFurniture = [
         image1: "/furniture/doors/suzdal1.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Дверь Суздальская",
         price: "от  2 400 000 сум кв/м",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Возможно изготовление любых размеров.",
-        comment: "Ручная работа, состаренное дерево."
+        comment: "Ручная работа, состаренное дерево.",
       },
       {
         id: uuidv4(),
@@ -61,14 +61,14 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Дверь Real",
         price: "от  2 200 000 сум кв/м",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Возможно изготовление любых размеров.",
-        comment: "Ручная работа, состаренное дерево."
+        comment: "Ручная работа, состаренное дерево.",
       },
       {
         id: uuidv4(),
@@ -77,14 +77,14 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Дверь Старая доска",
         price: "от  2 200 000 сум кв/м",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Возможно изготовление любых размеров.",
-        comment: "Ручная работа, состаренное дерево."
+        comment: "Ручная работа, состаренное дерево.",
       },
       {
         id: uuidv4(),
@@ -93,14 +93,14 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Дверь Стекло 1",
         price: "от  2 250 000 сум кв/м",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Возможно изготовление любых размеров.",
-        comment: "Ручная работа, состаренное дерево."
+        comment: "Ручная работа, состаренное дерево.",
       },
       {
         id: uuidv4(),
@@ -109,14 +109,14 @@ export const woodenFurniture = [
         image1: "/furniture/doors/enigma1.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Дверь двухстворчатый Энигма",
         price: "от  2 200 000 сум кв/м",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Возможно изготовление любых размеров.",
-        comment: "Ручная работа, состаренное дерево."
+        comment: "Ручная работа, состаренное дерево.",
       },
       {
         id: uuidv4(),
@@ -125,14 +125,14 @@ export const woodenFurniture = [
         image1: "/furniture/doors/paradisglass1.jpg",
         image2: "/furniture/doors/paradisglass2.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Дверь Парадис со стеклом",
         price: "от  2 300 000 сум кв/м",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Возможно изготовление любых размеров.",
-        comment: "Ручная работа, состаренное дерево."
+        comment: "Ручная работа, состаренное дерево.",
       },
       {
         id: uuidv4(),
@@ -141,14 +141,14 @@ export const woodenFurniture = [
         image1: "/furniture/doors/noble1.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Дверь Знатный",
         price: "от  2 250 000 сум кв/м",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Возможно изготовление любых размеров.",
-        comment: "Ручная работа, состаренное дерево."
+        comment: "Ручная работа, состаренное дерево.",
       },
       {
         id: uuidv4(),
@@ -157,14 +157,14 @@ export const woodenFurniture = [
         image1: "/furniture/doors/archie1.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Дверь Арчи",
         price: "от  2 350 000 сум кв/м",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Возможно изготовление любых размеров.",
-        comment: "Ручная работа, состаренное дерево."
+        comment: "Ручная работа, состаренное дерево.",
       },
       {
         id: uuidv4(),
@@ -173,14 +173,14 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Дверь Эверест",
         price: "от  2 300 000 сум кв/м",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Возможно изготовление любых размеров.",
-        comment: "Ручная работа, состаренное дерево."
+        comment: "Ручная работа, состаренное дерево.",
       },
       {
         id: uuidv4(),
@@ -189,14 +189,14 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Дверь Баба Яга",
         price: "от  2 500 000 сум кв/м",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Возможно изготовление любых размеров.",
-        comment: "Ручная работа, состаренное дерево."
+        comment: "Ручная работа, состаренное дерево.",
       },
       {
         id: uuidv4(),
@@ -205,14 +205,14 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Дверь Парадис 2 со стеклом",
         price: "от  2 300 000 сум кв/м",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Возможно изготовление любых размеров.",
-        comment: "Ручная работа, состаренное дерево."
+        comment: "Ручная работа, состаренное дерево.",
       },
       {
         id: uuidv4(),
@@ -221,14 +221,14 @@ export const woodenFurniture = [
         image1: "/furniture/doors/colors1.jpg",
         image2: "/furniture/doors/colors2.jpg",
         image3: "/furniture/doors/colors3.jpg",
-        
+
         title: "Дверь Расцветки",
         price: "от  2 200 000 сум кв/м",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Возможно изготовление любых размеров.",
-        comment: "Ручная работа, состаренное дерево."
+        comment: "Ручная работа, состаренное дерево.",
       },
     ],
   },
@@ -244,14 +244,15 @@ export const woodenFurniture = [
         image1: "/furniture/sofas_beds/lord1.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Кровать Лорд",
         price: "от 6 200 000 сум",
 
         availability: "Под заказ",
         material: "",
         size: "матраса 180х200 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -260,14 +261,15 @@ export const woodenFurniture = [
         image1: "/furniture/sofas_beds/elena1.jpg",
         image2: "/furniture/sofas_beds/elena2.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Кровать Елена",
         price: "от 5 400 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "матраса 180х200 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -276,14 +278,15 @@ export const woodenFurniture = [
         image1: "/furniture/sofas_beds/tsarevich1.jpg",
         image2: "/furniture/sofas_beds/tsarevich2.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Кровать Царевич",
         price: "от 5 600 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "матраса 180х200 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -292,14 +295,15 @@ export const woodenFurniture = [
         image1: "/furniture/sofas_beds/loft1.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Кровать Лофт 1",
         price: "от 8 200 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "матраса 180х200 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -308,14 +312,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Кровать Лофт 2",
         price: "от 7 800 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "матраса 180х200 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -324,14 +329,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Кровать Лофт 3",
         price: "от 7 800 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "матраса 180х200 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -340,14 +346,15 @@ export const woodenFurniture = [
         image1: "/furniture/sofas_beds/loft41.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Кровать Лофт 4",
         price: "от 6 500 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "матраса 180х200 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -356,14 +363,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Кровать Лофт 5",
         price: "от 7 100 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "матраса 180х200 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -372,14 +380,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Кровать Лофт 6",
         price: "от 7 200 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "матраса 180х200 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -388,14 +397,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Кровать Лофт 7",
         price: "от 7 400 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "матраса 180х200 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -404,14 +414,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Кровать Лофт 8",
         price: "от 7 300 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "матраса 180х200 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -420,14 +431,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Кровать Лофт 9",
         price: "от 7 400 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "матраса 180х200 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -436,14 +448,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Кровать Лофт 10",
         price: "от 7 300 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "матраса 180х200 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -452,14 +465,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Кровать Эдуард",
         price: "от 7 200 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "матраса 180х200 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -468,14 +482,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Кровать Эмилия",
         price: "от 8 200 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "матраса 180х200 см, Высота: 170 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -484,14 +499,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Кровать Эмилия 2",
         price: "от 8 100 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "матраса 180х200 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -500,14 +516,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Диван Элит",
         price: "от 9 000 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Длина: 150 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -516,14 +533,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Диван угловой Санта",
         price: "от 11 000 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "150x130 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -532,14 +550,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Диван угловой Византи",
         price: "от 14 000 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "150x130 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -548,14 +567,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Диван угловой князь",
         price: "от 11 800 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "140x140 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -564,14 +584,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Диван Византи 1",
         price: "от 9 500 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Длина: 200 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -580,14 +601,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Диван угловой Идеал",
         price: "от 14 800 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "170x130 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -596,14 +618,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Диван HuG",
         price: "от 9 500 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Длина: 180 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -612,14 +635,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Диван Викинг",
         price: "от 8 700 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Длина: 140 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -628,14 +652,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Диван Ретро угловой",
         price: "от 14 800 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "180x120 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -644,14 +669,15 @@ export const woodenFurniture = [
         image1: "/furniture/sofas_beds/tsars1.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Диван Царский",
         price: "от 6 500 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Длина: 130 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -660,14 +686,15 @@ export const woodenFurniture = [
         image1: "/furniture/sofas_beds/trinity1.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Диван Троица",
         price: "от 8 200 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Длина: 150 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -676,14 +703,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Диван комфорт",
         price: "от 6 800 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Длина: 140 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -692,14 +720,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Диван Квест",
         price: "от 6 900 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Длина: 140 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
     ],
   },
@@ -715,14 +744,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Люстра Колесо",
         price: "от 1 900 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Д: 100 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -731,14 +761,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Люстра Банная",
         price: "от 1 200 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Д: 70 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -747,14 +778,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Люстра Колестр",
         price: "от 800 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Д: 70 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -763,14 +795,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Люстра Браун",
         price: "от 1 100 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "100x100 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -779,14 +812,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Люстра Калибри",
         price: "от 1 100 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Д: 80 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -795,14 +829,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Светильник Колесо с Факел",
         price: "от 500 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "-",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -811,14 +846,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Люстра Урал",
         price: "от 750 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "85x75 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -827,14 +863,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Люстра Брус",
         price: "от 1 300 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "100x100 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -843,14 +880,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Люстра Парная",
         price: "от 950 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Д: 70 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -859,14 +897,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Люстра  старая доска",
         price: "от 1 300 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "120x90 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -875,14 +914,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Люстра Кораблик",
         price: "от 750 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "120 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -891,14 +931,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Люстра Барон",
         price: "от 950 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "90x90 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -907,14 +948,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Люстра колесо 2",
         price: "от 3 400 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Д: 120 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -923,14 +965,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Люстра Кораблик 2",
         price: "от 950 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Л: 100 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -939,30 +982,33 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Люстра простор",
         price: "от 800 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "75x60 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
 
-        image: "/furniture/chandeliers_lighting/chandelierwheelwithlantern0.jpg",
+        image:
+          "/furniture/chandeliers_lighting/chandelierwheelwithlantern0.jpg",
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Люстра Колесо 3 с фонарь",
         price: "от 3 700 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Д: 120 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -971,14 +1017,15 @@ export const woodenFurniture = [
         image1: "/furniture/chandeliers_lighting/torchlamp1.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Cветильник Факел",
         price: "от 400 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "60 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -987,14 +1034,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Светильник Фонарь",
         price: "от 600 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "-",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1003,14 +1051,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Светильник Бра",
         price: "от 450 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "-",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1019,14 +1068,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Светильник Бра 2",
         price: "от 450 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "-",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
     ],
   },
@@ -1042,14 +1092,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Лавка Прованс",
         price: "1 400 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Длина: 130 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1058,14 +1109,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Скамья Колёс",
         price: "1 900 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Длина: 150 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1074,16 +1126,17 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Скамья домашняя",
         price: "1 400 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Длина: 130 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
-      
+
       {
         id: uuidv4(),
 
@@ -1091,16 +1144,17 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Скамья дачная",
         price: "1 750 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Длина: 150 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
-      
+
       {
         id: uuidv4(),
 
@@ -1108,14 +1162,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Скамья Любава",
         price: "1 800 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Длина: 120 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1124,14 +1179,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Скамья бабуля",
         price: "2 000 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Длина: 130 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1140,14 +1196,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Скамья мягкая",
         price: "2 200 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Длина: 120 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1156,14 +1213,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Скамья Триумф",
         price: "1 600 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Длина: 120 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1172,14 +1230,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Скамья простор плюс",
         price: "1 600 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Длина: 140 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
     ],
   },
@@ -1195,14 +1254,15 @@ export const woodenFurniture = [
         image1: "/furniture/tables_chairs/dining1.jpg",
         image2: "/furniture/tables_chairs/dining2.jpg",
         image3: "/furniture/tables_chairs/dining3.jpg",
-        
+
         title: "Стол Обеденный",
         price: "от 7 500 000 сум",
-        
+
         availability: "Под заказ",
         material: "Сосна",
         size: "200x90 см",
-        comment: "300x1000 см = цена от 12 000 000 сум. Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "300x1000 см = цена от 12 000 000 сум. Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1211,14 +1271,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Стол Обеденный N2",
         price: "от 6 700 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "200x80 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1227,14 +1288,15 @@ export const woodenFurniture = [
         image1: "/furniture/tables_chairs/sailor1.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Стол Моряк",
         price: "от 4 800 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "120x80 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1243,14 +1305,15 @@ export const woodenFurniture = [
         image1: "/furniture/tables_chairs/conversation1.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Стол Беседа",
         price: "от 3 200 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "120x80 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1259,14 +1322,15 @@ export const woodenFurniture = [
         image1: "/furniture/tables_chairs/massive1.jpg",
         image2: "/furniture/tables_chairs/massive2.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Стол Массивный",
         price: "от 6 300 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "200x90 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1275,14 +1339,15 @@ export const woodenFurniture = [
         image1: "/furniture/tables_chairs/lord1.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Стол Лорд",
         price: "от 12 000 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "300x100 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1291,14 +1356,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Стол Трензель",
         price: "от 7 500 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "200x90 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1307,14 +1373,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Стол Kомпонион",
         price: "от 13 000 000 сум за комплект",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "120x80 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
     ],
   },
@@ -1330,14 +1397,15 @@ export const woodenFurniture = [
         image1: "/furniture/epoxy_table/vintage1.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Эпоксидный стол Винтаж",
         price: "от 16 500 000 сум",
-        
+
         availability: "Под заказ",
         material: "из слэба Платан, Орех, Карагач",
         size: "200x90 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1346,14 +1414,15 @@ export const woodenFurniture = [
         image1: "/furniture/epoxy_table/river1.jpg",
         image2: "/furniture/epoxy_table/river2.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Эпоксидный стол Река",
         price: "от 19 000 000 сум",
-        
+
         availability: "Под заказ",
         material: "из слэба Платан, Орех, Карагач",
         size: "250x95 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1362,14 +1431,15 @@ export const woodenFurniture = [
         image1: "/furniture/epoxy_table/oval1.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Эпоксидный стол Овал",
         price: "от 12 800 000 сум",
-        
+
         availability: "Под заказ",
         material: "из слэба Платан, Орех, Карагач",
         size: "140x85 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1378,14 +1448,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Эпоксидный стол Лофт",
         price: "от 12 800 000 сум",
-        
+
         availability: "Под заказ",
         material: "из слэба Платан, Орех, Карагач",
         size: "140x90 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
     ],
   },
@@ -1401,14 +1472,15 @@ export const woodenFurniture = [
         image1: "/furniture/decorative_beams/decorativebeams1.jpg",
         image2: "/furniture/decorative_beams/decorativebeams2.jpg",
         image3: "/furniture/decorative_beams/decorativebeams3.jpg",
-        
+
         title: "Декоративные фалщ балки",
         price: "от 250 000 сум за метр",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "15х15х15 см П образный",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
     ],
   },
@@ -1424,14 +1496,15 @@ export const woodenFurniture = [
         image1: "/furniture/cabinets_kitchens/esabel1.jpg",
         image2: "/furniture/cabinets_kitchens/esabel2.jpg",
         image3: "/furniture/cabinets_kitchens/esabel3.jpg",
-        
+
         title: "Кухня Эсабель",
         price: "от 6 500 000 сум пг/м",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "-",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1440,14 +1513,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Кухня Простор",
         price: "от 6 300 000 сум пг/м",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "-",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1456,14 +1530,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Кухня Лорд",
         price: "от 7 800 000 сум пг/м",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "-",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1472,14 +1547,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Кухня Арабика",
         price: "от 6 700 000 сум пг/м",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "-",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1488,14 +1564,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Кухня Екатерина",
         price: "от 7 700 000 сум пг/м",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "-",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1504,14 +1581,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Кухня Тайга",
         price: "от 6 200 000 сум пг/м",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "-",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1520,14 +1598,15 @@ export const woodenFurniture = [
         image1: "/furniture/cabinets_kitchens/winecellar1.jpg",
         image2: "/furniture/cabinets_kitchens/winecellar2.jpg",
         image3: "/furniture/cabinets_kitchens/winecellar3.jpg",
-        
+
         title: "Винный Погреб",
         price: "от 19 300 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 220x240x45 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1536,14 +1615,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Бочка Погреб",
         price: "от 7 200 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Диаметр: 80 см, Высота: 90 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1552,14 +1632,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Буфет Князь",
         price: "от 19 800 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 240x220x50 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1568,14 +1649,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Буфет Хатабич",
         price: "от 13 700 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 120x220x50 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1584,14 +1666,15 @@ export const woodenFurniture = [
         image1: "/furniture/cabinets_kitchens/caesar1.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Буфет Цезарь",
         price: "от 14 000 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 120x220x50 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1600,14 +1683,15 @@ export const woodenFurniture = [
         image1: "/furniture/cabinets_kitchens/special1.jpg",
         image2: "/furniture/cabinets_kitchens/special2.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Буфет Особый",
         price: "от 17 500 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 190x220x50 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1616,14 +1700,15 @@ export const woodenFurniture = [
         image1: "/furniture/cabinets_kitchens/provence1.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Буфет Прованс",
         price: "от 17 500 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 150x220x55 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1632,14 +1717,14 @@ export const woodenFurniture = [
         image1: "/furniture/cabinets_kitchens/furniturehallway1.jpg",
         image2: "/furniture/cabinets_kitchens/furniturehallway2.jpg",
         image3: "/furniture/cabinets_kitchens/furniturehallway3.jpg",
-        
+
         title: "Мебель для Прихожей",
         price: "Договорная",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "Возможно изготовление любых размеров.",
-        comment: "Ручная работа, состаренное дерево."
+        comment: "Ручная работа, состаренное дерево.",
       },
       {
         id: uuidv4(),
@@ -1648,14 +1733,14 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Обувьница вешалка Знатный",
         price: "от 6 500 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВ: 120x220 см",
-        comment: "Ручная работа, состаренное дерево."
+        comment: "Ручная работа, состаренное дерево.",
       },
       {
         id: uuidv4(),
@@ -1664,14 +1749,14 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Гардероб Гость",
         price: "от 8 700 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 130x220x50 см",
-        comment: "Ручная работа, состаренное дерево."
+        comment: "Ручная работа, состаренное дерево.",
       },
       {
         id: uuidv4(),
@@ -1680,14 +1765,14 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Обувница вешалка Уют",
         price: "от 7 200 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 130x220x45 см",
-        comment: "Ручная работа, состаренное дерево."
+        comment: "Ручная работа, состаренное дерево.",
       },
       {
         id: uuidv4(),
@@ -1696,14 +1781,14 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Обувница вешалка Охотник",
         price: "от 7 100 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 140x220x45 см",
-        comment: "Ручная работа, состаренное дерево."
+        comment: "Ручная работа, состаренное дерево.",
       },
     ],
   },
@@ -1719,14 +1804,15 @@ export const woodenFurniture = [
         image1: "/furniture/drawers/drawersforaquarium1.jpg",
         image2: "/furniture/drawers/drawersforaquarium2.jpg",
         image3: "/furniture/drawers/drawersforaquarium3.jpg",
-        
+
         title: "Комод под аквариум",
         price: "от 10 400 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 150x80x50 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1735,14 +1821,15 @@ export const woodenFurniture = [
         image1: "/furniture/drawers/drawerskhatabic1.jpg",
         image2: "/furniture/drawers/drawerskhatabic2.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Комод Хатабич",
         price: "от 7 500 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 130x95x50 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1751,14 +1838,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Комод брутал",
         price: "от 8 000 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 140x85x50 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1767,14 +1855,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Обувница 2",
         price: "от 5 200 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 130x70x45 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1783,14 +1872,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Обувница 1",
         price: "от 2 150 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 130x70x45 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1799,14 +1889,15 @@ export const woodenFurniture = [
         image1: "/furniture/drawers/thebedsidetable1.jpg",
         image2: "/furniture/drawers/thebedsidetable2.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Тумба Прикроватная",
         price: "от 7 500 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 50x50x45 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1815,14 +1906,15 @@ export const woodenFurniture = [
         image1: "/furniture/drawers/draweriskra0.jpg",
         image2: "/furniture/drawers/draweriskra2.jpg",
         image3: "/furniture/drawers/draweriskra3.jpg",
-        
+
         title: "Комод Искра",
         price: "от 8 700 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 120x90x50 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1831,14 +1923,15 @@ export const woodenFurniture = [
         image1: "/furniture/drawers/drawersundertv1.jpg",
         image2: "/furniture/drawers/drawersundertv2.jpg",
         image3: "/furniture/drawers/drawersundertv3.jpg",
-        
+
         title: "Комод под тв 2",
         price: "от 4 700 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 140x85x50 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1847,14 +1940,15 @@ export const woodenFurniture = [
         image1: "/furniture/drawers/cabinetundersink1.jpg",
         image2: "/furniture/drawers/cabinetundersink2.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Тумба под раковина 1",
         price: "от 7 800 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 70x75x50 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1863,14 +1957,15 @@ export const woodenFurniture = [
         image1: "/furniture/drawers/cornercabinetfloorbarrel1.jpg",
         image2: "/furniture/drawers/cornercabinetfloorbarrel2.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Угловой шкаф Пол бочка",
         price: "от 2 300 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 60x200x55 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1879,14 +1974,15 @@ export const woodenFurniture = [
         image1: "/furniture/drawers/bedsidetablebaby1.jpg",
         image2: "/furniture/drawers/bedsidetablebaby2.jpg",
         image3: "/furniture/drawers/bedsidetablebaby3.jpg",
-        
+
         title: "Прикроватная тумба малыш",
         price: "от 1 900 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 50x60x45 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1895,14 +1991,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Комод гостиный",
         price: "от 12 000 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 170x80x50 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1911,14 +2008,15 @@ export const woodenFurniture = [
         image1: "/furniture/drawers/drawestsar1.jpg",
         image2: "/furniture/drawers/drawestsar2.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Комод Царь",
         price: "от 12 300 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 170x85x50 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1927,14 +2025,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Тумба прикроватный Простой",
         price: "от 4 100 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 50x50x45 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1943,14 +2042,15 @@ export const woodenFurniture = [
         image1: "/furniture/drawers/barrelshapedpedestal1.jpg",
         image2: "/furniture/drawers/barrelshapedpedestal2.jpg",
         image3: "/furniture/drawers/barrelshapedpedestal3.jpg",
-        
+
         title: "Тумба пол бочка",
         price: "от 3 300 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 60x80x50 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
       {
         id: uuidv4(),
@@ -1959,14 +2059,15 @@ export const woodenFurniture = [
         image1: "/no_images.jpg",
         image2: "/no_images.jpg",
         image3: "/no_images.jpg",
-        
+
         title: "Комод Классик",
         price: "от 11 500 000 сум",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "ДxВxГ: 130x80x55 см",
-        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров."
+        comment:
+          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
     ],
   },
@@ -1995,11 +2096,12 @@ export const woodenHouse = [
 
         title: "Дом 10 на 10 с террасой",
         price: "Под Крышу: от 4 400 000 сум",
-        
+
         project: "Дом",
         square: "91 м²",
         size: "10x10 м",
-        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+        comment:
+          "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона.",
       },
       {
         id: uuidv4(),
@@ -2014,11 +2116,12 @@ export const woodenHouse = [
 
         title: "Дом 11 на 6 с большой террасой",
         price: "Под Крышу: от 4 400 000 сум",
-        
+
         project: "Дом",
         square: "66 м²",
         size: "11x6 м",
-        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+        comment:
+          "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона.",
       },
       {
         id: uuidv4(),
@@ -2033,11 +2136,12 @@ export const woodenHouse = [
 
         title: "Дом 6 на 4 с двухскатной крышей",
         price: "Под Крышу: от 4 400 000 сум",
-        
+
         project: "Дом",
         square: "21 м²",
         size: "6x4 м",
-        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+        comment:
+          "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона.",
       },
       {
         id: uuidv4(),
@@ -2052,11 +2156,12 @@ export const woodenHouse = [
 
         title: "Дом 8 на 8 с террасой",
         price: "Под Крышу: от 4 400 000 сум",
-        
+
         project: "Дом",
         square: "64 м²",
         size: "8x8 м",
-        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+        comment:
+          "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона.",
       },
       {
         id: uuidv4(),
@@ -2071,11 +2176,12 @@ export const woodenHouse = [
 
         title: "Дом 8 на 8 с террасой 2",
         price: "Под Крышу: от 4 400 000 сум",
-        
+
         project: "Дом",
         square: "76 м²",
         size: "8x8 м",
-        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+        comment:
+          "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона.",
       },
       {
         id: uuidv4(),
@@ -2090,12 +2196,13 @@ export const woodenHouse = [
 
         title: "Каркасный дом 10 на 11 с 3 спальнями",
         price: "Под Крышу: от 4 400 000 сум",
-        
+
         project: "Дом",
         square: "101 м²",
         size: "11x10 м",
-        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
-      },    
+        comment:
+          "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона.",
+      },
       {
         id: uuidv4(),
         table: "yes",
@@ -2109,11 +2216,12 @@ export const woodenHouse = [
 
         title: "Дома «А-фрейм»",
         price: "Под Крышу: от 4 400 000 сум",
-        
+
         project: "Дом",
         square: "38,5 м²",
         size: "6x6 м",
-        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+        comment:
+          "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона.",
       },
     ],
   },
@@ -2135,11 +2243,12 @@ export const woodenHouse = [
 
         title: "Баня вилл",
         price: "от 6 990 000 сум кв/м под ключ",
-        
+
         project: "Баня",
         square: "15 м²",
         size: "3x5 м",
-        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+        comment:
+          "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона.",
       },
       {
         id: uuidv4(),
@@ -2154,11 +2263,12 @@ export const woodenHouse = [
 
         title: "Баня 4х4",
         price: "от 6 990 000 сум кв/м под ключ",
-        
+
         project: "Баня",
         square: "16 м²",
         size: "4x4 м",
-        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+        comment:
+          "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона.",
       },
       {
         id: uuidv4(),
@@ -2173,11 +2283,12 @@ export const woodenHouse = [
 
         title: "Баня Мини",
         price: "от 6 990 000 сум кв/м под ключ",
-        
+
         project: "Баня",
         square: "9 м²",
         size: "3x3 м",
-        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+        comment:
+          "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона.",
       },
       {
         id: uuidv4(),
@@ -2192,11 +2303,12 @@ export const woodenHouse = [
 
         title: "Баня Каркасная",
         price: "от 6 990 000 сум кв/м под ключ",
-        
+
         project: "Баня",
         square: "16 м²",
         size: "4x4 м",
-        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+        comment:
+          "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона.",
       },
     ],
   },
@@ -2218,11 +2330,12 @@ export const woodenHouse = [
 
         title: "Беседка Националь",
         price: "от 29 000 000 сум",
-        
+
         project: "Беседка",
         square: "9 м²",
         size: "3x3 м",
-        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+        comment:
+          "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона.",
       },
       {
         id: uuidv4(),
@@ -2237,11 +2350,12 @@ export const woodenHouse = [
 
         title: "Беседка Беседа",
         price: "от 22 000 000 сум",
-        
+
         project: "Беседка",
         square: "9 м²",
         size: "3x3 м",
-        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+        comment:
+          "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона.",
       },
       {
         id: uuidv4(),
@@ -2256,11 +2370,12 @@ export const woodenHouse = [
 
         title: "Беседка Простор",
         price: "от 22 500 000 сум",
-        
+
         project: "Беседка",
         square: "9 м²",
         size: "3x3 м",
-        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+        comment:
+          "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона.",
       },
       {
         id: uuidv4(),
@@ -2275,11 +2390,12 @@ export const woodenHouse = [
 
         title: "Беседка Простор 2",
         price: "от 28 000 000 сум",
-        
+
         project: "Беседка",
         square: "12,25 м²",
         size: "3,5x3,5 м",
-        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+        comment:
+          "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона.",
       },
       {
         id: uuidv4(),
@@ -2294,11 +2410,12 @@ export const woodenHouse = [
 
         title: "Беседка Добро",
         price: "от 24 000 000 сум",
-        
+
         project: "Беседка",
         square: "9 м²",
         size: "3x3 м",
-        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+        comment:
+          "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона.",
       },
       {
         id: uuidv4(),
@@ -2313,11 +2430,12 @@ export const woodenHouse = [
 
         title: "Беседка Добро 2",
         price: "от 27 300 000 сум",
-        
+
         project: "Беседка",
         square: "9 м²",
         size: "3x3 м",
-        comment: "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона."
+        comment:
+          "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона.",
       },
     ],
   },

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Partners from "../components/Partners";
 
 // logo
-import logo from '../../public/logo/wood_city.png';
+import logo from "../../public/logo/wood_city.png";
 
 function AboutUs() {
   const [showAllGallery, setShowAllGallery] = useState(false);
@@ -22,8 +22,10 @@ function AboutUs() {
 
   return (
     <section className="container text-greener bg-lighterbg">
-      
-      <p className="font-bold text-[32px] text-center md:text-center my-[50px]">{" "}О нас{" "}</p>
+      <p className="font-bold text-[32px] text-center md:text-center my-[50px]">
+        {" "}
+        О нас{" "}
+      </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 grid-col-reverse">
         <div className="col-span-1 md:col-span-2 order-2 md:order-1">
@@ -31,7 +33,12 @@ function AboutUs() {
             Часть чего-то большего
           </p>
           <span className="my-4 mx-3 md:mx-0 block text-[18px] md:text-[22px]">
-          <b>Wood City</b> это строительство домиков, беседок, кафе ресторанов из натурального дерева. Занимающаяся коммерческой недвижимостью, малоэтажным строительством и развитием сферы внутреннего туризма в Узбекистане. Все проекты <b>Wood City</b> активно развиваются по территории Узбекистан и СНГ. Имеем ряд успешных проектов в сфере загородного отдыха и малоэтажного строительства.
+            <b>Wood City</b> это строительство домиков, беседок, кафе ресторанов
+            из натурального дерева. Занимающаяся коммерческой недвижимостью,
+            малоэтажным строительством и развитием сферы внутреннего туризма в
+            Узбекистане. Все проекты <b>Wood City</b> активно развиваются по
+            территории Узбекистан и СНГ. Имеем ряд успешных проектов в сфере
+            загородного отдыха и малоэтажного строительства.
           </span>
           {/* <span className="my-4 mx-3 md:mx-0 block text-[18px] md:text-[22px]">
             Все проекты DP-Group активно развиваются по территории России и СНГ.
@@ -71,11 +78,7 @@ function AboutUs() {
         </div>
 
         <div className="pt-5">
-          <img
-            className="w-[350px] mx-auto md:ml-0"
-            src={logo}
-            alt=""
-          />
+          <img className="w-[350px] mx-auto md:ml-0" src={logo} alt="" />
 
           <p className="mt-[35px] text-[20px]">
             Мы берём на себя весь спектр проектных и строительных работ: от

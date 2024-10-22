@@ -78,9 +78,10 @@ function ContactUs() {
         </div>
 
         <div className="hidden md:flex justify-end items-center">
-          <button 
-              onClick={() => document.getElementById("LeaveRequest").showModal()}
-              className="flex justify-end items-end rounded-lg p-2 text-greener hover:text-lighter bg-lighter hover:bg-greener border-0 transition-all duration-300">
+          <button
+            onClick={() => document.getElementById("LeaveRequest").showModal()}
+            className="flex justify-end items-end rounded-lg p-2 text-greener hover:text-lighter bg-lighter hover:bg-greener border-0 transition-all duration-300"
+          >
             Оставить заявку
           </button>
         </div>
