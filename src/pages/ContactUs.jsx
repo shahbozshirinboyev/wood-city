@@ -55,7 +55,7 @@ function ContactUs() {
           </div>
         </div>
 
-        <div className="border border-lighter rounded-[10px]">
+        <div className="border border-lighter rounded-[10px] h-[300px] md:h-full">
           <iframe
             src="https://yandex.uz/map-widget/v1/?ll=69.561178%2C41.456412&mode=search&sll=69.566018%2C41.458024&text=41.458024%2C69.566018&z=16.47"
             allowFullScreen
