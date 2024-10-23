@@ -115,6 +115,21 @@ function HomePage() {
           </div>
         </div>
 
+        <div className="my-[25px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 card card-side gap-4 md:gap-8 border border-lighter bg-lighterbg p-3 rounded-[20px]">
+            <NavLink to="/woodenhouses" className="w-full">
+              <button className="btn text-[18px] w-full text-greener hover:text-lighter bg-lighter hover:bg-greener border-0">
+                Заказать деревянный дом
+              </button>
+            </NavLink>
+            <NavLink to="/woodenfurniture" className="w-full">
+              <button className="btn text-[18px] w-full text-greener hover:text-lighter bg-lighter hover:bg-greener border-0">
+                Заказать деревянную мебель
+              </button>
+            </NavLink>
+          </div>
+        </div>
+
         <div className="mb-[50px]">
           <p className="font-bold text-[32px] text-center my-[25px] text-greener">
             Для Гос заказов ЕИС
@@ -204,7 +219,10 @@ function HomePage() {
                     className="w-full h-[250px] md:h-[350px] object-cover object-top rounded-[10px]"
                     src={woodColor.img}
                     alt="WoodColor"
-                    onClick={() => {setOpen(true); setActiveWoodColor(woodColor.img);}}
+                    onClick={() => {
+                      setOpen(true);
+                      setActiveWoodColor(woodColor.img);
+                    }}
                   />
                 </div>
               )
