@@ -28,6 +28,43 @@ export const NavbarMenu = [
   },
 ];
 
+export const homeContent = [
+  {
+    id: 0,
+    image: "/home_img/1.jpg",
+    description:
+      "Мы производим домокомплекты каркасных домов для постоянного проживания и доставляем их по всему СНГ.",
+  },
+  {
+    id: 1,
+    image: "/home_img/2.jpg",
+    description:
+      "Мы производим домокомплекты каркасных домов для постоянного проживания и доставляем их по всему СНГ.",
+  },
+  {
+    id: 2,
+    image: "/home_img/3.jpg",
+    description: "Строительство деревянных домов по всему Узбекистану и СНГ.",
+  },
+  {
+    id: 3,
+    image: "/home_img/4.jpg",
+    description: "Строительство деревянных домов по всему Узбекистану и СНГ.",
+  },
+  {
+    id: 4,
+    image: "/home_img/5.jpg",
+    description:
+      "Закажите каркасный дом из сухой строганой доски от завода производителя по отличной цене!",
+  },
+  {
+    id: 5,
+    image: "/home_img/6.jpg",
+    description:
+      "Закажите каркасный дом из сухой строганой доски от завода производителя по отличной цене!",
+  },
+];
+
 export const woodenFurniture = [
   {
     id: 0,
@@ -2438,5 +2475,64 @@ export const woodenHouse = [
           "Уникальный проект с новаторским подходом к планировке, в котором каждый элемент был тщательно продуман, чтобы обеспечить не только эстетическое наслаждение, но и максимальный комфорт для жизни. Включает в себя: просторный зал, полноценная кухонная зона с обеденным столом, санузел, банная зона.",
       },
     ],
+  },
+];
+
+export const woodColors = [
+  {
+    id: uuidv4(),
+    img: "/woodcolors/1.jpg",
+  },
+  {
+    id: uuidv4(),
+    img: "/woodcolors/2.jpg",
+  },
+  {
+    id: uuidv4(),
+    img: "/woodcolors/3.jpg",
+  },
+  {
+    id: uuidv4(),
+    img: "/woodcolors/4.jpg",
+  },
+  {
+    id: uuidv4(),
+    img: "/woodcolors/5.jpg",
+  },
+  {
+    id: uuidv4(),
+    img: "/woodcolors/6.jpg",
+  },
+  {
+    id: uuidv4(),
+    img: "/woodcolors/7.jpg",
+  },
+  {
+    id: uuidv4(),
+    img: "/woodcolors/8.jpg",
+  },
+  {
+    id: uuidv4(),
+    img: "/woodcolors/9.jpg",
+  },
+  {
+    id: uuidv4(),
+    img: "/woodcolors/10.jpg",
+  },
+  {
+    id: uuidv4(),
+    img: "/woodcolors/11.jpg",
+  },
+  {
+    id: uuidv4(),
+    img: "/woodcolors/12.jpg",
+  },
+  {
+    id: uuidv4(),
+    img: "/woodcolors/13.jpg",
+  },
+  {
+    id: uuidv4(),
+    img: "/woodcolors/14.jpg",
   },
 ];

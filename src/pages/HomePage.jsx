@@ -1,50 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { woodColors } from "../data/data";
+import { homeContent } from "../data/data";
 
 function HomePage() {
-  const arr = [
-    {
-      id: 0,
-      image: "./home_img/1.jpg",
-      description:
-        "Мы производим домокомплекты каркасных домов для постоянного проживания и доставляем их по всему СНГ.",
-    },
-    {
-      id: 1,
-      image: "./home_img/2.jpg",
-      description:
-        "Мы производим домокомплекты каркасных домов для постоянного проживания и доставляем их по всему СНГ.",
-    },
-    {
-      id: 2,
-      image: "./home_img/3.jpg",
-      description: "Строительство деревянных домов по всему Узбекистану и СНГ.",
-    },
-    {
-      id: 3,
-      image: "./home_img/4.jpg",
-      description: "Строительство деревянных домов по всему Узбекистану и СНГ.",
-    },
-    {
-      id: 4,
-      image: "./home_img/5.jpg",
-      description:
-        "Закажите каркасный дом из сухой строганой доски от завода производителя по отличной цене!",
-    },
-    {
-      id: 5,
-      image: "./home_img/6.jpg",
-      description:
-        "Закажите каркасный дом из сухой строганой доски от завода производителя по отличной цене!",
-    },
-  ];
   const sliceStart = 1;
   const sliceEnd = 6;
   const [currentIndex, setCurrentIndex] = useState(0);
   const [slicedValues, setSlicedValues] = useState([]);
+  const [showMoreColors, setShowMoreColors] = useState(false);
 
   useEffect(() => {
-    const extendedArray = [...arr, ...arr]; // Asosiy arrayni uzaytirish
+    const extendedArray = [...homeContent, ...homeContent]; // Asosiy arrayni uzaytirish
 
     const updateSlice = () => {
       const newSlice = extendedArray.slice(
@@ -56,18 +23,20 @@ function HomePage() {
 
     updateSlice(); // Komponent ishga tushganda dastlabki qiymatlarni olish
     const intervalId = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % arr.length); // Indexni yangilash
+      setCurrentIndex((prev) => (prev + 1) % homeContent.length); // Indexni yangilash
     }, 5000); // Har 5 sekundda yangilash
 
     return () => clearInterval(intervalId); // Komponent o'chirilganda intervalni to'xtatish
   }, [currentIndex]); // currentIndex ga qarab yangilash
 
   const handleNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % arr.length); // Oldinga o'tish
+    setCurrentIndex((prev) => (prev + 1) % homeContent.length); // Oldinga o'tish
   };
 
   const handlePrevious = () => {
-    setCurrentIndex((prev) => (prev - 1 + arr.length) % arr.length); // Orqaga qaytish
+    setCurrentIndex(
+      (prev) => (prev - 1 + homeContent.length) % homeContent.length
+    ); // Orqaga qaytish
   };
 
   return (
@@ -206,6 +175,50 @@ function HomePage() {
           </div>
         </div>
       </div>
+
+      <p className="font-bold text-[32px] text-center my-[50px] ">
+        {" "}
+        Возможные цвета дерева{" "}
+      </p>
+
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-[50px]">
+        {/* First show STRAT */}
+        {woodColors.map(
+          (woodColor, index) =>
+            (index < 2 || showMoreColors) && (
+              <div
+                key={woodColor.id}
+                className="border border-lighter rounded-[10px]"
+              >
+                <img
+                  className="w-full h-[350px] object-cover rounded-[10px]"
+                  src={woodColor.img}
+                  alt=""
+                />
+              </div>
+            )
+        )}
+        {/* First show STRAT */}
+      </div>
+      {/* Show All Photo START */}
+      {!showMoreColors && (
+        <div className="md:col-span-3 grid  grid-cols-4 gap- my-[25px]">
+          <div className="col-span-3 flex items-center">
+            <p className="font-bold text-[16px] md:text-[25px] lg:text-[30px] xl:text-[35px]">
+              Ещё больше цветов здесь
+            </p>
+          </div>
+          <div className="flex justify-end items-center">
+            <button
+              className="btn font-bold text-[14px] md:text-[16px] lg:text-[18px] text-greener hover:text-lighter bg-lighter hover:bg-greener border-0"
+              onClick={() => setShowMoreColors(true)}
+            >
+              Смотреть фото
+            </button>
+          </div>
+        </div>
+      )}
+      {/* Show All Photo END */}
     </section>
   );
 }
