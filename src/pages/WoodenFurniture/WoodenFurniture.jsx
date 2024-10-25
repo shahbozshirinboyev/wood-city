@@ -18,34 +18,11 @@ import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
 
-// motion framer
-import { motion } from "framer-motion";
-
 function WoodenFurniture() {
   const [activeMenuBtn, setActiveMenuBtn] = useState(0);
   const tabsListRef = useRef(null);
   const [scrollPos, setScrollPos] = useState(0);
   const [maxScroll, setMaxScroll] = useState(0);
-
-  const container = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2
-      }
-    }
-  };
-  
-  const item = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1
-    }
-  };
 
   // img modal
   const [open, setOpen] = useState(false);
@@ -263,9 +240,9 @@ function WoodenFurniture() {
         {/* Scroll Navigation links END */}
 
         {/* Cards START */}
-        <motion.div variants={container} initial="hidden" animate="visible" className="grid grid-cols-1 gap-3 py-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-3 py-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {getCounts(activeMenuBtn).map((card) => (
-            <motion.div key={card.id} variants={item} className="rounded-[10px] border border-lighter">
+            <div key={card.id} className="rounded-[10px] border border-lighter">
               {/* Card elements Start */}
               <>
                 <div className="p-3">
@@ -588,9 +565,9 @@ function WoodenFurniture() {
               {/* Information Modal End */}
 
               {/* Modals END */}
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
         {/* Cards END */}
       </section>
       <>
