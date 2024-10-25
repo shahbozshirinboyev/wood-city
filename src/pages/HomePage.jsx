@@ -201,10 +201,10 @@ function HomePage() {
           </div>
         </div>
 
-        <p className="font-bold text-[32px] text-center my-[50px] ">
+        <h3 className="font-bold text-[32px] text-center my-[50px] ">
           {" "}
           Возможные цвета дерева{" "}
-        </p>
+        </h3>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-[50px]">
           {/* First show STRAT */}
