@@ -183,9 +183,9 @@ function WoodenFurniture() {
       </div> */}
 
         <div className="mt-[25px]">
-          <p className="font-bold text-[32px] text-center my-[25px]">
+          <h1 className="font-bold text-[32px] text-center my-[25px]">
             Выберите нужную вам деревянную мебель
-          </p>
+          </h1>
         </div>
 
         {/* Scroll Navigation links START */}

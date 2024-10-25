@@ -197,10 +197,10 @@ function WoodenHouses() {
             </div>
 
             <br />
-            <p className="text-center md:text-start">
+            <h4 className="text-center md:text-start">
               Деревянные каркасные дома + Деревянные мебели под старину из
               массива.
-            </p>
+            </h4>
             <br />
 
             <div className="flex justify-center md:justify-start">
@@ -246,9 +246,9 @@ function WoodenHouses() {
         </div>
 
         <div className="mt-[25px]">
-          <p className="font-bold text-[32px] text-center my-[25px]">
+          <h1 className="font-bold text-[32px] text-center my-[25px]">
             Выберите нужный вам деревянный дом
-          </p>
+          </h1>
         </div>
 
         {/* Scroll Navigation links START */}

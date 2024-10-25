@@ -4,7 +4,7 @@ function ContactUs() {
   return (
     <section className="container mb-[25px] text-greener">
       <div className="">
-        <p className="font-bold text-[32px] text-center  my-[25px]">Контакты</p>
+        <h1 className="font-bold text-[32px] text-center  my-[25px]">Контакты</h1>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
