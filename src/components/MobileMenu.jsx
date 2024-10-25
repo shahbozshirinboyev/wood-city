@@ -64,10 +64,10 @@ function MobileMenu({ open, setOpen }) {
                     </NavLink>
                     <span className="block h-[5px] bg-transparent border-4 border-transparent"></span>
                     <NavLink
-                      to="tel:+998"
+                      to="tel:+998770091640"
                       className="border border-transparent hover:border-greener px-2 py-1 rounded-[5px]"
                     >
-                      +998 (99) 999 99 99
+                      +998 (77) 009 16 40
                     </NavLink>
                   </p>
                 </div>
@@ -78,7 +78,7 @@ function MobileMenu({ open, setOpen }) {
                   <NavLink to="">
                     <i className="bi bi-youtube mx-[10px] hover:text-red-500 transition-all duration-200"></i>
                   </NavLink>
-                  <NavLink to="">
+                  <NavLink to="https://www.instagram.com/art_old_wood.uz/">
                     <i className="bi bi-instagram mx-[10px] hover:text-pink-500 transition-all duration-200"></i>
                   </NavLink>
                   <NavLink to="">
