@@ -65,7 +65,7 @@ function HomePage() {
               }}
             >
               {index === 0 && (
-                <div className="absolute top-0 left-0 rounded-[20px] transition duration-300 p-5 w-full text-lighter h-full bg-black bg-opacity-30">
+                <div className="Для Гос заказов ЕИСabsolute top-0 left-0 rounded-[20px] transition duration-300 p-5 w-full text-lighter h-full bg-black bg-opacity-30">
                   <h1 className="text-2xl leading-normal md:text-3xl md:leading-normal lg:text-4xl lg:leading-normal xl:text-5xl xl:leading-relaxed font-bold z-[1000] uppercase md:w-[85%] mt-[50px]">
                     {item.description}
                   </h1>
@@ -163,7 +163,7 @@ function HomePage() {
               <div className="py-3 pt-3 md:pt-0">
                 <h2 className="card-title">Для Гос заказов ЕИС</h2>
                 <ul className="list-disc ml-[25px] py-4">
-                  <li className="mb-4">
+                  {/* <li className="mb-4">
                     Раздел "Для Гос заказов ЕИС" предлагает эффективную
                     платформу для оформления и мониторинга государственных
                     заказов.
@@ -176,6 +176,9 @@ function HomePage() {
                     Раздел "Для Гос заказов ЕИС" обеспечивает удобный и быстрый
                     процесс работы с государственными заказами для
                     государственного сектора.
+                  </li> */}
+                  <li className="mb-4">
+                  Сотрудничество с государственными и общественными организациями
                   </li>
                 </ul>
               </div>
