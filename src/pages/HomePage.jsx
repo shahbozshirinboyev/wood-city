@@ -116,7 +116,7 @@ function HomePage() {
         </div>
 
         <div className="my-[25px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 card card-side gap-4 md:gap-8 border border-lighter bg-lighterbg p-3 rounded-[20px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 card card-side gap-4 md:gap-6 border border-lighter bg-lighterbg p-3 rounded-[20px]">
             <NavLink to="/woodenhouses" className="w-full">
               <button className="btn text-[18px] w-full text-greener hover:text-lighter bg-lighter hover:bg-greener border-0">
                 <h1>Заказать деревянный дом</h1>
@@ -125,6 +125,11 @@ function HomePage() {
             <NavLink to="/woodenfurniture" className="w-full">
               <button className="btn text-[18px] w-full text-greener hover:text-lighter bg-lighter hover:bg-greener border-0">
                 <h1>Заказать деревянную мебель</h1>
+              </button>
+            </NavLink>
+            <NavLink to="https://sofa.wood-city.uz/" className="w-full col-span-1 md:col-span-2">
+              <button className="btn text-[18px] w-full text-greener hover:text-lighter bg-lighter hover:bg-greener border-0">
+                <h1>Мягкая мебель</h1>
               </button>
             </NavLink>
           </div>
