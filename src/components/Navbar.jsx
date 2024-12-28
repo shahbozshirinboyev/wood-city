@@ -12,9 +12,9 @@ import MobileMenu from "./MobileMenu";
 function Navbar() {
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
-  const handleToggle = () => {
-    setOpen(!open);
-  };
+  const handleToggle = () => { setOpen(!open); };
+  const scrollToTop = () => { window.scrollTo({ top: 0, behavior: "smooth", });};
+
   return (
     <section className="bg-lighter shadow-md top-0">
       <div
@@ -29,9 +29,7 @@ function Navbar() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            onClick={() => {
-              navigate("/");
-            }}
+            onClick={() => { navigate("/"); scrollToTop();}}
           />
         </div>
 
@@ -43,6 +41,7 @@ function Navbar() {
                 <li key={item.id} className="text-[14px] lg:text-[16px]">
                   <NavLink
                     to={item.link}
+                    onClick={scrollToTop}
                     className={({ isActive }) =>
                       `inline-block py-1 px-3 font-semibold whitespace-nowrap hover:text-lighter rounded-[10px] hover:bg-greener transition-all duration-300 ${
                         isActive ? "text-lighter bg-greener" : "text-greener"
