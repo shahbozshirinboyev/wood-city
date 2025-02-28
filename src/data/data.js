@@ -1505,19 +1505,50 @@ export const woodenFurniture = [
       {
         id: uuidv4(),
 
-        image: "/furniture/decorative_beams/decorativebeams0.jpg",
+        image: "/furniture/decorative_beams/flash-balki-square.jpg",
         image1: "/furniture/decorative_beams/decorativebeams1.jpg",
         image2: "/furniture/decorative_beams/decorativebeams2.jpg",
         image3: "/furniture/decorative_beams/decorativebeams3.jpg",
 
-        title: "Декоративные фалщ балки",
+        title: "Фальш-Короб",
         price: "от 250 000 сум за метр",
 
         availability: "Под заказ",
         material: "Сосна",
         size: "15х15х15 см П образный",
-        comment:
-          "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/decorative_beams/decorativebeams0.jpg",
+        image1: "/furniture/decorative_beams/decorativebeams1.jpg",
+        image2: "/furniture/decorative_beams/decorativebeams2.jpg",
+        image3: "/furniture/decorative_beams/decorativebeams3.jpg",
+
+        title: "Балка П-образная",
+        price: "от 250 000 сум за метр",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "15х15х15 см П образный",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
+      },
+      {
+        id: uuidv4(),
+
+        image: "/furniture/decorative_beams/g-beams.jpg",
+        image1: "/furniture/decorative_beams/decorativebeams1.jpg",
+        image2: "/furniture/decorative_beams/decorativebeams2.jpg",
+        image3: "/furniture/decorative_beams/decorativebeams3.jpg",
+
+        title: "Балка Г-образная",
+        price: "от 250 000 сум за метр",
+
+        availability: "Под заказ",
+        material: "Сосна",
+        size: "15х15х15 см П образный",
+        comment: "Ручная работа, состаренное дерево. Возможно изготовление любых размеров.",
       },
     ],
   },
