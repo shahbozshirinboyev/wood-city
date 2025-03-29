@@ -175,32 +175,15 @@ function WoodenHouses() {
             Готовые модульные дома и бани
           </p> */}
 
-            <p className="text-[20px] md:text-[18px] text-center md:text-start mt-[25px]">
-              Загородный жизнь с комфортом
-              <br />
-              <span>
-                <b>от 4 400 000 сум кв/м.</b>
-              </span>
-            </p>
-
+            <h1 className="text-[20px] md:text-[18px] text-center md:text-start mt-[25px]">✨ Wood City — Дом вашей мечты! ✨</h1>
             <br />
-
             <div className="text-[20px] md:text-[18px]">
-              <p className="text-center md:text-start">
-                {" "}
-                Под Крышу – от 4 400 000 сум{" "}
-              </p>
-              <p className="text-center md:text-start">
-                {" "}
-                Под Ключ – от 6 980 000 сум{" "}
-              </p>
+              <p className="text-center md:text-start">Под крышей - от 3 600 000 сум за кв/м.</p>
+              <p className="text-center md:text-start">Под ключ без мебели - от 4 420 000 сум за кв/м.</p>
+              <p className="text-center md:text-start">Под ключ с мебелью - от 6 200 000 сум за кв/м.</p>
             </div>
-
             <br />
-            <h4 className="text-center md:text-start">
-              Деревянные каркасные дома + Деревянные мебели под старину из
-              массива.
-            </h4>
+            <h2 className="text-center md:text-start">🌳 Wood City — натуральные материалы, стиль и комфорт в каждом доме!</h2>
             <br />
 
             <div className="flex justify-center md:justify-start">
@@ -353,7 +336,7 @@ function WoodenHouses() {
                   >
                     Оставить заявку
                   </button>
-                  {/* <button className="btn ml-2 text-oranger hover:text-lighter bg-lighter hover:bg-oranger border-0" 
+                  {/* <button className="btn ml-2 text-oranger hover:text-lighter bg-lighter hover:bg-oranger border-0"
                 onClick={() => { document.getElementById(`info_${card.id}`).showModal(); setActiveCardInfo({card}); }}>
                 Подробнее →
               </button> */}
