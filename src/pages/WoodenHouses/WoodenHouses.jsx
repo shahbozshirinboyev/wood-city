@@ -177,13 +177,13 @@ function WoodenHouses() {
 
             <h1 className="text-[20px] md:text-[18px] text-center md:text-start mt-[25px]">✨ Wood City — Дом вашей мечты! ✨</h1>
             <br />
-            <div className="text-[20px] md:text-[18px]">
+            <div className="text-[16px] md:text-[15px] lg:text-[18px]">
               <p className="text-center md:text-start">Под крышей - от 3 600 000 сум за кв/м.</p>
               <p className="text-center md:text-start">Под ключ без мебели - от 4 420 000 сум за кв/м.</p>
               <p className="text-center md:text-start">Под ключ с мебелью - от 6 200 000 сум за кв/м.</p>
             </div>
             <br />
-            <h2 className="text-center md:text-start">🌳 Wood City — натуральные материалы, стиль и комфорт в каждом доме!</h2>
+            <h2 className="text-center md:text-start text-[16px]">🌳 Wood City — натуральные материалы, стиль и комфорт в каждом доме!</h2>
             <br />
 
             <div className="flex justify-center md:justify-start">
