@@ -64,10 +64,10 @@ function MobileMenu({ open, setOpen }) {
                     </NavLink>
                     <span className="block h-[5px] bg-transparent border-4 border-transparent"></span>
                     <NavLink
-                      to="tel:+998770091640"
+                      to="tel:+77073026200"
                       className="border border-transparent hover:border-greener px-2 py-1 rounded-[5px]"
                     >
-                      +998 (77) 009 16 40
+                      +7 (707) 302 6200
                     </NavLink>
                   </p>
                 </div>
