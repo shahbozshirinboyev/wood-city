@@ -178,8 +178,8 @@ function WoodenHouses() {
             <h1 className="text-[20px] md:text-[18px] text-center md:text-start mt-[25px]">✨ Wood City — Дом вашей мечты! ✨</h1>
             <br />
             <div className="text-[16px] md:text-[15px] lg:text-[18px]">
-              <p className="text-center md:text-start">Под крышей - от 3 600 000 сум за кв/м.</p>
-              <p className="text-center md:text-start">Под ключ без мебели - от 4 420 000 сум за кв/м.</p>
+              <p className="text-center md:text-start">Под крышей - от 4 600 000 сум за кв/м.</p>
+              <p className="text-center md:text-start">Под ключ без мебели - от 5 550 000 сум за кв/м.</p>
               <p className="text-center md:text-start">Под ключ с мебелью - от 6 200 000 сум за кв/м.</p>
             </div>
             <br />

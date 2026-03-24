@@ -2163,7 +2163,7 @@ export const woodenHouse = [
         plan2d: "/houses/frame_houses/hometerrace0_plan2d.jpg",
 
         title: "Дом 10 на 10 с террасой",
-        price: "Под крышей: от 3 600 000 сум за кв/м.",
+        price: "Под крышей: от 4 600 000 сум за кв/м.",
 
         project: "Дом",
         square: "91 м²",
@@ -2183,7 +2183,7 @@ export const woodenHouse = [
         plan2d: "/houses/frame_houses/bighometerrace0_plan2d.jpg",
 
         title: "Дом 11 на 6 с большой террасой",
-        price: "Под крышей: от 3 600 000 сум за кв/м.",
+        price: "Под крышей: от 4 600 000 сум за кв/м.",
 
         project: "Дом",
         square: "66 м²",
@@ -2203,7 +2203,7 @@ export const woodenHouse = [
         plan2d: "/houses/frame_houses/homegableroof0_plan2d.jpg",
 
         title: "Дом 6 на 4 с двухскатной крышей",
-        price: "Под крышей: от 3 600 000 сум за кв/м.",
+        price: "Под крышей: от 4 600 000 сум за кв/м.",
 
         project: "Дом",
         square: "21 м²",
@@ -2223,7 +2223,7 @@ export const woodenHouse = [
         plan2d: "/houses/frame_houses/home88terrace0_plan2d.jpg",
 
         title: "Дом 8 на 8 с террасой",
-        price: "Под крышей: от 3 600 000 сум за кв/м.",
+        price: "Под крышей: от 4 600 000 сум за кв/м.",
 
         project: "Дом",
         square: "64 м²",
@@ -2243,7 +2243,7 @@ export const woodenHouse = [
         plan2d: "/houses/frame_houses/home88terrace20_plan2d.jpg",
 
         title: "Дом 8 на 8 с террасой 2",
-        price: "Под крышей: от 3 600 000 сум за кв/м.",
+        price: "Под крышей: от 4 600 000 сум за кв/м.",
 
         project: "Дом",
         square: "76 м²",
@@ -2263,7 +2263,7 @@ export const woodenHouse = [
         plan2d: "/houses/frame_houses/housewithbedrooms0_plan2d.jpg",
 
         title: "Каркасный дом 10 на 11 с 3 спальнями",
-        price: "Под крышей: от 3 600 000 сум за кв/м.",
+        price: "Под крышей: от 4 600 000 сум за кв/м.",
 
         project: "Дом",
         square: "101 м²",
@@ -2283,7 +2283,7 @@ export const woodenHouse = [
         plan2d: "/houses/frame_houses/aframe0_plan2d.jpg",
 
         title: "Дома «А-фрейм»",
-        price: "Под крышей: от 3 600 000 сум за кв/м.",
+        price: "Под крышей: от 4 600 000 сум за кв/м.",
 
         project: "Дом",
         square: "38,5 м²",
@@ -2303,7 +2303,7 @@ export const woodenHouse = [
         plan2d: "/houses/frame_houses/house4x40_plan2d.jpg",
 
         title: "Домик 4х4",
-        price: "Под крышей: от 3 600 000 сум за кв/м.",
+        price: "Под крышей: от 4 600 000 сум за кв/м.",
 
         project: "Дом",
         square: "16 м²",
@@ -2323,7 +2323,7 @@ export const woodenHouse = [
         plan2d: "/houses/frame_houses/floor2house4x60_plan2d.jpg",
 
         title: "Дачный дом",
-        price: "Под крышей: от 3 600 000 сум за кв/м.",
+        price: "Под крышей: от 4 600 000 сум за кв/м.",
 
         project: "Дом",
         square: "24 м²",
@@ -2343,7 +2343,7 @@ export const woodenHouse = [
         plan2d: "/houses/frame_houses/house6x6_plan2d.jpg",
 
         title: "Дом",
-        price: "Под крышей: от 3 600 000 сум за кв/м.",
+        price: "Под крышей: от 4 600 000 сум за кв/м.",
 
         project: "Дом",
         square: "36 м²",
@@ -2363,7 +2363,7 @@ export const woodenHouse = [
         plan2d: "/houses/frame_houses/CompactHouse5x5_plan2d.jpg",
 
         title: "Компактный домик с террасой",
-        price: "Под крышей: от 3 600 000 сум за кв/м.",
+        price: "Под крышей: от 4 600 000 сум за кв/м.",
 
         project: "Дом",
         square: "25 м²",
